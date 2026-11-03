@@ -12,6 +12,17 @@ extern void SetTile(u32 tileIndex, u32 tilePos, u32 layer);
 extern void UpdateScrollVram(void);
 extern u32 sub_080B1BA4(u32, u32, u32);
 extern void LoadResourceAsync(const void* src, void* dest, u32 size);
+
+// A copy queued for the next frame by LoadResourceAsync (see LoadResources).
+typedef struct {
+    u8 type; // 0: copy, 1: decompress to VRAM, 2: fill
+    u8 unk_1;
+    u16 size;
+    const void* src; // the value to fill with for type 2
+    void* dest;
+} QueuedResource;
+extern QueuedResource gUnk_03000C30[0x28];
+extern u8 gUnk_03003DE0; // queued resources
 extern u32 GetFuserId(struct Entity_*);
 #define GetFuserIdAndFuserTextId(ent) ((union SplitDWord)(*(MultiReturnTypeSingleEntityArg)(&GetFuserId))(ent))
 extern u32 CheckPlayerInRegion(u32 centerX, u32 centerY, u32 radiusX, u32 radiusY);

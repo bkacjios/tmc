@@ -11,6 +11,6 @@ gSpriteAnimations_GyorgMaleEnergyProjectile_1:: @ 0812AA31
 	.include "animations/gSpriteAnimations_GyorgMaleEnergyProjectile_1.s"
 
 gSpriteAnimations_GyorgMaleEnergyProjectile:: @ 0812AA50
-	.4byte gSpriteAnimations_GyorgMaleEnergyProjectile_0
-	.4byte gSpriteAnimations_GyorgMaleEnergyProjectile_1
-	.4byte 00000000
+	ptr gSpriteAnimations_GyorgMaleEnergyProjectile_0
+	ptr gSpriteAnimations_GyorgMaleEnergyProjectile_1
+	ptr 00000000

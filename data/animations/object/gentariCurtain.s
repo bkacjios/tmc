@@ -11,6 +11,6 @@ gSpriteAnimations_GentariCurtains_1:: @ 08122631
 	.include "animations/gSpriteAnimations_GentariCurtains_1.s"
 
 gSpriteAnimations_GentariCurtains:: @ 08122638
-	.4byte gSpriteAnimations_GentariCurtains_0
-	.4byte gSpriteAnimations_GentariCurtains_1
-	.4byte 00000000
+	ptr gSpriteAnimations_GentariCurtains_0
+	ptr gSpriteAnimations_GentariCurtains_1
+	ptr 00000000

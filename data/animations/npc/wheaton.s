@@ -17,8 +17,8 @@ gSpriteAnimations_Wheaton_3:: @ 0810C403
 	.include "animations/gSpriteAnimations_Wheaton_3.s"
 
 gSpriteAnimations_Wheaton:: @ 0810C414
-	.4byte gSpriteAnimations_Wheaton_0
-	.4byte gSpriteAnimations_Wheaton_1
-	.4byte gSpriteAnimations_Wheaton_2
-	.4byte gSpriteAnimations_Wheaton_3
-	.4byte 00000000
+	ptr gSpriteAnimations_Wheaton_0
+	ptr gSpriteAnimations_Wheaton_1
+	ptr gSpriteAnimations_Wheaton_2
+	ptr gSpriteAnimations_Wheaton_3
+	ptr 00000000

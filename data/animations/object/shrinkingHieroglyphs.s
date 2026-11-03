@@ -14,7 +14,7 @@ gSpriteAnimations_ShrinkingHieroglyphs_2:: @ 0812344C
 	.include "animations/gSpriteAnimations_ShrinkingHieroglyphs_2.s"
 
 gSpriteAnimations_ShrinkingHieroglyphs:: @ 08123474
-	.4byte gSpriteAnimations_ShrinkingHieroglyphs_0
-	.4byte gSpriteAnimations_ShrinkingHieroglyphs_1
-	.4byte gSpriteAnimations_ShrinkingHieroglyphs_2
-	.4byte 00000000
+	ptr gSpriteAnimations_ShrinkingHieroglyphs_0
+	ptr gSpriteAnimations_ShrinkingHieroglyphs_1
+	ptr gSpriteAnimations_ShrinkingHieroglyphs_2
+	ptr 00000000

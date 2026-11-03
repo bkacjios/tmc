@@ -8,5 +8,5 @@ gSpriteAnimations_BoneProjectile_0:: @ 08129634
 	.include "animations/gSpriteAnimations_BoneProjectile_0.s"
 
 gSpriteAnimations_BoneProjectile:: @ 08129648
-	.4byte gSpriteAnimations_BoneProjectile_0
-	.4byte 00000000
+	ptr gSpriteAnimations_BoneProjectile_0
+	ptr 00000000

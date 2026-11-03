@@ -55,7 +55,7 @@ gGfxGroup_3::
 	gfx_raw src=offset_gPalette_0, unknown=0xd, terminator=1
 
 gGfxGroup_4::
-	gfx_raw src=offset_gGfx_4_0, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_4_0, unknown=0x7, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_128_1, unknown=0x7, dest=0x6004000, size=0x19e0
 	gfx_raw src=offset_gGfx_4_2, unknown=0x7, dest=0x6014000, size=0xe00, terminator=1
 
@@ -82,21 +82,21 @@ gGfxGroup_6::
 	gfx_raw src=offset_gPalette_0, unknown=0xd, terminator=1
 
 gGfxGroup_7::
-	gfx_raw src=offset_gGfx_7_0, unknown=0x7, dest=0x20344b0, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_7_0, unknown=0x7, dest=gBG2Buffer, size=0x500, terminator=1
 
 gGfxGroup_8::
-	gfx_raw src=offset_gGfx_8_0, unknown=0x7, dest=0x20344b0, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_8_0, unknown=0x7, dest=gBG2Buffer, size=0x500, terminator=1
 
 gGfxGroup_12::
-	gfx_raw src=offset_gGfx_12_0, unknown=0x7, dest=0x2021ff0, size=0x400
-	gfx_raw src=offset_gGfx_12_1, unknown=0x7, dest=0x2034570, size=0x400, terminator=1
+	gfx_raw src=offset_gGfx_12_0, unknown=0x7, dest=gBG1Buffer+0xC0, size=0x400
+	gfx_raw src=offset_gGfx_12_1, unknown=0x7, dest=gBG2Buffer+0xC0, size=0x400, terminator=1
 
 gGfxGroup_13::
-	gfx_raw src=offset_gGfx_13_0, unknown=0x7, dest=0x2022030, size=0x400
-	gfx_raw src=offset_gGfx_13_1, unknown=0x7, dest=0x20345b0, size=0x400, terminator=1
+	gfx_raw src=offset_gGfx_13_0, unknown=0x7, dest=gBG1Buffer+0x100, size=0x400
+	gfx_raw src=offset_gGfx_13_1, unknown=0x7, dest=gBG2Buffer+0x100, size=0x400, terminator=1
 
 gGfxGroup_14::
-	gfx_raw src=offset_gGfx_14_0, unknown=0x7, dest=0x20344b0, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_14_0, unknown=0x7, dest=gBG2Buffer, size=0x500, terminator=1
 
 gGfxGroup_15::
 .ifdef EU
@@ -116,31 +116,31 @@ gGfxGroup_15::
 
 gGfxGroup_9::
 .ifdef EU
-	gfx_raw src=offset_gGfx_9_0, unknown=0xe, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_9_0, unknown=0xe, dest=gBG3Buffer, size=0x500
 .else
 .ifdef JP_D
-	gfx_raw src=offset_gGfx_9_0_JP, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_9_0_JP, dest=gBG3Buffer, size=0x500
 .else
-	gfx_raw src=offset_gGfx_9_0, unknown=0x1, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_9_0, unknown=0x1, dest=gBG3Buffer, size=0x500
 .endif
 .endif
 	gfx_raw src=offset_gPalette_0, unknown=0xd, terminator=1
 
 gGfxGroup_10::
 .ifdef EU
-	gfx_raw src=offset_gGfx_10_0, unknown=0xe, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_10_0, unknown=0xe, dest=gBG3Buffer, size=0x500
 .else
 .ifdef JP_D
-	gfx_raw src=offset_gGfx_10_0_JP, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_10_0_JP, dest=gBG3Buffer, size=0x500
 .else
-	gfx_raw src=offset_gGfx_10_0, unknown=0x1, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_10_0, unknown=0x1, dest=gBG3Buffer, size=0x500
 .endif
 .endif
 	gfx_raw src=offset_gPalette_0, unknown=0xd, terminator=1
 
 gGfxGroup_11::
 .ifdef JP_D
-	gfx_raw src=offset_gGfx_11_1_JP, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_11_1_JP, dest=gBG3Buffer, size=0x500
 .endif
 	gfx_raw src=offset_gPalette_0, unknown=0xd, terminator=1
 
@@ -175,7 +175,7 @@ gGfxGroup_36::
 
 gGfxGroup_37::
 	gfx_raw src=offset_gGfx_38_0, unknown=0x7, dest=0x600a800, size=0x800
-	gfx_raw src=offset_gGfx_37_1, unknown=0x7, dest=0x2001a40, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_37_1, unknown=0x7, dest=gBG3Buffer, size=0x1000, terminator=1
 
 gGfxGroup_38::
 	gfx_raw src=offset_gGfx_38_0, unknown=0x7, dest=0x600a400, size=0x800, terminator=1
@@ -198,45 +198,45 @@ gGfxGroup_42::
 
 gGfxGroup_30::
 	gfx_raw src=offset_gGfx_33_0, unknown=0x7, dest=0x6008000, size=0x4000
-	gfx_raw src=offset_gGfx_30_1, unknown=0x7, dest=0x2002f00, size=0x1000
-	gfx_raw src=offset_gGfx_30_2, unknown=0x7, dest=0x2003f00, size=0x1000
-	gfx_raw src=offset_gGfx_30_3, unknown=0x7, dest=0x2004f00, size=0x1000
-	gfx_raw src=offset_gGfx_30_4, unknown=0x7, dest=0x2005f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_30_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000
+	gfx_raw src=offset_gGfx_30_2, unknown=0x7, dest=gMapDataTopSpecial+0x1000, size=0x1000
+	gfx_raw src=offset_gGfx_30_3, unknown=0x7, dest=gMapDataTopSpecial+0x2000, size=0x1000
+	gfx_raw src=offset_gGfx_30_4, unknown=0x7, dest=gMapDataTopSpecial+0x3000, size=0x1000, terminator=1
 
 gGfxGroup_33::
 	gfx_raw src=offset_gGfx_33_0, unknown=0x7, dest=0x6008000, size=0x4000
-	gfx_raw src=offset_gGfx_33_1, unknown=0x7, dest=0x2002f00, size=0x1000
-	gfx_raw src=offset_gGfx_33_2, unknown=0x7, dest=0x2003f00, size=0x1000
-	gfx_raw src=offset_gGfx_33_3, unknown=0x7, dest=0x2004f00, size=0x1000
-	gfx_raw src=offset_gGfx_33_4, unknown=0x7, dest=0x2005f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_33_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000
+	gfx_raw src=offset_gGfx_33_2, unknown=0x7, dest=gMapDataTopSpecial+0x1000, size=0x1000
+	gfx_raw src=offset_gGfx_33_3, unknown=0x7, dest=gMapDataTopSpecial+0x2000, size=0x1000
+	gfx_raw src=offset_gGfx_33_4, unknown=0x7, dest=gMapDataTopSpecial+0x3000, size=0x1000, terminator=1
 
 gGfxGroup_32::
 	gfx_raw src=offset_gGfx_33_0, unknown=0x7, dest=0x6008000, size=0x4000
-	gfx_raw src=offset_gGfx_32_1, unknown=0x7, dest=0x2002f00, size=0x1000
-	gfx_raw src=offset_gGfx_32_2, unknown=0x7, dest=0x2003f00, size=0x1000
-	gfx_raw src=offset_gGfx_32_3, unknown=0x7, dest=0x2004f00, size=0x1000
-	gfx_raw src=offset_gGfx_32_4, unknown=0x7, dest=0x2005f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_32_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000
+	gfx_raw src=offset_gGfx_32_2, unknown=0x7, dest=gMapDataTopSpecial+0x1000, size=0x1000
+	gfx_raw src=offset_gGfx_32_3, unknown=0x7, dest=gMapDataTopSpecial+0x2000, size=0x1000
+	gfx_raw src=offset_gGfx_32_4, unknown=0x7, dest=gMapDataTopSpecial+0x3000, size=0x1000, terminator=1
 
 gGfxGroup_31::
 	gfx_raw src=offset_gGfx_33_0, unknown=0x7, dest=0x6008000, size=0x4000
-	gfx_raw src=offset_gGfx_31_1, unknown=0x7, dest=0x2002f00, size=0x1000
-	gfx_raw src=offset_gGfx_31_2, unknown=0x7, dest=0x2003f00, size=0x1000
-	gfx_raw src=offset_gGfx_31_3, unknown=0x7, dest=0x2004f00, size=0x1000
-	gfx_raw src=offset_gGfx_31_4, unknown=0x7, dest=0x2005f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_31_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000
+	gfx_raw src=offset_gGfx_31_2, unknown=0x7, dest=gMapDataTopSpecial+0x1000, size=0x1000
+	gfx_raw src=offset_gGfx_31_3, unknown=0x7, dest=gMapDataTopSpecial+0x2000, size=0x1000
+	gfx_raw src=offset_gGfx_31_4, unknown=0x7, dest=gMapDataTopSpecial+0x3000, size=0x1000, terminator=1
 
 gGfxGroup_35::
 	gfx_raw src=offset_gGfx_35_0, unknown=0x7, dest=0x6008000, size=0x4000
-	gfx_raw src=offset_gGfx_35_1, unknown=0x7, dest=0x2002f00, size=0x1000
-	gfx_raw src=offset_gGfx_35_2, unknown=0x7, dest=0x2003f00, size=0x1000
-	gfx_raw src=offset_gGfx_35_3, unknown=0x7, dest=0x2004f00, size=0x1000
-	gfx_raw src=offset_gGfx_35_4, unknown=0x7, dest=0x2005f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_35_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000
+	gfx_raw src=offset_gGfx_35_2, unknown=0x7, dest=gMapDataTopSpecial+0x1000, size=0x1000
+	gfx_raw src=offset_gGfx_35_3, unknown=0x7, dest=gMapDataTopSpecial+0x2000, size=0x1000
+	gfx_raw src=offset_gGfx_35_4, unknown=0x7, dest=gMapDataTopSpecial+0x3000, size=0x1000, terminator=1
 
 gGfxGroup_34::
 	gfx_raw src=offset_gGfx_34_0, unknown=0x7, dest=0x6008000, size=0x4000
-	gfx_raw src=offset_gGfx_34_1, unknown=0x7, dest=0x2002f00, size=0x1000
-	gfx_raw src=offset_gGfx_34_2, unknown=0x7, dest=0x2003f00, size=0x1000
-	gfx_raw src=offset_gGfx_34_3, unknown=0x7, dest=0x2004f00, size=0x1000
-	gfx_raw src=offset_gGfx_34_4, unknown=0x7, dest=0x2005f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_34_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000
+	gfx_raw src=offset_gGfx_34_2, unknown=0x7, dest=gMapDataTopSpecial+0x1000, size=0x1000
+	gfx_raw src=offset_gGfx_34_3, unknown=0x7, dest=gMapDataTopSpecial+0x2000, size=0x1000
+	gfx_raw src=offset_gGfx_34_4, unknown=0x7, dest=gMapDataTopSpecial+0x3000, size=0x1000, terminator=1
 
 gGfxGroup_22::
 	gfx_raw src=offset_gGfx_22_0, unknown=0x7, dest=0x6000000, size=0x4000
@@ -276,22 +276,22 @@ gGfxGroup_47::
 	gfx_raw src=offset_gGfx_47_0, unknown=0x7, dest=0x600f000, size=0x800, terminator=1
 
 gGfxGroup_48::
-	gfx_raw src=offset_gGfx_48_0, unknown=0x7, dest=0x2002f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_48_0, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000, terminator=1
 
 gGfxGroup_49::
-	gfx_raw src=offset_gGfx_49_0, unknown=0x7, dest=0x2001a40, size=0x800, terminator=1
+	gfx_raw src=offset_gGfx_49_0, unknown=0x7, dest=gBG3Buffer, size=0x800, terminator=1
 
 gGfxGroup_50::
-	gfx_raw src=offset_gGfx_50_0, unknown=0x7, dest=0x2001a40, size=0x800, terminator=1
+	gfx_raw src=offset_gGfx_50_0, unknown=0x7, dest=gBG3Buffer, size=0x800, terminator=1
 
 gGfxGroup_51::
-	gfx_raw src=offset_gGfx_51_0, unknown=0x7, dest=0x2001a40, size=0x800, terminator=1
+	gfx_raw src=offset_gGfx_51_0, unknown=0x7, dest=gBG3Buffer, size=0x800, terminator=1
 
 gGfxGroup_52::
-	gfx_raw src=offset_gGfx_52_0, unknown=0x7, dest=0x2001a40, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_52_0, unknown=0x7, dest=gBG3Buffer, size=0x1000, terminator=1
 
 gGfxGroup_53::
-	gfx_raw src=offset_gGfx_53_0, unknown=0x7, dest=0x2001a40, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_53_0, unknown=0x7, dest=gBG3Buffer, size=0x1000, terminator=1
 
 gGfxGroup_75::
 	gfx_raw src=offset_gGfx_75_0, unknown=0x7, dest=0x600f000, size=0x800, terminator=1
@@ -328,19 +328,19 @@ gGfxGroup_85::
 
 gGfxGroup_54::
 	gfx_raw src=offset_gGfx_54_0, unknown=0x7, dest=0x6004000, size=0x48c0
-	gfx_raw src=offset_gGfx_54_1, unknown=0x7, dest=0x2002f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_54_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000, terminator=1
 
 gGfxGroup_55::
 	gfx_raw src=offset_gGfx_55_0, unknown=0x7, dest=0x6004000, size=0x47c0
-	gfx_raw src=offset_gGfx_55_1, unknown=0x7, dest=0x2002f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_55_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000, terminator=1
 
 gGfxGroup_56::
 	gfx_raw src=offset_gGfx_56_0, unknown=0x7, dest=0x6004000, size=0x3be0
-	gfx_raw src=offset_gGfx_56_1, unknown=0x7, dest=0x2002f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_56_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000, terminator=1
 
 gGfxGroup_57::
 	gfx_raw src=offset_gGfx_57_0, unknown=0x7, dest=0x6004000, size=0x4700
-	gfx_raw src=offset_gGfx_57_1, unknown=0x7, dest=0x2002f00, size=0x1000, terminator=1
+	gfx_raw src=offset_gGfx_57_1, unknown=0x7, dest=gMapDataTopSpecial, size=0x1000, terminator=1
 
 gGfxGroup_58::
 	gfx_raw src=offset_gGfx_58_0, unknown=0x7, dest=0x6000000, size=0xc000
@@ -410,27 +410,27 @@ gGfxGroup_74::
 
 gGfxGroup_86::
 	gfx_raw src=offset_gGfx_88_0, unknown=0x7, dest=0x6008000, size=0x1d20
-	gfx_raw src=offset_gGfx_86_1, unknown=0x7, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_86_1, unknown=0x7, dest=gBG3Buffer, size=0x500
 	gfx_raw src=offset_gGfx_88_2, unknown=0x7, dest=0x6010000, size=0x700
 	gfx_raw src=offset_gGfx_88_3, unknown=0x7, dest=0x6012000, size=0x1c0, terminator=1
 
 gGfxGroup_87::
 	gfx_raw src=offset_gGfx_88_0, unknown=0x7, dest=0x6008000, size=0x1d20
-	gfx_raw src=offset_gGfx_87_1, unknown=0x7, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_87_1, unknown=0x7, dest=gBG3Buffer, size=0x500
 	gfx_raw src=offset_gGfx_88_2, unknown=0x7, dest=0x6010000, size=0x700
 	gfx_raw src=offset_gGfx_88_3, unknown=0x7, dest=0x6012000, size=0x1c0, terminator=1
 
 gGfxGroup_88::
 	gfx_raw src=offset_gGfx_88_0, unknown=0x7, dest=0x6008000, size=0x1d20
-	gfx_raw src=offset_gGfx_88_1, unknown=0x7, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_88_1, unknown=0x7, dest=gBG3Buffer, size=0x500
 	gfx_raw src=offset_gGfx_88_2, unknown=0x7, dest=0x6010000, size=0x700
 	gfx_raw src=offset_gGfx_88_3, unknown=0x7, dest=0x6012000, size=0x1c0, terminator=1
 
 gGfxGroup_89::
 .ifdef JP_D
-	gfx_raw src=offset_gGfx_89_0_JP, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_89_0_JP, dest=gBG2Buffer, size=0x500
 .else
-	gfx_raw src=offset_gGfx_89_0, unknown=0xf, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_89_0, unknown=0xf, dest=gBG2Buffer, size=0x500
 .endif
 	gfx_raw src=offset_gGfx_89_1, unknown=0x7, dest=0x6000000, size=0x3bc0
 	gfx_raw src=offset_gGfx_89_2, unknown=0x7, dest=0x6008000, size=0xe00
@@ -441,7 +441,7 @@ gGfxGroup_89::
 
 gGfxGroup_90::
 	gfx_raw src=offset_gGfx_90_0, unknown=0x7, dest=0x6000000, size=0x2640
-	gfx_raw src=offset_gGfx_90_1, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_90_1, unknown=0x7, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_90_2, unknown=0x7, dest=0x6014000, size=0x200
 .ifdef EU
 	gfx_raw src=offset_gGfx_90_3, unknown=0x2, dest=0x6010800, size=0x800
@@ -467,7 +467,7 @@ gGfxGroup_90::
 
 gGfxGroup_91::
 	gfx_raw src=offset_gGfx_91_0, unknown=0x7, dest=0x6000000, size=0x3300
-	gfx_raw src=offset_gGfx_91_1, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_91_1, unknown=0x7, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_91_2, unknown=0x7, dest=0x6014000, size=0x1780
 .ifdef EU
 	gfx_raw src=offset_gGfx_91_3, unknown=0x2, dest=0x6010800, size=0x800
@@ -493,8 +493,8 @@ gGfxGroup_91::
 
 gGfxGroup_92::
 	gfx_raw src=offset_gGfx_92_0, unknown=0x7, dest=0x6000000, size=0x2000
-	gfx_raw src=offset_gGfx_92_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_92_2, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_92_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_92_2, unknown=0x7, dest=gBG2Buffer, size=0x500
 .ifdef EU
 	gfx_raw src=offset_gGfx_92_3, unknown=0x2, dest=0x6014800, size=0x800
 	gfx_raw src=offset_gGfx_92_4_EU, unknown=0x3, dest=0x6014800, size=0x800
@@ -529,14 +529,14 @@ gGfxGroup_129::
 
 gGfxGroup_127::
 .ifdef EU
-	gfx_raw src=offset_gGfx_127_0, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_127_0, unknown=0x7, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_128_1, unknown=0x7, dest=0x6004000, size=0x19e0, terminator=1
 .else
 .ifdef JP_D
-	gfx_raw src=offset_gGfx_127_0_JP, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_127_0_JP, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_127_1_JP, dest=0x6004000, size=0x2000
 .else
-	gfx_raw src=offset_gGfx_127_0, unknown=0xf, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_127_0, unknown=0xf, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_128_1, unknown=0xf, dest=0x6004000, size=0x19e0
 .endif
 	gfx_raw src=offset_gPalette_0, unknown=0xd, terminator=1
@@ -544,14 +544,14 @@ gGfxGroup_127::
 
 gGfxGroup_128::
 .ifdef EU
-	gfx_raw src=offset_gGfx_128_0, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_128_0, unknown=0x7, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_128_1, unknown=0x7, dest=0x6004000, size=0x19e0, terminator=1
 .else
 .ifdef JP_D
-	gfx_raw src=offset_gGfx_128_0_JP, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_128_0_JP, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_127_1_JP, dest=0x6004000, size=0x2000
 .else
-	gfx_raw src=offset_gGfx_128_0, unknown=0xf, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_128_0, unknown=0xf, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_128_1, unknown=0xf, dest=0x6004000, size=0x19e0
 .endif
 	gfx_raw src=offset_gPalette_0, unknown=0xd, terminator=1
@@ -559,147 +559,147 @@ gGfxGroup_128::
 
 gGfxGroup_93::
 	gfx_raw src=offset_gGfx_94_0, unknown=0x7, dest=0x6000000, size=0x4000
-	gfx_raw src=offset_gGfx_94_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_94_2, unknown=0x7, dest=0x20344b0, size=0x500
-	gfx_raw src=offset_gGfx_93_3, unknown=0x7, dest=0x2001a40, size=0x500
+	gfx_raw src=offset_gGfx_94_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_94_2, unknown=0x7, dest=gBG2Buffer, size=0x500
+	gfx_raw src=offset_gGfx_93_3, unknown=0x7, dest=gBG3Buffer, size=0x500
 	gfx_raw src=offset_gGfx_94_3, unknown=0x7, dest=0x6014000, size=0x1300, terminator=1
 
 gGfxGroup_94::
 	gfx_raw src=offset_gGfx_94_0, unknown=0x7, dest=0x6000000, size=0x4000
-	gfx_raw src=offset_gGfx_94_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_94_2, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_94_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_94_2, unknown=0x7, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_94_3, unknown=0x7, dest=0x6014000, size=0x1300, terminator=1
 
 gGfxGroup_95::
 	gfx_raw src=offset_gGfx_96_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_95_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_95_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_96::
 	gfx_raw src=offset_gGfx_96_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_96_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_96_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_96_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_96_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_97::
 	gfx_raw src=offset_gGfx_98_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_97_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_97_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_98::
 	gfx_raw src=offset_gGfx_98_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_102_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_98_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_102_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_98_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_99::
 	gfx_raw src=offset_gGfx_113_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_99_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_99_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_100::
 	gfx_raw src=offset_gGfx_103_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_100_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_100_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_101::
 	gfx_raw src=offset_gGfx_105_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_101_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_101_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_102::
 	gfx_raw src=offset_gGfx_112_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_102_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_102_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_102_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_102_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_103::
 	gfx_raw src=offset_gGfx_103_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_103_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_103_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_104::
 	gfx_raw src=offset_gGfx_112_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_104_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_104_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_112::
 	gfx_raw src=offset_gGfx_112_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_112_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_112_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_105::
 	gfx_raw src=offset_gGfx_105_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_105_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_105_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_105_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_105_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_106::
 	gfx_raw src=offset_gGfx_113_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_106_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_106_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_113::
 	gfx_raw src=offset_gGfx_113_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_113_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_113_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_107::
 	gfx_raw src=offset_gGfx_108_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_107_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_107_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_107_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_107_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_108::
 	gfx_raw src=offset_gGfx_108_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_108_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_113_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_108_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_116::
 	gfx_raw src=offset_gGfx_116_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_116_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_116_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_115::
 	gfx_raw src=offset_gGfx_115_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_115_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_115_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_109::
 	gfx_raw src=offset_gGfx_109_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_109_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_109_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_110::
 	gfx_raw src=offset_gGfx_110_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_110_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_110_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_110_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_110_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_111::
 	gfx_raw src=offset_gGfx_111_0, unknown=0x7, dest=0x6000000, size=0x8000
-	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=0x2021f30, size=0x500
-	gfx_raw src=offset_gGfx_111_2, unknown=0x7, dest=0x20344b0, size=0x800
+	gfx_raw src=offset_gGfx_116_1, unknown=0x7, dest=gBG1Buffer, size=0x500
+	gfx_raw src=offset_gGfx_111_2, unknown=0x7, dest=gBG2Buffer, size=0x800
 	gfx_raw src=offset_gGfx_116_3, unknown=0x7, dest=0x6014000, size=0xa00, terminator=1
 
 gGfxGroup_117::
 	gfx_raw src=offset_gGfx_117_0, unknown=0x7, dest=0x6000000, size=0x2a80
 	gfx_raw src=offset_fixedTypeGfx_494, unknown=0x7, dest=0x6015400, size=0x600
-	gfx_raw src=offset_gGfx_117_2, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_117_2, unknown=0x7, dest=gBG2Buffer, size=0x500
 .ifdef EU
 	gfx_raw src=offset_gGfx_117_3, unknown=0x2, dest=0x6010800, size=0x800
 	gfx_raw src=offset_gGfx_117_4_EU, unknown=0x3, dest=0x6010800, size=0x800
@@ -716,29 +716,29 @@ gGfxGroup_117::
 	gfx_raw src=offset_gGfx_117_4, unknown=0x7, dest=0x6011c00, size=0x80, terminator=1
 
 gGfxGroup_118::
-	gfx_raw src=offset_gGfx_118_0, unknown=0x7, dest=0x2021f30, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_118_0, unknown=0x7, dest=gBG1Buffer, size=0x500, terminator=1
 
 gGfxGroup_119::
-	gfx_raw src=offset_gGfx_119_0, unknown=0x7, dest=0x2021f30, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_119_0, unknown=0x7, dest=gBG1Buffer, size=0x500, terminator=1
 
 gGfxGroup_120::
-	gfx_raw src=offset_gGfx_120_0, unknown=0x7, dest=0x2021f30, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_120_0, unknown=0x7, dest=gBG1Buffer, size=0x500, terminator=1
 
 gGfxGroup_121::
-	gfx_raw src=offset_gGfx_121_0, unknown=0x7, dest=0x2021f30, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_121_0, unknown=0x7, dest=gBG1Buffer, size=0x500, terminator=1
 
 gGfxGroup_122::
-	gfx_raw src=offset_gGfx_122_0, unknown=0x7, dest=0x2021f30, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_122_0, unknown=0x7, dest=gBG1Buffer, size=0x500, terminator=1
 
 gGfxGroup_123::
-	gfx_raw src=offset_gGfx_123_0, unknown=0x7, dest=0x2021f30, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_123_0, unknown=0x7, dest=gBG1Buffer, size=0x500, terminator=1
 
 gGfxGroup_124::
-	gfx_raw src=offset_gGfx_124_0, unknown=0x7, dest=0x2021f30, size=0x500, terminator=1
+	gfx_raw src=offset_gGfx_124_0, unknown=0x7, dest=gBG1Buffer, size=0x500, terminator=1
 
 gGfxGroup_125::
 	gfx_raw src=offset_gGfx_125_0, unknown=0x7, dest=0x6000000, size=0x3800
-	gfx_raw src=offset_gGfx_125_1, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_125_1, unknown=0x7, dest=gBG2Buffer, size=0x500
 .ifdef EU
 	gfx_raw src=offset_gGfx_125_2, unknown=0x2, dest=0x6010800, size=0x800
 	gfx_raw src=offset_gGfx_125_3_EU, unknown=0x3, dest=0x6010800, size=0x800
@@ -756,7 +756,7 @@ gGfxGroup_125::
 
 gGfxGroup_126::
 	gfx_raw src=offset_gGfx_126_0, unknown=0x7, dest=0x6000000, size=0x3940
-	gfx_raw src=offset_gGfx_126_1, unknown=0x7, dest=0x20344b0, size=0x500
+	gfx_raw src=offset_gGfx_126_1, unknown=0x7, dest=gBG2Buffer, size=0x500
 	gfx_raw src=offset_gGfx_126_2, unknown=0x7, dest=0x6014000, size=0x3100
 	gfx_raw src=offset_gGfx_126_3, unknown=0x7, dest=0x6013000, size=0x200
 	gfx_raw src=offset_gGfx_126_4, unknown=0x7, dest=0x6013400, size=0x200
@@ -784,136 +784,136 @@ gGfxGroup_131::
 gGfxGroup_132::
 	gfx_raw src=offset_gGfx_132_0, unknown=0x7, dest=0x6004000, size=0x100, compressed=1, terminator=1
 gGfxGroups::
-	.4byte 0
-	.4byte gGfxGroup_1
-	.4byte gGfxGroup_2
-	.4byte gGfxGroup_3
-	.4byte gGfxGroup_4
-	.4byte gGfxGroup_5
-	.4byte gGfxGroup_6
-	.4byte gGfxGroup_7
-	.4byte gGfxGroup_8
-	.4byte gGfxGroup_9
-	.4byte gGfxGroup_10
-	.4byte gGfxGroup_11
-	.4byte gGfxGroup_12
-	.4byte gGfxGroup_13
-	.4byte gGfxGroup_14
-	.4byte gGfxGroup_15
-	.4byte gGfxGroup_16
-	.4byte gGfxGroup_17
-	.4byte gGfxGroup_18
-	.4byte gGfxGroup_19
-	.4byte gGfxGroup_20
-	.4byte gGfxGroup_21
-	.4byte gGfxGroup_22
-	.4byte gGfxGroup_23
-	.4byte gGfxGroup_24
-	.4byte gGfxGroup_25
-	.4byte gGfxGroup_26
-	.4byte gGfxGroup_27
-	.4byte gGfxGroup_28
-	.4byte gGfxGroup_29
-	.4byte gGfxGroup_30
-	.4byte gGfxGroup_31
-	.4byte gGfxGroup_32
-	.4byte gGfxGroup_33
-	.4byte gGfxGroup_34
-	.4byte gGfxGroup_35
-	.4byte gGfxGroup_36
-	.4byte gGfxGroup_37
-	.4byte gGfxGroup_38
-	.4byte gGfxGroup_39
-	.4byte gGfxGroup_40
-	.4byte gGfxGroup_41
-	.4byte gGfxGroup_42
-	.4byte gGfxGroup_43
-	.4byte gGfxGroup_44
-	.4byte gGfxGroup_45
-	.4byte gGfxGroup_46
-	.4byte gGfxGroup_47
-	.4byte gGfxGroup_48
-	.4byte gGfxGroup_49
-	.4byte gGfxGroup_50
-	.4byte gGfxGroup_51
-	.4byte gGfxGroup_52
-	.4byte gGfxGroup_53
-	.4byte gGfxGroup_54
-	.4byte gGfxGroup_55
-	.4byte gGfxGroup_56
-	.4byte gGfxGroup_57
-	.4byte gGfxGroup_58
-	.4byte gGfxGroup_59
-	.4byte gGfxGroup_60
-	.4byte gGfxGroup_61
-	.4byte gGfxGroup_62
-	.4byte gGfxGroup_63
-	.4byte gGfxGroup_64
-	.4byte gGfxGroup_65
-	.4byte gGfxGroup_66
-	.4byte gGfxGroup_67
-	.4byte gGfxGroup_68
-	.4byte gGfxGroup_69
-	.4byte gGfxGroup_70
-	.4byte gGfxGroup_71
-	.4byte gGfxGroup_72
-	.4byte gGfxGroup_73
-	.4byte gGfxGroup_74
-	.4byte gGfxGroup_75
-	.4byte gGfxGroup_76
-	.4byte gGfxGroup_77
-	.4byte gGfxGroup_78
-	.4byte gGfxGroup_79
-	.4byte gGfxGroup_80
-	.4byte gGfxGroup_81
-	.4byte gGfxGroup_82
-	.4byte gGfxGroup_83
-	.4byte gGfxGroup_84
-	.4byte gGfxGroup_85
-	.4byte gGfxGroup_86
-	.4byte gGfxGroup_87
-	.4byte gGfxGroup_88
-	.4byte gGfxGroup_89
-	.4byte gGfxGroup_90
-	.4byte gGfxGroup_91
-	.4byte gGfxGroup_92
-	.4byte gGfxGroup_93
-	.4byte gGfxGroup_94
-	.4byte gGfxGroup_95
-	.4byte gGfxGroup_96
-	.4byte gGfxGroup_97
-	.4byte gGfxGroup_98
-	.4byte gGfxGroup_99
-	.4byte gGfxGroup_100
-	.4byte gGfxGroup_101
-	.4byte gGfxGroup_102
-	.4byte gGfxGroup_103
-	.4byte gGfxGroup_104
-	.4byte gGfxGroup_105
-	.4byte gGfxGroup_106
-	.4byte gGfxGroup_107
-	.4byte gGfxGroup_108
-	.4byte gGfxGroup_109
-	.4byte gGfxGroup_110
-	.4byte gGfxGroup_111
-	.4byte gGfxGroup_112
-	.4byte gGfxGroup_113
-	.4byte gGfxGroup_109
-	.4byte gGfxGroup_115
-	.4byte gGfxGroup_116
-	.4byte gGfxGroup_117
-	.4byte gGfxGroup_118
-	.4byte gGfxGroup_119
-	.4byte gGfxGroup_120
-	.4byte gGfxGroup_121
-	.4byte gGfxGroup_122
-	.4byte gGfxGroup_123
-	.4byte gGfxGroup_124
-	.4byte gGfxGroup_125
-	.4byte gGfxGroup_126
-	.4byte gGfxGroup_127
-	.4byte gGfxGroup_128
-	.4byte gGfxGroup_129
-	.4byte gGfxGroup_130
-	.4byte gGfxGroup_131
-	.4byte gGfxGroup_132
+	ptr 0
+	ptr gGfxGroup_1
+	ptr gGfxGroup_2
+	ptr gGfxGroup_3
+	ptr gGfxGroup_4
+	ptr gGfxGroup_5
+	ptr gGfxGroup_6
+	ptr gGfxGroup_7
+	ptr gGfxGroup_8
+	ptr gGfxGroup_9
+	ptr gGfxGroup_10
+	ptr gGfxGroup_11
+	ptr gGfxGroup_12
+	ptr gGfxGroup_13
+	ptr gGfxGroup_14
+	ptr gGfxGroup_15
+	ptr gGfxGroup_16
+	ptr gGfxGroup_17
+	ptr gGfxGroup_18
+	ptr gGfxGroup_19
+	ptr gGfxGroup_20
+	ptr gGfxGroup_21
+	ptr gGfxGroup_22
+	ptr gGfxGroup_23
+	ptr gGfxGroup_24
+	ptr gGfxGroup_25
+	ptr gGfxGroup_26
+	ptr gGfxGroup_27
+	ptr gGfxGroup_28
+	ptr gGfxGroup_29
+	ptr gGfxGroup_30
+	ptr gGfxGroup_31
+	ptr gGfxGroup_32
+	ptr gGfxGroup_33
+	ptr gGfxGroup_34
+	ptr gGfxGroup_35
+	ptr gGfxGroup_36
+	ptr gGfxGroup_37
+	ptr gGfxGroup_38
+	ptr gGfxGroup_39
+	ptr gGfxGroup_40
+	ptr gGfxGroup_41
+	ptr gGfxGroup_42
+	ptr gGfxGroup_43
+	ptr gGfxGroup_44
+	ptr gGfxGroup_45
+	ptr gGfxGroup_46
+	ptr gGfxGroup_47
+	ptr gGfxGroup_48
+	ptr gGfxGroup_49
+	ptr gGfxGroup_50
+	ptr gGfxGroup_51
+	ptr gGfxGroup_52
+	ptr gGfxGroup_53
+	ptr gGfxGroup_54
+	ptr gGfxGroup_55
+	ptr gGfxGroup_56
+	ptr gGfxGroup_57
+	ptr gGfxGroup_58
+	ptr gGfxGroup_59
+	ptr gGfxGroup_60
+	ptr gGfxGroup_61
+	ptr gGfxGroup_62
+	ptr gGfxGroup_63
+	ptr gGfxGroup_64
+	ptr gGfxGroup_65
+	ptr gGfxGroup_66
+	ptr gGfxGroup_67
+	ptr gGfxGroup_68
+	ptr gGfxGroup_69
+	ptr gGfxGroup_70
+	ptr gGfxGroup_71
+	ptr gGfxGroup_72
+	ptr gGfxGroup_73
+	ptr gGfxGroup_74
+	ptr gGfxGroup_75
+	ptr gGfxGroup_76
+	ptr gGfxGroup_77
+	ptr gGfxGroup_78
+	ptr gGfxGroup_79
+	ptr gGfxGroup_80
+	ptr gGfxGroup_81
+	ptr gGfxGroup_82
+	ptr gGfxGroup_83
+	ptr gGfxGroup_84
+	ptr gGfxGroup_85
+	ptr gGfxGroup_86
+	ptr gGfxGroup_87
+	ptr gGfxGroup_88
+	ptr gGfxGroup_89
+	ptr gGfxGroup_90
+	ptr gGfxGroup_91
+	ptr gGfxGroup_92
+	ptr gGfxGroup_93
+	ptr gGfxGroup_94
+	ptr gGfxGroup_95
+	ptr gGfxGroup_96
+	ptr gGfxGroup_97
+	ptr gGfxGroup_98
+	ptr gGfxGroup_99
+	ptr gGfxGroup_100
+	ptr gGfxGroup_101
+	ptr gGfxGroup_102
+	ptr gGfxGroup_103
+	ptr gGfxGroup_104
+	ptr gGfxGroup_105
+	ptr gGfxGroup_106
+	ptr gGfxGroup_107
+	ptr gGfxGroup_108
+	ptr gGfxGroup_109
+	ptr gGfxGroup_110
+	ptr gGfxGroup_111
+	ptr gGfxGroup_112
+	ptr gGfxGroup_113
+	ptr gGfxGroup_109
+	ptr gGfxGroup_115
+	ptr gGfxGroup_116
+	ptr gGfxGroup_117
+	ptr gGfxGroup_118
+	ptr gGfxGroup_119
+	ptr gGfxGroup_120
+	ptr gGfxGroup_121
+	ptr gGfxGroup_122
+	ptr gGfxGroup_123
+	ptr gGfxGroup_124
+	ptr gGfxGroup_125
+	ptr gGfxGroup_126
+	ptr gGfxGroup_127
+	ptr gGfxGroup_128
+	ptr gGfxGroup_129
+	ptr gGfxGroup_130
+	ptr gGfxGroup_131
+	ptr gGfxGroup_132

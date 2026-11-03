@@ -160,4 +160,4 @@ $(BUILD_DIR)/converted_assets_%: $(BUILD_DIR)/extracted_assets_%
 	touch $@
 
 translations/%.bin: translations/%.json
-	tools/bin/tmc_strings -p --source $< --dest $@
+	$(TMC_STRINGS) -p --source $< --dest $@

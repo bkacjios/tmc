@@ -41,16 +41,16 @@ gSpriteAnimations_WindProjectile_11:: @ 081297F3
 	.include "animations/gSpriteAnimations_WindProjectile_11.s"
 
 gSpriteAnimations_WindProjectile:: @ 081297F8
-	.4byte gSpriteAnimations_WindProjectile_0
-	.4byte gSpriteAnimations_WindProjectile_1
-	.4byte gSpriteAnimations_WindProjectile_2
-	.4byte gSpriteAnimations_WindProjectile_3
-	.4byte gSpriteAnimations_WindProjectile_4
-	.4byte gSpriteAnimations_WindProjectile_5
-	.4byte gSpriteAnimations_WindProjectile_6
-	.4byte gSpriteAnimations_WindProjectile_7
-	.4byte gSpriteAnimations_WindProjectile_8
-	.4byte gSpriteAnimations_WindProjectile_9
-	.4byte gSpriteAnimations_WindProjectile_10
-	.4byte gSpriteAnimations_WindProjectile_11
-	.4byte 00000000
+	ptr gSpriteAnimations_WindProjectile_0
+	ptr gSpriteAnimations_WindProjectile_1
+	ptr gSpriteAnimations_WindProjectile_2
+	ptr gSpriteAnimations_WindProjectile_3
+	ptr gSpriteAnimations_WindProjectile_4
+	ptr gSpriteAnimations_WindProjectile_5
+	ptr gSpriteAnimations_WindProjectile_6
+	ptr gSpriteAnimations_WindProjectile_7
+	ptr gSpriteAnimations_WindProjectile_8
+	ptr gSpriteAnimations_WindProjectile_9
+	ptr gSpriteAnimations_WindProjectile_10
+	ptr gSpriteAnimations_WindProjectile_11
+	ptr 00000000

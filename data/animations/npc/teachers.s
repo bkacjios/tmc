@@ -14,8 +14,8 @@ gSpriteAnimations_Teachers_1:: @ 081139EA
 	.include "animations/gSpriteAnimations_Teachers_1.s"
 
 gSpriteAnimations_Teachers:: @ 08113A08
-	.4byte gSpriteAnimations_Teachers_0
-	.4byte gSpriteAnimations_Teachers_1
-	.4byte gSpriteAnimations_Teachers_0
-	.4byte gSpriteAnimations_Teachers_3
-	.4byte 00000000
+	ptr gSpriteAnimations_Teachers_0
+	ptr gSpriteAnimations_Teachers_1
+	ptr gSpriteAnimations_Teachers_0
+	ptr gSpriteAnimations_Teachers_3
+	ptr 00000000

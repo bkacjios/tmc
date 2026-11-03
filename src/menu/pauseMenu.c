@@ -29,6 +29,11 @@ void sub_080A51D4(void);
 bool32 sub_080A51F4(void);
 void sub_080A5F48(u32, u32);
 void sub_080A57F4(void);
+#ifdef PLATFORM_PC
+// The Quest Status screen's SLEEP button opens the settings menu instead.
+void PcSettingsMenu(u8* msgSpeed, u8* brightness);
+void PcDrawOptionsButton(void);
+#endif
 
 void Subtask_PauseMenu(void) {
     static Subtask* const pauseMenu_Variants[] = {
@@ -58,7 +63,6 @@ void Subtask_PauseMenu(void) {
     }
 }
 
-extern u8 gUnk_02034492[];
 void UpdateVisibleFusionMapMarkers(void);
 s32 sub_080A50A0(s32);
 
@@ -70,7 +74,7 @@ void PauseMenu_Variant0(void) {
     sub_080A4D34();
     r1 = 4;
     do {
-        gUnk_02034492[r1] = 0;
+        gPauseMenuOptions.unk2[r1] = 0;
         r1++;
     } while (r1 <= 0xd);
     location = GetOverworldLocation((u16)gRoomTransition.player_status.overworld_map_x,
@@ -693,6 +697,9 @@ void sub_080A5594(void) {
     }
     gGenericMenu.unk14 = 1;
     gGenericMenu.unk15 = 1;
+#ifdef PLATFORM_PC
+    PcDrawOptionsButton();
+#endif
     SetMenuType(1);
 }
 
@@ -739,7 +746,14 @@ void sub_080A56A0(void) {
                     }
                 }
                 break;
-#if !defined(DEMO_USA) && !defined(DEMO_JP)
+#if defined(PLATFORM_PC)
+            case 4:
+                PcSettingsMenu(&gSave.msg_speed, &gSave.brightness);
+                break;
+            case 5:
+                iVar1 = 10;
+                break;
+#elif !defined(DEMO_USA) && !defined(DEMO_JP)
             case 4:
                 iVar1 = 9;
                 break;
@@ -790,7 +804,11 @@ void sub_080A56A0(void) {
                 item = 0x70;
                 break;
             case 4:
+#ifdef PLATFORM_PC
+                item = 0; // no description for OPTIONS
+#else
                 item = 0x74;
+#endif
                 break;
             case 5:
                 item = 0x73;

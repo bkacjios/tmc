@@ -50,20 +50,20 @@ gSpriteAnimations_Smith_15:: @ 0811047E
 	.include "animations/gSpriteAnimations_Smith_15.s"
 
 gSpriteAnimations_Smith:: @ 08110484
-	.4byte gSpriteAnimations_Smith_0
-	.4byte gSpriteAnimations_Smith_1
-	.4byte gSpriteAnimations_Smith_2
-	.4byte gSpriteAnimations_Smith_3
-	.4byte gSpriteAnimations_Smith_4
-	.4byte gSpriteAnimations_Smith_5
-	.4byte gSpriteAnimations_Smith_6
-	.4byte gSpriteAnimations_Smith_7
-	.4byte gSpriteAnimations_Smith_8
-	.4byte gSpriteAnimations_Smith_9
-	.4byte gSpriteAnimations_Smith_8
-	.4byte gSpriteAnimations_Smith_11
-	.4byte gSpriteAnimations_Smith_12
-	.4byte gSpriteAnimations_Smith_13
-	.4byte gSpriteAnimations_Smith_14
-	.4byte gSpriteAnimations_Smith_15
-	.4byte 00000000
+	ptr gSpriteAnimations_Smith_0
+	ptr gSpriteAnimations_Smith_1
+	ptr gSpriteAnimations_Smith_2
+	ptr gSpriteAnimations_Smith_3
+	ptr gSpriteAnimations_Smith_4
+	ptr gSpriteAnimations_Smith_5
+	ptr gSpriteAnimations_Smith_6
+	ptr gSpriteAnimations_Smith_7
+	ptr gSpriteAnimations_Smith_8
+	ptr gSpriteAnimations_Smith_9
+	ptr gSpriteAnimations_Smith_8
+	ptr gSpriteAnimations_Smith_11
+	ptr gSpriteAnimations_Smith_12
+	ptr gSpriteAnimations_Smith_13
+	ptr gSpriteAnimations_Smith_14
+	ptr gSpriteAnimations_Smith_15
+	ptr 00000000

@@ -17,12 +17,12 @@ gSpriteAnimations_Din_4:: @ 0810F97B
 	.include "animations/gSpriteAnimations_Din_4.s"
 
 gSpriteAnimations_Din:: @ 0810F98C
-	.4byte gSpriteAnimations_Din_0
-	.4byte gSpriteAnimations_Din_1
-	.4byte gSpriteAnimations_Din_0
-	.4byte gSpriteAnimations_Din_3
-	.4byte gSpriteAnimations_Din_4
-	.4byte gSpriteAnimations_Din_4
-	.4byte gSpriteAnimations_Din_4
-	.4byte gSpriteAnimations_Din_4
-	.4byte 00000000
+	ptr gSpriteAnimations_Din_0
+	ptr gSpriteAnimations_Din_1
+	ptr gSpriteAnimations_Din_0
+	ptr gSpriteAnimations_Din_3
+	ptr gSpriteAnimations_Din_4
+	ptr gSpriteAnimations_Din_4
+	ptr gSpriteAnimations_Din_4
+	ptr gSpriteAnimations_Din_4
+	ptr 00000000

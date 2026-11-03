@@ -14,7 +14,7 @@ gSpriteAnimations_Leever_2:: @ 080CA51C
 	.include "animations/gSpriteAnimations_Leever_2.s"
 
 gSpriteAnimations_Leever:: @ 080CA560
-	.4byte gSpriteAnimations_Leever_0
-	.4byte gSpriteAnimations_Leever_1
-	.4byte gSpriteAnimations_Leever_2
-	.4byte 00000000
+	ptr gSpriteAnimations_Leever_0
+	ptr gSpriteAnimations_Leever_1
+	ptr gSpriteAnimations_Leever_2
+	ptr 00000000

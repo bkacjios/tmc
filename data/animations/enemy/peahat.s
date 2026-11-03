@@ -26,10 +26,10 @@ gSpriteAnimations_Peahat_5:: @ 080CA63A
 	.include "animations/gSpriteAnimations_Peahat_5.s"
 
 gSpriteAnimations_Peahat:: @ 080CA650
-	.4byte gSpriteAnimations_Peahat_0
-	.4byte gSpriteAnimations_Peahat_1
-	.4byte gSpriteAnimations_Peahat_2
-	.4byte gSpriteAnimations_Peahat_3
-	.4byte gSpriteAnimations_Peahat_4
-	.4byte gSpriteAnimations_Peahat_5
-	.4byte 00000000
+	ptr gSpriteAnimations_Peahat_0
+	ptr gSpriteAnimations_Peahat_1
+	ptr gSpriteAnimations_Peahat_2
+	ptr gSpriteAnimations_Peahat_3
+	ptr gSpriteAnimations_Peahat_4
+	ptr gSpriteAnimations_Peahat_5
+	ptr 00000000

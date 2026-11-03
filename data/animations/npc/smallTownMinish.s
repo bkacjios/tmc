@@ -17,8 +17,8 @@ gSpriteAnimations_SmallTownMinish_3:: @ 081144D7
 	.include "animations/gSpriteAnimations_SmallTownMinish_3.s"
 
 gSpriteAnimations_SmallTownMinish:: @ 081144DC
-	.4byte gSpriteAnimations_SmallTownMinish_0
-	.4byte gSpriteAnimations_SmallTownMinish_1
-	.4byte gSpriteAnimations_SmallTownMinish_2
-	.4byte gSpriteAnimations_SmallTownMinish_3
-	.4byte 00000000
+	ptr gSpriteAnimations_SmallTownMinish_0
+	ptr gSpriteAnimations_SmallTownMinish_1
+	ptr gSpriteAnimations_SmallTownMinish_2
+	ptr gSpriteAnimations_SmallTownMinish_3
+	ptr 00000000

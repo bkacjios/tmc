@@ -11,6 +11,6 @@ gSpriteAnimations_PushableLever_1:: @ 081234C9
 	.include "animations/gSpriteAnimations_PushableLever_1.s"
 
 gSpriteAnimations_PushableLever:: @ 081234E0
-	.4byte gSpriteAnimations_PushableLever_0
-	.4byte gSpriteAnimations_PushableLever_1
-	.4byte 00000000
+	ptr gSpriteAnimations_PushableLever_0
+	ptr gSpriteAnimations_PushableLever_1
+	ptr 00000000

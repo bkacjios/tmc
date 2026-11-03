@@ -8,5 +8,5 @@ gSpriteAnimations_FlyingSkull_0:: @ 080CFBE8
 	.include "animations/gSpriteAnimations_FlyingSkull_0.s"
 
 gSpriteAnimations_FlyingSkull:: @ 080CFC0C
-	.4byte gSpriteAnimations_FlyingSkull_0
-	.4byte 00000000
+	ptr gSpriteAnimations_FlyingSkull_0
+	ptr 00000000

@@ -19,6 +19,7 @@ docs/doxygen/xml/
 
 # tools
 tools/agbcc
+tools/windows
 tools/binutils
 
 # scripts
@@ -89,3 +90,5 @@ __pycache__
 Info.plist
 ctx.c
 !doxygen_config.py
+gba_bios.bin
+tmc.cfg

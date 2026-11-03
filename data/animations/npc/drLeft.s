@@ -29,20 +29,20 @@ gSpriteAnimations_DrLeft_8:: @ 0811344F
 	.include "animations/gSpriteAnimations_DrLeft_8.s"
 
 gSpriteAnimations_DrLeft:: @ 08113490
-	.4byte gSpriteAnimations_DrLeft_0
-	.4byte gSpriteAnimations_DrLeft_0
-	.4byte gSpriteAnimations_DrLeft_0
-	.4byte gSpriteAnimations_DrLeft_0
-	.4byte gSpriteAnimations_DrLeft_4
-	.4byte gSpriteAnimations_DrLeft_5
-	.4byte gSpriteAnimations_DrLeft_4
-	.4byte gSpriteAnimations_DrLeft_7
-	.4byte gSpriteAnimations_DrLeft_8
-	.4byte gSpriteAnimations_DrLeft_8
-	.4byte gSpriteAnimations_DrLeft_8
-	.4byte gSpriteAnimations_DrLeft_8
-	.4byte gSpriteAnimations_DrLeft_12
-	.4byte gSpriteAnimations_DrLeft_13
-	.4byte gSpriteAnimations_DrLeft_14
-	.4byte gSpriteAnimations_DrLeft_13
-	.4byte 00000000
+	ptr gSpriteAnimations_DrLeft_0
+	ptr gSpriteAnimations_DrLeft_0
+	ptr gSpriteAnimations_DrLeft_0
+	ptr gSpriteAnimations_DrLeft_0
+	ptr gSpriteAnimations_DrLeft_4
+	ptr gSpriteAnimations_DrLeft_5
+	ptr gSpriteAnimations_DrLeft_4
+	ptr gSpriteAnimations_DrLeft_7
+	ptr gSpriteAnimations_DrLeft_8
+	ptr gSpriteAnimations_DrLeft_8
+	ptr gSpriteAnimations_DrLeft_8
+	ptr gSpriteAnimations_DrLeft_8
+	ptr gSpriteAnimations_DrLeft_12
+	ptr gSpriteAnimations_DrLeft_13
+	ptr gSpriteAnimations_DrLeft_14
+	ptr gSpriteAnimations_DrLeft_13
+	ptr 00000000

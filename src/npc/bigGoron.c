@@ -4,6 +4,7 @@
  *
  * @brief BigGoron NPC
  */
+#include "tileMap.h"
 #include "npc/bigGoron.h"
 #include "hitbox.h"
 #include "item.h"
@@ -31,8 +32,6 @@ static const u16 goronSounds[] = {
     SFX_VO_GORON4,
 };
 
-extern u8 gMapDataTopSpecial[];
-extern u8 gUnk_02006F00[];
 
 void sub_0806D520(BigGoronEntity* this, u32);
 void sub_0806CF30(BigGoronEntity* this);
@@ -174,7 +173,7 @@ void sub_0806D0F8(void) {
 }
 
 void sub_0806D110(void) {
-    u8* tmp = gMapDataTopSpecial;
+    u8* tmp = (u8*)gMapDataTopSpecial;
     u8* tmp2 = tmp + 0x4000;
     sub_0806D138((unk_0806D138param_1*)tmp, (unk_0806D138param_2*)tmp2);
     tmp += 0x800;
@@ -199,7 +198,7 @@ void sub_0806D164(Entity* this) {
     xOffset = ((s32)gRoomControls.scroll_x - this->x.HALF.HI) + 0xa0;
     gScreen.bg1.xOffset = (u16)xOffset & 0xf;
     gScreen.bg1.yOffset = (gRoomControls.scroll_y - this->y.HALF.HI) + 0xb0;
-    ptr = gUnk_02006F00;
+    ptr = gMapDataTopSpecialHalf2;
     puVar1 = &ptr[0];
     puVar2 = &ptr[-0x4000];
 

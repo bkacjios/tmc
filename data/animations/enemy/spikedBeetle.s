@@ -34,14 +34,14 @@ gSpriteAnimations_SpikedBeetle_9:: @ 080CD391
 	.include "animations/gSpriteAnimations_SpikedBeetle_9.s"
 
 gSpriteAnimations_SpikedBeetle:: @ 080CD398
-	.4byte gSpriteAnimations_SpikedBeetle_0
-	.4byte gSpriteAnimations_SpikedBeetle_1
-	.4byte gSpriteAnimations_SpikedBeetle_2
-	.4byte gSpriteAnimations_SpikedBeetle_3
-	.4byte gSpriteAnimations_SpikedBeetle_4
-	.4byte gSpriteAnimations_SpikedBeetle_5
-	.4byte gSpriteAnimations_SpikedBeetle_6
-	.4byte gSpriteAnimations_SpikedBeetle_7
-	.4byte gSpriteAnimations_SpikedBeetle_8
-	.4byte gSpriteAnimations_SpikedBeetle_9
-	.4byte 00000000
+	ptr gSpriteAnimations_SpikedBeetle_0
+	ptr gSpriteAnimations_SpikedBeetle_1
+	ptr gSpriteAnimations_SpikedBeetle_2
+	ptr gSpriteAnimations_SpikedBeetle_3
+	ptr gSpriteAnimations_SpikedBeetle_4
+	ptr gSpriteAnimations_SpikedBeetle_5
+	ptr gSpriteAnimations_SpikedBeetle_6
+	ptr gSpriteAnimations_SpikedBeetle_7
+	ptr gSpriteAnimations_SpikedBeetle_8
+	ptr gSpriteAnimations_SpikedBeetle_9
+	ptr 00000000

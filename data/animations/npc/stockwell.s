@@ -26,11 +26,11 @@ gSpriteAnimations_Stockwell_7:: @ 0810FE68
 	.include "animations/gSpriteAnimations_Stockwell_7.s"
 
 gSpriteAnimations_Stockwell:: @ 0810FE90
-	.4byte gSpriteAnimations_Stockwell_0
-	.4byte gSpriteAnimations_Stockwell_1
-	.4byte gSpriteAnimations_Stockwell_0
-	.4byte gSpriteAnimations_Stockwell_3
-	.4byte gSpriteAnimations_Stockwell_4
-	.4byte gSpriteAnimations_Stockwell_5
-	.4byte gSpriteAnimations_Stockwell_6
-	.4byte gSpriteAnimations_Stockwell_7
+	ptr gSpriteAnimations_Stockwell_0
+	ptr gSpriteAnimations_Stockwell_1
+	ptr gSpriteAnimations_Stockwell_0
+	ptr gSpriteAnimations_Stockwell_3
+	ptr gSpriteAnimations_Stockwell_4
+	ptr gSpriteAnimations_Stockwell_5
+	ptr gSpriteAnimations_Stockwell_6
+	ptr gSpriteAnimations_Stockwell_7

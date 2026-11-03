@@ -35,14 +35,14 @@ gSpriteAnimations_Ghini_9:: @ 080D0A8B
 	.include "animations/gSpriteAnimations_Ghini_9.s"
 
 gSpriteAnimations_Ghini:: @ 080D0A90
-	.4byte gSpriteAnimations_Ghini_0
-	.4byte gSpriteAnimations_Ghini_1
-	.4byte gSpriteAnimations_Ghini_2
-	.4byte gSpriteAnimations_Ghini_3
-	.4byte gSpriteAnimations_Ghini_4
-	.4byte gSpriteAnimations_Ghini_5
-	.4byte gSpriteAnimations_Ghini_6
-	.4byte gSpriteAnimations_Ghini_7
-	.4byte gSpriteAnimations_Ghini_8
-	.4byte gSpriteAnimations_Ghini_9
-	.4byte 00000000
+	ptr gSpriteAnimations_Ghini_0
+	ptr gSpriteAnimations_Ghini_1
+	ptr gSpriteAnimations_Ghini_2
+	ptr gSpriteAnimations_Ghini_3
+	ptr gSpriteAnimations_Ghini_4
+	ptr gSpriteAnimations_Ghini_5
+	ptr gSpriteAnimations_Ghini_6
+	ptr gSpriteAnimations_Ghini_7
+	ptr gSpriteAnimations_Ghini_8
+	ptr gSpriteAnimations_Ghini_9
+	ptr 00000000

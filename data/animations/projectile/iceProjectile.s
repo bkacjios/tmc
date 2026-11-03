@@ -29,12 +29,12 @@ gUnk_0812991F:: @ 0812991F
 	.incbin "projectile9/gUnk_0812991F.bin"
 
 gSpriteAnimations_IceProjectile:: @ 08129930
-	.4byte gUnk_081298C8
-	.4byte gUnk_081298D1
-	.4byte gUnk_081298DA
-	.4byte gUnk_081298E3
-	.4byte gUnk_081298EC
-	.4byte gUnk_081298FD
-	.4byte gUnk_0812990E
-	.4byte gUnk_0812991F
-	.4byte 00000000
+	ptr gUnk_081298C8
+	ptr gUnk_081298D1
+	ptr gUnk_081298DA
+	ptr gUnk_081298E3
+	ptr gUnk_081298EC
+	ptr gUnk_081298FD
+	ptr gUnk_0812990E
+	ptr gUnk_0812991F
+	ptr 00000000

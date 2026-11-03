@@ -17,8 +17,8 @@ gSpriteAnimations_SmallIceBlock_3:: @ 08123776
 	.include "animations/gSpriteAnimations_SmallIceBlock_3.s"
 
 gSpriteAnimations_SmallIceBlock:: @ 0812378C
-	.4byte gSpriteAnimations_SmallIceBlock_0
-	.4byte gSpriteAnimations_SmallIceBlock_1
-	.4byte gSpriteAnimations_SmallIceBlock_2
-	.4byte gSpriteAnimations_SmallIceBlock_3
-	.4byte 00000000
+	ptr gSpriteAnimations_SmallIceBlock_0
+	ptr gSpriteAnimations_SmallIceBlock_1
+	ptr gSpriteAnimations_SmallIceBlock_2
+	ptr gSpriteAnimations_SmallIceBlock_3
+	ptr 00000000

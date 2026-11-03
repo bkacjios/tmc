@@ -33,13 +33,13 @@ gSpriteAnimations_Maid_8:: @ 0810F93C
 	.include "animations/gSpriteAnimations_Maid_8.s"
 
 gSpriteAnimations_Maid:: @ 0810F944
-	.4byte gSpriteAnimations_Maid_0
-	.4byte gSpriteAnimations_Maid_1
-	.4byte gSpriteAnimations_Maid_2
-	.4byte gSpriteAnimations_Maid_3
-	.4byte gSpriteAnimations_Maid_4
-	.4byte gSpriteAnimations_Maid_5
-	.4byte gSpriteAnimations_Maid_6
-	.4byte gSpriteAnimations_Maid_7
-	.4byte gSpriteAnimations_Maid_8
-	.4byte 00000000
+	ptr gSpriteAnimations_Maid_0
+	ptr gSpriteAnimations_Maid_1
+	ptr gSpriteAnimations_Maid_2
+	ptr gSpriteAnimations_Maid_3
+	ptr gSpriteAnimations_Maid_4
+	ptr gSpriteAnimations_Maid_5
+	ptr gSpriteAnimations_Maid_6
+	ptr gSpriteAnimations_Maid_7
+	ptr gSpriteAnimations_Maid_8
+	ptr 00000000

@@ -25,7 +25,8 @@ typedef union {
     u32 w[2];
 } String8;
 
-extern String8 gUnk_020227E8[];
+// The four String8 text variables of gTextRender (_68.._80), as an array.
+#define gUnk_020227E8 (&gTextRender._68)
 extern u32 NumberToAscii(u32, String8*);
 extern WStruct* sub_0805F2C8(void);
 extern u32 sub_0805F7DC(u32, WStruct*);

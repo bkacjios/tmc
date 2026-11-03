@@ -17,9 +17,9 @@ gSpriteAnimations_GhostBrothers_4:: @ 08110333
 	.include "animations/gSpriteAnimations_GhostBrothers_4.s"
 
 gSpriteAnimations_GhostBrothers:: @ 0811033C
-	.4byte gSpriteAnimations_GhostBrothers_0
-	.4byte gSpriteAnimations_GhostBrothers_1
-	.4byte gSpriteAnimations_GhostBrothers_0
-	.4byte gSpriteAnimations_GhostBrothers_3
-	.4byte gSpriteAnimations_GhostBrothers_4
-	.4byte 00000000
+	ptr gSpriteAnimations_GhostBrothers_0
+	ptr gSpriteAnimations_GhostBrothers_1
+	ptr gSpriteAnimations_GhostBrothers_0
+	ptr gSpriteAnimations_GhostBrothers_3
+	ptr gSpriteAnimations_GhostBrothers_4
+	ptr 00000000

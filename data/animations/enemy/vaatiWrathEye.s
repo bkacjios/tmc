@@ -32,13 +32,13 @@ gSpriteAnimations_WrathEye_8:: @ 080D1E32
 	.include "animations/gSpriteAnimations_WrathEye_8.s"
 
 gSpriteAnimations_WrathEye:: @ 080D1E44
-	.4byte gSpriteAnimations_WrathEye_0
-	.4byte gSpriteAnimations_WrathEye_1
-	.4byte gSpriteAnimations_WrathEye_2
-	.4byte gSpriteAnimations_WrathEye_3
-	.4byte gSpriteAnimations_WrathEye_4
-	.4byte gSpriteAnimations_WrathEye_5
-	.4byte gSpriteAnimations_WrathEye_6
-	.4byte gSpriteAnimations_WrathEye_7
-	.4byte gSpriteAnimations_WrathEye_8
-	.4byte 00000000
+	ptr gSpriteAnimations_WrathEye_0
+	ptr gSpriteAnimations_WrathEye_1
+	ptr gSpriteAnimations_WrathEye_2
+	ptr gSpriteAnimations_WrathEye_3
+	ptr gSpriteAnimations_WrathEye_4
+	ptr gSpriteAnimations_WrathEye_5
+	ptr gSpriteAnimations_WrathEye_6
+	ptr gSpriteAnimations_WrathEye_7
+	ptr gSpriteAnimations_WrathEye_8
+	ptr 00000000

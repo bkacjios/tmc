@@ -47,18 +47,18 @@ gSpriteAnimations_KingDaltus_13:: @ 081105E1
 	.include "animations/gSpriteAnimations_KingDaltus_13.s"
 
 gSpriteAnimations_KingDaltus:: @ 08110608
-	.4byte gSpriteAnimations_KingDaltus_0
-	.4byte gSpriteAnimations_KingDaltus_1
-	.4byte gSpriteAnimations_KingDaltus_2
-	.4byte gSpriteAnimations_KingDaltus_3
-	.4byte gSpriteAnimations_KingDaltus_4
-	.4byte gSpriteAnimations_KingDaltus_5
-	.4byte gSpriteAnimations_KingDaltus_6
-	.4byte gSpriteAnimations_KingDaltus_7
-	.4byte gSpriteAnimations_KingDaltus_8
-	.4byte gSpriteAnimations_KingDaltus_9
-	.4byte gSpriteAnimations_KingDaltus_10
-	.4byte gSpriteAnimations_KingDaltus_11
-	.4byte gSpriteAnimations_KingDaltus_12
-	.4byte gSpriteAnimations_KingDaltus_13
-	.4byte 00000000
+	ptr gSpriteAnimations_KingDaltus_0
+	ptr gSpriteAnimations_KingDaltus_1
+	ptr gSpriteAnimations_KingDaltus_2
+	ptr gSpriteAnimations_KingDaltus_3
+	ptr gSpriteAnimations_KingDaltus_4
+	ptr gSpriteAnimations_KingDaltus_5
+	ptr gSpriteAnimations_KingDaltus_6
+	ptr gSpriteAnimations_KingDaltus_7
+	ptr gSpriteAnimations_KingDaltus_8
+	ptr gSpriteAnimations_KingDaltus_9
+	ptr gSpriteAnimations_KingDaltus_10
+	ptr gSpriteAnimations_KingDaltus_11
+	ptr gSpriteAnimations_KingDaltus_12
+	ptr gSpriteAnimations_KingDaltus_13
+	ptr 00000000

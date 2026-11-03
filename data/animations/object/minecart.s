@@ -54,24 +54,24 @@ gSpriteAnimations_Minecart_19:: @ 08122538
 	.include "animations/gSpriteAnimations_Minecart_19.s"
 
 gSpriteAnimations_Minecart:: @ 08122540
-	.4byte gSpriteAnimations_Minecart_0
-	.4byte gSpriteAnimations_Minecart_1
-	.4byte gSpriteAnimations_Minecart_2
-	.4byte gSpriteAnimations_Minecart_3
-	.4byte gSpriteAnimations_Minecart_4
-	.4byte gSpriteAnimations_Minecart_5
-	.4byte gSpriteAnimations_Minecart_4
-	.4byte gSpriteAnimations_Minecart_5
-	.4byte gSpriteAnimations_Minecart_8
-	.4byte gSpriteAnimations_Minecart_9
-	.4byte gSpriteAnimations_Minecart_8
-	.4byte gSpriteAnimations_Minecart_9
-	.4byte gSpriteAnimations_Minecart_12
-	.4byte gSpriteAnimations_Minecart_13
-	.4byte gSpriteAnimations_Minecart_14
-	.4byte gSpriteAnimations_Minecart_15
-	.4byte gSpriteAnimations_Minecart_16
-	.4byte gSpriteAnimations_Minecart_17
-	.4byte gSpriteAnimations_Minecart_18
-	.4byte gSpriteAnimations_Minecart_19
+	ptr gSpriteAnimations_Minecart_0
+	ptr gSpriteAnimations_Minecart_1
+	ptr gSpriteAnimations_Minecart_2
+	ptr gSpriteAnimations_Minecart_3
+	ptr gSpriteAnimations_Minecart_4
+	ptr gSpriteAnimations_Minecart_5
+	ptr gSpriteAnimations_Minecart_4
+	ptr gSpriteAnimations_Minecart_5
+	ptr gSpriteAnimations_Minecart_8
+	ptr gSpriteAnimations_Minecart_9
+	ptr gSpriteAnimations_Minecart_8
+	ptr gSpriteAnimations_Minecart_9
+	ptr gSpriteAnimations_Minecart_12
+	ptr gSpriteAnimations_Minecart_13
+	ptr gSpriteAnimations_Minecart_14
+	ptr gSpriteAnimations_Minecart_15
+	ptr gSpriteAnimations_Minecart_16
+	ptr gSpriteAnimations_Minecart_17
+	ptr gSpriteAnimations_Minecart_18
+	ptr gSpriteAnimations_Minecart_19
 

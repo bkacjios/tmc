@@ -11,6 +11,6 @@ gSpriteAnimations_FireballGuy_1:: @ 080D1839
 	.include "animations/gSpriteAnimations_FireballGuy_1.s"
 
 gSpriteAnimations_FireballGuy:: @ 080D185C
-	.4byte gSpriteAnimations_FireballGuy_0
-	.4byte gSpriteAnimations_FireballGuy_1
-	.4byte 00000000
+	ptr gSpriteAnimations_FireballGuy_0
+	ptr gSpriteAnimations_FireballGuy_1
+	ptr 00000000

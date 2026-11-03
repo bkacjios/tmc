@@ -34,14 +34,14 @@ gSpriteAnimations_Bobomb_9:: @ 080CD6AC
 	.include "animations/gSpriteAnimations_Bobomb_9.s"
 
 gSpriteAnimations_Bobomb:: @ 080CD6D0
-	.4byte gSpriteAnimations_Bobomb_0
-	.4byte gSpriteAnimations_Bobomb_1
-	.4byte gSpriteAnimations_Bobomb_2
-	.4byte gSpriteAnimations_Bobomb_3
-	.4byte gSpriteAnimations_Bobomb_4
-	.4byte gSpriteAnimations_Bobomb_5
-	.4byte gSpriteAnimations_Bobomb_6
-	.4byte gSpriteAnimations_Bobomb_7
-	.4byte gSpriteAnimations_Bobomb_8
-	.4byte gSpriteAnimations_Bobomb_9
-	.4byte 00000000
+	ptr gSpriteAnimations_Bobomb_0
+	ptr gSpriteAnimations_Bobomb_1
+	ptr gSpriteAnimations_Bobomb_2
+	ptr gSpriteAnimations_Bobomb_3
+	ptr gSpriteAnimations_Bobomb_4
+	ptr gSpriteAnimations_Bobomb_5
+	ptr gSpriteAnimations_Bobomb_6
+	ptr gSpriteAnimations_Bobomb_7
+	ptr gSpriteAnimations_Bobomb_8
+	ptr gSpriteAnimations_Bobomb_9
+	ptr 00000000

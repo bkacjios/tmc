@@ -38,14 +38,14 @@ gSpriteAnimations_Chuchu_9:: @ 080CA42E
 	.include "animations/gSpriteAnimations_Chuchu_9.s"
 
 gSpriteAnimations_Chuchu:: @ 080CA470
-	.4byte gSpriteAnimations_Chuchu_0
-	.4byte gSpriteAnimations_Chuchu_1
-	.4byte gSpriteAnimations_Chuchu_2
-	.4byte gSpriteAnimations_Chuchu_3
-	.4byte gSpriteAnimations_Chuchu_4
-	.4byte gSpriteAnimations_Chuchu_5
-	.4byte gSpriteAnimations_Chuchu_6
-	.4byte gSpriteAnimations_Chuchu_7
-	.4byte gSpriteAnimations_Chuchu_8
-	.4byte gSpriteAnimations_Chuchu_9
-	.4byte 00000000
+	ptr gSpriteAnimations_Chuchu_0
+	ptr gSpriteAnimations_Chuchu_1
+	ptr gSpriteAnimations_Chuchu_2
+	ptr gSpriteAnimations_Chuchu_3
+	ptr gSpriteAnimations_Chuchu_4
+	ptr gSpriteAnimations_Chuchu_5
+	ptr gSpriteAnimations_Chuchu_6
+	ptr gSpriteAnimations_Chuchu_7
+	ptr gSpriteAnimations_Chuchu_8
+	ptr gSpriteAnimations_Chuchu_9
+	ptr 00000000

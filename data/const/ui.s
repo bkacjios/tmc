@@ -26,6 +26,9 @@ gUnk_080C8F7C:: @ 080C8F7C
 
 
 gUIElementDefinitions:: @ 080C8F8C
+.ifdef PLATFORM_PC64
+	.include "data/pc64/gUIElementDefinitions.inc"
+.else
 .ifdef EU
     @ TODO only small differences
 	.incbin "data_080B7B74/gUIElementDefinitions_EU.bin"
@@ -104,18 +107,19 @@ gUIElementDefinitions:: @ 080C8F8C
 .endif
 	.4byte TextUIElement
 	.incbin "data_080B7B74/gUIElementDefinitions_22.bin"
+.endif
 
 ButtonUIElement_Actions:: @ 080C903C
-	.4byte ButtonUIElement_Action0
-	.4byte ButtonUIElement_Action1
+	ptr ButtonUIElement_Action0
+	ptr ButtonUIElement_Action1
 
 gUnk_080C9044:: @ 080C9044
 	.incbin "data_080B7B74/gUnk_080C9044.bin"
 
 EzloNagUIElement_Actions:: @ 080C904C
-	.4byte EzloNagUIElement_Action0
-	.4byte EzloNagUIElement_Action1
-	.4byte EzloNagUIElement_Action2
+	ptr EzloNagUIElement_Action0
+	ptr EzloNagUIElement_Action1
+	ptr EzloNagUIElement_Action2
 
 gUnk_080C9058:: @ 080C9058
 	.incbin "data_080B7B74/gUnk_080C9058.bin"

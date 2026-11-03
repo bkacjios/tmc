@@ -259,9 +259,15 @@ typedef struct {
     GENERIC_ENTITY_FIELDS
 } GenericEntityData;
 
+// An entity slot: every kind of entity is allocated from these.
 typedef struct {
     /*0x00*/ Entity base;
     GENERIC_ENTITY_FIELDS
+#if defined(PLATFORM_PC) && UINTPTR_MAX > 0xFFFFFFFF
+    // The fields an entity adds after base take 0x20 bytes on the GBA, up to
+    // twice that with 8-byte pointers.
+    u8 pc64Room[0x20];
+#endif
 } GenericEntity;
 
 /**
@@ -278,6 +284,9 @@ typedef struct LinkedList {
  * to allow the iteration of all Entity's.
  */
 extern LinkedList gEntityLists[9];
+// Entities that check collisions this frame (UpdateCollision), and how many.
+extern Entity* gCollidableList[80];
+extern u8 gCollidableCount;
 extern GenericEntity gAuxPlayerEntities[MAX_AUX_PLAYER_ENTITIES];
 extern GenericEntity gEntities[MAX_ENTITIES];
 

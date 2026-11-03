@@ -18,7 +18,7 @@ gSpriteAnimations_ArrowProjectile_3:: @ 08129A43
 	.include "animations/gSpriteAnimations_ArrowProjectile_3.s"
 
 gSpriteAnimations_ArrowProjectile:: @ 08129A54
-	.4byte gSpriteAnimations_ArrowProjectile_0
-	.4byte gSpriteAnimations_ArrowProjectile_1
-	.4byte gSpriteAnimations_ArrowProjectile_2
-	.4byte gSpriteAnimations_ArrowProjectile_3
+	ptr gSpriteAnimations_ArrowProjectile_0
+	ptr gSpriteAnimations_ArrowProjectile_1
+	ptr gSpriteAnimations_ArrowProjectile_2
+	ptr gSpriteAnimations_ArrowProjectile_3

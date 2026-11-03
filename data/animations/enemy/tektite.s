@@ -22,9 +22,9 @@ gSpriteAnimations_Tektite_4:: @ 080CDF33
 	.include "animations/gSpriteAnimations_Tektite_4.s"
 
 gSpriteAnimations_Tektite:: @ 080CDF38
-	.4byte gSpriteAnimations_Tektite_0
-	.4byte gSpriteAnimations_Tektite_1
-	.4byte gSpriteAnimations_Tektite_2
-	.4byte gSpriteAnimations_Tektite_3
-	.4byte gSpriteAnimations_Tektite_4
-	.4byte 00000000
+	ptr gSpriteAnimations_Tektite_0
+	ptr gSpriteAnimations_Tektite_1
+	ptr gSpriteAnimations_Tektite_2
+	ptr gSpriteAnimations_Tektite_3
+	ptr gSpriteAnimations_Tektite_4
+	ptr 00000000

@@ -29,12 +29,12 @@ gSpriteAnimations_Talon_7:: @ 0810FF27
 	.include "animations/gSpriteAnimations_Talon_7.s"
 
 gSpriteAnimations_Talon:: @ 0810FF38
-	.4byte gSpriteAnimations_Talon_0
-	.4byte gSpriteAnimations_Talon_1
-	.4byte gSpriteAnimations_Talon_2
-	.4byte gSpriteAnimations_Talon_3
-	.4byte gSpriteAnimations_Talon_4
-	.4byte gSpriteAnimations_Talon_5
-	.4byte gSpriteAnimations_Talon_6
-	.4byte gSpriteAnimations_Talon_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Talon_0
+	ptr gSpriteAnimations_Talon_1
+	ptr gSpriteAnimations_Talon_2
+	ptr gSpriteAnimations_Talon_3
+	ptr gSpriteAnimations_Talon_4
+	ptr gSpriteAnimations_Talon_5
+	ptr gSpriteAnimations_Talon_6
+	ptr gSpriteAnimations_Talon_7
+	ptr 00000000

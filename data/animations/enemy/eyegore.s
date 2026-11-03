@@ -50,20 +50,20 @@ gSpriteAnimations_Eyegore_13:: @ 080CE3F8
 	.include "animations/gSpriteAnimations_Eyegore_13.s"
 
 gSpriteAnimations_Eyegore:: @ 080CE404
-	.4byte gSpriteAnimations_Eyegore_0
-	.4byte gSpriteAnimations_Eyegore_1
-	.4byte gSpriteAnimations_Eyegore_2
-	.4byte gSpriteAnimations_Eyegore_3
-	.4byte gSpriteAnimations_Eyegore_4
-	.4byte gSpriteAnimations_Eyegore_5
-	.4byte gSpriteAnimations_Eyegore_6
-	.4byte gSpriteAnimations_Eyegore_7
-	.4byte gSpriteAnimations_Eyegore_8
-	.4byte gSpriteAnimations_Eyegore_9
-	.4byte gSpriteAnimations_Eyegore_10
-	.4byte gSpriteAnimations_Eyegore_11
-	.4byte gSpriteAnimations_Eyegore_8
-	.4byte gSpriteAnimations_Eyegore_13
-	.4byte gSpriteAnimations_Eyegore_14
-	.4byte gSpriteAnimations_Eyegore_15
-	.4byte 00000000
+	ptr gSpriteAnimations_Eyegore_0
+	ptr gSpriteAnimations_Eyegore_1
+	ptr gSpriteAnimations_Eyegore_2
+	ptr gSpriteAnimations_Eyegore_3
+	ptr gSpriteAnimations_Eyegore_4
+	ptr gSpriteAnimations_Eyegore_5
+	ptr gSpriteAnimations_Eyegore_6
+	ptr gSpriteAnimations_Eyegore_7
+	ptr gSpriteAnimations_Eyegore_8
+	ptr gSpriteAnimations_Eyegore_9
+	ptr gSpriteAnimations_Eyegore_10
+	ptr gSpriteAnimations_Eyegore_11
+	ptr gSpriteAnimations_Eyegore_8
+	ptr gSpriteAnimations_Eyegore_13
+	ptr gSpriteAnimations_Eyegore_14
+	ptr gSpriteAnimations_Eyegore_15
+	ptr 00000000

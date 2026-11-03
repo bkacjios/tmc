@@ -47,21 +47,21 @@ gSpriteAnimations_OctorokBoss_1_10:: @ 080CF1FF
 	.include "animations/gSpriteAnimations_OctorokBoss_1_10.s"
 
 gSpriteAnimations_OctorokBoss_1:: @ 080CF204
-	.4byte gSpriteAnimations_OctorokBoss_1_0
-	.4byte gSpriteAnimations_OctorokBoss_1_1
-	.4byte gSpriteAnimations_OctorokBoss_1_2
-	.4byte gSpriteAnimations_OctorokBoss_1_3
-	.4byte gSpriteAnimations_OctorokBoss_1_4
-	.4byte gSpriteAnimations_OctorokBoss_1_5
-	.4byte gSpriteAnimations_OctorokBoss_1_6
-	.4byte gSpriteAnimations_OctorokBoss_1_7
-	.4byte gSpriteAnimations_OctorokBoss_1_8
-	.4byte gSpriteAnimations_OctorokBoss_1_9
-	.4byte gSpriteAnimations_OctorokBoss_1_10
-	.4byte 00000000
+	ptr gSpriteAnimations_OctorokBoss_1_0
+	ptr gSpriteAnimations_OctorokBoss_1_1
+	ptr gSpriteAnimations_OctorokBoss_1_2
+	ptr gSpriteAnimations_OctorokBoss_1_3
+	ptr gSpriteAnimations_OctorokBoss_1_4
+	ptr gSpriteAnimations_OctorokBoss_1_5
+	ptr gSpriteAnimations_OctorokBoss_1_6
+	ptr gSpriteAnimations_OctorokBoss_1_7
+	ptr gSpriteAnimations_OctorokBoss_1_8
+	ptr gSpriteAnimations_OctorokBoss_1_9
+	ptr gSpriteAnimations_OctorokBoss_1_10
+	ptr 00000000
 
 gSpriteAnimations_OctorokBoss_0:: @ 080CF234
-	.4byte gSpriteAnimations_OctorokBoss_0_0
-	.4byte gSpriteAnimations_OctorokBoss_0_1
-	.4byte gSpriteAnimations_OctorokBoss_0_2
-	.4byte 00000000
+	ptr gSpriteAnimations_OctorokBoss_0_0
+	ptr gSpriteAnimations_OctorokBoss_0_1
+	ptr gSpriteAnimations_OctorokBoss_0_2
+	ptr 00000000

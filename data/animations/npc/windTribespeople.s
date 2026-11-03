@@ -29,15 +29,15 @@ gSpriteAnimations_WindTribespeople_0_7:: @ 08113B86
 	.include "animations/gSpriteAnimations_WindTribespeople_0_7.s"
 
 gSpriteAnimations_WindTribespeople_0:: @ 08113B98
-	.4byte gSpriteAnimations_WindTribespeople_0_0
-	.4byte gSpriteAnimations_WindTribespeople_0_1
-	.4byte gSpriteAnimations_WindTribespeople_0_2
-	.4byte gSpriteAnimations_WindTribespeople_0_3
-	.4byte gSpriteAnimations_WindTribespeople_0_4
-	.4byte gSpriteAnimations_WindTribespeople_0_5
-	.4byte gSpriteAnimations_WindTribespeople_0_6
-	.4byte gSpriteAnimations_WindTribespeople_0_7
-	.4byte 00000000
+	ptr gSpriteAnimations_WindTribespeople_0_0
+	ptr gSpriteAnimations_WindTribespeople_0_1
+	ptr gSpriteAnimations_WindTribespeople_0_2
+	ptr gSpriteAnimations_WindTribespeople_0_3
+	ptr gSpriteAnimations_WindTribespeople_0_4
+	ptr gSpriteAnimations_WindTribespeople_0_5
+	ptr gSpriteAnimations_WindTribespeople_0_6
+	ptr gSpriteAnimations_WindTribespeople_0_7
+	ptr 00000000
 
 gSpriteAnimations_WindTribespeople_1_0:: @ 08113BBC
 	.include "animations/gSpriteAnimations_WindTribespeople_1_0.s"
@@ -64,15 +64,15 @@ gSpriteAnimations_WindTribespeople_1_7:: @ 08113C03
 	.include "animations/gSpriteAnimations_WindTribespeople_1_7.s"
 
 gSpriteAnimations_WindTribespeople_1:: @ 08113C14
-	.4byte gSpriteAnimations_WindTribespeople_1_0
-	.4byte gSpriteAnimations_WindTribespeople_1_1
-	.4byte gSpriteAnimations_WindTribespeople_1_2
-	.4byte gSpriteAnimations_WindTribespeople_1_3
-	.4byte gSpriteAnimations_WindTribespeople_1_4
-	.4byte gSpriteAnimations_WindTribespeople_1_5
-	.4byte gSpriteAnimations_WindTribespeople_1_6
-	.4byte gSpriteAnimations_WindTribespeople_1_7
-	.4byte 00000000
+	ptr gSpriteAnimations_WindTribespeople_1_0
+	ptr gSpriteAnimations_WindTribespeople_1_1
+	ptr gSpriteAnimations_WindTribespeople_1_2
+	ptr gSpriteAnimations_WindTribespeople_1_3
+	ptr gSpriteAnimations_WindTribespeople_1_4
+	ptr gSpriteAnimations_WindTribespeople_1_5
+	ptr gSpriteAnimations_WindTribespeople_1_6
+	ptr gSpriteAnimations_WindTribespeople_1_7
+	ptr 00000000
 
 gSpriteAnimations_WindTribespeople_2_1:: @ 08113C38
 	.include "animations/gSpriteAnimations_WindTribespeople_2_1.s"
@@ -87,15 +87,15 @@ gSpriteAnimations_WindTribespeople_2_4:: @ 08113C47
 	.include "animations/gSpriteAnimations_WindTribespeople_2_4.s"
 
 gSpriteAnimations_WindTribespeople_2:: @ 08113C58
-	.4byte gSpriteAnimations_WindTribespeople_2_0
-	.4byte gSpriteAnimations_WindTribespeople_2_1
-	.4byte gSpriteAnimations_WindTribespeople_2_0
-	.4byte gSpriteAnimations_WindTribespeople_2_3
-	.4byte gSpriteAnimations_WindTribespeople_2_4
-	.4byte gSpriteAnimations_WindTribespeople_2_4
-	.4byte gSpriteAnimations_WindTribespeople_2_4
-	.4byte gSpriteAnimations_WindTribespeople_2_4
-	.4byte 00000000
+	ptr gSpriteAnimations_WindTribespeople_2_0
+	ptr gSpriteAnimations_WindTribespeople_2_1
+	ptr gSpriteAnimations_WindTribespeople_2_0
+	ptr gSpriteAnimations_WindTribespeople_2_3
+	ptr gSpriteAnimations_WindTribespeople_2_4
+	ptr gSpriteAnimations_WindTribespeople_2_4
+	ptr gSpriteAnimations_WindTribespeople_2_4
+	ptr gSpriteAnimations_WindTribespeople_2_4
+	ptr 00000000
 
 gSpriteAnimations_WindTribespeople_3_0:: @ 08113C7C
 	.include "animations/gSpriteAnimations_WindTribespeople_3_0.s"
@@ -122,15 +122,15 @@ gSpriteAnimations_WindTribespeople_3_7:: @ 08113CC3
 	.include "animations/gSpriteAnimations_WindTribespeople_3_7.s"
 
 gSpriteAnimations_WindTribespeople_3:: @ 08113CD4
-	.4byte gSpriteAnimations_WindTribespeople_3_0
-	.4byte gSpriteAnimations_WindTribespeople_3_1
-	.4byte gSpriteAnimations_WindTribespeople_3_2
-	.4byte gSpriteAnimations_WindTribespeople_3_3
-	.4byte gSpriteAnimations_WindTribespeople_3_4
-	.4byte gSpriteAnimations_WindTribespeople_3_5
-	.4byte gSpriteAnimations_WindTribespeople_3_6
-	.4byte gSpriteAnimations_WindTribespeople_3_7
-	.4byte 00000000
+	ptr gSpriteAnimations_WindTribespeople_3_0
+	ptr gSpriteAnimations_WindTribespeople_3_1
+	ptr gSpriteAnimations_WindTribespeople_3_2
+	ptr gSpriteAnimations_WindTribespeople_3_3
+	ptr gSpriteAnimations_WindTribespeople_3_4
+	ptr gSpriteAnimations_WindTribespeople_3_5
+	ptr gSpriteAnimations_WindTribespeople_3_6
+	ptr gSpriteAnimations_WindTribespeople_3_7
+	ptr 00000000
 
 gSpriteAnimations_WindTribespeople_4_1:: @ 08113CF8
 	.include "animations/gSpriteAnimations_WindTribespeople_4_1.s"
@@ -145,15 +145,15 @@ gSpriteAnimations_WindTribespeople_4_4:: @ 08113D07
 	.include "animations/gSpriteAnimations_WindTribespeople_4_4.s"
 
 gSpriteAnimations_WindTribespeople_4:: @ 08113D1C
-	.4byte gSpriteAnimations_WindTribespeople_4_0
-	.4byte gSpriteAnimations_WindTribespeople_4_1
-	.4byte gSpriteAnimations_WindTribespeople_4_0
-	.4byte gSpriteAnimations_WindTribespeople_4_3
-	.4byte gSpriteAnimations_WindTribespeople_4_4
-	.4byte gSpriteAnimations_WindTribespeople_4_4
-	.4byte gSpriteAnimations_WindTribespeople_4_4
-	.4byte gSpriteAnimations_WindTribespeople_4_4
-	.4byte 00000000
+	ptr gSpriteAnimations_WindTribespeople_4_0
+	ptr gSpriteAnimations_WindTribespeople_4_1
+	ptr gSpriteAnimations_WindTribespeople_4_0
+	ptr gSpriteAnimations_WindTribespeople_4_3
+	ptr gSpriteAnimations_WindTribespeople_4_4
+	ptr gSpriteAnimations_WindTribespeople_4_4
+	ptr gSpriteAnimations_WindTribespeople_4_4
+	ptr gSpriteAnimations_WindTribespeople_4_4
+	ptr 00000000
 
 gSpriteAnimations_WindTribespeople_5_1:: @ 08113D40
 	.include "animations/gSpriteAnimations_WindTribespeople_5_1.s"
@@ -168,12 +168,12 @@ gSpriteAnimations_WindTribespeople_5_4:: @ 08113D4F
 	.include "animations/gSpriteAnimations_WindTribespeople_5_4.s"
 
 gSpriteAnimations_WindTribespeople_5:: @ 08113D60
-	.4byte gSpriteAnimations_WindTribespeople_5_0
-	.4byte gSpriteAnimations_WindTribespeople_5_1
-	.4byte gSpriteAnimations_WindTribespeople_5_0
-	.4byte gSpriteAnimations_WindTribespeople_5_3
-	.4byte gSpriteAnimations_WindTribespeople_5_4
-	.4byte gSpriteAnimations_WindTribespeople_5_4
-	.4byte gSpriteAnimations_WindTribespeople_5_4
-	.4byte gSpriteAnimations_WindTribespeople_5_4
-	.4byte 00000000
+	ptr gSpriteAnimations_WindTribespeople_5_0
+	ptr gSpriteAnimations_WindTribespeople_5_1
+	ptr gSpriteAnimations_WindTribespeople_5_0
+	ptr gSpriteAnimations_WindTribespeople_5_3
+	ptr gSpriteAnimations_WindTribespeople_5_4
+	ptr gSpriteAnimations_WindTribespeople_5_4
+	ptr gSpriteAnimations_WindTribespeople_5_4
+	ptr gSpriteAnimations_WindTribespeople_5_4
+	ptr 00000000

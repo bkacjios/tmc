@@ -50,22 +50,22 @@ gSpriteAnimations_Beanstalk_1_12:: @ 08121016
 	.include "animations/gSpriteAnimations_Beanstalk_1_12.s"
 
 gSpriteAnimations_Beanstalk_0:: @ 0812101C
-	.4byte gSpriteAnimations_Beanstalk_0_0
-	.4byte gSpriteAnimations_Beanstalk_0_1
-	.4byte 00000000
+	ptr gSpriteAnimations_Beanstalk_0_0
+	ptr gSpriteAnimations_Beanstalk_0_1
+	ptr 00000000
 
 gSpriteAnimations_Beanstalk_1:: @ 08121028
-	.4byte gSpriteAnimations_Beanstalk_1_0
-	.4byte gSpriteAnimations_Beanstalk_1_1
-	.4byte gSpriteAnimations_Beanstalk_1_2
-	.4byte gSpriteAnimations_Beanstalk_1_3
-	.4byte gSpriteAnimations_Beanstalk_1_4
-	.4byte gSpriteAnimations_Beanstalk_1_5
-	.4byte gSpriteAnimations_Beanstalk_1_6
-	.4byte gSpriteAnimations_Beanstalk_1_7
-	.4byte gSpriteAnimations_Beanstalk_1_8
-	.4byte gSpriteAnimations_Beanstalk_1_9
-	.4byte gSpriteAnimations_Beanstalk_1_10
-	.4byte gSpriteAnimations_Beanstalk_1_11
-	.4byte gSpriteAnimations_Beanstalk_1_12
-	.4byte 00000000
+	ptr gSpriteAnimations_Beanstalk_1_0
+	ptr gSpriteAnimations_Beanstalk_1_1
+	ptr gSpriteAnimations_Beanstalk_1_2
+	ptr gSpriteAnimations_Beanstalk_1_3
+	ptr gSpriteAnimations_Beanstalk_1_4
+	ptr gSpriteAnimations_Beanstalk_1_5
+	ptr gSpriteAnimations_Beanstalk_1_6
+	ptr gSpriteAnimations_Beanstalk_1_7
+	ptr gSpriteAnimations_Beanstalk_1_8
+	ptr gSpriteAnimations_Beanstalk_1_9
+	ptr gSpriteAnimations_Beanstalk_1_10
+	ptr gSpriteAnimations_Beanstalk_1_11
+	ptr gSpriteAnimations_Beanstalk_1_12
+	ptr 00000000

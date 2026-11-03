@@ -53,7 +53,6 @@ const KeyButtonLayout gUnk_0812813C = {
     },
 };
 
-extern u8 gUnk_020344A0[8];
 
 extern const struct_08128AD8 gUnk_08128AD8[];
 
@@ -576,7 +575,7 @@ void sub_080A4D34(void) {
 }
 
 void InitPauseMenu(void) {
-    MemClear(gUnk_020344A0, sizeof(gUnk_020344A0));
+    MemClear((u8*)&gPauseMenuOptions + 0x10, 8);
     MenuFadeIn(1, 0);
     SetBgmVolume(0x80);
 }

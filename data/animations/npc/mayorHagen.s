@@ -38,16 +38,16 @@ gSpriteAnimations_MayorHagen_10:: @ 0811408A
 	.include "animations/gSpriteAnimations_MayorHagen_10.s"
 
 gSpriteAnimations_MayorHagen:: @ 08114098
-	.4byte gSpriteAnimations_MayorHagen_0
-	.4byte gSpriteAnimations_MayorHagen_1
-	.4byte gSpriteAnimations_MayorHagen_2
-	.4byte gSpriteAnimations_MayorHagen_3
-	.4byte gSpriteAnimations_MayorHagen_4
-	.4byte gSpriteAnimations_MayorHagen_5
-	.4byte gSpriteAnimations_MayorHagen_4
-	.4byte gSpriteAnimations_MayorHagen_7
-	.4byte gSpriteAnimations_MayorHagen_8
-	.4byte gSpriteAnimations_MayorHagen_9
-	.4byte gSpriteAnimations_MayorHagen_10
-	.4byte gSpriteAnimations_MayorHagen_11
-	.4byte 00000000
+	ptr gSpriteAnimations_MayorHagen_0
+	ptr gSpriteAnimations_MayorHagen_1
+	ptr gSpriteAnimations_MayorHagen_2
+	ptr gSpriteAnimations_MayorHagen_3
+	ptr gSpriteAnimations_MayorHagen_4
+	ptr gSpriteAnimations_MayorHagen_5
+	ptr gSpriteAnimations_MayorHagen_4
+	ptr gSpriteAnimations_MayorHagen_7
+	ptr gSpriteAnimations_MayorHagen_8
+	ptr gSpriteAnimations_MayorHagen_9
+	ptr gSpriteAnimations_MayorHagen_10
+	ptr gSpriteAnimations_MayorHagen_11
+	ptr 00000000

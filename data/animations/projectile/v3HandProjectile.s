@@ -17,8 +17,8 @@ gSpriteAnimations_V3HandProjectile_3:: @ 0812A92B
 	.include "animations/gSpriteAnimations_V3HandProjectile_3.s"
 
 gSpriteAnimations_V3HandProjectile:: @ 0812A940
-	.4byte gSpriteAnimations_V3HandProjectile_0
-	.4byte gSpriteAnimations_V3HandProjectile_1
-	.4byte gSpriteAnimations_V3HandProjectile_2
-	.4byte gSpriteAnimations_V3HandProjectile_3
-	.4byte 00000000
+	ptr gSpriteAnimations_V3HandProjectile_0
+	ptr gSpriteAnimations_V3HandProjectile_1
+	ptr gSpriteAnimations_V3HandProjectile_2
+	ptr gSpriteAnimations_V3HandProjectile_3
+	ptr 00000000

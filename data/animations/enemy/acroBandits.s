@@ -50,19 +50,19 @@ gSpriteAnimations_AcroBandits_14:: @ 080CE727
 	.include "animations/gSpriteAnimations_AcroBandits_14.s"
 
 gSpriteAnimations_AcroBandits:: @ 080CE770
-	.4byte gSpriteAnimations_AcroBandits_0
-	.4byte gSpriteAnimations_AcroBandits_1
-	.4byte gSpriteAnimations_AcroBandits_2
-	.4byte gSpriteAnimations_AcroBandits_3
-	.4byte gSpriteAnimations_AcroBandits_4
-	.4byte gSpriteAnimations_AcroBandits_5
-	.4byte gSpriteAnimations_AcroBandits_6
-	.4byte gSpriteAnimations_AcroBandits_7
-	.4byte gSpriteAnimations_AcroBandits_8
-	.4byte gSpriteAnimations_AcroBandits_9
-	.4byte gSpriteAnimations_AcroBandits_10
-	.4byte gSpriteAnimations_AcroBandits_11
-	.4byte gSpriteAnimations_AcroBandits_12
-	.4byte gSpriteAnimations_AcroBandits_13
-	.4byte gSpriteAnimations_AcroBandits_14
-	.4byte 00000000
+	ptr gSpriteAnimations_AcroBandits_0
+	ptr gSpriteAnimations_AcroBandits_1
+	ptr gSpriteAnimations_AcroBandits_2
+	ptr gSpriteAnimations_AcroBandits_3
+	ptr gSpriteAnimations_AcroBandits_4
+	ptr gSpriteAnimations_AcroBandits_5
+	ptr gSpriteAnimations_AcroBandits_6
+	ptr gSpriteAnimations_AcroBandits_7
+	ptr gSpriteAnimations_AcroBandits_8
+	ptr gSpriteAnimations_AcroBandits_9
+	ptr gSpriteAnimations_AcroBandits_10
+	ptr gSpriteAnimations_AcroBandits_11
+	ptr gSpriteAnimations_AcroBandits_12
+	ptr gSpriteAnimations_AcroBandits_13
+	ptr gSpriteAnimations_AcroBandits_14
+	ptr 00000000

@@ -14,12 +14,12 @@ gSpriteAnimations_Npc26_6:: @ 081106FE
 	.include "animations/gSpriteAnimations_Npc26_6.s"
 
 gSpriteAnimations_Npc26:: @ 08110710
-	.4byte gSpriteAnimations_Npc26_0
-	.4byte gSpriteAnimations_Npc26_0
-	.4byte gSpriteAnimations_Npc26_0
-	.4byte gSpriteAnimations_Npc26_0
-	.4byte gSpriteAnimations_Npc26_4
-	.4byte gSpriteAnimations_Npc26_4
-	.4byte gSpriteAnimations_Npc26_6
-	.4byte gSpriteAnimations_Npc26_6
-	.4byte 00000000
+	ptr gSpriteAnimations_Npc26_0
+	ptr gSpriteAnimations_Npc26_0
+	ptr gSpriteAnimations_Npc26_0
+	ptr gSpriteAnimations_Npc26_0
+	ptr gSpriteAnimations_Npc26_4
+	ptr gSpriteAnimations_Npc26_4
+	ptr gSpriteAnimations_Npc26_6
+	ptr gSpriteAnimations_Npc26_6
+	ptr 00000000

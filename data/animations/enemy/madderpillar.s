@@ -28,15 +28,15 @@ gSpriteAnimations_Madderpillar_0_7:: @ 080CCE53
 	.include "animations/gSpriteAnimations_Madderpillar_0_7.s"
 
 gSpriteAnimations_Madderpillar_0:: @ 080CCE64
-	.4byte gSpriteAnimations_Madderpillar_0_0
-	.4byte gSpriteAnimations_Madderpillar_0_1
-	.4byte gSpriteAnimations_Madderpillar_0_2
-	.4byte gSpriteAnimations_Madderpillar_0_3
-	.4byte gSpriteAnimations_Madderpillar_0_4
-	.4byte gSpriteAnimations_Madderpillar_0_5
-	.4byte gSpriteAnimations_Madderpillar_0_6
-	.4byte gSpriteAnimations_Madderpillar_0_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Madderpillar_0_0
+	ptr gSpriteAnimations_Madderpillar_0_1
+	ptr gSpriteAnimations_Madderpillar_0_2
+	ptr gSpriteAnimations_Madderpillar_0_3
+	ptr gSpriteAnimations_Madderpillar_0_4
+	ptr gSpriteAnimations_Madderpillar_0_5
+	ptr gSpriteAnimations_Madderpillar_0_6
+	ptr gSpriteAnimations_Madderpillar_0_7
+	ptr 00000000
 
 gSpriteAnimations_Madderpillar_1_0:: @ 080CCE88
 	.include "animations/gSpriteAnimations_Madderpillar_1_0.s"
@@ -99,24 +99,24 @@ gSpriteAnimations_Madderpillar_1_19:: @ 080CCFCB
 	.include "animations/gSpriteAnimations_Madderpillar_1_19.s"
 
 gSpriteAnimations_Madderpillar_1:: @ 080CCFDC
-	.4byte gSpriteAnimations_Madderpillar_1_0
-	.4byte gSpriteAnimations_Madderpillar_1_1
-	.4byte gSpriteAnimations_Madderpillar_1_2
-	.4byte gSpriteAnimations_Madderpillar_1_3
-	.4byte gSpriteAnimations_Madderpillar_1_4
-	.4byte gSpriteAnimations_Madderpillar_1_5
-	.4byte gSpriteAnimations_Madderpillar_1_6
-	.4byte gSpriteAnimations_Madderpillar_1_7
-	.4byte gSpriteAnimations_Madderpillar_1_8
-	.4byte gSpriteAnimations_Madderpillar_1_9
-	.4byte gSpriteAnimations_Madderpillar_1_10
-	.4byte gSpriteAnimations_Madderpillar_1_11
-	.4byte gSpriteAnimations_Madderpillar_1_12
-	.4byte gSpriteAnimations_Madderpillar_1_13
-	.4byte gSpriteAnimations_Madderpillar_1_14
-	.4byte gSpriteAnimations_Madderpillar_1_15
-	.4byte gSpriteAnimations_Madderpillar_1_16
-	.4byte gSpriteAnimations_Madderpillar_1_17
-	.4byte gSpriteAnimations_Madderpillar_1_18
-	.4byte gSpriteAnimations_Madderpillar_1_19
-	.4byte 00000000
+	ptr gSpriteAnimations_Madderpillar_1_0
+	ptr gSpriteAnimations_Madderpillar_1_1
+	ptr gSpriteAnimations_Madderpillar_1_2
+	ptr gSpriteAnimations_Madderpillar_1_3
+	ptr gSpriteAnimations_Madderpillar_1_4
+	ptr gSpriteAnimations_Madderpillar_1_5
+	ptr gSpriteAnimations_Madderpillar_1_6
+	ptr gSpriteAnimations_Madderpillar_1_7
+	ptr gSpriteAnimations_Madderpillar_1_8
+	ptr gSpriteAnimations_Madderpillar_1_9
+	ptr gSpriteAnimations_Madderpillar_1_10
+	ptr gSpriteAnimations_Madderpillar_1_11
+	ptr gSpriteAnimations_Madderpillar_1_12
+	ptr gSpriteAnimations_Madderpillar_1_13
+	ptr gSpriteAnimations_Madderpillar_1_14
+	ptr gSpriteAnimations_Madderpillar_1_15
+	ptr gSpriteAnimations_Madderpillar_1_16
+	ptr gSpriteAnimations_Madderpillar_1_17
+	ptr gSpriteAnimations_Madderpillar_1_18
+	ptr gSpriteAnimations_Madderpillar_1_19
+	ptr 00000000

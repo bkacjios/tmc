@@ -5,18 +5,18 @@
 	.align 2
 
 gUnk_08000F54:: @ 08000F54
-	.4byte gUnk_08000F84
-	.4byte gUnk_08000FC4
-	.4byte gUnk_08001004
-	.4byte 00000000
-	.4byte gUnk_08001044
-	.4byte gUnk_08001084
-	.4byte gUnk_080010C4
-	.4byte 00000000
-	.4byte gUnk_08001104
-	.4byte gUnk_08001144
-	.4byte gUnk_08001184
-	.4byte 00000000
+	ptr gUnk_08000F84
+	ptr gUnk_08000FC4
+	ptr gUnk_08001004
+	ptr 00000000
+	ptr gUnk_08001044
+	ptr gUnk_08001084
+	ptr gUnk_080010C4
+	ptr 00000000
+	ptr gUnk_08001104
+	ptr gUnk_08001144
+	ptr gUnk_08001184
+	ptr 00000000
 
 gUnk_08000F84:: @ 08000F84
 	.incbin "data_08000F54/gUnk_08000F84.bin"

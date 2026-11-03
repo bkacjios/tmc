@@ -17,7 +17,7 @@ gSpriteAnimations_JarPortal_3:: @ 081214B5
 	.include "animations/gSpriteAnimations_JarPortal_3.s"
 
 gSpriteAnimations_JarPortal:: @ 081214C8
-	.4byte gSpriteAnimations_JarPortal_0
-	.4byte gSpriteAnimations_JarPortal_1
-	.4byte gSpriteAnimations_JarPortal_2
-	.4byte gSpriteAnimations_JarPortal_3
+	ptr gSpriteAnimations_JarPortal_0
+	ptr gSpriteAnimations_JarPortal_1
+	ptr gSpriteAnimations_JarPortal_2
+	ptr gSpriteAnimations_JarPortal_3

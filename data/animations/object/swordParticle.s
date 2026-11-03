@@ -44,20 +44,20 @@ gSpriteAnimations_SwordParticle_12:: @ 08121B24
 	.include "animations/gSpriteAnimations_SwordParticle_12.s"
 
 gSpriteAnimations_SwordParticle:: @ 08121B48
-	.4byte gSpriteAnimations_SwordParticle_0
-	.4byte gSpriteAnimations_SwordParticle_1
-	.4byte gSpriteAnimations_SwordParticle_2
-	.4byte gSpriteAnimations_SwordParticle_3
-	.4byte gSpriteAnimations_SwordParticle_4
-	.4byte gSpriteAnimations_SwordParticle_5
-	.4byte gSpriteAnimations_SwordParticle_6
-	.4byte gSpriteAnimations_SwordParticle_7
-	.4byte gSpriteAnimations_SwordParticle_8
-	.4byte gSpriteAnimations_SwordParticle_9
-	.4byte gSpriteAnimations_SwordParticle_10
-	.4byte gSpriteAnimations_SwordParticle_11
-	.4byte gSpriteAnimations_SwordParticle_12
-	.4byte gSpriteAnimations_SwordParticle_12
-	.4byte gSpriteAnimations_SwordParticle_12
-	.4byte gSpriteAnimations_SwordParticle_12
-	.4byte 00000000
+	ptr gSpriteAnimations_SwordParticle_0
+	ptr gSpriteAnimations_SwordParticle_1
+	ptr gSpriteAnimations_SwordParticle_2
+	ptr gSpriteAnimations_SwordParticle_3
+	ptr gSpriteAnimations_SwordParticle_4
+	ptr gSpriteAnimations_SwordParticle_5
+	ptr gSpriteAnimations_SwordParticle_6
+	ptr gSpriteAnimations_SwordParticle_7
+	ptr gSpriteAnimations_SwordParticle_8
+	ptr gSpriteAnimations_SwordParticle_9
+	ptr gSpriteAnimations_SwordParticle_10
+	ptr gSpriteAnimations_SwordParticle_11
+	ptr gSpriteAnimations_SwordParticle_12
+	ptr gSpriteAnimations_SwordParticle_12
+	ptr gSpriteAnimations_SwordParticle_12
+	ptr gSpriteAnimations_SwordParticle_12
+	ptr 00000000

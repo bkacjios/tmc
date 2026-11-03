@@ -26,13 +26,13 @@ gSpriteAnimations_Simon_8:: @ 0811364A
 	.include "animations/gSpriteAnimations_Simon_8.s"
 
 gSpriteAnimations_Simon:: @ 081136B0
-	.4byte gSpriteAnimations_Simon_0
-	.4byte gSpriteAnimations_Simon_1
-	.4byte gSpriteAnimations_Simon_0
-	.4byte gSpriteAnimations_Simon_3
-	.4byte gSpriteAnimations_Simon_4
-	.4byte gSpriteAnimations_Simon_5
-	.4byte gSpriteAnimations_Simon_4
-	.4byte gSpriteAnimations_Simon_7
-	.4byte gSpriteAnimations_Simon_8
-	.4byte 00000000
+	ptr gSpriteAnimations_Simon_0
+	ptr gSpriteAnimations_Simon_1
+	ptr gSpriteAnimations_Simon_0
+	ptr gSpriteAnimations_Simon_3
+	ptr gSpriteAnimations_Simon_4
+	ptr gSpriteAnimations_Simon_5
+	ptr gSpriteAnimations_Simon_4
+	ptr gSpriteAnimations_Simon_7
+	ptr gSpriteAnimations_Simon_8
+	ptr 00000000

@@ -13,7 +13,6 @@
 #include "save.h"
 #include "tiles.h"
 
-extern u8 gCollidableCount;
 extern u8 gUnk_080B3740[];
 
 typedef enum {

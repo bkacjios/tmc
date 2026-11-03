@@ -29,16 +29,16 @@ gSpriteAnimations_BossDoor_7:: @ 081215B0
 	.include "animations/gSpriteAnimations_BossDoor_7.s"
 
 gSpriteAnimations_BossDoor:: @ 081215B4
-	.4byte gSpriteAnimations_BossDoor_0
-	.4byte gSpriteAnimations_BossDoor_1
-	.4byte gSpriteAnimations_BossDoor_2
-	.4byte gSpriteAnimations_BossDoor_3
-	.4byte gSpriteAnimations_BossDoor_4
-	.4byte gSpriteAnimations_BossDoor_5
-	.4byte gSpriteAnimations_BossDoor_6
-	.4byte gSpriteAnimations_BossDoor_7
-	.4byte gSpriteAnimations_BossDoor_4
-	.4byte gSpriteAnimations_BossDoor_5
-	.4byte gSpriteAnimations_BossDoor_6
-	.4byte gSpriteAnimations_BossDoor_7
-	.4byte 00000000
+	ptr gSpriteAnimations_BossDoor_0
+	ptr gSpriteAnimations_BossDoor_1
+	ptr gSpriteAnimations_BossDoor_2
+	ptr gSpriteAnimations_BossDoor_3
+	ptr gSpriteAnimations_BossDoor_4
+	ptr gSpriteAnimations_BossDoor_5
+	ptr gSpriteAnimations_BossDoor_6
+	ptr gSpriteAnimations_BossDoor_7
+	ptr gSpriteAnimations_BossDoor_4
+	ptr gSpriteAnimations_BossDoor_5
+	ptr gSpriteAnimations_BossDoor_6
+	ptr gSpriteAnimations_BossDoor_7
+	ptr 00000000

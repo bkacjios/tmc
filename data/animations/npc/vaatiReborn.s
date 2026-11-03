@@ -14,7 +14,7 @@ gSpriteAnimations_VaatiReborn_2:: @ 08112FD5
 	.include "animations/gSpriteAnimations_VaatiReborn_2.s"
 
 gSpriteAnimations_VaatiReborn:: @ 08112FF4
-	.4byte gSpriteAnimations_VaatiReborn_0
-	.4byte gSpriteAnimations_VaatiReborn_1
-	.4byte gSpriteAnimations_VaatiReborn_2
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiReborn_0
+	ptr gSpriteAnimations_VaatiReborn_1
+	ptr gSpriteAnimations_VaatiReborn_2
+	ptr 00000000

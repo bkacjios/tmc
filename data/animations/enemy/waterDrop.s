@@ -10,6 +10,6 @@ gSpriteAnimations_WaterDrop_1:: @ 080CD069
 	.include "animations/gSpriteAnimations_WaterDrop_1.s"
 
 gSpriteAnimations_WaterDrop:: @ 080CD070
-	.4byte gSpriteAnimations_WaterDrop_0
-	.4byte gSpriteAnimations_WaterDrop_1
-	.4byte 00000000
+	ptr gSpriteAnimations_WaterDrop_0
+	ptr gSpriteAnimations_WaterDrop_1
+	ptr 00000000

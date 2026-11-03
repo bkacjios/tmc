@@ -27,20 +27,20 @@ gSpriteAnimations_Gina_4:: @ 081135E2
 	.include "animations/gSpriteAnimations_Gina_4.s"
 
 gSpriteAnimations_Gina:: @ 081135E8
-	.4byte gSpriteAnimations_Gina_0
-	.4byte gSpriteAnimations_Gina_1
-	.4byte gSpriteAnimations_Gina_0
-	.4byte gSpriteAnimations_Gina_3
-	.4byte gSpriteAnimations_Gina_4
-	.4byte gSpriteAnimations_Gina_5
-	.4byte gSpriteAnimations_Gina_4
-	.4byte gSpriteAnimations_Gina_4
-	.4byte gSpriteAnimations_Gina_8
-	.4byte gSpriteAnimations_Gina_8
-	.4byte gSpriteAnimations_Gina_8
-	.4byte gSpriteAnimations_Gina_8
-	.4byte gSpriteAnimations_Gina_12
-	.4byte gSpriteAnimations_Gina_12
-	.4byte gSpriteAnimations_Gina_12
-	.4byte gSpriteAnimations_Gina_12
-	.4byte 00000000
+	ptr gSpriteAnimations_Gina_0
+	ptr gSpriteAnimations_Gina_1
+	ptr gSpriteAnimations_Gina_0
+	ptr gSpriteAnimations_Gina_3
+	ptr gSpriteAnimations_Gina_4
+	ptr gSpriteAnimations_Gina_5
+	ptr gSpriteAnimations_Gina_4
+	ptr gSpriteAnimations_Gina_4
+	ptr gSpriteAnimations_Gina_8
+	ptr gSpriteAnimations_Gina_8
+	ptr gSpriteAnimations_Gina_8
+	ptr gSpriteAnimations_Gina_8
+	ptr gSpriteAnimations_Gina_12
+	ptr gSpriteAnimations_Gina_12
+	ptr gSpriteAnimations_Gina_12
+	ptr gSpriteAnimations_Gina_12
+	ptr 00000000

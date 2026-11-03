@@ -17,8 +17,8 @@ gSpriteAnimations_FanWind_3:: @ 081249EB
 	.include "animations/gSpriteAnimations_FanWind_3.s"
 
 gSpriteAnimations_FanWind:: @ 081249FC
-	.4byte gSpriteAnimations_FanWind_0
-	.4byte gSpriteAnimations_FanWind_1
-	.4byte gSpriteAnimations_FanWind_2
-	.4byte gSpriteAnimations_FanWind_3
-	.4byte 00000000
+	ptr gSpriteAnimations_FanWind_0
+	ptr gSpriteAnimations_FanWind_1
+	ptr gSpriteAnimations_FanWind_2
+	ptr gSpriteAnimations_FanWind_3
+	ptr 00000000

@@ -71,9 +71,22 @@
 #define min(a, b) ((a) < (b) ? (a) : (b))
 #define max(a, b) ((a) >= (b) ? (a) : (b))
 
+// The sizes asserted are the GBA's. Types with pointers are larger in the 64-bit
+// PC build, so there tools/pc/layout_audit.py checks the layouts instead.
+#if defined(PLATFORM_PC) && UINTPTR_MAX > 0xFFFFFFFF
+#define static_assert(cond) extern char assertion[1]
+#else
 #define static_assert(cond) extern char assertion[(cond) ? 1 : -1]
+#endif
 
 #define super (&this->base)
+
+// agbcc accepts a static definition after an extern declaration, GCC does not.
+#ifdef PLATFORM_PC
+#define STATIC_AFTER_EXTERN
+#else
+#define STATIC_AFTER_EXTERN static
+#endif
 
 #if NON_MATCHING
 #define ASM_FUNC(path, decl)

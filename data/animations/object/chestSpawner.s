@@ -20,9 +20,9 @@ gSpriteAnimations_ChestSpawner_3:: @ 0811F8E8
 	.include "animations/gSpriteAnimations_ChestSpawner_3.s"
 
 gSpriteAnimations_ChestSpawner:: @ 0811F8F0
-	.4byte gSpriteAnimations_ChestSpawner_0
-	.4byte gSpriteAnimations_ChestSpawner_1
-	.4byte gSpriteAnimations_ChestSpawner_2
-	.4byte gSpriteAnimations_ChestSpawner_3
-	.4byte gSpriteAnimations_ChestSpawner_4
-	.4byte 00000000
+	ptr gSpriteAnimations_ChestSpawner_0
+	ptr gSpriteAnimations_ChestSpawner_1
+	ptr gSpriteAnimations_ChestSpawner_2
+	ptr gSpriteAnimations_ChestSpawner_3
+	ptr gSpriteAnimations_ChestSpawner_4
+	ptr 00000000

@@ -8,5 +8,5 @@ gSpriteAnimations_Flame_0:: @ 08120DD8
 	.include "animations/gSpriteAnimations_Flame_0.s"
 
 gSpriteAnimations_Flame:: @ 08120DEC
-	.4byte gSpriteAnimations_Flame_0
-	.4byte 00000000
+	ptr gSpriteAnimations_Flame_0
+	ptr 00000000

@@ -56,45 +56,45 @@ gSpriteAnimations_Kid_13:: @ 0810C1DC
 	.include "animations/gSpriteAnimations_Kid_13.s"
 
 gSpriteAnimations_Kid:: @ 0810C1E4
-	.4byte gSpriteAnimations_Kid_0
-	.4byte gSpriteAnimations_Kid_1
-	.4byte gSpriteAnimations_Kid_2
-	.4byte gSpriteAnimations_Kid_3
-	.4byte gSpriteAnimations_Kid_4
-	.4byte gSpriteAnimations_Kid_5
-	.4byte gSpriteAnimations_Kid_6
-	.4byte gSpriteAnimations_Kid_7
-	.4byte gSpriteAnimations_Kid_8
-	.4byte gSpriteAnimations_Kid_9
-	.4byte gSpriteAnimations_Kid_9
-	.4byte gSpriteAnimations_Kid_11
-	.4byte gSpriteAnimations_Kid_12
-	.4byte gSpriteAnimations_Kid_13
-	.4byte gSpriteAnimations_Kid_0
-	.4byte gSpriteAnimations_Kid_0
-	.4byte gSpriteAnimations_Kid_0
-	.4byte gSpriteAnimations_Kid_1
-	.4byte gSpriteAnimations_Kid_2
-	.4byte gSpriteAnimations_Kid_3
-	.4byte gSpriteAnimations_Kid_20
-	.4byte gSpriteAnimations_Kid_21
-	.4byte gSpriteAnimations_Kid_22
-	.4byte gSpriteAnimations_Kid_23
-	.4byte gSpriteAnimations_Kid_8
-	.4byte gSpriteAnimations_Kid_9
-	.4byte gSpriteAnimations_Kid_9
-	.4byte gSpriteAnimations_Kid_11
-	.4byte gSpriteAnimations_Kid_12
-	.4byte gSpriteAnimations_Kid_13
-	.4byte gSpriteAnimations_Kid_0
-	.4byte gSpriteAnimations_Kid_0
-	.4byte 00000000
+	ptr gSpriteAnimations_Kid_0
+	ptr gSpriteAnimations_Kid_1
+	ptr gSpriteAnimations_Kid_2
+	ptr gSpriteAnimations_Kid_3
+	ptr gSpriteAnimations_Kid_4
+	ptr gSpriteAnimations_Kid_5
+	ptr gSpriteAnimations_Kid_6
+	ptr gSpriteAnimations_Kid_7
+	ptr gSpriteAnimations_Kid_8
+	ptr gSpriteAnimations_Kid_9
+	ptr gSpriteAnimations_Kid_9
+	ptr gSpriteAnimations_Kid_11
+	ptr gSpriteAnimations_Kid_12
+	ptr gSpriteAnimations_Kid_13
+	ptr gSpriteAnimations_Kid_0
+	ptr gSpriteAnimations_Kid_0
+	ptr gSpriteAnimations_Kid_0
+	ptr gSpriteAnimations_Kid_1
+	ptr gSpriteAnimations_Kid_2
+	ptr gSpriteAnimations_Kid_3
+	ptr gSpriteAnimations_Kid_20
+	ptr gSpriteAnimations_Kid_21
+	ptr gSpriteAnimations_Kid_22
+	ptr gSpriteAnimations_Kid_23
+	ptr gSpriteAnimations_Kid_8
+	ptr gSpriteAnimations_Kid_9
+	ptr gSpriteAnimations_Kid_9
+	ptr gSpriteAnimations_Kid_11
+	ptr gSpriteAnimations_Kid_12
+	ptr gSpriteAnimations_Kid_13
+	ptr gSpriteAnimations_Kid_0
+	ptr gSpriteAnimations_Kid_0
+	ptr 00000000
 
 @ TODO data of an unused entity?
 @ maybe the unused original guard npc?
 gUnk_0810C268:: @ 0810C268
-	.4byte sub_08062AD0
-	.4byte sub_08062AD4
+	ptr sub_08062AD0
+	ptr sub_08062AD4
 
 gUnk_0810C270:: @ 0810C270
 	.incbin "kid/gUnk_0810C270.bin"
@@ -106,7 +106,7 @@ gUnk_0810C27A:: @ 0810C27A
 	.incbin "kid/gUnk_0810C27A.bin"
 
 gUnk_0810C280:: @ 0810C280
-	.4byte gUnk_0810C270
-	.4byte gUnk_0810C275
-	.4byte gUnk_0810C27A
-	.4byte 00000000
+	ptr gUnk_0810C270
+	ptr gUnk_0810C275
+	ptr gUnk_0810C27A
+	ptr 00000000

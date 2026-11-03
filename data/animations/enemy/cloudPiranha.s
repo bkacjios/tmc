@@ -41,16 +41,16 @@ gSpriteAnimations_CloudPiranha_11:: @ 080CF5BF
 	.include "animations/gSpriteAnimations_CloudPiranha_11.s"
 
 gSpriteAnimations_CloudPiranha:: @ 080CF5CC
-	.4byte gSpriteAnimations_CloudPiranha_0
-	.4byte gSpriteAnimations_CloudPiranha_1
-	.4byte gSpriteAnimations_CloudPiranha_2
-	.4byte gSpriteAnimations_CloudPiranha_3
-	.4byte gSpriteAnimations_CloudPiranha_4
-	.4byte gSpriteAnimations_CloudPiranha_5
-	.4byte gSpriteAnimations_CloudPiranha_6
-	.4byte gSpriteAnimations_CloudPiranha_7
-	.4byte gSpriteAnimations_CloudPiranha_8
-	.4byte gSpriteAnimations_CloudPiranha_9
-	.4byte gSpriteAnimations_CloudPiranha_10
-	.4byte gSpriteAnimations_CloudPiranha_11
-	.4byte 00000000
+	ptr gSpriteAnimations_CloudPiranha_0
+	ptr gSpriteAnimations_CloudPiranha_1
+	ptr gSpriteAnimations_CloudPiranha_2
+	ptr gSpriteAnimations_CloudPiranha_3
+	ptr gSpriteAnimations_CloudPiranha_4
+	ptr gSpriteAnimations_CloudPiranha_5
+	ptr gSpriteAnimations_CloudPiranha_6
+	ptr gSpriteAnimations_CloudPiranha_7
+	ptr gSpriteAnimations_CloudPiranha_8
+	ptr gSpriteAnimations_CloudPiranha_9
+	ptr gSpriteAnimations_CloudPiranha_10
+	ptr gSpriteAnimations_CloudPiranha_11
+	ptr 00000000

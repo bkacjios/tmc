@@ -11,11 +11,11 @@ gSpriteAnimations_Stamp_4:: @ 0810C325
 	.include "animations/gSpriteAnimations_Stamp_4.s"
 
 gSpriteAnimations_Stamp:: @ 0810C32C
-	.4byte gSpriteAnimations_Stamp_0
-	.4byte gSpriteAnimations_Stamp_0
-	.4byte gSpriteAnimations_Stamp_0
-	.4byte gSpriteAnimations_Stamp_0
-	.4byte gSpriteAnimations_Stamp_4
-	.4byte gSpriteAnimations_Stamp_4
-	.4byte gSpriteAnimations_Stamp_4
-	.4byte gSpriteAnimations_Stamp_4
+	ptr gSpriteAnimations_Stamp_0
+	ptr gSpriteAnimations_Stamp_0
+	ptr gSpriteAnimations_Stamp_0
+	ptr gSpriteAnimations_Stamp_0
+	ptr gSpriteAnimations_Stamp_4
+	ptr gSpriteAnimations_Stamp_4
+	ptr gSpriteAnimations_Stamp_4
+	ptr gSpriteAnimations_Stamp_4

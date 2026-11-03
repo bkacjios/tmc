@@ -13,7 +13,7 @@ gSpriteAnimations_Chaser_2:: @ 080CD2BD
 	.include "animations/gSpriteAnimations_Chaser_2.s"
 
 gSpriteAnimations_Chaser:: @ 080CD2C8
-	.4byte gSpriteAnimations_Chaser_0
-	.4byte gSpriteAnimations_Chaser_1
-	.4byte gSpriteAnimations_Chaser_2
-	.4byte 00000000
+	ptr gSpriteAnimations_Chaser_0
+	ptr gSpriteAnimations_Chaser_1
+	ptr gSpriteAnimations_Chaser_2
+	ptr 00000000

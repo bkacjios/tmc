@@ -10,16 +10,12 @@
 #include "player.h"
 #include "physics.h"
 #include "color.h"
+#include "manager.h"
 
-typedef struct Temp {
-    void* prev;
-    void* next;
-    u8 _0[0x38];
-} Temp;
 #include "tiles.h"
 
 extern u8 gUpdateVisibleTiles;
-extern Manager gUnk_02033290;
+extern ManagerSlot gUnk_02033290[32];
 void UpdatePlayerInput(void);
 void ClearHitboxList(void);
 void sub_0805EE88(void);
@@ -248,8 +244,10 @@ void UpdateManagers(void) {
 void EraseAllEntities(void) {
     DeleteAllEntities();
     MemClear(&gPriorityHandler, sizeof(PriorityHandler));
-    MemClear(&gPlayerEntity.base, 10880);
-    MemClear(&gUnk_02033290, 2048);
+    MemClear(&gPlayerEntity, sizeof(gPlayerEntity));
+    MemClear(gAuxPlayerEntities, sizeof(gAuxPlayerEntities));
+    MemClear(gEntities, sizeof(gEntities));
+    MemClear(gUnk_02033290, sizeof(gUnk_02033290));
     sub_0805E98C();
     gEntCount = 0;
     gManagerCount = 0;
@@ -287,7 +285,7 @@ Entity* GetEmptyEntity() {
             ClearDeletedEntity(&currentEnt->base);
             return &currentEnt->base;
         }
-    } while (++currentEnt < (GenericEntity*)&gCarriedEntity);
+    } while (++currentEnt < &gEntities[MAX_ENTITIES]);
 
     flags_ip = 0;
     rv = NULL;
@@ -424,10 +422,10 @@ void DeleteAllEntities(void) {
 
 // fix this
 Manager* GetEmptyManager(void) {
-    Temp* it;
-    for (it = (Temp*)&gUnk_02033290; it < ((Temp*)&gUnk_02033290 + 32); it++) {
-        if (it->prev == 0) {
-            return (Manager*)it;
+    ManagerSlot* it;
+    for (it = gUnk_02033290; it < gUnk_02033290 + 32; it++) {
+        if (it->base.prev == NULL) {
+            return &it->base;
         }
     }
     return NULL;
@@ -440,7 +438,7 @@ void DeleteManager(void* ent) {
 
     ReleaseTransitionManager(manager);
     UnlinkEntity((Entity*)manager);
-    MemClear(manager, sizeof(Temp));
+    MemClear(manager, sizeof(ManagerSlot));
     gManagerCount--;
 }
 
@@ -453,15 +451,15 @@ void ReleaseTransitionManager(void* mgr) {
     }
 }
 
-extern LinkedList gEntityListsBackup;
+extern LinkedList gEntityListsBackup[9];
 
 void sub_0805E958(void) {
-    MemCopy(&gEntityLists, &gEntityListsBackup, 0x48);
+    MemCopy(gEntityLists, gEntityListsBackup, sizeof(gEntityLists));
     sub_0805E98C();
 }
 
 void sub_0805E974(void) {
-    MemCopy(&gEntityListsBackup, &gEntityLists, 0x48);
+    MemCopy(gEntityListsBackup, gEntityLists, sizeof(gEntityLists));
 }
 
 void sub_0805E98C(void) {

@@ -29,12 +29,12 @@ gSpriteAnimations_FireProjectile_7:: @ 08129887
 	.include "animations/gSpriteAnimations_FireProjectile_7.s"
 
 gSpriteAnimations_FireProjectile:: @ 08129894
-	.4byte gSpriteAnimations_FireProjectile_0
-	.4byte gSpriteAnimations_FireProjectile_1
-	.4byte gSpriteAnimations_FireProjectile_2
-	.4byte gSpriteAnimations_FireProjectile_3
-	.4byte gSpriteAnimations_FireProjectile_4
-	.4byte gSpriteAnimations_FireProjectile_5
-	.4byte gSpriteAnimations_FireProjectile_6
-	.4byte gSpriteAnimations_FireProjectile_7
-	.4byte 00000000
+	ptr gSpriteAnimations_FireProjectile_0
+	ptr gSpriteAnimations_FireProjectile_1
+	ptr gSpriteAnimations_FireProjectile_2
+	ptr gSpriteAnimations_FireProjectile_3
+	ptr gSpriteAnimations_FireProjectile_4
+	ptr gSpriteAnimations_FireProjectile_5
+	ptr gSpriteAnimations_FireProjectile_6
+	ptr gSpriteAnimations_FireProjectile_7
+	ptr 00000000

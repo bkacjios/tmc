@@ -20,8 +20,8 @@ gSpriteAnimations_CuccoAggr_4:: @ 080CF87F
 	.include "animations/gSpriteAnimations_CuccoAggr_4.s"
 
 gSpriteAnimations_CuccoAggr:: @ 080CF890
-	.4byte gSpriteAnimations_CuccoAggr_0
-	.4byte gSpriteAnimations_CuccoAggr_1
-	.4byte gSpriteAnimations_CuccoAggr_2
-	.4byte gSpriteAnimations_CuccoAggr_3
-	.4byte gSpriteAnimations_CuccoAggr_4
+	ptr gSpriteAnimations_CuccoAggr_0
+	ptr gSpriteAnimations_CuccoAggr_1
+	ptr gSpriteAnimations_CuccoAggr_2
+	ptr gSpriteAnimations_CuccoAggr_3
+	ptr gSpriteAnimations_CuccoAggr_4

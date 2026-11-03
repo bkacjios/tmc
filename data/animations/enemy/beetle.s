@@ -25,11 +25,11 @@ gSpriteAnimations_Beetle_6:: @ 080CB671
 	.include "animations/gSpriteAnimations_Beetle_6.s"
 
 gSpriteAnimations_Beetle:: @ 080CB67C
-	.4byte gSpriteAnimations_Beetle_0
-	.4byte gSpriteAnimations_Beetle_1
-	.4byte gSpriteAnimations_Beetle_2
-	.4byte gSpriteAnimations_Beetle_3
-	.4byte gSpriteAnimations_Beetle_4
-	.4byte gSpriteAnimations_Beetle_5
-	.4byte gSpriteAnimations_Beetle_6
-	.4byte 00000000
+	ptr gSpriteAnimations_Beetle_0
+	ptr gSpriteAnimations_Beetle_1
+	ptr gSpriteAnimations_Beetle_2
+	ptr gSpriteAnimations_Beetle_3
+	ptr gSpriteAnimations_Beetle_4
+	ptr gSpriteAnimations_Beetle_5
+	ptr gSpriteAnimations_Beetle_6
+	ptr 00000000

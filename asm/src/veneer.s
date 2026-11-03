@@ -100,10 +100,10 @@ tile_wrong_type:
 	bl UnregisterInteractTile
 	pop {r4, r5, r6, r7, pc}
 	.align 2, 0
-_080001C0: .4byte gMapBottom+0x6004
-_080001C4: .4byte gMapBottom+0x6004
-_080001C8: .4byte gMapTop+0x6004
-_080001CC: .4byte gMapBottom+0x6004
+_080001C0: .4byte gMapBottom+0x6000+MAP_LAYER_HEADER
+_080001C4: .4byte gMapBottom+0x6000+MAP_LAYER_HEADER
+_080001C8: .4byte gMapTop+0x6000+MAP_LAYER_HEADER
+_080001CC: .4byte gMapBottom+0x6000+MAP_LAYER_HEADER
 
 @ r0: @see gMapSpecialTileToActTile  r1: tilePos, r2: layer
 	thumb_func_start SetActTileAtTilePos
@@ -141,34 +141,34 @@ _08000220: .4byte gActTilePtrs
 _08000224: .4byte gMapDataPtrs
 
 gMapDataPtrs::
-	.4byte BOTTOM_TILEDATA @ layer 0
+	ptr BOTTOM_TILEDATA @ layer 0
 gTileTypesPtrs::
-	.4byte BOTTOM_TILETYPES
-	.4byte BOTTOM_TILEDATA @ layer 1
-	.4byte BOTTOM_TILETYPES
-	.4byte TOP_TILEDATA @ layer 2
-	.4byte TOP_TILETYPES
-	.4byte BOTTOM_TILEDATA @ layer 3
-	.4byte BOTTOM_TILETYPES
+	ptr BOTTOM_TILETYPES
+	ptr BOTTOM_TILEDATA @ layer 1
+	ptr BOTTOM_TILETYPES
+	ptr TOP_TILEDATA @ layer 2
+	ptr TOP_TILETYPES
+	ptr BOTTOM_TILEDATA @ layer 3
+	ptr BOTTOM_TILETYPES
 gCollisionDataPtrs::
-	.4byte BOTTOM_COLLISIONDATA @ layer 0
-	.4byte BOTTOM_COLLISIONDATA @ layer 1
-	.4byte TOP_COLLISIONDATA @ layer 2
-	.4byte BOTTOM_COLLISIONDATA @ layer 3
+	ptr BOTTOM_COLLISIONDATA @ layer 0
+	ptr BOTTOM_COLLISIONDATA @ layer 1
+	ptr TOP_COLLISIONDATA @ layer 2
+	ptr BOTTOM_COLLISIONDATA @ layer 3
 gUnk_08000258:: @ mapDataOriginal and tileTypes
-	.4byte BOTTOM_TILEDATAORIGINAL @ layer 0
-	.4byte BOTTOM_TILETYPES
-	.4byte BOTTOM_TILEDATAORIGINAL @ layer 1
-	.4byte BOTTOM_TILETYPES
-	.4byte TOP_TILEDATAORIGINAL @ layer 2
-	.4byte TOP_TILETYPES
-	.4byte BOTTOM_TILEDATAORIGINAL @ layer 3
-	.4byte BOTTOM_TILETYPES
+	ptr BOTTOM_TILEDATAORIGINAL @ layer 0
+	ptr BOTTOM_TILETYPES
+	ptr BOTTOM_TILEDATAORIGINAL @ layer 1
+	ptr BOTTOM_TILETYPES
+	ptr TOP_TILEDATAORIGINAL @ layer 2
+	ptr TOP_TILETYPES
+	ptr BOTTOM_TILEDATAORIGINAL @ layer 3
+	ptr BOTTOM_TILETYPES
 gActTilePtrs:: @ actTile for layers
-	.4byte BOTTOM_ACTTILES @ layer 0
-	.4byte BOTTOM_ACTTILES @ layer 1
-	.4byte TOP_ACTTILES @ layer 2
-	.4byte BOTTOM_ACTTILES @ layer 3
+	ptr BOTTOM_ACTTILES @ layer 0
+	ptr BOTTOM_ACTTILES @ layer 1
+	ptr TOP_ACTTILES @ layer 2
+	ptr BOTTOM_ACTTILES @ layer 3
 
 @ call 0x80B19CC
 @ ========

@@ -7,14 +7,14 @@
 
 
 gUnk_08132714:: @ 08132714
-	.4byte gUnk_08132AF4
-	.4byte gUnk_08132AEA
-	.4byte gUnk_08132AE0
-	.4byte gUnk_08132AEA
-	.4byte gUnk_08132B1A
-	.4byte gUnk_08132B0C
-	.4byte gUnk_08132AFE
-	.4byte gUnk_08132B0C
+	ptr gUnk_08132AF4
+	ptr gUnk_08132AEA
+	ptr gUnk_08132AE0
+	ptr gUnk_08132AEA
+	ptr gUnk_08132B1A
+	ptr gUnk_08132B0C
+	ptr gUnk_08132AFE
+	ptr gUnk_08132B0C
 
 gSpriteAnimations_ItemGustJar_2:: @ 08132734
 	.include "animations/gSpriteAnimations_ItemGustJar_2.s"
@@ -44,19 +44,19 @@ gSpriteAnimations_ItemGustJar_8:: @ 081327C4
 	.include "animations/gSpriteAnimations_ItemGustJar_8.s"
 
 gSpriteAnimations_ItemGustJar:: @ 081327DC
-	.4byte gSpriteAnimations_ItemGustJar_0
-	.4byte gSpriteAnimations_ItemGustJar_1
-	.4byte gSpriteAnimations_ItemGustJar_2
-	.4byte gSpriteAnimations_ItemGustJar_1
-	.4byte gSpriteAnimations_ItemGustJar_4
-	.4byte gSpriteAnimations_ItemGustJar_5
-	.4byte gSpriteAnimations_ItemGustJar_6
-	.4byte gSpriteAnimations_ItemGustJar_5
-	.4byte gSpriteAnimations_ItemGustJar_8
-	.4byte gSpriteAnimations_ItemGustJar_9
-	.4byte gSpriteAnimations_ItemGustJar_10
-	.4byte gSpriteAnimations_ItemGustJar_9
-	.4byte 00000000
+	ptr gSpriteAnimations_ItemGustJar_0
+	ptr gSpriteAnimations_ItemGustJar_1
+	ptr gSpriteAnimations_ItemGustJar_2
+	ptr gSpriteAnimations_ItemGustJar_1
+	ptr gSpriteAnimations_ItemGustJar_4
+	ptr gSpriteAnimations_ItemGustJar_5
+	ptr gSpriteAnimations_ItemGustJar_6
+	ptr gSpriteAnimations_ItemGustJar_5
+	ptr gSpriteAnimations_ItemGustJar_8
+	ptr gSpriteAnimations_ItemGustJar_9
+	ptr gSpriteAnimations_ItemGustJar_10
+	ptr gSpriteAnimations_ItemGustJar_9
+	ptr 00000000
 
 gSpriteFrames_23:: @ 08132810
 	.incbin "playerItemGustJar/gSpriteFrames_23.bin"

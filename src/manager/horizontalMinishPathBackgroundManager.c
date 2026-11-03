@@ -4,6 +4,7 @@
  *
  * @brief Parallax scrolling for horizontal MinishPaths
  */
+#include "tileMap.h"
 #include "manager/horizontalMinishPathBackgroundManager.h"
 #include "common.h"
 #include "screen.h"
@@ -17,7 +18,6 @@ void sub_08058034(void);
 void sub_08058084(u16*, u16*);
 void sub_08058004(u32, void*, void*);
 
-extern u8 gUnk_02006F00[];
 extern u16 gMapDataTopSpecial[];
 
 void HorizontalMinishPathBackgroundManager_Main(HorizontalMinishPathBackgroundManager* this) {
@@ -45,7 +45,7 @@ void sub_08057F20(HorizontalMinishPathBackgroundManager* this) {
     gScreen.bg3.xOffset = tmp & 0xF;
     gScreen.bg3.yOffset = 0x30 - ((0x30 - (gRoomControls.scroll_y - gRoomControls.origin_y)) >> 2);
     gScreen.bg3.subTileMap = gBG3Buffer;
-    sub_08058004(tmp, gUnk_02006F00, gBG3Buffer);
+    sub_08058004(tmp, gMapDataTopSpecialHalf2, gBG3Buffer);
     tmp = (tmp >> 4) << 1;
     if (this->unk_38 != tmp) {
         this->unk_38 = tmp;
@@ -56,7 +56,7 @@ void sub_08057F20(HorizontalMinishPathBackgroundManager* this) {
     gScreen.bg1.xOffset = tmp & 0xF;
     gScreen.bg1.yOffset = 0x30 - ((0x30 - (gRoomControls.scroll_y - gRoomControls.origin_y)) >> 1);
     gScreen.bg1.subTileMap = gBG3Buffer + 0x400;
-    sub_08058004(tmp, gUnk_02006F00 + 0x2000, gBG3Buffer + 0x400);
+    sub_08058004(tmp, gMapDataTopSpecialHalf2 + 0x2000, gBG3Buffer + 0x400);
     tmp = (tmp >> 4) << 1;
     if (this->unk_3c != tmp) {
         this->unk_3c = tmp;
@@ -109,7 +109,7 @@ void sub_080580B0(u32 unk1) {
     sub_08058034();
     tmp = gRoomControls.scroll_x - gRoomControls.origin_x;
     tmp = tmp + (tmp >> 3) + (0x400 - gRoomControls.width) / 2;
-    sub_08058004(tmp, gUnk_02006F00, gBG3Buffer);
+    sub_08058004(tmp, gMapDataTopSpecialHalf2, gBG3Buffer);
     gScreen.bg3.xOffset = tmp & 0xF;
     gScreen.bg3.yOffset = 0x30 - ((0x30 - (gRoomControls.scroll_y - gRoomControls.origin_y)) >> 1); //?
     gScreen.bg3.control = 0x1D09;
@@ -117,7 +117,7 @@ void sub_080580B0(u32 unk1) {
     gScreen.bg3.updated = 1;
     tmp = gRoomControls.scroll_x - gRoomControls.origin_x;
     tmp = tmp + (tmp >> 2) + (0x400 - gRoomControls.width) / 2;
-    sub_08058004(tmp, gUnk_02006F00 + 0x2000, gBG3Buffer + 0x400);
+    sub_08058004(tmp, gMapDataTopSpecialHalf2 + 0x2000, gBG3Buffer + 0x400);
     gScreen.bg1.xOffset = tmp & 0xF;
     gScreen.bg1.yOffset = 0x30 - ((0x30 - (gRoomControls.scroll_y - gRoomControls.origin_y)) >> 1); //?
     gScreen.bg1.control = 0x1E09;

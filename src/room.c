@@ -19,6 +19,9 @@ extern u32 EnemyEnableRespawn(u32);
 
 extern void** gCurrentRoomProperties;
 extern void*** gAreaTable[];
+#ifdef PLATFORM_PC
+bool32 PcOracleOverride(u32 area, u32 room);
+#endif
 extern u8 gEntityListLUT[];
 
 extern void sub_080186EC(void);
@@ -168,7 +171,11 @@ u32 CallRoomProp6(void) {
 void CallRoomProp5And7(void) {
     void (*func)(void);
 
-    sub_080186EC();
+#ifdef PLATFORM_PC
+    // nor kinstone fusion objects
+    if (!PcOracleOverride(gRoomControls.area, gRoomControls.room))
+#endif
+        sub_080186EC();
     func = (void (*)())GetCurrentRoomProperty(5);
     if (func) {
         func();
@@ -221,6 +228,10 @@ void sub_0804B0B0(u32 area, u32 room) {
 
 void SetCurrentRoomPropertyList(u32 area, u32 room) {
     gCurrentRoomProperties = NULL;
+#ifdef PLATFORM_PC
+    if (PcOracleOverride(area, room))
+        return; // the Oracle map has no entities or room scripts
+#endif
     if (gAreaTable[area] != NULL) {
         gCurrentRoomProperties = gAreaTable[area][room];
     }
@@ -239,6 +250,10 @@ void sub_0804B0E8(u32 area, u32 room) {
 void* GetRoomProperty(u32 area, u32 room, u32 property) {
     void** temp;
     temp = NULL;
+#ifdef PLATFORM_PC
+    if (PcOracleOverride(area, room))
+        return NULL;
+#endif
     if (gAreaTable[area] != NULL) {
         temp = gAreaTable[area][room];
         if (temp != NULL) {

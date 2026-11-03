@@ -17,12 +17,12 @@ gSpriteAnimations_Brocco_7:: @ 0810CB4F
 	.include "animations/gSpriteAnimations_Brocco_7.s"
 
 gSpriteAnimations_Brocco:: @ 0810CB54
-	.4byte gSpriteAnimations_Brocco_0
-	.4byte gSpriteAnimations_Brocco_0
-	.4byte gSpriteAnimations_Brocco_0
-	.4byte gSpriteAnimations_Brocco_0
-	.4byte gSpriteAnimations_Brocco_4
-	.4byte gSpriteAnimations_Brocco_5
-	.4byte gSpriteAnimations_Brocco_4
-	.4byte gSpriteAnimations_Brocco_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Brocco_0
+	ptr gSpriteAnimations_Brocco_0
+	ptr gSpriteAnimations_Brocco_0
+	ptr gSpriteAnimations_Brocco_0
+	ptr gSpriteAnimations_Brocco_4
+	ptr gSpriteAnimations_Brocco_5
+	ptr gSpriteAnimations_Brocco_4
+	ptr gSpriteAnimations_Brocco_7
+	ptr 00000000

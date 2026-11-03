@@ -26,11 +26,11 @@ gSpriteAnimations_V1EyeLaser_6:: @ 0812A689
 	.include "animations/gSpriteAnimations_V1EyeLaser_6.s"
 
 gSpriteAnimations_V1EyeLaser:: @ 0812A694
-	.4byte gSpriteAnimations_V1EyeLaser_0
-	.4byte gSpriteAnimations_V1EyeLaser_1
-	.4byte gSpriteAnimations_V1EyeLaser_2
-	.4byte gSpriteAnimations_V1EyeLaser_3
-	.4byte gSpriteAnimations_V1EyeLaser_4
-	.4byte gSpriteAnimations_V1EyeLaser_5
-	.4byte gSpriteAnimations_V1EyeLaser_6
-	.4byte 00000000
+	ptr gSpriteAnimations_V1EyeLaser_0
+	ptr gSpriteAnimations_V1EyeLaser_1
+	ptr gSpriteAnimations_V1EyeLaser_2
+	ptr gSpriteAnimations_V1EyeLaser_3
+	ptr gSpriteAnimations_V1EyeLaser_4
+	ptr gSpriteAnimations_V1EyeLaser_5
+	ptr gSpriteAnimations_V1EyeLaser_6
+	ptr 00000000

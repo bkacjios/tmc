@@ -26,14 +26,14 @@ gSpriteAnimations_MinisterPotho_9:: @ 08110682
 	.include "animations/gSpriteAnimations_MinisterPotho_9.s"
 
 gSpriteAnimations_MinisterPotho:: @ 081106A8
-	.4byte gSpriteAnimations_MinisterPotho_0
-	.4byte gSpriteAnimations_MinisterPotho_1
-	.4byte gSpriteAnimations_MinisterPotho_2
-	.4byte gSpriteAnimations_MinisterPotho_3
-	.4byte gSpriteAnimations_MinisterPotho_4
-	.4byte gSpriteAnimations_MinisterPotho_4
-	.4byte gSpriteAnimations_MinisterPotho_4
-	.4byte gSpriteAnimations_MinisterPotho_4
-	.4byte gSpriteAnimations_MinisterPotho_8
-	.4byte gSpriteAnimations_MinisterPotho_9
-	.4byte 00000000
+	ptr gSpriteAnimations_MinisterPotho_0
+	ptr gSpriteAnimations_MinisterPotho_1
+	ptr gSpriteAnimations_MinisterPotho_2
+	ptr gSpriteAnimations_MinisterPotho_3
+	ptr gSpriteAnimations_MinisterPotho_4
+	ptr gSpriteAnimations_MinisterPotho_4
+	ptr gSpriteAnimations_MinisterPotho_4
+	ptr gSpriteAnimations_MinisterPotho_4
+	ptr gSpriteAnimations_MinisterPotho_8
+	ptr gSpriteAnimations_MinisterPotho_9
+	ptr 00000000

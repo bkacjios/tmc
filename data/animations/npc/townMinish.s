@@ -41,16 +41,16 @@ gSpriteAnimations_TownMinish_11:: @ 08112D0F
 	.include "animations/gSpriteAnimations_TownMinish_11.s"
 
 gSpriteAnimations_TownMinish:: @ 08112D14
-	.4byte gSpriteAnimations_TownMinish_0
-	.4byte gSpriteAnimations_TownMinish_1
-	.4byte gSpriteAnimations_TownMinish_2
-	.4byte gSpriteAnimations_TownMinish_3
-	.4byte gSpriteAnimations_TownMinish_4
-	.4byte gSpriteAnimations_TownMinish_5
-	.4byte gSpriteAnimations_TownMinish_6
-	.4byte gSpriteAnimations_TownMinish_7
-	.4byte gSpriteAnimations_TownMinish_8
-	.4byte gSpriteAnimations_TownMinish_9
-	.4byte gSpriteAnimations_TownMinish_10
-	.4byte gSpriteAnimations_TownMinish_11
-	.4byte 00000000
+	ptr gSpriteAnimations_TownMinish_0
+	ptr gSpriteAnimations_TownMinish_1
+	ptr gSpriteAnimations_TownMinish_2
+	ptr gSpriteAnimations_TownMinish_3
+	ptr gSpriteAnimations_TownMinish_4
+	ptr gSpriteAnimations_TownMinish_5
+	ptr gSpriteAnimations_TownMinish_6
+	ptr gSpriteAnimations_TownMinish_7
+	ptr gSpriteAnimations_TownMinish_8
+	ptr gSpriteAnimations_TownMinish_9
+	ptr gSpriteAnimations_TownMinish_10
+	ptr gSpriteAnimations_TownMinish_11
+	ptr 00000000

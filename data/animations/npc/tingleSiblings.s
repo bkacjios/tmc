@@ -20,16 +20,16 @@ gSpriteAnimations_TingleSiblings_8:: @ 0810FCCE
 	.include "animations/gSpriteAnimations_TingleSiblings_8.s"
 
 gSpriteAnimations_TingleSiblings:: @ 0810FD6C
-	.4byte gSpriteAnimations_TingleSiblings_0
-	.4byte gSpriteAnimations_TingleSiblings_1
-	.4byte gSpriteAnimations_TingleSiblings_0
-	.4byte gSpriteAnimations_TingleSiblings_3
-	.4byte gSpriteAnimations_TingleSiblings_4
-	.4byte gSpriteAnimations_TingleSiblings_4
-	.4byte gSpriteAnimations_TingleSiblings_4
-	.4byte gSpriteAnimations_TingleSiblings_4
-	.4byte gSpriteAnimations_TingleSiblings_8
-	.4byte gSpriteAnimations_TingleSiblings_8
-	.4byte gSpriteAnimations_TingleSiblings_8
-	.4byte gSpriteAnimations_TingleSiblings_8
-	.4byte 00000000
+	ptr gSpriteAnimations_TingleSiblings_0
+	ptr gSpriteAnimations_TingleSiblings_1
+	ptr gSpriteAnimations_TingleSiblings_0
+	ptr gSpriteAnimations_TingleSiblings_3
+	ptr gSpriteAnimations_TingleSiblings_4
+	ptr gSpriteAnimations_TingleSiblings_4
+	ptr gSpriteAnimations_TingleSiblings_4
+	ptr gSpriteAnimations_TingleSiblings_4
+	ptr gSpriteAnimations_TingleSiblings_8
+	ptr gSpriteAnimations_TingleSiblings_8
+	ptr gSpriteAnimations_TingleSiblings_8
+	ptr gSpriteAnimations_TingleSiblings_8
+	ptr 00000000

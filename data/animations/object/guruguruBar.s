@@ -17,8 +17,8 @@ gSpriteAnimations_GuruguruBar_3:: @ 0812426C
 	.include "animations/gSpriteAnimations_GuruguruBar_3.s"
 
 gSpriteAnimations_GuruguruBar:: @ 081242B4
-	.4byte gSpriteAnimations_GuruguruBar_0
-	.4byte gSpriteAnimations_GuruguruBar_1
-	.4byte gSpriteAnimations_GuruguruBar_2
-	.4byte gSpriteAnimations_GuruguruBar_3
-	.4byte 00000000
+	ptr gSpriteAnimations_GuruguruBar_0
+	ptr gSpriteAnimations_GuruguruBar_1
+	ptr gSpriteAnimations_GuruguruBar_2
+	ptr gSpriteAnimations_GuruguruBar_3
+	ptr 00000000

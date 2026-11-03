@@ -17,8 +17,8 @@ gSpriteAnimations_GyorgFemaleMouth_3:: @ 080D294F
 	.include "animations/gSpriteAnimations_GyorgFemaleMouth_3.s"
 
 gSpriteAnimations_GyorgFemaleMouth:: @ 080D2960
-	.4byte gSpriteAnimations_GyorgFemaleMouth_0
-	.4byte gSpriteAnimations_GyorgFemaleMouth_1
-	.4byte gSpriteAnimations_GyorgFemaleMouth_2
-	.4byte gSpriteAnimations_GyorgFemaleMouth_3
-	.4byte 00000000
+	ptr gSpriteAnimations_GyorgFemaleMouth_0
+	ptr gSpriteAnimations_GyorgFemaleMouth_1
+	ptr gSpriteAnimations_GyorgFemaleMouth_2
+	ptr gSpriteAnimations_GyorgFemaleMouth_3
+	ptr 00000000

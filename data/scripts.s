@@ -576,7 +576,9 @@
 	.include "data/scripts/minishWoods/script_CutsceneOrchestratorPotionRed.inc"
 	.include "data/scripts/npc/script_BladeBrothers.inc"
 	.include "data/scripts/npc/script_PlayerAtBladeBrothers.inc"
+.ifndef PLATFORM_PC @ Thumb code, provided in C by the PC platform layer
 	.include "data/scripts/CreateDustFromScript.inc"
+.endif
 	.include "data/scripts/unused/script_08016384.inc"
 	.include "data/scripts/unused/script_08016482.inc"
 	.include "data/scripts/unused/script_080165A4.inc"

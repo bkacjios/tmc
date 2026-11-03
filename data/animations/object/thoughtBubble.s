@@ -14,7 +14,7 @@ gSpriteAnimations_ThoughtBubble_2:: @ 081225D8
 	.include "animations/gSpriteAnimations_ThoughtBubble_2.s"
 
 gSpriteAnimations_ThoughtBubble:: @ 081225F4
-	.4byte gSpriteAnimations_ThoughtBubble_0
-	.4byte gSpriteAnimations_ThoughtBubble_1
-	.4byte gSpriteAnimations_ThoughtBubble_2
-	.4byte 00000000
+	ptr gSpriteAnimations_ThoughtBubble_0
+	ptr gSpriteAnimations_ThoughtBubble_1
+	ptr gSpriteAnimations_ThoughtBubble_2
+	ptr 00000000

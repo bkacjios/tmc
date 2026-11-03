@@ -53,20 +53,20 @@ gSpriteAnimations_GyorgChild_15:: @ 080D1F1A
 	.include "animations/gSpriteAnimations_GyorgChild_15.s"
 
 gSpriteAnimations_GyorgChild:: @ 080D1F20
-	.4byte gSpriteAnimations_GyorgChild_0
-	.4byte gSpriteAnimations_GyorgChild_1
-	.4byte gSpriteAnimations_GyorgChild_2
-	.4byte gSpriteAnimations_GyorgChild_3
-	.4byte gSpriteAnimations_GyorgChild_4
-	.4byte gSpriteAnimations_GyorgChild_5
-	.4byte gSpriteAnimations_GyorgChild_6
-	.4byte gSpriteAnimations_GyorgChild_7
-	.4byte gSpriteAnimations_GyorgChild_8
-	.4byte gSpriteAnimations_GyorgChild_9
-	.4byte gSpriteAnimations_GyorgChild_10
-	.4byte gSpriteAnimations_GyorgChild_11
-	.4byte gSpriteAnimations_GyorgChild_12
-	.4byte gSpriteAnimations_GyorgChild_13
-	.4byte gSpriteAnimations_GyorgChild_14
-	.4byte gSpriteAnimations_GyorgChild_15
-	.4byte 00000000
+	ptr gSpriteAnimations_GyorgChild_0
+	ptr gSpriteAnimations_GyorgChild_1
+	ptr gSpriteAnimations_GyorgChild_2
+	ptr gSpriteAnimations_GyorgChild_3
+	ptr gSpriteAnimations_GyorgChild_4
+	ptr gSpriteAnimations_GyorgChild_5
+	ptr gSpriteAnimations_GyorgChild_6
+	ptr gSpriteAnimations_GyorgChild_7
+	ptr gSpriteAnimations_GyorgChild_8
+	ptr gSpriteAnimations_GyorgChild_9
+	ptr gSpriteAnimations_GyorgChild_10
+	ptr gSpriteAnimations_GyorgChild_11
+	ptr gSpriteAnimations_GyorgChild_12
+	ptr gSpriteAnimations_GyorgChild_13
+	ptr gSpriteAnimations_GyorgChild_14
+	ptr gSpriteAnimations_GyorgChild_15
+	ptr 00000000

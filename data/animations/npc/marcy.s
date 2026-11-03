@@ -14,15 +14,15 @@ gSpriteAnimations_Marcy_8:: @ 0810C382
 	.include "animations/gSpriteAnimations_Marcy_8.s"
 
 gSpriteAnimations_Marcy:: @ 0810C390
-	.4byte gSpriteAnimations_Marcy_0
-	.4byte gSpriteAnimations_Marcy_0
-	.4byte gSpriteAnimations_Marcy_0
-	.4byte gSpriteAnimations_Marcy_0
-	.4byte gSpriteAnimations_Marcy_4
-	.4byte gSpriteAnimations_Marcy_4
-	.4byte gSpriteAnimations_Marcy_4
-	.4byte gSpriteAnimations_Marcy_4
-	.4byte gSpriteAnimations_Marcy_8
-	.4byte gSpriteAnimations_Marcy_8
-	.4byte gSpriteAnimations_Marcy_8
-	.4byte gSpriteAnimations_Marcy_8
+	ptr gSpriteAnimations_Marcy_0
+	ptr gSpriteAnimations_Marcy_0
+	ptr gSpriteAnimations_Marcy_0
+	ptr gSpriteAnimations_Marcy_0
+	ptr gSpriteAnimations_Marcy_4
+	ptr gSpriteAnimations_Marcy_4
+	ptr gSpriteAnimations_Marcy_4
+	ptr gSpriteAnimations_Marcy_4
+	ptr gSpriteAnimations_Marcy_8
+	ptr gSpriteAnimations_Marcy_8
+	ptr gSpriteAnimations_Marcy_8
+	ptr gSpriteAnimations_Marcy_8

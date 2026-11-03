@@ -29,12 +29,12 @@ gSpriteAnimations_EyeSwitch_7:: @ 08120BAB
 	.include "animations/gSpriteAnimations_EyeSwitch_7.s"
 
 gSpriteAnimations_EyeSwitch:: @ 08120BBC
-	.4byte gSpriteAnimations_EyeSwitch_0
-	.4byte gSpriteAnimations_EyeSwitch_1
-	.4byte gSpriteAnimations_EyeSwitch_2
-	.4byte gSpriteAnimations_EyeSwitch_3
-	.4byte gSpriteAnimations_EyeSwitch_4
-	.4byte gSpriteAnimations_EyeSwitch_5
-	.4byte gSpriteAnimations_EyeSwitch_6
-	.4byte gSpriteAnimations_EyeSwitch_7
-	.4byte 00000000
+	ptr gSpriteAnimations_EyeSwitch_0
+	ptr gSpriteAnimations_EyeSwitch_1
+	ptr gSpriteAnimations_EyeSwitch_2
+	ptr gSpriteAnimations_EyeSwitch_3
+	ptr gSpriteAnimations_EyeSwitch_4
+	ptr gSpriteAnimations_EyeSwitch_5
+	ptr gSpriteAnimations_EyeSwitch_6
+	ptr gSpriteAnimations_EyeSwitch_7
+	ptr 00000000

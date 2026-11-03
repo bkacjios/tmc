@@ -9,19 +9,17 @@ std::filesystem::path AifAsset::generateAssetPath() {
 void AifAsset::convertToHumanReadable(const std::vector<char>& baserom) {
     (void)baserom;
 
-    std::filesystem::path toolsPath = "tools";
     std::vector<std::string> cmd;
-    cmd.push_back(toolsPath / "bin" / "aif2pcm");
-    cmd.push_back(path);
-    cmd.push_back(assetPath);
+    cmd.push_back(tool_path("aif2pcm"));
+    cmd.push_back(path.string());
+    cmd.push_back(assetPath.string());
     check_call(cmd);
 }
 
 void AifAsset::buildToBinary() {
-    std::filesystem::path toolsPath = "tools";
     std::vector<std::string> cmd;
-    cmd.push_back(toolsPath / "bin" / "aif2pcm");
-    cmd.push_back(assetPath);
-    cmd.push_back(path);
+    cmd.push_back(tool_path("aif2pcm"));
+    cmd.push_back(assetPath.string());
+    cmd.push_back(path.string());
     check_call(cmd);
 }

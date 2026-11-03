@@ -13,7 +13,7 @@ gSpriteAnimations_RockChuchu_2:: @ 080CB9D6
 	.include "animations/gSpriteAnimations_RockChuchu_2.s"
 
 gSpriteAnimations_RockChuchu:: @ 080CBA18
-	.4byte gSpriteAnimations_RockChuchu_0
-	.4byte gSpriteAnimations_RockChuchu_1
-	.4byte gSpriteAnimations_RockChuchu_2
-	.4byte 00000000
+	ptr gSpriteAnimations_RockChuchu_0
+	ptr gSpriteAnimations_RockChuchu_1
+	ptr gSpriteAnimations_RockChuchu_2
+	ptr 00000000

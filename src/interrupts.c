@@ -15,8 +15,6 @@
 #include "map.h"
 #include "fade.h"
 
-extern u8 gUnk_03003DE0;
-extern u8 gUnk_03000C30;
 
 extern u8 gUpdateVisibleTiles;
 extern Entity* gPlayerClones[3];
@@ -158,22 +156,22 @@ void DispCtrlSet(void) {
 // Load any resources that were requested with LoadResourceAsync
 void LoadResources(void) {
     if (gUnk_03003DE0 != 0) {
-        u8* buf = &gUnk_03000C30;
+        QueuedResource* entry = gUnk_03000C30;
         s32 i = gUnk_03003DE0;
         gUnk_03003DE0 = 0;
         do {
-            switch (*buf) {
+            switch (entry->type) {
                 case 0:
-                    DmaCopy32(3, *(u32*)(buf + 4), *(u32*)(buf + 8), *(u16*)(buf + 2));
+                    DmaCopy32(3, entry->src, entry->dest, entry->size);
                     break;
                 case 1:
-                    LZ77UnCompVram(*(void**)(buf + 4), *(u8**)(buf + 8));
+                    LZ77UnCompVram(entry->src, entry->dest);
                     break;
                 case 2:
-                    DmaFill32(3, *(u32*)(buf + 4), *(u32*)(buf + 8), *(u16*)(buf + 2));
+                    DmaFill32(3, (u32)(uptr)entry->src, entry->dest, entry->size);
                     break;
             }
-            buf += 12;
+            entry++;
             i--;
         } while (0 < i);
     }

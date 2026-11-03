@@ -23,12 +23,12 @@ gSpriteAnimations_AngryStatue_7:: @ 081246B8
 	.include "animations/gSpriteAnimations_AngryStatue_7.s"
 
 gSpriteAnimations_AngryStatue:: @ 081246C8
-	.4byte gSpriteAnimations_AngryStatue_0
-	.4byte gSpriteAnimations_AngryStatue_1
-	.4byte gSpriteAnimations_AngryStatue_0
-	.4byte gSpriteAnimations_AngryStatue_3
-	.4byte gSpriteAnimations_AngryStatue_4
-	.4byte gSpriteAnimations_AngryStatue_5
-	.4byte gSpriteAnimations_AngryStatue_4
-	.4byte gSpriteAnimations_AngryStatue_7
-	.4byte 00000000
+	ptr gSpriteAnimations_AngryStatue_0
+	ptr gSpriteAnimations_AngryStatue_1
+	ptr gSpriteAnimations_AngryStatue_0
+	ptr gSpriteAnimations_AngryStatue_3
+	ptr gSpriteAnimations_AngryStatue_4
+	ptr gSpriteAnimations_AngryStatue_5
+	ptr gSpriteAnimations_AngryStatue_4
+	ptr gSpriteAnimations_AngryStatue_7
+	ptr 00000000

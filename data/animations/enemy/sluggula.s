@@ -25,12 +25,12 @@ gSpriteAnimations_Sluggula_6:: @ 080CBE9E
 	.include "animations/gSpriteAnimations_Sluggula_6.s"
 
 gSpriteAnimations_Sluggula:: @ 080CBEA4
-	.4byte gSpriteAnimations_Sluggula_0
-	.4byte gSpriteAnimations_Sluggula_1
-	.4byte gSpriteAnimations_Sluggula_2
-	.4byte gSpriteAnimations_Sluggula_3
-	.4byte gSpriteAnimations_Sluggula_4
-	.4byte gSpriteAnimations_Sluggula_5
-	.4byte gSpriteAnimations_Sluggula_6
-	.4byte 00000000
+	ptr gSpriteAnimations_Sluggula_0
+	ptr gSpriteAnimations_Sluggula_1
+	ptr gSpriteAnimations_Sluggula_2
+	ptr gSpriteAnimations_Sluggula_3
+	ptr gSpriteAnimations_Sluggula_4
+	ptr gSpriteAnimations_Sluggula_5
+	ptr gSpriteAnimations_Sluggula_6
+	ptr 00000000
 

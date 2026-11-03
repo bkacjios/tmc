@@ -25,11 +25,11 @@ gSpriteAnimations_SpinyChuchu_6:: @ 080CBB3F
 	.include "animations/gSpriteAnimations_SpinyChuchu_6.s"
 
 gSpriteAnimations_SpinyChuchu:: @ 080CBB44
-	.4byte gSpriteAnimations_SpinyChuchu_0
-	.4byte gSpriteAnimations_SpinyChuchu_1
-	.4byte gSpriteAnimations_SpinyChuchu_2
-	.4byte gSpriteAnimations_SpinyChuchu_3
-	.4byte gSpriteAnimations_SpinyChuchu_4
-	.4byte gSpriteAnimations_SpinyChuchu_5
-	.4byte gSpriteAnimations_SpinyChuchu_6
-	.4byte 00000000
+	ptr gSpriteAnimations_SpinyChuchu_0
+	ptr gSpriteAnimations_SpinyChuchu_1
+	ptr gSpriteAnimations_SpinyChuchu_2
+	ptr gSpriteAnimations_SpinyChuchu_3
+	ptr gSpriteAnimations_SpinyChuchu_4
+	ptr gSpriteAnimations_SpinyChuchu_5
+	ptr gSpriteAnimations_SpinyChuchu_6
+	ptr 00000000

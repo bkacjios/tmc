@@ -104,32 +104,32 @@ gUnk_080D03A3:: @ 080D03A3
 	.incbin "lakitu/gUnk_080D03A3.bin"
 
 gSpriteAnimations_Lakitu:: @ 080D03B4
-	.4byte gSpriteAnimations_Lakitu_0
-	.4byte gSpriteAnimations_Lakitu_1
-	.4byte gSpriteAnimations_Lakitu_2
-	.4byte gSpriteAnimations_Lakitu_3
-	.4byte gSpriteAnimations_Lakitu_4
-	.4byte gSpriteAnimations_Lakitu_5
-	.4byte gSpriteAnimations_Lakitu_6
-	.4byte gSpriteAnimations_Lakitu_7
-	.4byte gSpriteAnimations_Lakitu_8
-	.4byte gSpriteAnimations_Lakitu_9
-	.4byte gSpriteAnimations_Lakitu_10
-	.4byte gSpriteAnimations_Lakitu_11
-	.4byte gSpriteAnimations_Lakitu_12
-	.4byte gSpriteAnimations_Lakitu_13
-	.4byte gSpriteAnimations_Lakitu_14
+	ptr gSpriteAnimations_Lakitu_0
+	ptr gSpriteAnimations_Lakitu_1
+	ptr gSpriteAnimations_Lakitu_2
+	ptr gSpriteAnimations_Lakitu_3
+	ptr gSpriteAnimations_Lakitu_4
+	ptr gSpriteAnimations_Lakitu_5
+	ptr gSpriteAnimations_Lakitu_6
+	ptr gSpriteAnimations_Lakitu_7
+	ptr gSpriteAnimations_Lakitu_8
+	ptr gSpriteAnimations_Lakitu_9
+	ptr gSpriteAnimations_Lakitu_10
+	ptr gSpriteAnimations_Lakitu_11
+	ptr gSpriteAnimations_Lakitu_12
+	ptr gSpriteAnimations_Lakitu_13
+	ptr gSpriteAnimations_Lakitu_14
 
 gUnk_080D03F0:: @ 080D03F0
-	.4byte gUnk_080D031B
-	.4byte gUnk_080D032C
-	.4byte gUnk_080D033D
-	.4byte gUnk_080D034E
-	.4byte gUnk_080D035F
+	ptr gUnk_080D031B
+	ptr gUnk_080D032C
+	ptr gUnk_080D033D
+	ptr gUnk_080D034E
+	ptr gUnk_080D035F
 
 gUnk_080D0404:: @ 080D0404
-	.4byte gUnk_080D0370
-	.4byte gUnk_080D0381
-	.4byte gUnk_080D0392
-	.4byte gUnk_080D03A3
-	.4byte 00000000
+	ptr gUnk_080D0370
+	ptr gUnk_080D0381
+	ptr gUnk_080D0392
+	ptr gUnk_080D03A3
+	ptr 00000000

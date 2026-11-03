@@ -2,6 +2,7 @@
 #define TOOLS_FILE_H
 
 #include <cstdio>
+#include <filesystem>
 #include <memory>
 #include <string>
 #include <string_view>
@@ -19,6 +20,11 @@ inline file_ptr_t open_file(std::string_view filename, std::string_view mode) {
 
 inline file_ptr_t open_file(const std::string& filename, std::string_view mode) {
     return { std::fopen(filename.c_str(), mode.data()), file_ptr_deleter };
+}
+
+// A path does not convert to std::string implicitly on Windows.
+inline file_ptr_t open_file(const std::filesystem::path& filename, std::string_view mode) {
+    return open_file(filename.string(), mode);
 }
 
 } // namespace util

@@ -20,12 +20,12 @@ gSpriteAnimations_Mama_3:: @ 081138B0
 	.include "animations/gSpriteAnimations_Mama_3.s"
 
 gSpriteAnimations_Mama:: @ 081138B8
-	.4byte gSpriteAnimations_Mama_0
-	.4byte gSpriteAnimations_Mama_1
-	.4byte gSpriteAnimations_Mama_2
-	.4byte gSpriteAnimations_Mama_3
-	.4byte gSpriteAnimations_Mama_4
-	.4byte gSpriteAnimations_Mama_4
-	.4byte gSpriteAnimations_Mama_4
-	.4byte gSpriteAnimations_Mama_4
-	.4byte 00000000
+	ptr gSpriteAnimations_Mama_0
+	ptr gSpriteAnimations_Mama_1
+	ptr gSpriteAnimations_Mama_2
+	ptr gSpriteAnimations_Mama_3
+	ptr gSpriteAnimations_Mama_4
+	ptr gSpriteAnimations_Mama_4
+	ptr gSpriteAnimations_Mama_4
+	ptr gSpriteAnimations_Mama_4
+	ptr 00000000

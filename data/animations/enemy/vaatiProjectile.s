@@ -14,7 +14,7 @@ gSpriteAnimations_VaatiProjectile_2:: @ 080D06B2
 	.include "animations/gSpriteAnimations_VaatiProjectile_2.s"
 
 gSpriteAnimations_VaatiProjectile:: @ 080D06D0
-	.4byte gSpriteAnimations_VaatiProjectile_0
-	.4byte gSpriteAnimations_VaatiProjectile_1
-	.4byte gSpriteAnimations_VaatiProjectile_2
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiProjectile_0
+	ptr gSpriteAnimations_VaatiProjectile_1
+	ptr gSpriteAnimations_VaatiProjectile_2
+	ptr 00000000

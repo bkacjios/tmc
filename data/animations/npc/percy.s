@@ -29,20 +29,20 @@ gSpriteAnimations_Percy_13:: @ 08112F2F
 	.include "animations/gSpriteAnimations_Percy_13.s"
 
 gSpriteAnimations_Percy:: @ 08112F34
-	.4byte gSpriteAnimations_Percy_0
-	.4byte gSpriteAnimations_Percy_0
-	.4byte gSpriteAnimations_Percy_0
-	.4byte gSpriteAnimations_Percy_0
-	.4byte gSpriteAnimations_Percy_4
-	.4byte gSpriteAnimations_Percy_5
-	.4byte gSpriteAnimations_Percy_4
-	.4byte gSpriteAnimations_Percy_7
-	.4byte gSpriteAnimations_Percy_8
-	.4byte gSpriteAnimations_Percy_8
-	.4byte gSpriteAnimations_Percy_8
-	.4byte gSpriteAnimations_Percy_8
-	.4byte gSpriteAnimations_Percy_12
-	.4byte gSpriteAnimations_Percy_13
-	.4byte gSpriteAnimations_Percy_12
-	.4byte gSpriteAnimations_Percy_15
-	.4byte 00000000
+	ptr gSpriteAnimations_Percy_0
+	ptr gSpriteAnimations_Percy_0
+	ptr gSpriteAnimations_Percy_0
+	ptr gSpriteAnimations_Percy_0
+	ptr gSpriteAnimations_Percy_4
+	ptr gSpriteAnimations_Percy_5
+	ptr gSpriteAnimations_Percy_4
+	ptr gSpriteAnimations_Percy_7
+	ptr gSpriteAnimations_Percy_8
+	ptr gSpriteAnimations_Percy_8
+	ptr gSpriteAnimations_Percy_8
+	ptr gSpriteAnimations_Percy_8
+	ptr gSpriteAnimations_Percy_12
+	ptr gSpriteAnimations_Percy_13
+	ptr gSpriteAnimations_Percy_12
+	ptr gSpriteAnimations_Percy_15
+	ptr 00000000

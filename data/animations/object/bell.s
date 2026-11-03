@@ -8,5 +8,5 @@ gSpriteAnimations_Bell_0:: @ 0812338C
 	.include "animations/gSpriteAnimations_Bell_0.s"
 
 gSpriteAnimations_Bell:: @ 081233B0
-	.4byte gSpriteAnimations_Bell_0
+	ptr gSpriteAnimations_Bell_0
 	.include "animations/gSpriteAnimations_Bell.s"

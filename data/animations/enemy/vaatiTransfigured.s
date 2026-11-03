@@ -11,12 +11,12 @@ gSpriteAnimations_VaatiTransfigured_0_4:: @ 080D0BB5
 	.include "animations/gSpriteAnimations_VaatiTransfigured_0_4.s"
 
 gSpriteAnimations_VaatiTransfigured_0:: @ 080D0BC4
-	.4byte gSpriteAnimations_VaatiTransfigured_0_0
-	.4byte gSpriteAnimations_VaatiTransfigured_0_0
-	.4byte gSpriteAnimations_VaatiTransfigured_0_0
-	.4byte gSpriteAnimations_VaatiTransfigured_0_0
-	.4byte gSpriteAnimations_VaatiTransfigured_0_4
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiTransfigured_0_0
+	ptr gSpriteAnimations_VaatiTransfigured_0_0
+	ptr gSpriteAnimations_VaatiTransfigured_0_0
+	ptr gSpriteAnimations_VaatiTransfigured_0_0
+	ptr gSpriteAnimations_VaatiTransfigured_0_4
+	ptr 00000000
 
 gSpriteAnimations_VaatiTransfigured_2_0:: @ 080D0BDC
 	.include "animations/gSpriteAnimations_VaatiTransfigured_2_0.s"
@@ -37,16 +37,16 @@ gSpriteAnimations_VaatiTransfigured_2_8:: @ 080D0BFC
 	.include "animations/gSpriteAnimations_VaatiTransfigured_2_8.s"
 
 gSpriteAnimations_VaatiTransfigured_2:: @ 080D0C0C
-	.4byte gSpriteAnimations_VaatiTransfigured_2_0
-	.4byte gSpriteAnimations_VaatiTransfigured_2_0
-	.4byte gSpriteAnimations_VaatiTransfigured_2_0
-	.4byte gSpriteAnimations_VaatiTransfigured_2_0
-	.4byte gSpriteAnimations_VaatiTransfigured_2_4
-	.4byte gSpriteAnimations_VaatiTransfigured_2_5
-	.4byte gSpriteAnimations_VaatiTransfigured_2_6
-	.4byte gSpriteAnimations_VaatiTransfigured_2_7
-	.4byte gSpriteAnimations_VaatiTransfigured_2_8
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiTransfigured_2_0
+	ptr gSpriteAnimations_VaatiTransfigured_2_0
+	ptr gSpriteAnimations_VaatiTransfigured_2_0
+	ptr gSpriteAnimations_VaatiTransfigured_2_0
+	ptr gSpriteAnimations_VaatiTransfigured_2_4
+	ptr gSpriteAnimations_VaatiTransfigured_2_5
+	ptr gSpriteAnimations_VaatiTransfigured_2_6
+	ptr gSpriteAnimations_VaatiTransfigured_2_7
+	ptr gSpriteAnimations_VaatiTransfigured_2_8
+	ptr 00000000
 
 gSpriteAnimations_VaatiTransfigured_1_0:: @ 080D0C34
 	.include "animations/gSpriteAnimations_VaatiTransfigured_1_0.s"
@@ -55,12 +55,12 @@ gSpriteAnimations_VaatiTransfigured_1_1:: @ 080D0C55
 	.include "animations/gSpriteAnimations_VaatiTransfigured_1_1.s"
 
 gSpriteAnimations_VaatiTransfigured_1:: @ 080D0C88
-	.4byte gSpriteAnimations_VaatiTransfigured_1_0
-	.4byte gSpriteAnimations_VaatiTransfigured_1_1
-	.4byte gSpriteAnimations_VaatiTransfigured_1_0
-	.4byte gSpriteAnimations_VaatiTransfigured_1_0
-	.4byte gSpriteAnimations_VaatiTransfigured_1_0
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiTransfigured_1_0
+	ptr gSpriteAnimations_VaatiTransfigured_1_1
+	ptr gSpriteAnimations_VaatiTransfigured_1_0
+	ptr gSpriteAnimations_VaatiTransfigured_1_0
+	ptr gSpriteAnimations_VaatiTransfigured_1_0
+	ptr 00000000
 
 gSpriteAnimations_VaatiTransfigured_3_0:: @ 080D0CA0
 	.include "animations/gSpriteAnimations_VaatiTransfigured_3_0.s"
@@ -75,18 +75,18 @@ gSpriteAnimations_VaatiTransfigured_3_4:: @ 080D0CE6
 	.include "animations/gSpriteAnimations_VaatiTransfigured_3_4.s"
 
 gSpriteAnimations_VaatiTransfigured_3:: @ 080D0CF4
-	.4byte gSpriteAnimations_VaatiTransfigured_3_0
-	.4byte gSpriteAnimations_VaatiTransfigured_3_0
-	.4byte gSpriteAnimations_VaatiTransfigured_3_2
-	.4byte gSpriteAnimations_VaatiTransfigured_3_3
-	.4byte gSpriteAnimations_VaatiTransfigured_3_4
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiTransfigured_3_0
+	ptr gSpriteAnimations_VaatiTransfigured_3_0
+	ptr gSpriteAnimations_VaatiTransfigured_3_2
+	ptr gSpriteAnimations_VaatiTransfigured_3_3
+	ptr gSpriteAnimations_VaatiTransfigured_3_4
+	ptr 00000000
 
 gSpriteAnimations_VaatiTransfigured_4_0:: @ 080D0D0C
 	.include "animations/gSpriteAnimations_VaatiTransfigured_4_0.s"
 
 gSpriteAnimations_VaatiTransfigured_4:: @ 080D0D40
-	.4byte gSpriteAnimations_VaatiTransfigured_4_0
+	ptr gSpriteAnimations_VaatiTransfigured_4_0
 	.include "animations/gSpriteAnimations_VaatiTransfigured_4.s"
 
 gSpriteAnimations_VaatiTransfigured_5_0:: @ 080D0D48
@@ -102,8 +102,8 @@ gSpriteAnimations_VaatiTransfigured_5_3:: @ 080D0DA1
 	.include "animations/gSpriteAnimations_VaatiTransfigured_5_3.s"
 
 gSpriteAnimations_VaatiTransfigured_5:: @ 080D0DB0
-	.4byte gSpriteAnimations_VaatiTransfigured_5_0
-	.4byte gSpriteAnimations_VaatiTransfigured_5_1
-	.4byte gSpriteAnimations_VaatiTransfigured_5_2
-	.4byte gSpriteAnimations_VaatiTransfigured_5_3
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiTransfigured_5_0
+	ptr gSpriteAnimations_VaatiTransfigured_5_1
+	ptr gSpriteAnimations_VaatiTransfigured_5_2
+	ptr gSpriteAnimations_VaatiTransfigured_5_3
+	ptr 00000000

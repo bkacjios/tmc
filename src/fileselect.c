@@ -368,6 +368,34 @@ void SetActiveSave(u32 idx) {
     LoadOptionsFromSave(idx);
 }
 
+#ifdef PLATFORM_PC
+void PcSettingsMenu(u8* msgSpeed, u8* brightness);
+u32 WriteSaveFile(u32 index, SaveFile* saveFile);
+
+// The settings menu replaces the options screen. The file's options it
+// changed are saved right away (the PC's save memory is written at once).
+static void OpenFileOptions(u32 idx) {
+    SaveFile* file = &gMapDataBottomSpecial.saves[idx];
+    u8 msgSpeed = file->msg_speed;
+    u8 brightness = file->brightness;
+
+    PcSettingsMenu(&file->msg_speed, &file->brightness);
+    SetActiveSave(idx);
+    if (file->msg_speed == msgSpeed && file->brightness == brightness)
+        return;
+    InitDMA();
+    if (WriteSaveFile(idx, &gSave) == 1) {
+        SoundReq(SFX_TEXTBOX_SELECT);
+    } else {
+        file->msg_speed = msgSpeed;
+        file->brightness = brightness;
+        SetActiveSave(idx);
+        SoundReq(SFX_MENU_ERROR);
+    }
+    InitVBlankDMA();
+}
+#endif
+
 void FileSelectTask(void) {
     FlushSprites();
     sTaskHandlers[gMain.state]();
@@ -650,7 +678,11 @@ void sub_08050940(void) {
             break;
         case R_BUTTON:
             if (gMapDataBottomSpecial.saveStatus[row_idx] == SAVE_VALID)
+#ifdef PLATFORM_PC
+                OpenFileOptions(row_idx);
+#else
                 mode = STATE_OPTIONS;
+#endif
             break;
         case A_BUTTON:
         case START_BUTTON:

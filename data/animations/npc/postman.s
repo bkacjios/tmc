@@ -29,12 +29,12 @@ gSpriteAnimations_Postman_7:: @ 0810ABC7
 	.include "animations/gSpriteAnimations_Postman_7.s"
 
 gSpriteAnimations_Postman:: @ 0810ABF8
-	.4byte gSpriteAnimations_Postman_0
-	.4byte gSpriteAnimations_Postman_1
-	.4byte gSpriteAnimations_Postman_2
-	.4byte gSpriteAnimations_Postman_3
-	.4byte gSpriteAnimations_Postman_4
-	.4byte gSpriteAnimations_Postman_5
-	.4byte gSpriteAnimations_Postman_6
-	.4byte gSpriteAnimations_Postman_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Postman_0
+	ptr gSpriteAnimations_Postman_1
+	ptr gSpriteAnimations_Postman_2
+	ptr gSpriteAnimations_Postman_3
+	ptr gSpriteAnimations_Postman_4
+	ptr gSpriteAnimations_Postman_5
+	ptr gSpriteAnimations_Postman_6
+	ptr gSpriteAnimations_Postman_7
+	ptr 00000000

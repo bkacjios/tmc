@@ -14,7 +14,7 @@ gSpriteAnimations_VaatiBall_2:: @ 080D166E
 	.include "animations/gSpriteAnimations_VaatiBall_2.s"
 
 gSpriteAnimations_VaatiBall:: @ 080D1694
-	.4byte gSpriteAnimations_VaatiBall_0
-	.4byte gSpriteAnimations_VaatiBall_1
-	.4byte gSpriteAnimations_VaatiBall_2
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiBall_0
+	ptr gSpriteAnimations_VaatiBall_1
+	ptr gSpriteAnimations_VaatiBall_2
+	ptr 00000000

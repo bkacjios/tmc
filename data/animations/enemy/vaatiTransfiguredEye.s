@@ -47,20 +47,20 @@ gSpriteAnimations_Enemy5A_14:: @ 080D19AD
 	.include "animations/gSpriteAnimations_Enemy5A_14.s"
 
 gSpriteAnimations_Enemy5A:: @ 080D19B8
-	.4byte gSpriteAnimations_Enemy5A_0
-	.4byte gSpriteAnimations_Enemy5A_1
-	.4byte gSpriteAnimations_Enemy5A_2
-	.4byte gSpriteAnimations_Enemy5A_3
-	.4byte gSpriteAnimations_Enemy5A_4
-	.4byte gSpriteAnimations_Enemy5A_5
-	.4byte gSpriteAnimations_Enemy5A_6
-	.4byte gSpriteAnimations_Enemy5A_2
-	.4byte gSpriteAnimations_Enemy5A_8
-	.4byte gSpriteAnimations_Enemy5A_9
-	.4byte gSpriteAnimations_Enemy5A_10
-	.4byte gSpriteAnimations_Enemy5A_11
-	.4byte gSpriteAnimations_Enemy5A_12
-	.4byte gSpriteAnimations_Enemy5A_13
-	.4byte gSpriteAnimations_Enemy5A_14
-	.4byte gSpriteAnimations_Enemy5A_10
-	.4byte 00000000
+	ptr gSpriteAnimations_Enemy5A_0
+	ptr gSpriteAnimations_Enemy5A_1
+	ptr gSpriteAnimations_Enemy5A_2
+	ptr gSpriteAnimations_Enemy5A_3
+	ptr gSpriteAnimations_Enemy5A_4
+	ptr gSpriteAnimations_Enemy5A_5
+	ptr gSpriteAnimations_Enemy5A_6
+	ptr gSpriteAnimations_Enemy5A_2
+	ptr gSpriteAnimations_Enemy5A_8
+	ptr gSpriteAnimations_Enemy5A_9
+	ptr gSpriteAnimations_Enemy5A_10
+	ptr gSpriteAnimations_Enemy5A_11
+	ptr gSpriteAnimations_Enemy5A_12
+	ptr gSpriteAnimations_Enemy5A_13
+	ptr gSpriteAnimations_Enemy5A_14
+	ptr gSpriteAnimations_Enemy5A_10
+	ptr 00000000

@@ -23,13 +23,13 @@ gSpriteAnimations_MoleMittsParticle_4:: @ 081209BC
 	.include "animations/gSpriteAnimations_MoleMittsParticle_4.s"
 
 gSpriteAnimations_MoleMittsParticle:: @ 081209E8
-	.4byte gSpriteAnimations_MoleMittsParticle_0
-	.4byte gSpriteAnimations_MoleMittsParticle_1
-	.4byte gSpriteAnimations_MoleMittsParticle_2
-	.4byte gSpriteAnimations_MoleMittsParticle_1
-	.4byte gSpriteAnimations_MoleMittsParticle_4
-	.4byte gSpriteAnimations_MoleMittsParticle_5
-	.4byte gSpriteAnimations_MoleMittsParticle_6
-	.4byte gSpriteAnimations_MoleMittsParticle_5
-	.4byte 00000000
+	ptr gSpriteAnimations_MoleMittsParticle_0
+	ptr gSpriteAnimations_MoleMittsParticle_1
+	ptr gSpriteAnimations_MoleMittsParticle_2
+	ptr gSpriteAnimations_MoleMittsParticle_1
+	ptr gSpriteAnimations_MoleMittsParticle_4
+	ptr gSpriteAnimations_MoleMittsParticle_5
+	ptr gSpriteAnimations_MoleMittsParticle_6
+	ptr gSpriteAnimations_MoleMittsParticle_5
+	ptr 00000000
 

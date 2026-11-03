@@ -28,6 +28,14 @@ typedef u8 bool8;
 typedef u16 bool16;
 typedef u32 bool32;
 
+// An integer that holds an address in data, such as an entity's script. It is
+// pointer-sized on the PC (8 bytes in the 64-bit build).
+#ifdef PLATFORM_PC
+typedef uintptr_t uptr;
+#else
+typedef u32 uptr;
+#endif
+
 struct BgCnt {
     u16 priority : 2;
     u16 charBaseBlock : 2;

@@ -59,6 +59,11 @@ bool32 sub_08079E90(u32);
 void* CreateItemGetPlayerItemWithParent(ItemBehavior*);
 u32 sub_08079FD4(Entity*, u32);
 void LoadRoomGfx(void);
+#ifdef PLATFORM_PC
+void PcOracleLoadTileSet(void);
+void PcOracleLoadMap(void);
+void PcOracleApplyCollision(void);
+#endif
 void sub_0807AAF8(Entity*, u32);
 void sub_0807A750(u32, u32, const u8*, u32);
 
@@ -132,7 +137,6 @@ extern const u8 gUnk_0811BFE0[];
 extern const u8 gUnk_08007DF4[];
 extern const u8 gUnk_080084BC[];
 
-extern InteractableObject gInteractableObjects[];
 
 u32 sub_0807A180(Entity*, Entity*, u32, u32);
 
@@ -1222,7 +1226,7 @@ InteractableObject* sub_080784E4(void) {
     interactY = gPlayerEntity.base.y.HALF.HI + interactOffsets[1];
 
     for (index = 0; index < 0x20; index++) {
-        iObject = gInteractableObjects + index;
+        iObject = gPossibleInteraction.candidates + index;
         entity = iObject->entity;
         if (entity == NULL)
             continue;
@@ -3853,6 +3857,9 @@ void LoadRoomTileSet(void) {
             tileIndices[*tileTypes] = index;
         }
     }
+#ifdef PLATFORM_PC
+    PcOracleLoadTileSet();
+#endif
 }
 
 void LoadRoomGfx(void) {
@@ -3870,6 +3877,9 @@ void LoadRoomGfx(void) {
     MemClear(&gMapDataBottomSpecial, 0x8000);
     MemClear(&gMapDataTopSpecial, 0x8000);
     LoadMapData((gArea.pCurrentRoomInfo)->map);
+#ifdef PLATFORM_PC
+    PcOracleLoadMap();
+#endif
     if (gMapBottom.mapData[0] != 0xffff) {
         sub_0807C8B0(gMapBottom.mapData, roomControls->width / 16, roomControls->height / 16);
         sub_0807C8B0(gMapTop.mapData, roomControls->width / 16, roomControls->height / 16);
@@ -3905,6 +3915,9 @@ void LoadRoomGfx(void) {
     CreateCollisionDataBorderAroundRoom();
     FillActTileForLayer(&gMapBottom);
     FillActTileForLayer(&gMapTop);
+#ifdef PLATFORM_PC
+    PcOracleApplyCollision();
+#endif
     if (!clearBottomMap) {
         // Render the complete bottom and top tileMaps into the tileMaps.
         RenderMapLayerToSubTileMap(gMapDataBottomSpecial, &gMapBottom);
@@ -4114,7 +4127,7 @@ void sub_0807C69C(u8* data, u32 width, u32 height) {
 
     for (index = 0; index < height; index++) {
         for (innerIndex = 0; innerIndex < width; innerIndex++) {
-            ptr1[-innerIndex] = ptr2[-innerIndex];
+            ptr1[-(s32)innerIndex] = ptr2[-(s32)innerIndex];
         }
         ptr1 -= 0x40;
         ptr2 -= width;
@@ -4248,7 +4261,7 @@ void sub_0807C8B0(u16* data, u32 width, u32 height) {
         src_ptr_cpy = src_ptr; //[index * -width];
         dst_ptr_cpy = dst_ptr; //[index * -0x40];
         for (innerIndex = 0; innerIndex < width; innerIndex++) {
-            dst_ptr_cpy[-innerIndex] = src_ptr_cpy[-innerIndex];
+            dst_ptr_cpy[-(s32)innerIndex] = src_ptr_cpy[-(s32)innerIndex];
         }
         dst_ptr -= 0x40;
         src_ptr -= width;
@@ -4256,7 +4269,7 @@ void sub_0807C8B0(u16* data, u32 width, u32 height) {
 
     diff = 0x40 - width;
     for (index = 0; index < 0x40; index++) {
-        dst_ptr = data + width - index * -0x40;
+        dst_ptr = data + width + index * 0x40;
 
         for (innerIndex = 0; innerIndex < diff; innerIndex++) {
             dst_ptr[innerIndex] = 0;

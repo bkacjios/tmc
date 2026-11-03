@@ -20,16 +20,16 @@ gSpriteAnimations_Epona_8:: @ 081100B8
 	.include "animations/gSpriteAnimations_Epona_8.s"
 
 gSpriteAnimations_Epona:: @ 081100E4
-	.4byte gSpriteAnimations_Epona_0
-	.4byte gSpriteAnimations_Epona_1
-	.4byte gSpriteAnimations_Epona_2
-	.4byte gSpriteAnimations_Epona_1
-	.4byte gSpriteAnimations_Epona_4
-	.4byte gSpriteAnimations_Epona_4
-	.4byte gSpriteAnimations_Epona_4
-	.4byte gSpriteAnimations_Epona_4
-	.4byte gSpriteAnimations_Epona_8
-	.4byte gSpriteAnimations_Epona_8
-	.4byte gSpriteAnimations_Epona_8
-	.4byte gSpriteAnimations_Epona_8
-	.4byte 00000000
+	ptr gSpriteAnimations_Epona_0
+	ptr gSpriteAnimations_Epona_1
+	ptr gSpriteAnimations_Epona_2
+	ptr gSpriteAnimations_Epona_1
+	ptr gSpriteAnimations_Epona_4
+	ptr gSpriteAnimations_Epona_4
+	ptr gSpriteAnimations_Epona_4
+	ptr gSpriteAnimations_Epona_4
+	ptr gSpriteAnimations_Epona_8
+	ptr gSpriteAnimations_Epona_8
+	ptr gSpriteAnimations_Epona_8
+	ptr gSpriteAnimations_Epona_8
+	ptr 00000000

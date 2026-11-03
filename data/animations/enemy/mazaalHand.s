@@ -36,14 +36,14 @@ gSpriteAnimations_MazaalHand_9:: @ 080CF002
 	.include "animations/gSpriteAnimations_MazaalHand_9.s"
 
 gSpriteAnimations_MazaalHand:: @ 080CF014
-	.4byte gSpriteAnimations_MazaalHand_0
-	.4byte gSpriteAnimations_MazaalHand_1
-	.4byte gSpriteAnimations_MazaalHand_2
-	.4byte gSpriteAnimations_MazaalHand_3
-	.4byte gSpriteAnimations_MazaalHand_4
-	.4byte gSpriteAnimations_MazaalHand_5
-	.4byte gSpriteAnimations_MazaalHand_6
-	.4byte gSpriteAnimations_MazaalHand_7
-	.4byte gSpriteAnimations_MazaalHand_8
-	.4byte gSpriteAnimations_MazaalHand_9
-	.4byte 00000000
+	ptr gSpriteAnimations_MazaalHand_0
+	ptr gSpriteAnimations_MazaalHand_1
+	ptr gSpriteAnimations_MazaalHand_2
+	ptr gSpriteAnimations_MazaalHand_3
+	ptr gSpriteAnimations_MazaalHand_4
+	ptr gSpriteAnimations_MazaalHand_5
+	ptr gSpriteAnimations_MazaalHand_6
+	ptr gSpriteAnimations_MazaalHand_7
+	ptr gSpriteAnimations_MazaalHand_8
+	ptr gSpriteAnimations_MazaalHand_9
+	ptr 00000000

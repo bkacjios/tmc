@@ -13,7 +13,6 @@ std::filesystem::path SubTileSetAsset::generateAssetPath() {
 void SubTileSetAsset::convertToHumanReadable(const std::vector<char>& baserom) {
     (void)baserom;
 
-    std::filesystem::path toolsPath = "tools";
     std::vector<std::string> cmd;
 
     std::filesystem::path decompressedPath = path;
@@ -21,16 +20,16 @@ void SubTileSetAsset::convertToHumanReadable(const std::vector<char>& baserom) {
     if (isCompressed()) {
         // First decompress.
         decompressedPath.replace_extension("");
-        cmd.push_back(toolsPath / "bin" / "gbagfx");
-        cmd.push_back(path);
-        cmd.push_back(decompressedPath);
+        cmd.push_back(tool_path("gbagfx"));
+        cmd.push_back(path.string());
+        cmd.push_back(decompressedPath.string());
         check_call(cmd);
         cmd.clear();
     }
 
-    cmd.push_back(toolsPath / "bin" / "gbagfx");
-    cmd.push_back(decompressedPath);
-    cmd.push_back(assetPath);
+    cmd.push_back(tool_path("gbagfx"));
+    cmd.push_back(decompressedPath.string());
+    cmd.push_back(assetPath.string());
     // This creates a better looking tileMap but in some cases not all tiles are used, so it adds additional data when converting back to binary.
     //cmd.push_back("-mwidth");
     //cmd.push_back("32");
@@ -38,7 +37,6 @@ void SubTileSetAsset::convertToHumanReadable(const std::vector<char>& baserom) {
 }
 
 void SubTileSetAsset::buildToBinary() {
-    std::filesystem::path toolsPath = "tools";
     std::vector<std::string> cmd;
 
     std::filesystem::path decompressedPath = path;
@@ -46,17 +44,17 @@ void SubTileSetAsset::buildToBinary() {
         decompressedPath.replace_extension("");
     }
 
-    cmd.push_back(toolsPath / "bin" / "gbagfx");
-    cmd.push_back(assetPath);
-    cmd.push_back(decompressedPath);
+    cmd.push_back(tool_path("gbagfx"));
+    cmd.push_back(assetPath.string());
+    cmd.push_back(decompressedPath.string());
     check_call(cmd);
 
     if (isCompressed()) {
         // Compress.
         cmd.clear();
-        cmd.push_back(toolsPath / "bin" / "gbagfx");
-        cmd.push_back(decompressedPath);
-        cmd.push_back(path);
+        cmd.push_back(tool_path("gbagfx"));
+        cmd.push_back(decompressedPath.string());
+        cmd.push_back(path.string());
         check_call(cmd);
     }
 }

@@ -14,7 +14,7 @@ gSpriteAnimations_CarlovObject_2:: @ 0812141E
 	.include "animations/gSpriteAnimations_CarlovObject_2.s"
 
 gSpriteAnimations_CarlovObject:: @ 08121430
-	.4byte gSpriteAnimations_CarlovObject_0
-	.4byte gSpriteAnimations_CarlovObject_1
-	.4byte gSpriteAnimations_CarlovObject_2
-	.4byte 00000000
+	ptr gSpriteAnimations_CarlovObject_0
+	ptr gSpriteAnimations_CarlovObject_1
+	ptr gSpriteAnimations_CarlovObject_2
+	ptr 00000000

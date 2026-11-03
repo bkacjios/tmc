@@ -28,12 +28,12 @@ gSpriteAnimations_Pesto_7:: @ 080CBF6F
 	.include "animations/gSpriteAnimations_Pesto_7.s"
 
 gSpriteAnimations_Pesto:: @ 080CBF78
-	.4byte gSpriteAnimations_Pesto_0
-	.4byte gSpriteAnimations_Pesto_1
-	.4byte gSpriteAnimations_Pesto_2
-	.4byte gSpriteAnimations_Pesto_3
-	.4byte gSpriteAnimations_Pesto_4
-	.4byte gSpriteAnimations_Pesto_5
-	.4byte gSpriteAnimations_Pesto_6
-	.4byte gSpriteAnimations_Pesto_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Pesto_0
+	ptr gSpriteAnimations_Pesto_1
+	ptr gSpriteAnimations_Pesto_2
+	ptr gSpriteAnimations_Pesto_3
+	ptr gSpriteAnimations_Pesto_4
+	ptr gSpriteAnimations_Pesto_5
+	ptr gSpriteAnimations_Pesto_6
+	ptr gSpriteAnimations_Pesto_7
+	ptr 00000000

@@ -26,16 +26,16 @@ gSpriteAnimations_Beedle_11:: @ 0810CA2E
 	.include "animations/gSpriteAnimations_Beedle_11.s"
 
 gSpriteAnimations_Beedle:: @ 0810CA6C
-	.4byte gSpriteAnimations_Beedle_0
-	.4byte gSpriteAnimations_Beedle_0
-	.4byte gSpriteAnimations_Beedle_0
-	.4byte gSpriteAnimations_Beedle_0
-	.4byte gSpriteAnimations_Beedle_4
-	.4byte gSpriteAnimations_Beedle_5
-	.4byte gSpriteAnimations_Beedle_4
-	.4byte gSpriteAnimations_Beedle_7
-	.4byte gSpriteAnimations_Beedle_8
-	.4byte gSpriteAnimations_Beedle_9
-	.4byte gSpriteAnimations_Beedle_8
-	.4byte gSpriteAnimations_Beedle_11
-	.4byte 00000000
+	ptr gSpriteAnimations_Beedle_0
+	ptr gSpriteAnimations_Beedle_0
+	ptr gSpriteAnimations_Beedle_0
+	ptr gSpriteAnimations_Beedle_0
+	ptr gSpriteAnimations_Beedle_4
+	ptr gSpriteAnimations_Beedle_5
+	ptr gSpriteAnimations_Beedle_4
+	ptr gSpriteAnimations_Beedle_7
+	ptr gSpriteAnimations_Beedle_8
+	ptr gSpriteAnimations_Beedle_9
+	ptr gSpriteAnimations_Beedle_8
+	ptr gSpriteAnimations_Beedle_11
+	ptr 00000000

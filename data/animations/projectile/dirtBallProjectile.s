@@ -11,6 +11,6 @@ gSpriteAnimations_DirtBallProjectile_1:: @ 08129775
 	.include "animations/gSpriteAnimations_DirtBallProjectile_1.s"
 
 gSpriteAnimations_DirtBallProjectile:: @ 08129790
-	.4byte gSpriteAnimations_DirtBallProjectile_0
-	.4byte gSpriteAnimations_DirtBallProjectile_1
-	.4byte 00000000
+	ptr gSpriteAnimations_DirtBallProjectile_0
+	ptr gSpriteAnimations_DirtBallProjectile_1
+	ptr 00000000

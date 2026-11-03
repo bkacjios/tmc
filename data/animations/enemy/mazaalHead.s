@@ -26,11 +26,11 @@ gSpriteAnimations_MazaalHead_6:: @ 080CEE57
 	.include "animations/gSpriteAnimations_MazaalHead_6.s"
 
 gSpriteAnimations_MazaalHead:: @ 080CEE70
-	.4byte gSpriteAnimations_MazaalHead_0
-	.4byte gSpriteAnimations_MazaalHead_1
-	.4byte gSpriteAnimations_MazaalHead_2
-	.4byte gSpriteAnimations_MazaalHead_3
-	.4byte gSpriteAnimations_MazaalHead_4
-	.4byte gSpriteAnimations_MazaalHead_5
-	.4byte gSpriteAnimations_MazaalHead_6
-	.4byte 00000000
+	ptr gSpriteAnimations_MazaalHead_0
+	ptr gSpriteAnimations_MazaalHead_1
+	ptr gSpriteAnimations_MazaalHead_2
+	ptr gSpriteAnimations_MazaalHead_3
+	ptr gSpriteAnimations_MazaalHead_4
+	ptr gSpriteAnimations_MazaalHead_5
+	ptr gSpriteAnimations_MazaalHead_6
+	ptr 00000000

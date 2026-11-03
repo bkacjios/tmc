@@ -41,16 +41,16 @@ gSpriteAnimations_Mulldozer_11:: @ 080CEAF1
 	.include "animations/gSpriteAnimations_Mulldozer_11.s"
 
 gSpriteAnimations_Mulldozer:: @ 080CEB04
-	.4byte gSpriteAnimations_Mulldozer_0
-	.4byte gSpriteAnimations_Mulldozer_1
-	.4byte gSpriteAnimations_Mulldozer_2
-	.4byte gSpriteAnimations_Mulldozer_3
-	.4byte gSpriteAnimations_Mulldozer_4
-	.4byte gSpriteAnimations_Mulldozer_5
-	.4byte gSpriteAnimations_Mulldozer_6
-	.4byte gSpriteAnimations_Mulldozer_7
-	.4byte gSpriteAnimations_Mulldozer_8
-	.4byte gSpriteAnimations_Mulldozer_9
-	.4byte gSpriteAnimations_Mulldozer_10
-	.4byte gSpriteAnimations_Mulldozer_11
-	.4byte 00000000
+	ptr gSpriteAnimations_Mulldozer_0
+	ptr gSpriteAnimations_Mulldozer_1
+	ptr gSpriteAnimations_Mulldozer_2
+	ptr gSpriteAnimations_Mulldozer_3
+	ptr gSpriteAnimations_Mulldozer_4
+	ptr gSpriteAnimations_Mulldozer_5
+	ptr gSpriteAnimations_Mulldozer_6
+	ptr gSpriteAnimations_Mulldozer_7
+	ptr gSpriteAnimations_Mulldozer_8
+	ptr gSpriteAnimations_Mulldozer_9
+	ptr gSpriteAnimations_Mulldozer_10
+	ptr gSpriteAnimations_Mulldozer_11
+	ptr 00000000

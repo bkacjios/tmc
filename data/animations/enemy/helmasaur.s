@@ -40,16 +40,16 @@ gSpriteAnimations_Helmasaur_11:: @ 080CD508
 	.include "animations/gSpriteAnimations_Helmasaur_11.s"
 
 gSpriteAnimations_Helmasaur:: @ 080CD50C
-	.4byte gSpriteAnimations_Helmasaur_0
-	.4byte gSpriteAnimations_Helmasaur_1
-	.4byte gSpriteAnimations_Helmasaur_2
-	.4byte gSpriteAnimations_Helmasaur_3
-	.4byte gSpriteAnimations_Helmasaur_4
-	.4byte gSpriteAnimations_Helmasaur_5
-	.4byte gSpriteAnimations_Helmasaur_6
-	.4byte gSpriteAnimations_Helmasaur_7
-	.4byte gSpriteAnimations_Helmasaur_8
-	.4byte gSpriteAnimations_Helmasaur_9
-	.4byte gSpriteAnimations_Helmasaur_10
-	.4byte gSpriteAnimations_Helmasaur_11
-	.4byte 00000000
+	ptr gSpriteAnimations_Helmasaur_0
+	ptr gSpriteAnimations_Helmasaur_1
+	ptr gSpriteAnimations_Helmasaur_2
+	ptr gSpriteAnimations_Helmasaur_3
+	ptr gSpriteAnimations_Helmasaur_4
+	ptr gSpriteAnimations_Helmasaur_5
+	ptr gSpriteAnimations_Helmasaur_6
+	ptr gSpriteAnimations_Helmasaur_7
+	ptr gSpriteAnimations_Helmasaur_8
+	ptr gSpriteAnimations_Helmasaur_9
+	ptr gSpriteAnimations_Helmasaur_10
+	ptr gSpriteAnimations_Helmasaur_11
+	ptr 00000000

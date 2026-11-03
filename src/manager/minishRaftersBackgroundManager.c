@@ -4,6 +4,7 @@
  *
  * @brief Parallax background for minish rafters
  */
+#include "tileMap.h"
 #include "manager/minishRaftersBackgroundManager.h"
 #include "common.h"
 #include "room.h"
@@ -16,8 +17,6 @@ u32 sub_08058244(int);
 void sub_080582A0(u32, u32*, u16*);
 void sub_080582F8(u8*, u8*);
 
-extern u8 gMapDataTopSpecial[];
-extern u32 gUnk_02006F00[];
 
 void MinishRaftersBackgroundManager_Main(MinishRaftersBackgroundManager* this) {
     sub_08058210(this);
@@ -37,7 +36,7 @@ void sub_08058210(MinishRaftersBackgroundManager* this) {
     if (this->unk_3c == tmp)
         return;
     this->unk_3c = tmp;
-    sub_080582A0(tmp, gUnk_02006F00, gBG3Buffer);
+    sub_080582A0(tmp, ((u32*)gMapDataTopSpecialHalf2), gBG3Buffer);
     gScreen.bg1.updated = 1;
 }
 
@@ -66,7 +65,7 @@ void sub_080582A0(u32 unk, u32* unk2, u16* unk3) {
 }
 
 void sub_080582D0(void) {
-    u8* tmp = gMapDataTopSpecial;
+    u8* tmp = (u8*)gMapDataTopSpecial;
     u8* tmp2 = tmp + 0x4000;
     sub_080582F8(tmp, tmp2);
     tmp += 0x800;
@@ -86,7 +85,7 @@ void sub_08058324(u32 unk) {
     LoadPaletteGroup(unk + 0x86);
     LoadGfxGroup(unk + 0x36);
     sub_080582D0();
-    sub_080582A0(sub_08058244(unk), gUnk_02006F00, gBG3Buffer);
+    sub_080582A0(sub_08058244(unk), ((u32*)gMapDataTopSpecialHalf2), gBG3Buffer);
     gScreen.bg1.control = 0x1D47;
     gScreen.bg1.subTileMap = gBG3Buffer;
     gScreen.bg1.updated = 1;

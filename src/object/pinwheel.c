@@ -4,6 +4,7 @@
  *
  * @brief Pinwheel object
  */
+#include "area.h"
 #include "entity.h"
 #include "flags.h"
 #include "object.h"
@@ -17,7 +18,6 @@ typedef struct {
 static const u16 gPinwheelFlags[] = {
     KUMOUE_02_AWASE_01, KUMOUE_02_AWASE_02, KUMOUE_02_AWASE_03, KUMOUE_02_AWASE_04, KUMOUE_02_AWASE_05, BEGIN_1,
 };
-extern u32 gUnk_020342F8;
 
 void Pinwheel_Init(PinwheelEntity* this);
 void Pinwheel_Action1(PinwheelEntity* this);
@@ -31,7 +31,7 @@ void Pinwheel(PinwheelEntity* this) {
     };
     u16 x = super->health;
     if ((x & 0x7f) != 0) {
-        if (ReadBit(&gUnk_020342F8, x - 1) == 0) {
+        if (ReadBit(gArea.filler6, x - 1) == 0) {
             DeleteThisEntity();
         }
     }

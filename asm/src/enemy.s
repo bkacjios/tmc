@@ -153,11 +153,11 @@ _080012BA:
 	.align 2, 0
 
 gUnk_080012C8::
-	.4byte 0x00000000
-_080012CC: .4byte sub_08001214
-_080012D0: .4byte CreateDrownFx
-_080012D4: .4byte CreateLavaDrownFx
-_080012D8: .4byte CreateSwampDrownFx
+	ptr 0x00000000
+_080012CC: ptr sub_08001214
+_080012D0: ptr CreateDrownFx
+_080012D4: ptr CreateLavaDrownFx
+_080012D8: ptr CreateSwampDrownFx
 
 	thumb_func_start sub_080012DC
 sub_080012DC: @ 0x080012DC

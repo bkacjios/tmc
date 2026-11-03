@@ -8,5 +8,5 @@ gSpriteAnimations_BakerOven_0:: @ 08123E2C
 	.include "animations/gSpriteAnimations_BakerOven_0.s"
 
 gSpriteAnimations_BakerOven:: @ 08123E78
-	.4byte gSpriteAnimations_BakerOven_0
-	.4byte 00000000
+	ptr gSpriteAnimations_BakerOven_0
+	ptr 00000000

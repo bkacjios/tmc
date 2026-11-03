@@ -21,10 +21,10 @@ gUnk_080B4410:: @ 080B4410
 .endif
 
 gUnk_080B4458:: @ 080B4458
-	.4byte sub_08019698
-	.4byte sub_08019740
-	.4byte sub_08019764
-	.4byte sub_080197A0
+	ptr sub_08019698
+	ptr sub_08019740
+	ptr sub_08019764
+	ptr sub_080197A0
 
 gUnk_080B4468:: @ 080B4468
 	.incbin "data_080B4410/gUnk_080B4468.bin"

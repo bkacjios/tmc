@@ -14,20 +14,20 @@ gSpriteAnimations_CastorWildsStatue_1:: @ 08110EA6
 	.include "animations/gSpriteAnimations_CastorWildsStatue_1.s"
 
 gSpriteAnimations_CastorWildsStatue:: @ 08110EAC
-	.4byte gSpriteAnimations_CastorWildsStatue_0
-	.4byte gSpriteAnimations_CastorWildsStatue_1
-	.4byte gSpriteAnimations_CastorWildsStatue_0
-	.4byte gSpriteAnimations_CastorWildsStatue_1
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte gSpriteAnimations_CastorWildsStatue_0
-	.4byte gSpriteAnimations_CastorWildsStatue_1
-	.4byte gSpriteAnimations_CastorWildsStatue_0
-	.4byte gSpriteAnimations_CastorWildsStatue_1
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte gSpriteAnimations_CastorWildsStatue_4
-	.4byte 00000000
+	ptr gSpriteAnimations_CastorWildsStatue_0
+	ptr gSpriteAnimations_CastorWildsStatue_1
+	ptr gSpriteAnimations_CastorWildsStatue_0
+	ptr gSpriteAnimations_CastorWildsStatue_1
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr gSpriteAnimations_CastorWildsStatue_0
+	ptr gSpriteAnimations_CastorWildsStatue_1
+	ptr gSpriteAnimations_CastorWildsStatue_0
+	ptr gSpriteAnimations_CastorWildsStatue_1
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr gSpriteAnimations_CastorWildsStatue_4
+	ptr 00000000

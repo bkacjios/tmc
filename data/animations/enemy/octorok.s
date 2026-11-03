@@ -29,12 +29,12 @@ gSpriteAnimations_Octorok_7:: @ 080CA1E3
 	.include "animations/gSpriteAnimations_Octorok_7.s"
 
 gSpriteAnimations_Octorok:: @ 080CA1F8
-	.4byte gSpriteAnimations_Octorok_0
-	.4byte gSpriteAnimations_Octorok_1
-	.4byte gSpriteAnimations_Octorok_2
-	.4byte gSpriteAnimations_Octorok_3
-	.4byte gSpriteAnimations_Octorok_4
-	.4byte gSpriteAnimations_Octorok_5
-	.4byte gSpriteAnimations_Octorok_6
-	.4byte gSpriteAnimations_Octorok_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Octorok_0
+	ptr gSpriteAnimations_Octorok_1
+	ptr gSpriteAnimations_Octorok_2
+	ptr gSpriteAnimations_Octorok_3
+	ptr gSpriteAnimations_Octorok_4
+	ptr gSpriteAnimations_Octorok_5
+	ptr gSpriteAnimations_Octorok_6
+	ptr gSpriteAnimations_Octorok_7
+	ptr 00000000

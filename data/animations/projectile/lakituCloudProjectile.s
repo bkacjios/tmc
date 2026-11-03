@@ -17,12 +17,12 @@ gSpriteAnimations_LakituCloudProjectile_5:: @ 08129BB7
 	.include "animations/gSpriteAnimations_LakituCloudProjectile_5.s"
 
 gSpriteAnimations_LakituCloudProjectile:: @ 08129BC8
-	.4byte gSpriteAnimations_LakituCloudProjectile_0
-	.4byte gSpriteAnimations_LakituCloudProjectile_1
-	.4byte gSpriteAnimations_LakituCloudProjectile_0
-	.4byte gSpriteAnimations_LakituCloudProjectile_1
-	.4byte gSpriteAnimations_LakituCloudProjectile_4
-	.4byte gSpriteAnimations_LakituCloudProjectile_5
-	.4byte gSpriteAnimations_LakituCloudProjectile_4
-	.4byte gSpriteAnimations_LakituCloudProjectile_5
-	.4byte 00000000
+	ptr gSpriteAnimations_LakituCloudProjectile_0
+	ptr gSpriteAnimations_LakituCloudProjectile_1
+	ptr gSpriteAnimations_LakituCloudProjectile_0
+	ptr gSpriteAnimations_LakituCloudProjectile_1
+	ptr gSpriteAnimations_LakituCloudProjectile_4
+	ptr gSpriteAnimations_LakituCloudProjectile_5
+	ptr gSpriteAnimations_LakituCloudProjectile_4
+	ptr gSpriteAnimations_LakituCloudProjectile_5
+	ptr 00000000

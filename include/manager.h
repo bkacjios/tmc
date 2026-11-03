@@ -29,6 +29,13 @@ typedef struct Manager {
     /*0x1c*/ u8 unused2[0x4];      /**< Not used by any manager. */
 } Manager;
 
+// A manager slot: managers are allocated from these. The fields a manager adds
+// after base take 0x20 bytes on the GBA, up to twice that with 8-byte pointers.
+typedef struct {
+    Manager base;
+    u8 fields[0x20 / 4 * sizeof(void*)];
+} ManagerSlot;
+
 typedef enum {
     MANAGER_NONE,
     LIGHT_RAY_MANAGER,

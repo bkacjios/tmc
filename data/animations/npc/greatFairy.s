@@ -8,8 +8,8 @@ gUnk_0812079C:: @ 0812079C
 	.incbin "greatFairy/gUnk_0812079C.bin"
 
 gUnk_081207A4:: @ 081207A4
-	.4byte sub_080872AC
-	.4byte sub_080872F8
+	ptr sub_080872AC
+	ptr sub_080872F8
 
 gUnk_081207AC:: @ 081207AC
 	.incbin "greatFairy/gUnk_081207AC.bin"
@@ -45,13 +45,13 @@ gSpriteAnimations_GreatFairy_8:: @ 08120855
 	.include "animations/gSpriteAnimations_GreatFairy_8.s"
 
 gSpriteAnimations_GreatFairy:: @ 08120878
-	.4byte gSpriteAnimations_GreatFairy_0
-	.4byte gSpriteAnimations_GreatFairy_1
-	.4byte gSpriteAnimations_GreatFairy_2
-	.4byte gSpriteAnimations_GreatFairy_3
-	.4byte gSpriteAnimations_GreatFairy_4
-	.4byte gSpriteAnimations_GreatFairy_5
-	.4byte gSpriteAnimations_GreatFairy_6
-	.4byte gSpriteAnimations_GreatFairy_7
-	.4byte gSpriteAnimations_GreatFairy_8
-	.4byte gSpriteAnimations_GreatFairy_9
+	ptr gSpriteAnimations_GreatFairy_0
+	ptr gSpriteAnimations_GreatFairy_1
+	ptr gSpriteAnimations_GreatFairy_2
+	ptr gSpriteAnimations_GreatFairy_3
+	ptr gSpriteAnimations_GreatFairy_4
+	ptr gSpriteAnimations_GreatFairy_5
+	ptr gSpriteAnimations_GreatFairy_6
+	ptr gSpriteAnimations_GreatFairy_7
+	ptr gSpriteAnimations_GreatFairy_8
+	ptr gSpriteAnimations_GreatFairy_9

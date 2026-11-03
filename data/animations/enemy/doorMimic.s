@@ -22,16 +22,16 @@ gSpriteAnimations_DoorMimic_9:: @ 080CB901
 	.include "animations/gSpriteAnimations_DoorMimic_9.s"
 
 gSpriteAnimations_DoorMimic:: @ 080CB914
-	.4byte gSpriteAnimations_DoorMimic_0
-	.4byte gSpriteAnimations_DoorMimic_1
-	.4byte gSpriteAnimations_DoorMimic_1
-	.4byte gSpriteAnimations_DoorMimic_0
-	.4byte gSpriteAnimations_DoorMimic_4
-	.4byte gSpriteAnimations_DoorMimic_5
-	.4byte gSpriteAnimations_DoorMimic_5
-	.4byte gSpriteAnimations_DoorMimic_4
-	.4byte gSpriteAnimations_DoorMimic_8
-	.4byte gSpriteAnimations_DoorMimic_9
-	.4byte gSpriteAnimations_DoorMimic_9
-	.4byte gSpriteAnimations_DoorMimic_8
-	.4byte 00000000
+	ptr gSpriteAnimations_DoorMimic_0
+	ptr gSpriteAnimations_DoorMimic_1
+	ptr gSpriteAnimations_DoorMimic_1
+	ptr gSpriteAnimations_DoorMimic_0
+	ptr gSpriteAnimations_DoorMimic_4
+	ptr gSpriteAnimations_DoorMimic_5
+	ptr gSpriteAnimations_DoorMimic_5
+	ptr gSpriteAnimations_DoorMimic_4
+	ptr gSpriteAnimations_DoorMimic_8
+	ptr gSpriteAnimations_DoorMimic_9
+	ptr gSpriteAnimations_DoorMimic_9
+	ptr gSpriteAnimations_DoorMimic_8
+	ptr 00000000

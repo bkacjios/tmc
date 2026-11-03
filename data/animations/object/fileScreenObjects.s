@@ -11,6 +11,6 @@ gSpriteAnimations_FileScreenObjects_1:: @ 08121E31
 	.include "animations/gSpriteAnimations_FileScreenObjects_1.s"
 
 gSpriteAnimations_FileScreenObjects:: @ 08121E50
-	.4byte gSpriteAnimations_FileScreenObjects_0
-	.4byte gSpriteAnimations_FileScreenObjects_1
-	.4byte 00000000
+	ptr gSpriteAnimations_FileScreenObjects_0
+	ptr gSpriteAnimations_FileScreenObjects_1
+	ptr 00000000

@@ -18,8 +18,8 @@ gSpriteAnimations_EvilSpirit_4:: @ 08120692
 	.include "animations/gSpriteAnimations_EvilSpirit_4.s"
 
 gSpriteAnimations_EvilSpirit:: @ 08120698
-	.4byte gSpriteAnimations_EvilSpirit_0
-	.4byte gSpriteAnimations_EvilSpirit_1
-	.4byte gSpriteAnimations_EvilSpirit_2
-	.4byte gSpriteAnimations_EvilSpirit_3
-	.4byte gSpriteAnimations_EvilSpirit_4
+	ptr gSpriteAnimations_EvilSpirit_0
+	ptr gSpriteAnimations_EvilSpirit_1
+	ptr gSpriteAnimations_EvilSpirit_2
+	ptr gSpriteAnimations_EvilSpirit_3
+	ptr gSpriteAnimations_EvilSpirit_4

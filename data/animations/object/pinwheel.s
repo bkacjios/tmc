@@ -8,5 +8,5 @@ gSpriteAnimations_Pinwheel_0:: @ 08125068
 	.include "animations/gSpriteAnimations_Pinwheel_0.s"
 
 gSpriteAnimations_Pinwheel:: @ 0812507C
-	.4byte gSpriteAnimations_Pinwheel_0
-	.4byte 00000000
+	ptr gSpriteAnimations_Pinwheel_0
+	ptr 00000000

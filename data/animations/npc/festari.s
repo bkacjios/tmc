@@ -35,17 +35,17 @@ gSpriteAnimations_Festari_12:: @ 08109C59
 	.include "animations/gSpriteAnimations_Festari_12.s"
 
 gSpriteAnimations_Festari:: @ 08109C60
-	.4byte gSpriteAnimations_Festari_0
-	.4byte gSpriteAnimations_Festari_1
-	.4byte gSpriteAnimations_Festari_0
-	.4byte gSpriteAnimations_Festari_3
-	.4byte gSpriteAnimations_Festari_4
-	.4byte gSpriteAnimations_Festari_4
-	.4byte gSpriteAnimations_Festari_4
-	.4byte gSpriteAnimations_Festari_7
-	.4byte gSpriteAnimations_Festari_8
-	.4byte gSpriteAnimations_Festari_9
-	.4byte gSpriteAnimations_Festari_10
-	.4byte gSpriteAnimations_Festari_11
-	.4byte gSpriteAnimations_Festari_12
-	.4byte 00000000
+	ptr gSpriteAnimations_Festari_0
+	ptr gSpriteAnimations_Festari_1
+	ptr gSpriteAnimations_Festari_0
+	ptr gSpriteAnimations_Festari_3
+	ptr gSpriteAnimations_Festari_4
+	ptr gSpriteAnimations_Festari_4
+	ptr gSpriteAnimations_Festari_4
+	ptr gSpriteAnimations_Festari_7
+	ptr gSpriteAnimations_Festari_8
+	ptr gSpriteAnimations_Festari_9
+	ptr gSpriteAnimations_Festari_10
+	ptr gSpriteAnimations_Festari_11
+	ptr gSpriteAnimations_Festari_12
+	ptr 00000000

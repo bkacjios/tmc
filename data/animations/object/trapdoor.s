@@ -11,6 +11,6 @@ gSpriteAnimations_Trapdoor_1:: @ 08123820
 	.include "animations/gSpriteAnimations_Trapdoor_1.s"
 
 gSpriteAnimations_Trapdoor:: @ 08123834
-	.4byte gSpriteAnimations_Trapdoor_0
-	.4byte gSpriteAnimations_Trapdoor_1
-	.4byte 00000000
+	ptr gSpriteAnimations_Trapdoor_0
+	ptr gSpriteAnimations_Trapdoor_1
+	ptr 00000000

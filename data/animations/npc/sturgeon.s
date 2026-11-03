@@ -35,14 +35,14 @@ gSpriteAnimations_Sturgeon_9:: @ 0810FBAD
 	.include "animations/gSpriteAnimations_Sturgeon_9.s"
 
 gSpriteAnimations_Sturgeon:: @ 0810FBD0
-	.4byte gSpriteAnimations_Sturgeon_0
-	.4byte gSpriteAnimations_Sturgeon_1
-	.4byte gSpriteAnimations_Sturgeon_2
-	.4byte gSpriteAnimations_Sturgeon_3
-	.4byte gSpriteAnimations_Sturgeon_4
-	.4byte gSpriteAnimations_Sturgeon_5
-	.4byte gSpriteAnimations_Sturgeon_6
-	.4byte gSpriteAnimations_Sturgeon_7
-	.4byte gSpriteAnimations_Sturgeon_8
-	.4byte gSpriteAnimations_Sturgeon_9
-	.4byte 00000000
+	ptr gSpriteAnimations_Sturgeon_0
+	ptr gSpriteAnimations_Sturgeon_1
+	ptr gSpriteAnimations_Sturgeon_2
+	ptr gSpriteAnimations_Sturgeon_3
+	ptr gSpriteAnimations_Sturgeon_4
+	ptr gSpriteAnimations_Sturgeon_5
+	ptr gSpriteAnimations_Sturgeon_6
+	ptr gSpriteAnimations_Sturgeon_7
+	ptr gSpriteAnimations_Sturgeon_8
+	ptr gSpriteAnimations_Sturgeon_9
+	ptr 00000000

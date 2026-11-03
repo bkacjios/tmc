@@ -17,12 +17,12 @@ gSpriteAnimations_Farore_4:: @ 0810FA03
 	.include "animations/gSpriteAnimations_Farore_4.s"
 
 gSpriteAnimations_Farore:: @ 0810FA14
-	.4byte gSpriteAnimations_Farore_0
-	.4byte gSpriteAnimations_Farore_1
-	.4byte gSpriteAnimations_Farore_0
-	.4byte gSpriteAnimations_Farore_3
-	.4byte gSpriteAnimations_Farore_4
-	.4byte gSpriteAnimations_Farore_4
-	.4byte gSpriteAnimations_Farore_4
-	.4byte gSpriteAnimations_Farore_4
-	.4byte 00000000
+	ptr gSpriteAnimations_Farore_0
+	ptr gSpriteAnimations_Farore_1
+	ptr gSpriteAnimations_Farore_0
+	ptr gSpriteAnimations_Farore_3
+	ptr gSpriteAnimations_Farore_4
+	ptr gSpriteAnimations_Farore_4
+	ptr gSpriteAnimations_Farore_4
+	ptr gSpriteAnimations_Farore_4
+	ptr 00000000

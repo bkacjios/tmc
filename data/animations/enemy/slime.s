@@ -38,15 +38,15 @@ gSpriteAnimations_Slime_10:: @ 080D177D
 	.include "animations/gSpriteAnimations_Slime_10.s"
 
 gSpriteAnimations_Slime:: @ 080D1790
-	.4byte gSpriteAnimations_Slime_0
-	.4byte gSpriteAnimations_Slime_1
-	.4byte gSpriteAnimations_Slime_2
-	.4byte gSpriteAnimations_Slime_3
-	.4byte gSpriteAnimations_Slime_4
-	.4byte gSpriteAnimations_Slime_5
-	.4byte gSpriteAnimations_Slime_6
-	.4byte gSpriteAnimations_Slime_7
-	.4byte gSpriteAnimations_Slime_8
-	.4byte gSpriteAnimations_Slime_9
-	.4byte gSpriteAnimations_Slime_10
-	.4byte 00000000
+	ptr gSpriteAnimations_Slime_0
+	ptr gSpriteAnimations_Slime_1
+	ptr gSpriteAnimations_Slime_2
+	ptr gSpriteAnimations_Slime_3
+	ptr gSpriteAnimations_Slime_4
+	ptr gSpriteAnimations_Slime_5
+	ptr gSpriteAnimations_Slime_6
+	ptr gSpriteAnimations_Slime_7
+	ptr gSpriteAnimations_Slime_8
+	ptr gSpriteAnimations_Slime_9
+	ptr gSpriteAnimations_Slime_10
+	ptr 00000000

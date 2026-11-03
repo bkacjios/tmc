@@ -107,12 +107,25 @@ static void InitOverlays(void) {
     RegisterRamReset(RESET_ALL & ~RESET_EWRAM);
     *(vu16*)BG_PLTT = 0x7FFF;
     REG_WAITCNT = WAITCNT_PREFETCH_ENABLE | WAITCNT_WS0_S_1 | WAITCNT_WS0_N_3;
+#ifdef PLATFORM_PC
+    // The ram_ functions are C on PC, and the tables after them are read in
+    // ROM (asm_intr.c). The 64-bit build keeps only EWRAM's first 0xC0 bytes
+    // at their addresses; RegisterRamReset cleared the other variables (see
+    // tools/pc/gen_linker.py and bios.c).
+#if UINTPTR_MAX > 0xFFFFFFFF
+    size = 0xC0 - 0x30;
+#else
+    size = 0x3FFD0;
+#endif
+    MemClear(gUnk_02000030, size);
+#else
     size = 0x3FFD0;
     MemClear(gUnk_02000030, size);
     size = (u32)RAMFUNCS_END - (u32)sub_080B197C;
     if (size != 0) {
         MemCopy(sub_080B197C, ram_sub_080B197C, size);
     }
+#endif
 
     size = (u32)gCopyToEndOfEwram_End - (u32)gCopyToEndOfEwram_Start;
     if (size != 0) {

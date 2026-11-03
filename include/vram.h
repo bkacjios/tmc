@@ -65,6 +65,22 @@ typedef struct {
     u8 unk7;
 } OAMObj;
 
+// Entities to draw this frame, queued by layer and sorted when drawn.
+typedef struct {
+    u8 count;
+    Entity* entities[0x50];
+} EntityDrawList;
+
+// Shadows to draw after the entities of a layer.
+typedef struct {
+    u8 count;
+    u8 _1[3];
+    struct {
+        u16 xAndShape; // x << 6 | shadow shape
+        u16 yAndPriority; // y << 6 | priority
+    } entries[0x50];
+} ShadowDrawList;
+
 typedef struct {
     u8 field_0x0;
     u8 field_0x1;
@@ -74,7 +90,9 @@ typedef struct {
     u16 _6;
     u8 _0[0x18];
     struct OamData oam[0x80];
-    OAMObj unk[0xA0]; /* todo: affine */
+    OAMObj unk[0x20]; /* todo: affine */
+    EntityDrawList drawLists[4];
+    ShadowDrawList shadows;
 } OAMControls;
 extern OAMControls gOAMControls;
 

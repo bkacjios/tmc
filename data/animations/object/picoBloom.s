@@ -23,13 +23,13 @@ gSpriteAnimations_PicoBloom_4:: @ 081235EB
 	.include "animations/gSpriteAnimations_PicoBloom_4.s"
 
 gSpriteAnimations_PicoBloom:: @ 08123620
-	.4byte gSpriteAnimations_PicoBloom_0
-	.4byte gSpriteAnimations_PicoBloom_1
-	.4byte gSpriteAnimations_PicoBloom_2
-	.4byte gSpriteAnimations_PicoBloom_3
-	.4byte gSpriteAnimations_PicoBloom_4
-	.4byte gSpriteAnimations_PicoBloom_5
-	.4byte 00000000
+	ptr gSpriteAnimations_PicoBloom_0
+	ptr gSpriteAnimations_PicoBloom_1
+	ptr gSpriteAnimations_PicoBloom_2
+	ptr gSpriteAnimations_PicoBloom_3
+	ptr gSpriteAnimations_PicoBloom_4
+	ptr gSpriteAnimations_PicoBloom_5
+	ptr 00000000
 
 gUnk_0812363C:: @ 0812363C
 	.incbin "picoBloom/gUnk_0812363C.bin"

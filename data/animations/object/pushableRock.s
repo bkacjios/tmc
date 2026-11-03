@@ -23,11 +23,11 @@ gSpriteAnimations_PushableRock_6:: @ 08121154
 	.include "animations/gSpriteAnimations_PushableRock_6.s"
 
 gSpriteAnimations_PushableRock:: @ 08121158
-	.4byte gSpriteAnimations_PushableRock_0
-	.4byte gSpriteAnimations_PushableRock_1
-	.4byte gSpriteAnimations_PushableRock_2
-	.4byte gSpriteAnimations_PushableRock_3
-	.4byte gSpriteAnimations_PushableRock_2
-	.4byte gSpriteAnimations_PushableRock_5
-	.4byte gSpriteAnimations_PushableRock_6
-	.4byte 00000000
+	ptr gSpriteAnimations_PushableRock_0
+	ptr gSpriteAnimations_PushableRock_1
+	ptr gSpriteAnimations_PushableRock_2
+	ptr gSpriteAnimations_PushableRock_3
+	ptr gSpriteAnimations_PushableRock_2
+	ptr gSpriteAnimations_PushableRock_5
+	ptr gSpriteAnimations_PushableRock_6
+	ptr 00000000

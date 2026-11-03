@@ -28,12 +28,12 @@ gSpriteAnimations_RupeeLike_7:: @ 080CCD06
 	.include "animations/gSpriteAnimations_RupeeLike_7.s"
 
 gSpriteAnimations_RupeeLike:: @ 080CCD20
-	.4byte gSpriteAnimations_RupeeLike_0
-	.4byte gSpriteAnimations_RupeeLike_1
-	.4byte gSpriteAnimations_RupeeLike_2
-	.4byte gSpriteAnimations_RupeeLike_3
-	.4byte gSpriteAnimations_RupeeLike_4
-	.4byte gSpriteAnimations_RupeeLike_5
-	.4byte gSpriteAnimations_RupeeLike_6
-	.4byte gSpriteAnimations_RupeeLike_7
-	.4byte 00000000
+	ptr gSpriteAnimations_RupeeLike_0
+	ptr gSpriteAnimations_RupeeLike_1
+	ptr gSpriteAnimations_RupeeLike_2
+	ptr gSpriteAnimations_RupeeLike_3
+	ptr gSpriteAnimations_RupeeLike_4
+	ptr gSpriteAnimations_RupeeLike_5
+	ptr gSpriteAnimations_RupeeLike_6
+	ptr gSpriteAnimations_RupeeLike_7
+	ptr 00000000

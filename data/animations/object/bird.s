@@ -8,7 +8,7 @@ gSpriteAnimations_Bird_1_0:: @ 08123F0C
 	.include "animations/gSpriteAnimations_Bird_1_0.s"
 
 gSpriteAnimations_Bird_1:: @ 08123F20
-	.4byte gSpriteAnimations_Bird_1_0
+	ptr gSpriteAnimations_Bird_1_0
 	.include "animations/gSpriteAnimations_Bird_1.s"
 
 gSpriteAnimations_Bird_0_0:: @ 08123F28
@@ -24,8 +24,8 @@ gSpriteAnimations_Bird_0_3:: @ 08123F7B
 	.include "animations/gSpriteAnimations_Bird_0_3.s"
 
 gSpriteAnimations_Bird:: @ 08123F9C
-	.4byte gSpriteAnimations_Bird_0_0
-	.4byte gSpriteAnimations_Bird_0_1
-	.4byte gSpriteAnimations_Bird_0_2
-	.4byte gSpriteAnimations_Bird_0_3
-	.4byte 00000000
+	ptr gSpriteAnimations_Bird_0_0
+	ptr gSpriteAnimations_Bird_0_1
+	ptr gSpriteAnimations_Bird_0_2
+	ptr gSpriteAnimations_Bird_0_3
+	ptr 00000000

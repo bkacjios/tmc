@@ -23,15 +23,15 @@ gSpriteAnimations_Librari_10:: @ 08112DE7
 	.include "animations/gSpriteAnimations_Librari_10.s"
 
 gSpriteAnimations_Librari:: @ 08112DEC
-	.4byte gSpriteAnimations_Librari_0
-	.4byte gSpriteAnimations_Librari_0
-	.4byte gSpriteAnimations_Librari_0
-	.4byte gSpriteAnimations_Librari_0
-	.4byte gSpriteAnimations_Librari_4
-	.4byte gSpriteAnimations_Librari_4
-	.4byte gSpriteAnimations_Librari_6
-	.4byte gSpriteAnimations_Librari_6
-	.4byte gSpriteAnimations_Librari_8
-	.4byte gSpriteAnimations_Librari_9
-	.4byte gSpriteAnimations_Librari_10
-	.4byte 00000000
+	ptr gSpriteAnimations_Librari_0
+	ptr gSpriteAnimations_Librari_0
+	ptr gSpriteAnimations_Librari_0
+	ptr gSpriteAnimations_Librari_0
+	ptr gSpriteAnimations_Librari_4
+	ptr gSpriteAnimations_Librari_4
+	ptr gSpriteAnimations_Librari_6
+	ptr gSpriteAnimations_Librari_6
+	ptr gSpriteAnimations_Librari_8
+	ptr gSpriteAnimations_Librari_9
+	ptr gSpriteAnimations_Librari_10
+	ptr 00000000

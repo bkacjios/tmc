@@ -8,5 +8,5 @@ gSpriteAnimations_SanctuaryStoneTablet_0:: @ 08124808
 	.include "animations/gSpriteAnimations_SanctuaryStoneTablet_0.s"
 
 gSpriteAnimations_SanctuaryStoneTablet:: @ 0812481C
-	.4byte gSpriteAnimations_SanctuaryStoneTablet_0
-	.4byte 00000000
+	ptr gSpriteAnimations_SanctuaryStoneTablet_0
+	ptr 00000000

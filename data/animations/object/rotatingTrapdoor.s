@@ -8,5 +8,5 @@ gSpriteAnimations_RotatingTrapdoor_0:: @ 08121B94
 	.include "animations/gSpriteAnimations_RotatingTrapdoor_0.s"
 
 gSpriteAnimations_RotatingTrapdoor:: @ 08121BD0
-	.4byte gSpriteAnimations_RotatingTrapdoor_0
-	.4byte 00000000
+	ptr gSpriteAnimations_RotatingTrapdoor_0
+	ptr 00000000

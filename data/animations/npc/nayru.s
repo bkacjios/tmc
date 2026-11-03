@@ -17,12 +17,12 @@ gSpriteAnimations_Nayru_4:: @ 0810F9BF
 	.include "animations/gSpriteAnimations_Nayru_4.s"
 
 gSpriteAnimations_Nayru:: @ 0810F9D0
-	.4byte gSpriteAnimations_Nayru_0
-	.4byte gSpriteAnimations_Nayru_1
-	.4byte gSpriteAnimations_Nayru_0
-	.4byte gSpriteAnimations_Nayru_3
-	.4byte gSpriteAnimations_Nayru_4
-	.4byte gSpriteAnimations_Nayru_4
-	.4byte gSpriteAnimations_Nayru_4
-	.4byte gSpriteAnimations_Nayru_4
-	.4byte 00000000
+	ptr gSpriteAnimations_Nayru_0
+	ptr gSpriteAnimations_Nayru_1
+	ptr gSpriteAnimations_Nayru_0
+	ptr gSpriteAnimations_Nayru_3
+	ptr gSpriteAnimations_Nayru_4
+	ptr gSpriteAnimations_Nayru_4
+	ptr gSpriteAnimations_Nayru_4
+	ptr gSpriteAnimations_Nayru_4
+	ptr 00000000

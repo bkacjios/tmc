@@ -11,6 +11,6 @@ gSpriteAnimations_JapaneseSubtitle_1:: @ 08124BA9
 	.include "animations/gSpriteAnimations_JapaneseSubtitle_1.s"
 
 gSpriteAnimations_JapaneseSubtitle:: @ 08124BFC
-	.4byte gSpriteAnimations_JapaneseSubtitle_0
-	.4byte gSpriteAnimations_JapaneseSubtitle_1
-	.4byte 00000000
+	ptr gSpriteAnimations_JapaneseSubtitle_0
+	ptr gSpriteAnimations_JapaneseSubtitle_1
+	ptr 00000000

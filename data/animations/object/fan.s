@@ -29,12 +29,12 @@ gSpriteAnimations_Fan_7:: @ 08124627
 	.include "animations/gSpriteAnimations_Fan_7.s"
 
 gSpriteAnimations_Fan:: @ 0812464C
-	.4byte gSpriteAnimations_Fan_0
-	.4byte gSpriteAnimations_Fan_1
-	.4byte gSpriteAnimations_Fan_2
-	.4byte gSpriteAnimations_Fan_3
-	.4byte gSpriteAnimations_Fan_4
-	.4byte gSpriteAnimations_Fan_5
-	.4byte gSpriteAnimations_Fan_6
-	.4byte gSpriteAnimations_Fan_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Fan_0
+	ptr gSpriteAnimations_Fan_1
+	ptr gSpriteAnimations_Fan_2
+	ptr gSpriteAnimations_Fan_3
+	ptr gSpriteAnimations_Fan_4
+	ptr gSpriteAnimations_Fan_5
+	ptr gSpriteAnimations_Fan_6
+	ptr gSpriteAnimations_Fan_7
+	ptr 00000000

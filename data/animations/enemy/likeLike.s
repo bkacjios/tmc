@@ -13,7 +13,7 @@ gSpriteAnimations_LikeLike_2:: @ 080CC76E
 	.include "animations/gSpriteAnimations_LikeLike_2.s"
 
 gSpriteAnimations_LikeLike:: @ 080CC780
-	.4byte gSpriteAnimations_LikeLike_0
-	.4byte gSpriteAnimations_LikeLike_1
-	.4byte gSpriteAnimations_LikeLike_2
-	.4byte 00000000
+	ptr gSpriteAnimations_LikeLike_0
+	ptr gSpriteAnimations_LikeLike_1
+	ptr gSpriteAnimations_LikeLike_2
+	ptr 00000000

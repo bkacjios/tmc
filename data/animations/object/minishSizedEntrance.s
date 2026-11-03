@@ -12,7 +12,7 @@ gSpriteAnimations_MinishSizedEntrance_1:: @ 08122268
 	.include "animations/gSpriteAnimations_MinishSizedEntrance_1.s"
 
 gSpriteAnimations_MinishSizedEntrance:: @ 0812226C
-	.4byte gSpriteAnimations_MinishSizedEntrance_0
-	.4byte gSpriteAnimations_MinishSizedEntrance_1
-	.4byte 00000000
+	ptr gSpriteAnimations_MinishSizedEntrance_0
+	ptr gSpriteAnimations_MinishSizedEntrance_1
+	ptr 00000000
 

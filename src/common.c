@@ -21,7 +21,6 @@
 
 extern u8 gUnk_03003DE0;
 extern u8 gzHeap[0x1000];
-extern u8 gUnk_02035542[];
 extern u32 gDungeonMap[0x800];
 extern s16 gUnk_02018EE0[];
 
@@ -437,9 +436,9 @@ void* zMalloc(u32 size) {
         return 0;
 
     // Register successful allocation
-    *(u16*)(gUnk_02035542 + (numEntries << 2)) = candidateSlotStartOffset - (gUnk_02035542 - 2);
-    *(u16*)(gUnk_02035542 + (numEntries << 2) + 2) = candidateSlotStartOffset - (gUnk_02035542 - 2) + size;
-    *(u16*)(gUnk_02035542 - 2) = numEntries + 1;
+    *(u16*)((gzHeap + 2) + (numEntries << 2)) = candidateSlotStartOffset - ((gzHeap + 2) - 2);
+    *(u16*)((gzHeap + 2) + (numEntries << 2) + 2) = candidateSlotStartOffset - ((gzHeap + 2) - 2) + size;
+    *(u16*)((gzHeap + 2) - 2) = numEntries + 1;
     MemClear(candidateSlotStartOffset, size);
     return candidateSlotStartOffset;
 }

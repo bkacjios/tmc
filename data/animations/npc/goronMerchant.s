@@ -20,12 +20,12 @@ gSpriteAnimations_GoronMerchant_7:: @ 08111BF2
 	.include "animations/gSpriteAnimations_GoronMerchant_7.s"
 
 gSpriteAnimations_GoronMerchant:: @ 08111C18
-	.4byte gSpriteAnimations_GoronMerchant_0
-	.4byte gSpriteAnimations_GoronMerchant_1
-	.4byte gSpriteAnimations_GoronMerchant_0
-	.4byte gSpriteAnimations_GoronMerchant_3
-	.4byte gSpriteAnimations_GoronMerchant_0
-	.4byte gSpriteAnimations_GoronMerchant_5
-	.4byte gSpriteAnimations_GoronMerchant_0
-	.4byte gSpriteAnimations_GoronMerchant_7
-	.4byte 00000000
+	ptr gSpriteAnimations_GoronMerchant_0
+	ptr gSpriteAnimations_GoronMerchant_1
+	ptr gSpriteAnimations_GoronMerchant_0
+	ptr gSpriteAnimations_GoronMerchant_3
+	ptr gSpriteAnimations_GoronMerchant_0
+	ptr gSpriteAnimations_GoronMerchant_5
+	ptr gSpriteAnimations_GoronMerchant_0
+	ptr gSpriteAnimations_GoronMerchant_7
+	ptr 00000000

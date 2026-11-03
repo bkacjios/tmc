@@ -20,9 +20,9 @@ gSpriteAnimations_SpinyBeetle_4:: @ 080CEC5C
 	.include "animations/gSpriteAnimations_SpinyBeetle_4.s"
 
 gSpriteAnimations_SpinyBeetle:: @ 080CEC70
-	.4byte gSpriteAnimations_SpinyBeetle_0
-	.4byte gSpriteAnimations_SpinyBeetle_1
-	.4byte gSpriteAnimations_SpinyBeetle_2
-	.4byte gSpriteAnimations_SpinyBeetle_3
-	.4byte gSpriteAnimations_SpinyBeetle_4
-	.4byte 00000000
+	ptr gSpriteAnimations_SpinyBeetle_0
+	ptr gSpriteAnimations_SpinyBeetle_1
+	ptr gSpriteAnimations_SpinyBeetle_2
+	ptr gSpriteAnimations_SpinyBeetle_3
+	ptr gSpriteAnimations_SpinyBeetle_4
+	ptr 00000000

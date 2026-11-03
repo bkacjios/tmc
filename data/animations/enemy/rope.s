@@ -29,12 +29,12 @@ gSpriteAnimations_Rope_7:: @ 080CE4F3
 	.include "animations/gSpriteAnimations_Rope_7.s"
 
 gSpriteAnimations_Rope:: @ 080CE50C
-	.4byte gSpriteAnimations_Rope_0
-	.4byte gSpriteAnimations_Rope_1
-	.4byte gSpriteAnimations_Rope_2
-	.4byte gSpriteAnimations_Rope_3
-	.4byte gSpriteAnimations_Rope_4
-	.4byte gSpriteAnimations_Rope_5
-	.4byte gSpriteAnimations_Rope_6
-	.4byte gSpriteAnimations_Rope_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Rope_0
+	ptr gSpriteAnimations_Rope_1
+	ptr gSpriteAnimations_Rope_2
+	ptr gSpriteAnimations_Rope_3
+	ptr gSpriteAnimations_Rope_4
+	ptr gSpriteAnimations_Rope_5
+	ptr gSpriteAnimations_Rope_6
+	ptr gSpriteAnimations_Rope_7
+	ptr 00000000

@@ -15,7 +15,7 @@ gSpriteAnimations_ObjectA2_2:: @ 08124764
 	.include "animation/gSpriteAnimations_ObjectA2_2.s"
 
 gSpriteAnimations_ObjectA2:: @ 08124788
-	.4byte gSpriteAnimations_ObjectA2_0
-	.4byte gSpriteAnimations_ObjectA2_1
-	.4byte gSpriteAnimations_ObjectA2_2
-	.4byte 00000000
+	ptr gSpriteAnimations_ObjectA2_0
+	ptr gSpriteAnimations_ObjectA2_1
+	ptr gSpriteAnimations_ObjectA2_2
+	ptr 00000000

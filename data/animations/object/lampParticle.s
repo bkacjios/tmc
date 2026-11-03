@@ -11,6 +11,6 @@ gSpriteAnimations_LampParticle_1:: @ 08121BF8
 	.include "animations/gSpriteAnimations_LampParticle_1.s"
 
 gSpriteAnimations_LampParticle:: @ 08121C34
-	.4byte gSpriteAnimations_LampParticle_0
-	.4byte gSpriteAnimations_LampParticle_1
-	.4byte 00000000
+	ptr gSpriteAnimations_LampParticle_0
+	ptr gSpriteAnimations_LampParticle_1
+	ptr 00000000

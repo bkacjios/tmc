@@ -14,6 +14,15 @@
 	.set ENEMY_CHUCHU, 0x1
 	.set ENEMY_TREE_ITEM, 0x65
 
+@ Room entity records are EntityData (include/room.h): 16 bytes, 24 in the
+@ 64-bit PC build, where its last field is a pointer at offset 16. Records of
+@ other shapes in the same lists are padded to match.
+	.macro entity_record_pad
+	.ifdef PLATFORM_PC64
+	.space 8
+	.endif
+	.endm
+
 	.macro object_minish_lilypad x, y, room_property, collision=0
 	.byte ENTITY_TYPE_OBJECT | ((\collision) << 4)
 	.byte DEFAULT_POOL
@@ -23,6 +32,7 @@
 	.byte 0x00, 0x00, 0x00
 	.2byte \x, \y
 	.2byte 0x0, 0x0
+	entity_record_pad
 	.endm
 
 	.macro object_item x, y, item, flag, collision=0
@@ -35,6 +45,7 @@
 	.byte 0x00, 0x00
 	.2byte \x, \y
 	.2byte 0x0, \flag
+	entity_record_pad
 	.endm
 
 	.macro enemy_octorok x, y, bound_x, bound_y, bound_tile_width, bound_tile_height, collision=0
@@ -45,6 +56,7 @@
 	.byte \bound_tile_width, \bound_tile_height
 	.2byte \x, \y
 	.2byte \bound_x, \bound_y
+	entity_record_pad
 	.endm
 
 	.macro enemy_chuchu x, y, bound_x, bound_y, bound_tile_width, bound_tile_height, collision=0
@@ -55,6 +67,7 @@
 	.byte \bound_tile_width, \bound_tile_height
 	.2byte \x, \y
 	.2byte \bound_x, \bound_y
+	entity_record_pad
 	.endm
 
 	.macro enemy_tree_item x, y, unknown, collision=0
@@ -64,6 +77,7 @@
 	.byte \unknown, 0x00, 0x00, 0x00, 0x00
 	.2byte \x, \y
 	.2byte 0x00, 0x00
+	entity_record_pad
 	.endm
 
 	.macro entity_raw type:req, subtype:req, collision=0, pool:req, paramA=0, paramB=0, x=0, y=0, paramC=0
@@ -74,7 +88,10 @@
 	.4byte \paramB
 	.2byte \x
 	.2byte \y
-	.4byte \paramC
+	.ifdef PLATFORM_PC64
+	.4byte 0
+	.endif
+	ptr \paramC
 	.endm
 
 	.macro ezlo_hint type=0 x:req, y:req, rx:req, ry:req, msg:req, flag:req, msg_y=0, flag2=0
@@ -91,6 +108,7 @@
 	.byte \ry
 	.2byte \flag
 	.2byte \flag2
+	entity_record_pad
 	.endm
 
 	.macro manager subtype:req, collision=0, pool=DEFAULT_POOL, paramA=0, paramB=0, x=0, y=0, paramC=0
@@ -115,6 +133,7 @@
 
 	.macro entity_list_end
 	.byte 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+	entity_record_pad
 	.endm
 
 	.macro tile_entity_list_end
@@ -141,9 +160,12 @@
 	.byte \layer
 	.2byte \x
 	.2byte \y
-	.4byte \paramC
+	ptr \paramC @ NPCStruct (include/npc.h)
 	.2byte \paramD
 	.2byte \conditions
+	.ifdef PLATFORM_PC64
+	.space 4
+	.endif
 	.endm
 
 	.macro exit_region_raw centerX=0, centerY=0, halfWidth=0, halfHeight=0, exitIndex=0, bitfield=0

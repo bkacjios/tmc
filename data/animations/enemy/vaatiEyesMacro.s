@@ -13,6 +13,6 @@ gSpriteAnimations_VaatiEyesMacro_1:: @ 080CDEB1
 	.include "animations/gSpriteAnimations_VaatiEyesMacro_1.s"
 
 gSpriteAnimations_VaatiEyesMacro:: @ 080CDEC4
-	.4byte gSpriteAnimations_VaatiEyesMacro_0
-	.4byte gSpriteAnimations_VaatiEyesMacro_1
-	.4byte 00000000
+	ptr gSpriteAnimations_VaatiEyesMacro_0
+	ptr gSpriteAnimations_VaatiEyesMacro_1
+	ptr 00000000

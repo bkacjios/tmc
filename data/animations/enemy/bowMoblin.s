@@ -53,20 +53,20 @@ gSpriteAnimations_BowMoblin_15:: @ 080D00B7
 	.include "animations/gSpriteAnimations_BowMoblin_15.s"
 
 gSpriteAnimations_BowMoblin:: @ 080D00CC
-	.4byte gSpriteAnimations_BowMoblin_0
-	.4byte gSpriteAnimations_BowMoblin_1
-	.4byte gSpriteAnimations_BowMoblin_2
-	.4byte gSpriteAnimations_BowMoblin_3
-	.4byte gSpriteAnimations_BowMoblin_4
-	.4byte gSpriteAnimations_BowMoblin_5
-	.4byte gSpriteAnimations_BowMoblin_6
-	.4byte gSpriteAnimations_BowMoblin_7
-	.4byte gSpriteAnimations_BowMoblin_8
-	.4byte gSpriteAnimations_BowMoblin_9
-	.4byte gSpriteAnimations_BowMoblin_10
-	.4byte gSpriteAnimations_BowMoblin_11
-	.4byte gSpriteAnimations_BowMoblin_12
-	.4byte gSpriteAnimations_BowMoblin_13
-	.4byte gSpriteAnimations_BowMoblin_14
-	.4byte gSpriteAnimations_BowMoblin_15
-	.4byte 00000000
+	ptr gSpriteAnimations_BowMoblin_0
+	ptr gSpriteAnimations_BowMoblin_1
+	ptr gSpriteAnimations_BowMoblin_2
+	ptr gSpriteAnimations_BowMoblin_3
+	ptr gSpriteAnimations_BowMoblin_4
+	ptr gSpriteAnimations_BowMoblin_5
+	ptr gSpriteAnimations_BowMoblin_6
+	ptr gSpriteAnimations_BowMoblin_7
+	ptr gSpriteAnimations_BowMoblin_8
+	ptr gSpriteAnimations_BowMoblin_9
+	ptr gSpriteAnimations_BowMoblin_10
+	ptr gSpriteAnimations_BowMoblin_11
+	ptr gSpriteAnimations_BowMoblin_12
+	ptr gSpriteAnimations_BowMoblin_13
+	ptr gSpriteAnimations_BowMoblin_14
+	ptr gSpriteAnimations_BowMoblin_15
+	ptr 00000000

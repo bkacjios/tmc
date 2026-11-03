@@ -7,7 +7,6 @@
 #include "gfx.h"
 #include "fade.h"
 
-extern Palette gUnk_02001A3C;
 
 void LoadObjPaletteAtIndex(u32 a1, u32 paletteIndex);
 void CleanUpObjPalettes();
@@ -58,11 +57,11 @@ void sub_0801D000(u32 a1) {
         CleanUpObjPalettes();
         sub_0801CFD0(0xf);
     } else {
-        if (gUnk_02001A3C._0_0 == 4) {
-            gUnk_02001A3C._0_0 = 0;
-            gUnk_02001A3C._0_4 = 0;
-            gUnk_02001A3C._1 = 0;
-            gUnk_02001A3C.objPaletteId = 0;
+        if (gPaletteList[15]._0_0 == 4) {
+            gPaletteList[15]._0_0 = 0;
+            gPaletteList[15]._0_4 = 0;
+            gPaletteList[15]._1 = 0;
+            gPaletteList[15].objPaletteId = 0;
         }
     }
 }

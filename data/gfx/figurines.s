@@ -9,6 +9,9 @@
 .endm
 
 gFigurines::
+.ifdef PLATFORM_PC64
+	.include "data/pc64/gFigurines.inc"
+.else
 	figurine pal=gFigurinePal1, gfx=gFigurineGfx1, size=0x580
 	figurine pal=gFigurinePal1, gfx=gFigurineGfx1, size=0x580
 	figurine pal=gFigurinePal2, gfx=gFigurineGfx2, size=0x5e0
@@ -146,3 +149,4 @@ gFigurines::
 	figurine pal=gFigurinePal134, gfx=gFigurineGfx134, size=0x1100
 	figurine pal=gFigurinePal135, gfx=gFigurineGfx135, size=0x2580
 	figurine pal=gFigurinePal136, gfx=gFigurineGfx136, size=0x18e0
+.endif

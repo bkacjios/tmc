@@ -95,6 +95,10 @@ void GameTask(void) {
 #endif
 }
 
+#ifdef PLATFORM_PC
+void PcOracleSpawn(PlayerRoomStatus* status);
+#endif
+
 static void GameTask_Transition(void) {
     // wait for file select to fade out
     if (gFadeControl.active)
@@ -112,6 +116,9 @@ static void GameTask_Transition(void) {
     FinalizeSave();
     // spawn in with saved status
     MemCopy(&gSave.saved_status, &gRoomTransition.player_status, sizeof(gRoomTransition.player_status));
+#ifdef PLATFORM_PC
+    PcOracleSpawn(&gRoomTransition.player_status);
+#endif
     gRoomTransition.type = TRANSITION_FADE_BLACK_SLOW;
     ResetTmpFlags();
 

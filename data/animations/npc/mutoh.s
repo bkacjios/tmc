@@ -17,12 +17,12 @@ gSpriteAnimations_Mutoh_7:: @ 08110C7F
 	.include "animations/gSpriteAnimations_Mutoh_7.s"
 
 gSpriteAnimations_Mutoh:: @ 08110C84
-	.4byte gSpriteAnimations_Mutoh_0
-	.4byte gSpriteAnimations_Mutoh_0
-	.4byte gSpriteAnimations_Mutoh_0
-	.4byte gSpriteAnimations_Mutoh_0
-	.4byte gSpriteAnimations_Mutoh_4
-	.4byte gSpriteAnimations_Mutoh_5
-	.4byte gSpriteAnimations_Mutoh_4
-	.4byte gSpriteAnimations_Mutoh_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Mutoh_0
+	ptr gSpriteAnimations_Mutoh_0
+	ptr gSpriteAnimations_Mutoh_0
+	ptr gSpriteAnimations_Mutoh_0
+	ptr gSpriteAnimations_Mutoh_4
+	ptr gSpriteAnimations_Mutoh_5
+	ptr gSpriteAnimations_Mutoh_4
+	ptr gSpriteAnimations_Mutoh_7
+	ptr 00000000

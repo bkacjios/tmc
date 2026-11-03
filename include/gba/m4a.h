@@ -23,13 +23,17 @@ typedef struct WaveData {
 #define TONEDATA_P_S_PAN 0xc0
 #define TONEDATA_P_S_PAM TONEDATA_P_S_PAN
 
+// Song data in ROM keeps the GBA's layout on every platform: its addresses
+// are 32-bit (the PC builds keep all code and data below 4 GiB), so they are
+// u32 here, cast to pointers where used.
+
 typedef struct ToneData {
     u8 type;
     u8 key;
     u8 length;    // sound length (compatible sound)
     u8 pan_sweep; // pan or sweep (compatible sound ch. 1)
-    WaveData* wav;
-    u8 attack;
+    u32 wav;      // WaveData*, a key split's voice group (ToneData*), or a CGB voice's settings
+    u8 attack;    // attack to release: a key split's table (u8*)
     u8 decay;
     u8 sustain;
     u8 release;
@@ -40,8 +44,8 @@ typedef struct SongHeader {
     u8 blockCount;
     u8 priority;
     u8 reverb;
-    ToneData* tone;
-    u8* part[1];
+    u32 tone;    // ToneData*
+    u32 part[1]; // u8*
 } SongHeader;
 
 typedef struct Song {

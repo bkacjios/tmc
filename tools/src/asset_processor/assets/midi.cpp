@@ -20,7 +20,7 @@ std::filesystem::path MidiAsset::generateBuildPath() {
 
 void MidiAsset::extractBinary(const std::vector<char>& baserom) {
     // Custom extraction as we need a label in the middle.
-    std::string label = path.stem();
+    std::string label = path.stem().string();
 
     std::filesystem::path tracksPath = path;
     tracksPath.replace_filename(label + "_tracks.bin");
@@ -42,9 +42,9 @@ void MidiAsset::extractBinary(const std::vector<char>& baserom) {
 
     // Create dummy .s file.
     auto file = util::open_file(buildPath, "w");
-    fmt::print(file.get(), "\t.incbin \"{}\"\n", tracksPath.native());
+    fmt::print(file.get(), "\t.incbin \"{}\"\n", tracksPath.generic_string());
     fmt::print(file.get(), "{}::\n", label);
-    fmt::print(file.get(), "\t.incbin \"{}\"\n", headerPath.native());
+    fmt::print(file.get(), "\t.incbin \"{}\"\n", headerPath.generic_string());
 }
 
 void MidiAsset::parseOptions(std::vector<std::string>& commonParams, std::vector<std::string>& agb2midParams) {
@@ -112,22 +112,21 @@ void MidiAsset::convertToHumanReadable(const std::vector<char>& baserom) {
 
     int headerOffset = asset["options"]["headerOffset"];
 
-    std::filesystem::path toolPath = "tools";
     std::vector<std::string> cmd;
-    cmd.push_back(toolPath / "bin" / "agb2mid");
+    cmd.push_back(tool_path("agb2mid"));
     cmd.push_back(gBaseromPath);
     cmd.push_back(fmt::format("{:#x}", start + headerOffset));
     cmd.push_back(gBaseromPath); // TODO deduplicate?
-    cmd.push_back(assetPath);
+    cmd.push_back(assetPath.string());
     cmd.insert(cmd.end(), commonParams.begin(), commonParams.end());
     cmd.insert(cmd.end(), agb2midParams.begin(), agb2midParams.end());
     check_call(cmd);
 
     // We also need to build the mid to an s file here, so we get shiftability after converting.
     cmd.clear();
-    cmd.push_back(toolPath / "bin" / "mid2agb");
-    cmd.push_back(assetPath);
-    cmd.push_back(buildPath);
+    cmd.push_back(tool_path("mid2agb"));
+    cmd.push_back(assetPath.string());
+    cmd.push_back(buildPath.string());
     cmd.insert(cmd.end(), commonParams.begin(), commonParams.end());
     check_call(cmd);
 }
@@ -137,11 +136,10 @@ void MidiAsset::buildToBinary() {
     std::vector<std::string> commonParams;
     std::vector<std::string> agb2midParams;
     parseOptions(commonParams, agb2midParams);
-    std::filesystem::path toolPath = "tools";
     std::vector<std::string> cmd;
-    cmd.push_back(toolPath / "bin" / "mid2agb");
-    cmd.push_back(assetPath);
-    cmd.push_back(buildPath);
+    cmd.push_back(tool_path("mid2agb"));
+    cmd.push_back(assetPath.string());
+    cmd.push_back(buildPath.string());
     cmd.insert(cmd.end(), commonParams.begin(), commonParams.end());
     check_call(cmd);
 }

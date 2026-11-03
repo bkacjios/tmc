@@ -24,10 +24,10 @@ gSpriteAnimations_Crow_5:: @ 080CE9ED
 	.include "animations/gSpriteAnimations_Crow_5.s"
 
 gSpriteAnimations_Crow:: @ 080CEA00
-	.4byte gSpriteAnimations_Crow_0
-	.4byte gSpriteAnimations_Crow_1
-	.4byte gSpriteAnimations_Crow_2
-	.4byte gSpriteAnimations_Crow_3
-	.4byte gSpriteAnimations_Crow_4
-	.4byte gSpriteAnimations_Crow_5
-	.4byte 00000000
+	ptr gSpriteAnimations_Crow_0
+	ptr gSpriteAnimations_Crow_1
+	ptr gSpriteAnimations_Crow_2
+	ptr gSpriteAnimations_Crow_3
+	ptr gSpriteAnimations_Crow_4
+	ptr gSpriteAnimations_Crow_5
+	ptr 00000000

@@ -17,7 +17,10 @@ add_library(project_settings INTERFACE)
 
 # use CompilerWarnings.cmake directly since project_options normally requires cmake 3.16
 include(${_project_options_SOURCE_DIR}/src/CompilerWarnings.cmake)
-set_project_warnings(project_settings ON "" "" "" "")
+# OFF for the 32-bit Windows (MinGW) build, where nlohmann_json warns about
+# casts to the 32-bit size_t.
+option(TOOLS_WARNINGS_AS_ERRORS "Treat compiler warnings as errors" ON)
+set_project_warnings(project_settings ${TOOLS_WARNINGS_AS_ERRORS} "" "" "" "")
 
 # nlohmann/json
 # this repo is a mirror, that only holds the release versions of the headers to keep the size small

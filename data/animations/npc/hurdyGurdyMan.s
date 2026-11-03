@@ -23,16 +23,16 @@ gSpriteAnimations_HurdyGurdyMan_3:: @ 08114579
 	.include "animations/gSpriteAnimations_HurdyGurdyMan_3.s"
 
 gSpriteAnimations_HurdyGurdyMan:: @ 08114580
-	.4byte gSpriteAnimations_HurdyGurdyMan_0
-	.4byte gSpriteAnimations_HurdyGurdyMan_1
-	.4byte gSpriteAnimations_HurdyGurdyMan_0
-	.4byte gSpriteAnimations_HurdyGurdyMan_3
-	.4byte gSpriteAnimations_HurdyGurdyMan_4
-	.4byte gSpriteAnimations_HurdyGurdyMan_4
-	.4byte gSpriteAnimations_HurdyGurdyMan_4
-	.4byte gSpriteAnimations_HurdyGurdyMan_7
-	.4byte gSpriteAnimations_HurdyGurdyMan_8
-	.4byte gSpriteAnimations_HurdyGurdyMan_8
-	.4byte gSpriteAnimations_HurdyGurdyMan_8
-	.4byte gSpriteAnimations_HurdyGurdyMan_8
-	.4byte 00000000
+	ptr gSpriteAnimations_HurdyGurdyMan_0
+	ptr gSpriteAnimations_HurdyGurdyMan_1
+	ptr gSpriteAnimations_HurdyGurdyMan_0
+	ptr gSpriteAnimations_HurdyGurdyMan_3
+	ptr gSpriteAnimations_HurdyGurdyMan_4
+	ptr gSpriteAnimations_HurdyGurdyMan_4
+	ptr gSpriteAnimations_HurdyGurdyMan_4
+	ptr gSpriteAnimations_HurdyGurdyMan_7
+	ptr gSpriteAnimations_HurdyGurdyMan_8
+	ptr gSpriteAnimations_HurdyGurdyMan_8
+	ptr gSpriteAnimations_HurdyGurdyMan_8
+	ptr gSpriteAnimations_HurdyGurdyMan_8
+	ptr 00000000

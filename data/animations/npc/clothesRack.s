@@ -17,8 +17,8 @@ gSpriteAnimations_ClothesRack_3:: @ 0811428F
 	.include "animations/gSpriteAnimations_ClothesRack_3.s"
 
 gSpriteAnimations_ClothesRack:: @ 081142A8
-	.4byte gSpriteAnimations_ClothesRack_0
-	.4byte gSpriteAnimations_ClothesRack_1
-	.4byte gSpriteAnimations_ClothesRack_2
-	.4byte gSpriteAnimations_ClothesRack_3
-	.4byte 00000000
+	ptr gSpriteAnimations_ClothesRack_0
+	ptr gSpriteAnimations_ClothesRack_1
+	ptr gSpriteAnimations_ClothesRack_2
+	ptr gSpriteAnimations_ClothesRack_3
+	ptr 00000000

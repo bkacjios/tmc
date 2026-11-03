@@ -14,8 +14,8 @@ gSpriteAnimations_CannonballProjectile_3:: @ 0812A5C6
 	.include "animations/gSpriteAnimations_CannonballProjectile_3.s"
 
 gSpriteAnimations_CannonballProjectile:: @ 0812A5D4
-	.4byte gSpriteAnimations_CannonballProjectile_0
-	.4byte gSpriteAnimations_CannonballProjectile_1
-	.4byte gSpriteAnimations_CannonballProjectile_0
-	.4byte gSpriteAnimations_CannonballProjectile_3
-	.4byte 00000000
+	ptr gSpriteAnimations_CannonballProjectile_0
+	ptr gSpriteAnimations_CannonballProjectile_1
+	ptr gSpriteAnimations_CannonballProjectile_0
+	ptr gSpriteAnimations_CannonballProjectile_3
+	ptr 00000000

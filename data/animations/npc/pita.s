@@ -11,12 +11,12 @@ gSpriteAnimations_Pita_4:: @ 0810C44A
 	.include "animations/gSpriteAnimations_Pita_4.s"
 
 gSpriteAnimations_Pita:: @ 0810C468
-	.4byte gSpriteAnimations_Pita_0
-	.4byte gSpriteAnimations_Pita_0
-	.4byte gSpriteAnimations_Pita_0
-	.4byte gSpriteAnimations_Pita_0
-	.4byte gSpriteAnimations_Pita_4
-	.4byte gSpriteAnimations_Pita_4
-	.4byte gSpriteAnimations_Pita_4
-	.4byte gSpriteAnimations_Pita_4
-	.4byte 00000000
+	ptr gSpriteAnimations_Pita_0
+	ptr gSpriteAnimations_Pita_0
+	ptr gSpriteAnimations_Pita_0
+	ptr gSpriteAnimations_Pita_0
+	ptr gSpriteAnimations_Pita_4
+	ptr gSpriteAnimations_Pita_4
+	ptr gSpriteAnimations_Pita_4
+	ptr gSpriteAnimations_Pita_4
+	ptr 00000000

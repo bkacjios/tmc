@@ -3,6 +3,7 @@
 #include "asm.h"
 #include "room.h"
 #include "common.h"
+#include "main.h"
 #include "message.h"
 #include "save.h"
 #include "ui.h"
@@ -220,9 +221,9 @@ static u32 MsgIdle(void) {
     return 0;
 }
 
-extern u8 gUnk_020227DC, gUnk_020227F0, gUnk_020227F8, gUnk_02022800;
 u8* const gUnk_08107BE0[] = {
-    &gUnk_020227DC, (void*)&gUnk_020227E8, &gUnk_020227F0, &gUnk_020227F8, &gUnk_02022800,
+    (u8*)gTextRender.player_name, (u8*)&gTextRender._68, (u8*)&gTextRender._70,
+    (u8*)&gTextRender._78,        (u8*)&gTextRender._80,
 };
 
 u32 MsgInit(void) {
@@ -343,6 +344,14 @@ static void TextDispUpdate(TextRender* this) {
     }
 
     numCharsToRead = 0;
+#ifdef PLATFORM_PC
+    if (this->message.textSpeed == MSG_SPEED_INSTANT) {
+        // More characters than a box holds: drawing stops at the next line
+        // break, pause or button prompt.
+        this->typeSpeed = 0;
+        numCharsToRead = 0x10000;
+    } else
+#endif
     do {
         numCharsToRead++;
         this->typeSpeed += speeds[this->message.textSpeed];

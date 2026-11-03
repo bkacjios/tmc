@@ -48,6 +48,9 @@ enum {
 };
 
 static void HandleNintendoCapcomLogos(void);
+#ifdef PLATFORM_PC
+void PcGameSelect(void);
+#endif
 static void HandleTitlescreen(void);
 static void UpdateSwordBgAffineData(void);
 static void ExitTitlescreen(void);
@@ -202,6 +205,9 @@ static void HandleNintendoCapcomLogos(void) {
 
     if (advance == ADVANCE_KEY_PRESSED) {
         gUnk_02000010.listenForKeyPresses = 1;
+#ifdef PLATFORM_PC
+        PcGameSelect();
+#endif
         AdvanceIntroSequence(1);
     }
 }
@@ -455,7 +461,14 @@ static u32 GetAdvanceState(void) {
         return ADVANCE_NONE;
     }
 
+    // The game only lets A or Start skip the Nintendo/Capcom logos after a
+    // soft reset. Built with LOGOS_SKIPPABLE=1, they skip them on the first
+    // boot too.
+#ifdef PC_LOGOS_SKIPPABLE
+    if (0) {
+#else
     if (!gUnk_02000010.listenForKeyPresses) {
+#endif
         newKeys = 0;
     } else {
         newKeys = gInput.newKeys & (A_BUTTON | START_BUTTON);

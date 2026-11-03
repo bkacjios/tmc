@@ -26,10 +26,10 @@ void CopyOAM(void) {
     s32 rem;
 
     if (gMain.pad == 0) {
-        gOAMControls.unk[0x20].unk0 = 0;
-        gOAMControls.unk[0x48].unk4 = 0;
-        gOAMControls.unk[0x71].unk0 = 0;
-        gOAMControls.unk[0x99].unk4 = 0;
+        gOAMControls.drawLists[0].count = 0;
+        gOAMControls.drawLists[1].count = 0;
+        gOAMControls.drawLists[2].count = 0;
+        gOAMControls.drawLists[3].count = 0;
     } else {
         gMain.pad--;
     }
@@ -39,7 +39,11 @@ void CopyOAM(void) {
         d = (u16*)&gOAMControls.oam[gOAMControls.updated];
         for (; rem != 0; rem--) {
             *d = 0x2A0;
+#ifdef PLATFORM_PC
+            d = (u16*)((u8*)d + 8);
+#else
             (u8*)d += 8;
+#endif
         }
     }
     if (gOAMControls.unk[0].unk7) {

@@ -29,12 +29,12 @@ gSpriteAnimations_Gorman_5:: @ 08111D1B
 	.include "animations/gSpriteAnimations_Gorman_5.s"
 
 gSpriteAnimations_Gorman:: @ 08111D34
-	.4byte gSpriteAnimations_Gorman_0
-	.4byte gSpriteAnimations_Gorman_1
-	.4byte gSpriteAnimations_Gorman_2
-	.4byte gSpriteAnimations_Gorman_3
-	.4byte gSpriteAnimations_Gorman_4
-	.4byte gSpriteAnimations_Gorman_5
-	.4byte gSpriteAnimations_Gorman_6
-	.4byte gSpriteAnimations_Gorman_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Gorman_0
+	ptr gSpriteAnimations_Gorman_1
+	ptr gSpriteAnimations_Gorman_2
+	ptr gSpriteAnimations_Gorman_3
+	ptr gSpriteAnimations_Gorman_4
+	ptr gSpriteAnimations_Gorman_5
+	ptr gSpriteAnimations_Gorman_6
+	ptr gSpriteAnimations_Gorman_7
+	ptr 00000000

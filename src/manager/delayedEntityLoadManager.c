@@ -20,7 +20,6 @@ typedef struct {
     u8 spawnedCount; /**< Count of entities spawned by this manager */
 } DelayedEntityLoadManager;
 
-extern u8 gUnk_020342F8[];
 
 void DelayedEntityLoadManager_Main(DelayedEntityLoadManager* this) {
     NPCStruct* properties;
@@ -57,7 +56,7 @@ void DelayedEntityLoadManager_Main(DelayedEntityLoadManager* this) {
     npcPtr2 = gNPCData;
     npcPtr2 = &npcPtr2[(super->type2 + this->unk_20)];
     progressMask = 1 << gSave.global_progress;
-    bitfield = &gUnk_020342F8[(this->unk_20 + 7) / 8];
+    bitfield = &gArea.filler6[(this->unk_20 + 7) / 8];
     index2 = super->type2;
     while (npcPtr2->id != 0xff) {
         if (!CheckRectOnScreen(npcPtr2->x, npcPtr2->y, 0x18, 0x20)) {

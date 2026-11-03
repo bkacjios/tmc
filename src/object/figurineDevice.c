@@ -53,7 +53,6 @@ typedef struct {
 } FigurineDeviceEntity;
 
 extern void ModShells(s32);
-extern u8 gUnk_020227F0;
 
 void sub_0808804C(FigurineDeviceEntity*);
 void sub_08087F58(FigurineDeviceEntity*);

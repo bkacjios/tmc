@@ -41,17 +41,17 @@ gSpriteAnimations_MountainMinish_12:: @ 081114E3
 	.include "animations/gSpriteAnimations_MountainMinish_12.s"
 
 gSpriteAnimations_MountainMinish:: @ 081114E8
-	.4byte gSpriteAnimations_MountainMinish_0
-	.4byte gSpriteAnimations_MountainMinish_1
-	.4byte gSpriteAnimations_MountainMinish_2
-	.4byte gSpriteAnimations_MountainMinish_3
-	.4byte gSpriteAnimations_MountainMinish_4
-	.4byte gSpriteAnimations_MountainMinish_5
-	.4byte gSpriteAnimations_MountainMinish_4
-	.4byte gSpriteAnimations_MountainMinish_7
-	.4byte gSpriteAnimations_MountainMinish_8
-	.4byte gSpriteAnimations_MountainMinish_9
-	.4byte gSpriteAnimations_MountainMinish_10
-	.4byte gSpriteAnimations_MountainMinish_11
-	.4byte gSpriteAnimations_MountainMinish_12
-	.4byte 00000000
+	ptr gSpriteAnimations_MountainMinish_0
+	ptr gSpriteAnimations_MountainMinish_1
+	ptr gSpriteAnimations_MountainMinish_2
+	ptr gSpriteAnimations_MountainMinish_3
+	ptr gSpriteAnimations_MountainMinish_4
+	ptr gSpriteAnimations_MountainMinish_5
+	ptr gSpriteAnimations_MountainMinish_4
+	ptr gSpriteAnimations_MountainMinish_7
+	ptr gSpriteAnimations_MountainMinish_8
+	ptr gSpriteAnimations_MountainMinish_9
+	ptr gSpriteAnimations_MountainMinish_10
+	ptr gSpriteAnimations_MountainMinish_11
+	ptr gSpriteAnimations_MountainMinish_12
+	ptr 00000000

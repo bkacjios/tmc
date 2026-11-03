@@ -30,23 +30,23 @@ gSpriteAnimations_BladeBrothers_0_4:: @ 0811185B
 	.include "animations/gSpriteAnimations_BladeBrothers_0_4.s"
 
 gSpriteAnimations_BladeBrothers_1:: @ 081118CC
-	.4byte gSpriteAnimations_BladeBrothers_1_0
-	.4byte gSpriteAnimations_BladeBrothers_1_1
-	.4byte gSpriteAnimations_BladeBrothers_1_0
-	.4byte gSpriteAnimations_BladeBrothers_1_3
-	.4byte gSpriteAnimations_BladeBrothers_1_4
-	.4byte gSpriteAnimations_BladeBrothers_1_4
-	.4byte gSpriteAnimations_BladeBrothers_1_4
-	.4byte gSpriteAnimations_BladeBrothers_1_4
-	.4byte 00000000
+	ptr gSpriteAnimations_BladeBrothers_1_0
+	ptr gSpriteAnimations_BladeBrothers_1_1
+	ptr gSpriteAnimations_BladeBrothers_1_0
+	ptr gSpriteAnimations_BladeBrothers_1_3
+	ptr gSpriteAnimations_BladeBrothers_1_4
+	ptr gSpriteAnimations_BladeBrothers_1_4
+	ptr gSpriteAnimations_BladeBrothers_1_4
+	ptr gSpriteAnimations_BladeBrothers_1_4
+	ptr 00000000
 
 gSpriteAnimations_BladeBrothers_0:: @ 081118F0
-	.4byte gSpriteAnimations_BladeBrothers_0_0
-	.4byte gSpriteAnimations_BladeBrothers_0_1
-	.4byte gSpriteAnimations_BladeBrothers_0_0
-	.4byte gSpriteAnimations_BladeBrothers_0_3
-	.4byte gSpriteAnimations_BladeBrothers_0_4
-	.4byte gSpriteAnimations_BladeBrothers_0_4
-	.4byte gSpriteAnimations_BladeBrothers_0_4
-	.4byte gSpriteAnimations_BladeBrothers_0_4
-	.4byte 00000000
+	ptr gSpriteAnimations_BladeBrothers_0_0
+	ptr gSpriteAnimations_BladeBrothers_0_1
+	ptr gSpriteAnimations_BladeBrothers_0_0
+	ptr gSpriteAnimations_BladeBrothers_0_3
+	ptr gSpriteAnimations_BladeBrothers_0_4
+	ptr gSpriteAnimations_BladeBrothers_0_4
+	ptr gSpriteAnimations_BladeBrothers_0_4
+	ptr gSpriteAnimations_BladeBrothers_0_4
+	ptr 00000000

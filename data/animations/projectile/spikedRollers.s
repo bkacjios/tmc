@@ -47,18 +47,18 @@ gSpriteAnimations_SpikedRollers_13:: @ 0812A78B
 	.include "animations/gSpriteAnimations_SpikedRollers_13.s"
 
 gSpriteAnimations_SpikedRollers:: @ 0812A798
-	.4byte gSpriteAnimations_SpikedRollers_0
-	.4byte gSpriteAnimations_SpikedRollers_1
-	.4byte gSpriteAnimations_SpikedRollers_2
-	.4byte gSpriteAnimations_SpikedRollers_3
-	.4byte gSpriteAnimations_SpikedRollers_4
-	.4byte gSpriteAnimations_SpikedRollers_5
-	.4byte gSpriteAnimations_SpikedRollers_6
-	.4byte gSpriteAnimations_SpikedRollers_7
-	.4byte gSpriteAnimations_SpikedRollers_8
-	.4byte gSpriteAnimations_SpikedRollers_9
-	.4byte gSpriteAnimations_SpikedRollers_10
-	.4byte gSpriteAnimations_SpikedRollers_11
-	.4byte gSpriteAnimations_SpikedRollers_12
-	.4byte gSpriteAnimations_SpikedRollers_13
-	.4byte 00000000
+	ptr gSpriteAnimations_SpikedRollers_0
+	ptr gSpriteAnimations_SpikedRollers_1
+	ptr gSpriteAnimations_SpikedRollers_2
+	ptr gSpriteAnimations_SpikedRollers_3
+	ptr gSpriteAnimations_SpikedRollers_4
+	ptr gSpriteAnimations_SpikedRollers_5
+	ptr gSpriteAnimations_SpikedRollers_6
+	ptr gSpriteAnimations_SpikedRollers_7
+	ptr gSpriteAnimations_SpikedRollers_8
+	ptr gSpriteAnimations_SpikedRollers_9
+	ptr gSpriteAnimations_SpikedRollers_10
+	ptr gSpriteAnimations_SpikedRollers_11
+	ptr gSpriteAnimations_SpikedRollers_12
+	ptr gSpriteAnimations_SpikedRollers_13
+	ptr 00000000

@@ -16,8 +16,8 @@ gSpriteAnimations_BombPeahat_3:: @ 080CD217
 	.include "animations/gSpriteAnimations_BombPeahat_3.s"
 
 gSpriteAnimations_BombPeahat:: @ 080CD220
-	.4byte gSpriteAnimations_BombPeahat_0
-	.4byte gSpriteAnimations_BombPeahat_1
-	.4byte gSpriteAnimations_BombPeahat_2
-	.4byte gSpriteAnimations_BombPeahat_3
-	.4byte 00000000
+	ptr gSpriteAnimations_BombPeahat_0
+	ptr gSpriteAnimations_BombPeahat_1
+	ptr gSpriteAnimations_BombPeahat_2
+	ptr gSpriteAnimations_BombPeahat_3
+	ptr 00000000

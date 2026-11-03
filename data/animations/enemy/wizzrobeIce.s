@@ -29,12 +29,12 @@ gSpriteAnimations_WizzrobeIce_7:: @ 080CE0F3
 	.include "animations/gSpriteAnimations_WizzrobeIce_7.s"
 
 gSpriteAnimations_WizzrobeIce:: @ 080CE100
-	.4byte gSpriteAnimations_WizzrobeIce_0
-	.4byte gSpriteAnimations_WizzrobeIce_1
-	.4byte gSpriteAnimations_WizzrobeIce_2
-	.4byte gSpriteAnimations_WizzrobeIce_3
-	.4byte gSpriteAnimations_WizzrobeIce_4
-	.4byte gSpriteAnimations_WizzrobeIce_5
-	.4byte gSpriteAnimations_WizzrobeIce_6
-	.4byte gSpriteAnimations_WizzrobeIce_7
-	.4byte 00000000
+	ptr gSpriteAnimations_WizzrobeIce_0
+	ptr gSpriteAnimations_WizzrobeIce_1
+	ptr gSpriteAnimations_WizzrobeIce_2
+	ptr gSpriteAnimations_WizzrobeIce_3
+	ptr gSpriteAnimations_WizzrobeIce_4
+	ptr gSpriteAnimations_WizzrobeIce_5
+	ptr gSpriteAnimations_WizzrobeIce_6
+	ptr gSpriteAnimations_WizzrobeIce_7
+	ptr 00000000

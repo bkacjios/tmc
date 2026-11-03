@@ -41,16 +41,16 @@ gSpriteAnimations_Pot_11:: @ 0811F113
 	.include "animations/gSpriteAnimations_Pot_11.s"
 
 gSpriteAnimations_Pot:: @ 0811F118
-	.4byte gSpriteAnimations_Pot_0
-	.4byte gSpriteAnimations_Pot_1
-	.4byte gSpriteAnimations_Pot_2
-	.4byte gSpriteAnimations_Pot_3
-	.4byte gSpriteAnimations_Pot_4
-	.4byte gSpriteAnimations_Pot_5
-	.4byte gSpriteAnimations_Pot_6
-	.4byte gSpriteAnimations_Pot_7
-	.4byte gSpriteAnimations_Pot_8
-	.4byte gSpriteAnimations_Pot_9
-	.4byte gSpriteAnimations_Pot_10
-	.4byte gSpriteAnimations_Pot_11
-	.4byte 00000000
+	ptr gSpriteAnimations_Pot_0
+	ptr gSpriteAnimations_Pot_1
+	ptr gSpriteAnimations_Pot_2
+	ptr gSpriteAnimations_Pot_3
+	ptr gSpriteAnimations_Pot_4
+	ptr gSpriteAnimations_Pot_5
+	ptr gSpriteAnimations_Pot_6
+	ptr gSpriteAnimations_Pot_7
+	ptr gSpriteAnimations_Pot_8
+	ptr gSpriteAnimations_Pot_9
+	ptr gSpriteAnimations_Pot_10
+	ptr gSpriteAnimations_Pot_11
+	ptr 00000000

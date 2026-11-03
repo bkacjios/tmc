@@ -32,20 +32,20 @@ gSpriteAnimations_Malon_10:: @ 08110014
 	.include "animations/gSpriteAnimations_Malon_10.s"
 
 gSpriteAnimations_Malon:: @ 08110028
-	.4byte gSpriteAnimations_Malon_0
-	.4byte gSpriteAnimations_Malon_1
-	.4byte gSpriteAnimations_Malon_2
-	.4byte gSpriteAnimations_Malon_3
-	.4byte gSpriteAnimations_Malon_4
-	.4byte gSpriteAnimations_Malon_5
-	.4byte gSpriteAnimations_Malon_6
-	.4byte gSpriteAnimations_Malon_4
-	.4byte gSpriteAnimations_Malon_0
-	.4byte gSpriteAnimations_Malon_1
-	.4byte gSpriteAnimations_Malon_10
-	.4byte gSpriteAnimations_Malon_3
-	.4byte gSpriteAnimations_Malon_12
-	.4byte gSpriteAnimations_Malon_12
-	.4byte gSpriteAnimations_Malon_12
-	.4byte gSpriteAnimations_Malon_12
-	.4byte 00000000
+	ptr gSpriteAnimations_Malon_0
+	ptr gSpriteAnimations_Malon_1
+	ptr gSpriteAnimations_Malon_2
+	ptr gSpriteAnimations_Malon_3
+	ptr gSpriteAnimations_Malon_4
+	ptr gSpriteAnimations_Malon_5
+	ptr gSpriteAnimations_Malon_6
+	ptr gSpriteAnimations_Malon_4
+	ptr gSpriteAnimations_Malon_0
+	ptr gSpriteAnimations_Malon_1
+	ptr gSpriteAnimations_Malon_10
+	ptr gSpriteAnimations_Malon_3
+	ptr gSpriteAnimations_Malon_12
+	ptr gSpriteAnimations_Malon_12
+	ptr gSpriteAnimations_Malon_12
+	ptr gSpriteAnimations_Malon_12
+	ptr 00000000

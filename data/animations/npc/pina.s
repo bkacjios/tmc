@@ -23,14 +23,14 @@ gSpriteAnimations_Pina_7:: @ 0810CF19
 	.include "animations/gSpriteAnimations_Pina_7.s"
 
 gSpriteAnimations_Pina:: @ 0810CF20
-	.4byte gSpriteAnimations_Pina_0
-	.4byte gSpriteAnimations_Pina_0
-	.4byte gSpriteAnimations_Pina_0
-	.4byte gSpriteAnimations_Pina_0
-	.4byte gSpriteAnimations_Pina_4
-	.4byte gSpriteAnimations_Pina_5
-	.4byte gSpriteAnimations_Pina_4
-	.4byte gSpriteAnimations_Pina_7
-	.4byte gSpriteAnimations_Pina_8
-	.4byte gSpriteAnimations_Pina_9
-	.4byte 00000000
+	ptr gSpriteAnimations_Pina_0
+	ptr gSpriteAnimations_Pina_0
+	ptr gSpriteAnimations_Pina_0
+	ptr gSpriteAnimations_Pina_0
+	ptr gSpriteAnimations_Pina_4
+	ptr gSpriteAnimations_Pina_5
+	ptr gSpriteAnimations_Pina_4
+	ptr gSpriteAnimations_Pina_7
+	ptr gSpriteAnimations_Pina_8
+	ptr gSpriteAnimations_Pina_9
+	ptr 00000000

@@ -26,16 +26,16 @@ gSpriteAnimations_CrenelBeanSprout_12:: @ 08123204
 	.include "animations/gSpriteAnimations_CrenelBeanSprout_12.s"
 
 gSpriteAnimations_CrenelBeanSprout:: @ 08123208
-	.4byte gSpriteAnimations_CrenelBeanSprout_0
-	.4byte gSpriteAnimations_CrenelBeanSprout_1
-	.4byte gSpriteAnimations_CrenelBeanSprout_0
-	.4byte gSpriteAnimations_CrenelBeanSprout_3
-	.4byte gSpriteAnimations_CrenelBeanSprout_1
-	.4byte gSpriteAnimations_CrenelBeanSprout_3
-	.4byte gSpriteAnimations_CrenelBeanSprout_6
-	.4byte gSpriteAnimations_CrenelBeanSprout_6
-	.4byte gSpriteAnimations_CrenelBeanSprout_8
-	.4byte gSpriteAnimations_CrenelBeanSprout_8
-	.4byte gSpriteAnimations_CrenelBeanSprout_10
-	.4byte gSpriteAnimations_CrenelBeanSprout_10
-	.4byte gSpriteAnimations_CrenelBeanSprout_12
+	ptr gSpriteAnimations_CrenelBeanSprout_0
+	ptr gSpriteAnimations_CrenelBeanSprout_1
+	ptr gSpriteAnimations_CrenelBeanSprout_0
+	ptr gSpriteAnimations_CrenelBeanSprout_3
+	ptr gSpriteAnimations_CrenelBeanSprout_1
+	ptr gSpriteAnimations_CrenelBeanSprout_3
+	ptr gSpriteAnimations_CrenelBeanSprout_6
+	ptr gSpriteAnimations_CrenelBeanSprout_6
+	ptr gSpriteAnimations_CrenelBeanSprout_8
+	ptr gSpriteAnimations_CrenelBeanSprout_8
+	ptr gSpriteAnimations_CrenelBeanSprout_10
+	ptr gSpriteAnimations_CrenelBeanSprout_10
+	ptr gSpriteAnimations_CrenelBeanSprout_12

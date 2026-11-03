@@ -329,7 +329,7 @@ void UpdateRailMovement(Entity* this, u16** param_2, u16* param_3) {
     u16* ptr = *param_2;
     if (ptr != NULL) {
         if (*ptr == 0xfe) {
-            ptr = ptr + (u32)ptr[1] * -3;
+            ptr = ptr - ptr[1] * 3;
         }
         if (*ptr == 0xff) {
             this->direction = DIR_NONE;

@@ -30,12 +30,12 @@ gSpriteAnimations_WizzrobeWind_7:: @ 080CDF9B
 	.include "animations/gSpriteAnimations_WizzrobeWind_7.s"
 
 gSpriteAnimations_WizzrobeWind:: @ 080CDFA0
-	.4byte gSpriteAnimations_WizzrobeWind_0
-	.4byte gSpriteAnimations_WizzrobeWind_1
-	.4byte gSpriteAnimations_WizzrobeWind_2
-	.4byte gSpriteAnimations_WizzrobeWind_3
-	.4byte gSpriteAnimations_WizzrobeWind_4
-	.4byte gSpriteAnimations_WizzrobeWind_5
-	.4byte gSpriteAnimations_WizzrobeWind_6
-	.4byte gSpriteAnimations_WizzrobeWind_7
-	.4byte 00000000
+	ptr gSpriteAnimations_WizzrobeWind_0
+	ptr gSpriteAnimations_WizzrobeWind_1
+	ptr gSpriteAnimations_WizzrobeWind_2
+	ptr gSpriteAnimations_WizzrobeWind_3
+	ptr gSpriteAnimations_WizzrobeWind_4
+	ptr gSpriteAnimations_WizzrobeWind_5
+	ptr gSpriteAnimations_WizzrobeWind_6
+	ptr gSpriteAnimations_WizzrobeWind_7
+	ptr 00000000

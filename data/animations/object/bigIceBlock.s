@@ -20,9 +20,9 @@ gSpriteAnimations_BigIceBlock_4:: @ 081237CA
 	.include "animations/gSpriteAnimations_BigIceBlock_4.s"
 
 gSpriteAnimations_BigIceBlock:: @ 081237E0
-	.4byte gSpriteAnimations_BigIceBlock_0
-	.4byte gSpriteAnimations_BigIceBlock_1
-	.4byte gSpriteAnimations_BigIceBlock_2
-	.4byte gSpriteAnimations_BigIceBlock_3
-	.4byte gSpriteAnimations_BigIceBlock_4
-	.4byte 00000000
+	ptr gSpriteAnimations_BigIceBlock_0
+	ptr gSpriteAnimations_BigIceBlock_1
+	ptr gSpriteAnimations_BigIceBlock_2
+	ptr gSpriteAnimations_BigIceBlock_3
+	ptr gSpriteAnimations_BigIceBlock_4
+	ptr 00000000

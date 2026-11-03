@@ -11,7 +11,7 @@ gAreaRoomMap_MinishWoods_0:: @ 081032DC
 	map_top offset_gAreaRoomMap_MinishWoods_Main_top, 0x1F02, 1, 1
 
 gAreaRoomMaps_MinishWoods:: @ 081032F4
-	.4byte gAreaRoomMap_MinishWoods_0
+	ptr gAreaRoomMap_MinishWoods_0
 
 gAreaRoomMap_LakeHylia_0:: @ 081032F8
 	map_bottom offset_gAreaRoomMap_LakeHylia_Main_bottom, 0x1680, 1
@@ -22,15 +22,15 @@ gAreaRoomMap_LakeHylia_1:: @ 08103310
 	map_top offset_gAreaRoomMap_LakeHylia_Beanstalk_top, 0x5E8, 1, 1
 
 gAreaRoomMaps_LakeHylia:: @ 08103328
-	.4byte gAreaRoomMap_LakeHylia_0
-	.4byte gAreaRoomMap_LakeHylia_1
+	ptr gAreaRoomMap_LakeHylia_0
+	ptr gAreaRoomMap_LakeHylia_1
 
 gAreaRoomMap_CastorWilds_0:: @ 08103330
 	map_bottom offset_gAreaRoomMap_CastorWilds_Main_bottom, 0x1D88, 1
 	map_top offset_gAreaRoomMap_CastorWilds_Main_top, 0x1D88, 1, 1
 
 gAreaRoomMaps_CastorWilds:: @ 08103348
-	.4byte gAreaRoomMap_CastorWilds_0
+	ptr gAreaRoomMap_CastorWilds_0
 
 gAreaRoomMap_Ruins_0:: @ 0810334C
 	map_bottom offset_gAreaRoomMap_Ruins_Entrance_bottom, 0x3DE, 1
@@ -57,26 +57,26 @@ gAreaRoomMap_Ruins_5:: @ 081033C4
 	map_top offset_gAreaRoomMap_Ruins_BelowFortressEntrance_top, 0x462, 1, 1
 
 gAreaRoomMaps_Ruins:: @ 081033DC
-	.4byte gAreaRoomMap_Ruins_0
-	.4byte gAreaRoomMap_Ruins_1
-	.4byte gAreaRoomMap_Ruins_2
-	.4byte gAreaRoomMap_Ruins_3
-	.4byte gAreaRoomMap_Ruins_4
-	.4byte gAreaRoomMap_Ruins_5
+	ptr gAreaRoomMap_Ruins_0
+	ptr gAreaRoomMap_Ruins_1
+	ptr gAreaRoomMap_Ruins_2
+	ptr gAreaRoomMap_Ruins_3
+	ptr gAreaRoomMap_Ruins_4
+	ptr gAreaRoomMap_Ruins_5
 
 gAreaRoomMap_HyruleTown_0:: @ 081033F4
 	map_bottom offset_gAreaRoomMap_HyruleTown_Main_bottom, 0x1D88, 1
 	map_top offset_gAreaRoomMap_HyruleTown_Main_top, 0x1D88, 1, 1
 
 gAreaRoomMaps_HyruleTown:: @ 0810340C
-	.4byte gAreaRoomMap_HyruleTown_0
+	ptr gAreaRoomMap_HyruleTown_0
 
 gAreaRoomMap_FestivalTown_0:: @ 08103410
 	map_bottom offset_gAreaRoomMap_FestivalTown_Main_bottom, 0xBB8, 1
 	map_top offset_gAreaRoomMap_FestivalTown_Main_top, 0xBB8, 1, 1
 
 gAreaRoomMaps_FestivalTown:: @ 08103428
-	.4byte gAreaRoomMap_FestivalTown_0
+	ptr gAreaRoomMap_FestivalTown_0
 
 gAreaRoomMap_MtCrenel_0:: @ 0810342C
 	map_bottom offset_gAreaRoomMap_MtCrenel_Top_bottom, 0x6E4, 1
@@ -99,11 +99,11 @@ gAreaRoomMap_MtCrenel_4:: @ 0810348C
 	map_top offset_gAreaRoomMap_MtCrenel_Entrance_top, 0xEC4, 1, 1
 
 gAreaRoomMaps_MtCrenel:: @ 081034A4
-	.4byte gAreaRoomMap_MtCrenel_0
-	.4byte gAreaRoomMap_MtCrenel_1
-	.4byte gAreaRoomMap_MtCrenel_2
-	.4byte gAreaRoomMap_MtCrenel_3
-	.4byte gAreaRoomMap_MtCrenel_4
+	ptr gAreaRoomMap_MtCrenel_0
+	ptr gAreaRoomMap_MtCrenel_1
+	ptr gAreaRoomMap_MtCrenel_2
+	ptr gAreaRoomMap_MtCrenel_3
+	ptr gAreaRoomMap_MtCrenel_4
 
 gAreaRoomMap_HyruleField_0:: @ 081034B8
 	map_bottom offset_gAreaRoomMap_HyruleField_WesternWoodsSouth_bottom, 0x30C, 1
@@ -164,23 +164,23 @@ gAreaRoomMap_HyruleField_9:: @ 08103668
 	map_top offset_gAreaRoomMap_HyruleField_WesternWoodsCenter_top, 0x258, 1, 1
 
 gAreaRoomMaps_HyruleField:: @ 08103680
-	.4byte gAreaRoomMap_HyruleField_0
-	.4byte gAreaRoomMap_HyruleField_1
-	.4byte gAreaRoomMap_HyruleField_2
-	.4byte gAreaRoomMap_HyruleField_3
-	.4byte gAreaRoomMap_HyruleField_4
-	.4byte gAreaRoomMap_HyruleField_5
-	.4byte gAreaRoomMap_HyruleField_6
-	.4byte gAreaRoomMap_HyruleField_7
-	.4byte gAreaRoomMap_HyruleField_8
-	.4byte gAreaRoomMap_HyruleField_9
+	ptr gAreaRoomMap_HyruleField_0
+	ptr gAreaRoomMap_HyruleField_1
+	ptr gAreaRoomMap_HyruleField_2
+	ptr gAreaRoomMap_HyruleField_3
+	ptr gAreaRoomMap_HyruleField_4
+	ptr gAreaRoomMap_HyruleField_5
+	ptr gAreaRoomMap_HyruleField_6
+	ptr gAreaRoomMap_HyruleField_7
+	ptr gAreaRoomMap_HyruleField_8
+	ptr gAreaRoomMap_HyruleField_9
 
 gAreaRoomMap_CastleGarden_0:: @ 081036A8
 	map_bottom offset_gAreaRoomMap_CastleGarden_Main_bottom, 0x103E, 1
 	map_top offset_gAreaRoomMap_CastleGarden_Main_top, 0x103E, 1, 1
 
 gAreaRoomMaps_CastleGarden:: @ 081036C0
-	.4byte gAreaRoomMap_CastleGarden_0
+	ptr gAreaRoomMap_CastleGarden_0
 
 gAreaRoomMap_CloudTops_0:: @ 081036C4
 	map_bottom offset_gAreaRoomMap_CloudTops_CloudTops_bottom, 0x1F02, 1
@@ -195,9 +195,9 @@ gAreaRoomMap_CloudTops_2:: @ 081036F4
 	map_top offset_gAreaRoomMap_CloudTops_CloudBottoms_top, 0x1F02, 1, 1
 
 gAreaRoomMaps_CloudTops:: @ 0810370C
-	.4byte gAreaRoomMap_CloudTops_0
-	.4byte gAreaRoomMap_CloudTops_1
-	.4byte gAreaRoomMap_CloudTops_2
+	ptr gAreaRoomMap_CloudTops_0
+	ptr gAreaRoomMap_CloudTops_1
+	ptr gAreaRoomMap_CloudTops_2
 
 gAreaRoomMap_RoyalValley_0:: @ 08103718
 	map_bottom offset_gAreaRoomMap_RoyalValley_Main_bottom, 0xEC4, 1
@@ -208,22 +208,22 @@ gAreaRoomMap_RoyalValley_1:: @ 08103730
 	map_top offset_gAreaRoomMap_RoyalValley_ForestMaze_top, 0x12C, 1, 1
 
 gAreaRoomMaps_RoyalValley:: @ 08103748
-	.4byte gAreaRoomMap_RoyalValley_0
-	.4byte gAreaRoomMap_RoyalValley_1
+	ptr gAreaRoomMap_RoyalValley_0
+	ptr gAreaRoomMap_RoyalValley_1
 
 gAreaRoomMap_VeilFalls_0:: @ 08103750
 	map_bottom offset_gAreaRoomMap_VeilFalls_Main_bottom, 0xEC4, 1
 	map_top offset_gAreaRoomMap_VeilFalls_Main_top, 0xEC4, 1, 1
 
 gAreaRoomMaps_VeilFalls:: @ 08103768
-	.4byte gAreaRoomMap_VeilFalls_0
+	ptr gAreaRoomMap_VeilFalls_0
 
 gAreaRoomMap_VeilFallsTop_0:: @ 0810376C
 	map_bottom offset_gAreaRoomMap_VeilFallsTop_0_bottom, 0x2D0, 1
 	map_top offset_gAreaRoomMap_VeilFallsTop_0_top, 0x2D0, 1, 1
 
 gAreaRoomMaps_VeilFallsTop:: @ 08103784
-	.4byte gAreaRoomMap_VeilFallsTop_0
+	ptr gAreaRoomMap_VeilFallsTop_0
 
 gAreaRoomMap_Beanstalks_0:: @ 08103788
 	map_bottom offset_gAreaRoomMap_Beanstalks_Crenel_bottom, 0x12C, 0, 1
@@ -241,42 +241,42 @@ gAreaRoomMap_Beanstalks_4:: @ 081037B8
 	map_bottom offset_gAreaRoomMap_Beanstalks_WesternWoods_bottom, 0x12C, 0, 1
 
 gAreaRoomMap_Beanstalks_5:: @ 081037C4
-	.4byte 0x80000000, gMapBottom+0x0004, 0x80002000
+	.4byte 0x80000000, gMapBottom+MAP_LAYER_HEADER, 0x80002000
 	map_top_special offset_gRoomMapping_Beanstalks_CrenelClimb_top, 0x800, 1, 1
 
 gAreaRoomMaps_Beanstalks:: @ 081037DC
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_1
-	.4byte gAreaRoomMap_Beanstalks_2
-	.4byte gAreaRoomMap_Beanstalks_3
-	.4byte gAreaRoomMap_Beanstalks_4
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_0
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
-	.4byte gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_1
+	ptr gAreaRoomMap_Beanstalks_2
+	ptr gAreaRoomMap_Beanstalks_3
+	ptr gAreaRoomMap_Beanstalks_4
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_0
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
+	ptr gAreaRoomMap_Beanstalks_5
 
 gAreaRoomMap_CrenelCaves_0:: @ 0810385C
 	map_bottom offset_gAreaRoomMap_CrenelCaves_BlockPushing_bottom, 0xA8C, 1
@@ -347,23 +347,23 @@ gAreaRoomMap_CrenelCaves_16:: @ 081039DC
 	map_top offset_gAreaRoomMap_CrenelCaves_ToGrayblade_top, 0x1FE, 1, 1
 
 gAreaRoomMaps_CrenelCaves:: @ 081039F4
-	.4byte gAreaRoomMap_CrenelCaves_0
-	.4byte gAreaRoomMap_CrenelCaves_1
-	.4byte gAreaRoomMap_CrenelCaves_2
-	.4byte gAreaRoomMap_CrenelCaves_3
-	.4byte gAreaRoomMap_CrenelCaves_4
-	.4byte gAreaRoomMap_CrenelCaves_5
-	.4byte gAreaRoomMap_CrenelCaves_6
-	.4byte gAreaRoomMap_CrenelCaves_7
-	.4byte gAreaRoomMap_CrenelCaves_8
-	.4byte gAreaRoomMap_CrenelCaves_9
-	.4byte gAreaRoomMap_CrenelCaves_10
-	.4byte gAreaRoomMap_CrenelCaves_11
-	.4byte gAreaRoomMap_CrenelCaves_12
-	.4byte gAreaRoomMap_CrenelCaves_13
-	.4byte gAreaRoomMap_CrenelCaves_14
-	.4byte gAreaRoomMap_CrenelCaves_15
-	.4byte gAreaRoomMap_CrenelCaves_16
+	ptr gAreaRoomMap_CrenelCaves_0
+	ptr gAreaRoomMap_CrenelCaves_1
+	ptr gAreaRoomMap_CrenelCaves_2
+	ptr gAreaRoomMap_CrenelCaves_3
+	ptr gAreaRoomMap_CrenelCaves_4
+	ptr gAreaRoomMap_CrenelCaves_5
+	ptr gAreaRoomMap_CrenelCaves_6
+	ptr gAreaRoomMap_CrenelCaves_7
+	ptr gAreaRoomMap_CrenelCaves_8
+	ptr gAreaRoomMap_CrenelCaves_9
+	ptr gAreaRoomMap_CrenelCaves_10
+	ptr gAreaRoomMap_CrenelCaves_11
+	ptr gAreaRoomMap_CrenelCaves_12
+	ptr gAreaRoomMap_CrenelCaves_13
+	ptr gAreaRoomMap_CrenelCaves_14
+	ptr gAreaRoomMap_CrenelCaves_15
+	ptr gAreaRoomMap_CrenelCaves_16
 
 gAreaRoomMap_GreatFairies_0:: @ 08103A38
 	map_bottom offset_gAreaRoomMap_GreatFairies_Graveyard_bottom, 0x21C, 1
@@ -378,28 +378,28 @@ gAreaRoomMap_GreatFairies_2:: @ 08103A68
 	map_top offset_gAreaRoomMap_GreatFairies_Crenel_top, 0x21C, 1, 1
 
 gAreaRoomMaps_GreatFairies:: @ 08103A80
-	.4byte gAreaRoomMap_GreatFairies_0
-	.4byte gAreaRoomMap_GreatFairies_1
-	.4byte gAreaRoomMap_GreatFairies_2
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
+	ptr gAreaRoomMap_GreatFairies_0
+	ptr gAreaRoomMap_GreatFairies_1
+	ptr gAreaRoomMap_GreatFairies_2
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
 
 gAreaRoomMap_LakeWoodsCave_0:: @ 08103AA0
 	map_bottom offset_gAreaRoomMap_LakeWoodsCave_Main_bottom, 0x1F02, 1
 	map_top offset_gAreaRoomMap_LakeWoodsCave_Main_top, 0x1F02, 1, 1
 
 gAreaRoomMaps_LakeWoodsCave:: @ 08103AB8
-	.4byte gAreaRoomMap_LakeWoodsCave_0
+	ptr gAreaRoomMap_LakeWoodsCave_0
 
 gAreaRoomMap_HyruleDigCaves_0:: @ 08103ABC
 	map_bottom offset_gAreaRoomMap_HyruleDigCaves_Town_bottom, 0x1D88, 1
 	map_top offset_gAreaRoomMap_HyruleDigCaves_Town_top, 0x1D88, 1, 1
 
 gAreaRoomMaps_HyruleDigCaves:: @ 08103AD4
-	.4byte gAreaRoomMap_HyruleDigCaves_0
+	ptr gAreaRoomMap_HyruleDigCaves_0
 
 gAreaRoomMap_DigCaves_0:: @ 08103AD8
 	map_bottom offset_gAreaRoomMap_DigCaves_EasternHills_bottom, 0x7F8, 1
@@ -410,31 +410,31 @@ gAreaRoomMap_DigCaves_1:: @ 08103AF0
 	map_top offset_gAreaRoomMap_DigCaves_TrilbyHighlands_top, 0xE10, 1, 1
 
 gAreaRoomMaps_DigCaves1:: @ 08103B08
-	.4byte gAreaRoomMap_DigCaves_0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_DigCaves_1
+	ptr gAreaRoomMap_DigCaves_0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_DigCaves_1
 
 gAreaRoomMap_CrenelDigCave_0:: @ 08103B18
 	map_bottom offset_gAreaRoomMap_CrenelDigCave_0_bottom, 0x7C0, 1
 	map_top offset_gAreaRoomMap_CrenelDigCave_0_top, 0x7C0, 1, 1
 
 gAreaRoomMaps_CrenelDigCave:: @ 08103B30
-	.4byte gAreaRoomMap_CrenelDigCave_0
+	ptr gAreaRoomMap_CrenelDigCave_0
 
 gAreaRoomMap_VeilFallsDigCave_0:: @ 08103B34
 	map_bottom offset_gAreaRoomMap_VeilFallsDigCave_0_bottom, 0xEC4, 1
 	map_top offset_gAreaRoomMap_VeilFallsDigCave_0_top, 0xEC4, 1, 1
 
 gAreaRoomMaps_VeilFallsDigCave:: @ 08103B4C
-	.4byte gAreaRoomMap_VeilFallsDigCave_0
+	ptr gAreaRoomMap_VeilFallsDigCave_0
 
 gAreaRoomMap_CastorWildsDigCave_0:: @ 08103B50
 	map_bottom offset_gAreaRoomMap_CastorWildsDigCave_0_bottom, 0x1D88, 1
 	map_top offset_gAreaRoomMap_CastorWildsDigCave_0_top, 0x1D88, 1, 1
 
 gAreaRoomMaps_CastorWildsDigCave:: @ 08103B68
-	.4byte gAreaRoomMap_CastorWildsDigCave_0
+	ptr gAreaRoomMap_CastorWildsDigCave_0
 
 gAreaRoomMap_OuterFortressOfWinds_0:: @ 08103B6C
 	map_bottom offset_gAreaRoomMap_OuterFortressOfWinds_EntranceHall_bottom, 0x5FE, 1
@@ -457,11 +457,11 @@ gAreaRoomMap_OuterFortressOfWinds_4:: @ 08103BCC
 	map_top offset_gAreaRoomMap_OuterFortressOfWinds_SmallKey_top, 0x186, 1, 1
 
 gAreaRoomMaps_OuterFortressOfWinds:: @ 08103BE4
-	.4byte gAreaRoomMap_OuterFortressOfWinds_0
-	.4byte gAreaRoomMap_OuterFortressOfWinds_1
-	.4byte gAreaRoomMap_OuterFortressOfWinds_2
-	.4byte gAreaRoomMap_OuterFortressOfWinds_3
-	.4byte gAreaRoomMap_OuterFortressOfWinds_4
+	ptr gAreaRoomMap_OuterFortressOfWinds_0
+	ptr gAreaRoomMap_OuterFortressOfWinds_1
+	ptr gAreaRoomMap_OuterFortressOfWinds_2
+	ptr gAreaRoomMap_OuterFortressOfWinds_3
+	ptr gAreaRoomMap_OuterFortressOfWinds_4
 
 gAreaRoomMap_HyliaDigCaves_0:: @ 08103BF8
 	map_bottom offset_gAreaRoomMap_HyliaDigCaves_0_bottom, 0x220, 1
@@ -472,16 +472,16 @@ gAreaRoomMap_HyliaDigCaves_1:: @ 08103C10
 	map_top offset_gAreaRoomMap_HyliaDigCaves_1_top, 0xD4A, 1, 1
 
 gAreaRoomMaps_HyliaDigCaves:: @ 08103C28
-	.4byte gAreaRoomMap_HyliaDigCaves_0
-	.4byte gAreaRoomMap_HyliaDigCaves_1
+	ptr gAreaRoomMap_HyliaDigCaves_0
+	ptr gAreaRoomMap_HyliaDigCaves_1
 
 gAreaRoomMap_Empty_0:: @ 08103C30
 	map_bottom offset_gAreaRoomMap_Empty_0_bottom, 0x1F02, 1
 	map_top offset_gAreaRoomMap_Empty_0_top, 0x1F02, 1, 1
 
 gAreaRoomMaps_Empty:: @ 08103C48
-	.4byte gAreaRoomMap_Empty_0
-	.4byte gAreaRoomMap_Empty_0
+	ptr gAreaRoomMap_Empty_0
+	ptr gAreaRoomMap_Empty_0
 
 gAreaRoomMap_MinishVillage_0:: @ 08103C50
 	map_bottom offset_gAreaRoomMap_MinishVillage_Main_bottom, 0x1F02, 1
@@ -492,15 +492,15 @@ gAreaRoomMap_MinishVillage_1:: @ 08103C68
 	map_top offset_gAreaRoomMap_MinishVillage_SideHouseArea_top, 0x618, 1, 1
 
 gAreaRoomMaps_MinishVillage:: @ 08103C80
-	.4byte gAreaRoomMap_MinishVillage_0
-	.4byte gAreaRoomMap_MinishVillage_1
+	ptr gAreaRoomMap_MinishVillage_0
+	ptr gAreaRoomMap_MinishVillage_1
 
 gAreaRoomMap_MelarisMine_0:: @ 08103C88
 	map_bottom offset_gAreaRoomMap_MelarisMine_Main_bottom, 0xDB6, 1
 	map_top offset_gAreaRoomMap_MelarisMine_Main_top, 0xDB6, 1, 1
 
 gAreaRoomMaps_MelarisMine:: @ 08103CA0
-	.4byte gAreaRoomMap_MelarisMine_0
+	ptr gAreaRoomMap_MelarisMine_0
 
 gAreaRoomMap_MinishPaths_0:: @ 08103CA4
 	map_bottom offset_gAreaRoomMap_MinishPaths_MinishVillage_bottom, 0x5DC, 1, 1
@@ -518,11 +518,11 @@ gAreaRoomMap_MinishPaths_4:: @ 08103CD4
 	map_bottom offset_gAreaRoomMap_MinishPaths_LakeHylia_bottom, 0x5DC, 1, 1
 
 gAreaRoomMaps_MinishPaths:: @ 08103CE0
-	.4byte gAreaRoomMap_MinishPaths_0
-	.4byte gAreaRoomMap_MinishPaths_1
-	.4byte gAreaRoomMap_MinishPaths_2
-	.4byte gAreaRoomMap_MinishPaths_3
-	.4byte gAreaRoomMap_MinishPaths_4
+	ptr gAreaRoomMap_MinishPaths_0
+	ptr gAreaRoomMap_MinishPaths_1
+	ptr gAreaRoomMap_MinishPaths_2
+	ptr gAreaRoomMap_MinishPaths_3
+	ptr gAreaRoomMap_MinishPaths_4
 
 gAreaRoomMap_CrenelMinishPaths_0:: @ 08103CF4
 	map_bottom offset_gAreaRoomMap_CrenelMinishPaths_Bean_bottom, 0x5DC, 1, 1
@@ -537,10 +537,10 @@ gAreaRoomMap_CrenelMinishPaths_3:: @ 08103D18
 	map_bottom offset_gAreaRoomMap_CrenelMinishPaths_Melari_bottom, 0x4B0, 1, 1
 
 gAreaRoomMaps_CrenelMinishPaths:: @ 08103D24
-	.4byte gAreaRoomMap_CrenelMinishPaths_0
-	.4byte gAreaRoomMap_CrenelMinishPaths_1
-	.4byte gAreaRoomMap_CrenelMinishPaths_2
-	.4byte gAreaRoomMap_CrenelMinishPaths_3
+	ptr gAreaRoomMap_CrenelMinishPaths_0
+	ptr gAreaRoomMap_CrenelMinishPaths_1
+	ptr gAreaRoomMap_CrenelMinishPaths_2
+	ptr gAreaRoomMap_CrenelMinishPaths_3
 
 gAreaRoomMap_MinishHouseInteriors_0:: @ 08103D34
 	map_bottom offset_gAreaRoomMap_None, 0x2000, 1
@@ -648,46 +648,46 @@ gAreaRoomMap_MinishHouseInteriors_20:: @ 08104004
 	map_bottom_special offset_gRoomMapping_MinishHouseInteriors_LakeHyliaOcarina_bottom, 0x800, 1, 1
 
 gAreaRoomMaps_MinishHouseInteriors:: @ 08104028
-	.4byte gAreaRoomMap_MinishHouseInteriors_0
-	.4byte gAreaRoomMap_MinishHouseInteriors_1
-	.4byte gAreaRoomMap_MinishHouseInteriors_2
-	.4byte gAreaRoomMap_MinishHouseInteriors_3
-	.4byte gAreaRoomMap_MinishHouseInteriors_4
-	.4byte gAreaRoomMap_MinishHouseInteriors_5
-	.4byte gAreaRoomMap_MinishHouseInteriors_6
-	.4byte gAreaRoomMap_MinishHouseInteriors_7
-	.4byte gAreaRoomMap_MinishHouseInteriors_8
-	.4byte gAreaRoomMap_MinishHouseInteriors_9
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_MinishHouseInteriors_10
-	.4byte gAreaRoomMap_MinishHouseInteriors_11
-	.4byte gAreaRoomMap_MinishHouseInteriors_12
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_MinishHouseInteriors_13
-	.4byte gAreaRoomMap_MinishHouseInteriors_14
-	.4byte gAreaRoomMap_MinishHouseInteriors_15
-	.4byte gAreaRoomMap_MinishHouseInteriors_16
-	.4byte gAreaRoomMap_MinishHouseInteriors_17
-	.4byte gAreaRoomMap_MinishHouseInteriors_18
-	.4byte gAreaRoomMap_MinishHouseInteriors_19
-	.4byte gAreaRoomMap_MinishHouseInteriors_20
+	ptr gAreaRoomMap_MinishHouseInteriors_0
+	ptr gAreaRoomMap_MinishHouseInteriors_1
+	ptr gAreaRoomMap_MinishHouseInteriors_2
+	ptr gAreaRoomMap_MinishHouseInteriors_3
+	ptr gAreaRoomMap_MinishHouseInteriors_4
+	ptr gAreaRoomMap_MinishHouseInteriors_5
+	ptr gAreaRoomMap_MinishHouseInteriors_6
+	ptr gAreaRoomMap_MinishHouseInteriors_7
+	ptr gAreaRoomMap_MinishHouseInteriors_8
+	ptr gAreaRoomMap_MinishHouseInteriors_9
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_MinishHouseInteriors_10
+	ptr gAreaRoomMap_MinishHouseInteriors_11
+	ptr gAreaRoomMap_MinishHouseInteriors_12
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_MinishHouseInteriors_13
+	ptr gAreaRoomMap_MinishHouseInteriors_14
+	ptr gAreaRoomMap_MinishHouseInteriors_15
+	ptr gAreaRoomMap_MinishHouseInteriors_16
+	ptr gAreaRoomMap_MinishHouseInteriors_17
+	ptr gAreaRoomMap_MinishHouseInteriors_18
+	ptr gAreaRoomMap_MinishHouseInteriors_19
+	ptr gAreaRoomMap_MinishHouseInteriors_20
 
 gAreaRoomMap_TownMinishHoles_0:: @ 081040C8
 	map_bottom offset_gAreaRoomMap_None, 0x2000, 1
@@ -735,54 +735,54 @@ gAreaRoomMap_TownMinishHoles_8:: @ 081041E8
 	map_bottom_special offset_gRoomMapping_TownMinishHoles_RemShoeShop_bottom, 0x2000, 1, 1
 
 gAreaRoomMaps_TownMinishHoles:: @ 0810420C
-	.4byte gAreaRoomMap_TownMinishHoles_0
-	.4byte gAreaRoomMap_TownMinishHoles_1
-	.4byte gAreaRoomMap_TownMinishHoles_2
-	.4byte gAreaRoomMap_TownMinishHoles_3
-	.4byte gAreaRoomMap_TownMinishHoles_4
-	.4byte gAreaRoomMap_TownMinishHoles_5
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_TownMinishHoles_6
-	.4byte gAreaRoomMap_TownMinishHoles_7
-	.4byte gAreaRoomMap_TownMinishHoles_8
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
+	ptr gAreaRoomMap_TownMinishHoles_0
+	ptr gAreaRoomMap_TownMinishHoles_1
+	ptr gAreaRoomMap_TownMinishHoles_2
+	ptr gAreaRoomMap_TownMinishHoles_3
+	ptr gAreaRoomMap_TownMinishHoles_4
+	ptr gAreaRoomMap_TownMinishHoles_5
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_TownMinishHoles_6
+	ptr gAreaRoomMap_TownMinishHoles_7
+	ptr gAreaRoomMap_TownMinishHoles_8
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
 
 gAreaRoomMap_HouseInteriors1_0:: @ 081042CC
 	map_bottom offset_gAreaRoomMap_HouseInteriors1_Mayor_bottom, 0x198, 1
@@ -837,22 +837,22 @@ gAreaRoomMap_HouseInteriors1_12:: @ 081043EC
 	map_top offset_gAreaRoomMap_HouseInteriors1_SchoolEast_top, 0x1B8, 1, 1
 
 gAreaRoomMaps_HouseInteriors1:: @ 08104404
-	.4byte gAreaRoomMap_HouseInteriors1_0
-	.4byte gAreaRoomMap_HouseInteriors1_1
-	.4byte gAreaRoomMap_HouseInteriors1_2
-	.4byte gAreaRoomMap_HouseInteriors1_3
-	.4byte gAreaRoomMap_HouseInteriors1_4
-	.4byte gAreaRoomMap_HouseInteriors1_5
-	.4byte gAreaRoomMap_HouseInteriors1_6
-	.4byte gAreaRoomMap_HouseInteriors1_7
-	.4byte gAreaRoomMap_HouseInteriors1_8
-	.4byte gAreaRoomMap_HouseInteriors1_9
-	.4byte gAreaRoomMap_HouseInteriors1_10
-	.4byte gAreaRoomMap_HouseInteriors1_11
-	.4byte gAreaRoomMap_HouseInteriors1_12
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
+	ptr gAreaRoomMap_HouseInteriors1_0
+	ptr gAreaRoomMap_HouseInteriors1_1
+	ptr gAreaRoomMap_HouseInteriors1_2
+	ptr gAreaRoomMap_HouseInteriors1_3
+	ptr gAreaRoomMap_HouseInteriors1_4
+	ptr gAreaRoomMap_HouseInteriors1_5
+	ptr gAreaRoomMap_HouseInteriors1_6
+	ptr gAreaRoomMap_HouseInteriors1_7
+	ptr gAreaRoomMap_HouseInteriors1_8
+	ptr gAreaRoomMap_HouseInteriors1_9
+	ptr gAreaRoomMap_HouseInteriors1_10
+	ptr gAreaRoomMap_HouseInteriors1_11
+	ptr gAreaRoomMap_HouseInteriors1_12
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
 
 gAreaRoomMap_HouseInteriors2_0:: @ 08104444
 	map_bottom offset_gAreaRoomMap_HouseInteriors2_Stranger_bottom, 0x12C, 1
@@ -931,54 +931,54 @@ gAreaRoomMap_HouseInteriors2_18:: @ 081045F4
 	map_top offset_gAreaRoomMap_HouseInteriors2_LinksHouseBedroom_top, 0x12C, 1, 1
 
 gAreaRoomMaps_HouseInteriors2:: @ 0810460C
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_1
-	.4byte gAreaRoomMap_HouseInteriors2_2
-	.4byte gAreaRoomMap_HouseInteriors2_3
-	.4byte gAreaRoomMap_HouseInteriors2_4
-	.4byte gAreaRoomMap_HouseInteriors2_5
-	.4byte gAreaRoomMap_HouseInteriors2_6
-	.4byte gAreaRoomMap_HouseInteriors2_7
-	.4byte gAreaRoomMap_HouseInteriors2_8
-	.4byte gAreaRoomMap_HouseInteriors2_9
-	.4byte gAreaRoomMap_HouseInteriors2_10
-	.4byte gAreaRoomMap_HouseInteriors2_11
-	.4byte gAreaRoomMap_HouseInteriors2_12
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_13
-	.4byte gAreaRoomMap_HouseInteriors2_14
-	.4byte gAreaRoomMap_HouseInteriors2_15
-	.4byte gAreaRoomMap_HouseInteriors2_16
-	.4byte gAreaRoomMap_HouseInteriors2_17
-	.4byte gAreaRoomMap_HouseInteriors2_18
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
-	.4byte gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_1
+	ptr gAreaRoomMap_HouseInteriors2_2
+	ptr gAreaRoomMap_HouseInteriors2_3
+	ptr gAreaRoomMap_HouseInteriors2_4
+	ptr gAreaRoomMap_HouseInteriors2_5
+	ptr gAreaRoomMap_HouseInteriors2_6
+	ptr gAreaRoomMap_HouseInteriors2_7
+	ptr gAreaRoomMap_HouseInteriors2_8
+	ptr gAreaRoomMap_HouseInteriors2_9
+	ptr gAreaRoomMap_HouseInteriors2_10
+	ptr gAreaRoomMap_HouseInteriors2_11
+	ptr gAreaRoomMap_HouseInteriors2_12
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_13
+	ptr gAreaRoomMap_HouseInteriors2_14
+	ptr gAreaRoomMap_HouseInteriors2_15
+	ptr gAreaRoomMap_HouseInteriors2_16
+	ptr gAreaRoomMap_HouseInteriors2_17
+	ptr gAreaRoomMap_HouseInteriors2_18
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
+	ptr gAreaRoomMap_HouseInteriors2_0
 
 gAreaRoomMap_HouseInteriors4_0:: @ 081046CC
 	map_bottom offset_gAreaRoomMap_HouseInteriors4_Carpenter_bottom, 0x168, 1
@@ -1005,22 +1005,22 @@ gAreaRoomMap_HouseInteriors4_5:: @ 08104744
 	map_top offset_gAreaRoomMap_HouseInteriors4_MayorLakeCabin_top, 0x168, 1, 1
 
 gAreaRoomMaps_HouseInteriors4:: @ 0810475C
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_1
-	.4byte gAreaRoomMap_HouseInteriors4_2
-	.4byte gAreaRoomMap_HouseInteriors4_3
-	.4byte gAreaRoomMap_HouseInteriors4_4
-	.4byte gAreaRoomMap_HouseInteriors4_5
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
-	.4byte gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_1
+	ptr gAreaRoomMap_HouseInteriors4_2
+	ptr gAreaRoomMap_HouseInteriors4_3
+	ptr gAreaRoomMap_HouseInteriors4_4
+	ptr gAreaRoomMap_HouseInteriors4_5
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
+	ptr gAreaRoomMap_HouseInteriors4_0
 
 gAreaRoomMap_HouseInteriors3_0:: @ 0810479C
 	map_bottom offset_gAreaRoomMap_HouseInteriors3_StockwellShop_bottom, 0x186, 1
@@ -1059,15 +1059,15 @@ gAreaRoomMap_HouseInteriors3_8:: @ 0810485C
 	map_top offset_gAreaRoomMap_HouseInteriors3_Borlov_top, 0x140, 1, 1
 
 gAreaRoomMaps_HouseInteriors3:: @ 08104874
-	.4byte gAreaRoomMap_HouseInteriors3_0
-	.4byte gAreaRoomMap_HouseInteriors3_1
-	.4byte gAreaRoomMap_HouseInteriors3_2
-	.4byte gAreaRoomMap_HouseInteriors3_3
-	.4byte gAreaRoomMap_HouseInteriors3_4
-	.4byte gAreaRoomMap_HouseInteriors3_5
-	.4byte gAreaRoomMap_HouseInteriors3_6
-	.4byte gAreaRoomMap_HouseInteriors3_7
-	.4byte gAreaRoomMap_HouseInteriors3_8
+	ptr gAreaRoomMap_HouseInteriors3_0
+	ptr gAreaRoomMap_HouseInteriors3_1
+	ptr gAreaRoomMap_HouseInteriors3_2
+	ptr gAreaRoomMap_HouseInteriors3_3
+	ptr gAreaRoomMap_HouseInteriors3_4
+	ptr gAreaRoomMap_HouseInteriors3_5
+	ptr gAreaRoomMap_HouseInteriors3_6
+	ptr gAreaRoomMap_HouseInteriors3_7
+	ptr gAreaRoomMap_HouseInteriors3_8
 
 gAreaRoomMap_TreeInteriors_0:: @ 08104898
 	map_bottom offset_gAreaRoomMap_TreeInteriors_WitchHut_bottom, 0x12C, 0
@@ -1138,38 +1138,38 @@ gAreaRoomMap_TreeInteriors_16:: @ 08104A18
 	map_top offset_gAreaRoomMap_TreeInteriors_UnusedHeartContainer_top, 0x12C, 1, 1
 
 gAreaRoomMaps_TreeInteriors:: @ 08104A30
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_0
-	.4byte gAreaRoomMap_TreeInteriors_1
-	.4byte gAreaRoomMap_TreeInteriors_2
-	.4byte gAreaRoomMap_TreeInteriors_3
-	.4byte gAreaRoomMap_TreeInteriors_4
-	.4byte gAreaRoomMap_TreeInteriors_5
-	.4byte gAreaRoomMap_TreeInteriors_6
-	.4byte gAreaRoomMap_TreeInteriors_7
-	.4byte gAreaRoomMap_TreeInteriors_8
-	.4byte gAreaRoomMap_TreeInteriors_9
-	.4byte gAreaRoomMap_TreeInteriors_10
-	.4byte gAreaRoomMap_TreeInteriors_11
-	.4byte gAreaRoomMap_TreeInteriors_12
-	.4byte gAreaRoomMap_TreeInteriors_13
-	.4byte gAreaRoomMap_TreeInteriors_14
-	.4byte gAreaRoomMap_TreeInteriors_15
-	.4byte gAreaRoomMap_TreeInteriors_16
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_0
+	ptr gAreaRoomMap_TreeInteriors_1
+	ptr gAreaRoomMap_TreeInteriors_2
+	ptr gAreaRoomMap_TreeInteriors_3
+	ptr gAreaRoomMap_TreeInteriors_4
+	ptr gAreaRoomMap_TreeInteriors_5
+	ptr gAreaRoomMap_TreeInteriors_6
+	ptr gAreaRoomMap_TreeInteriors_7
+	ptr gAreaRoomMap_TreeInteriors_8
+	ptr gAreaRoomMap_TreeInteriors_9
+	ptr gAreaRoomMap_TreeInteriors_10
+	ptr gAreaRoomMap_TreeInteriors_11
+	ptr gAreaRoomMap_TreeInteriors_12
+	ptr gAreaRoomMap_TreeInteriors_13
+	ptr gAreaRoomMap_TreeInteriors_14
+	ptr gAreaRoomMap_TreeInteriors_15
+	ptr gAreaRoomMap_TreeInteriors_16
 
 gAreaRoomMap_Dojos_0:: @ 08104AB0
 	map_bottom offset_gAreaRoomMap_Dojos_Grayblade_bottom, 0x168, 1
@@ -1228,22 +1228,22 @@ gAreaRoomMap_Dojos_13:: @ 08104BE8
 	map_top offset_gAreaRoomMap_Dojos_ToScarblade_top, 0x12C, 1, 1
 
 gAreaRoomMaps_Dojos:: @ 08104C00
-	.4byte gAreaRoomMap_Dojos_0
-	.4byte gAreaRoomMap_Dojos_1
-	.4byte gAreaRoomMap_Dojos_2
-	.4byte gAreaRoomMap_Dojos_3
-	.4byte gAreaRoomMap_Dojos_4
-	.4byte gAreaRoomMap_Dojos_5
-	.4byte gAreaRoomMap_Dojos_6
-	.4byte gAreaRoomMap_Dojos_7
-	.4byte gAreaRoomMap_Dojos_8
-	.4byte gAreaRoomMap_Dojos_9
-	.4byte gAreaRoomMap_Dojos_10
-	.4byte gAreaRoomMap_Dojos_11
-	.4byte gAreaRoomMap_Dojos_12
-	.4byte gAreaRoomMap_Dojos_13
-	.4byte gAreaRoomMap_Dojos_0
-	.4byte gAreaRoomMap_Dojos_0
+	ptr gAreaRoomMap_Dojos_0
+	ptr gAreaRoomMap_Dojos_1
+	ptr gAreaRoomMap_Dojos_2
+	ptr gAreaRoomMap_Dojos_3
+	ptr gAreaRoomMap_Dojos_4
+	ptr gAreaRoomMap_Dojos_5
+	ptr gAreaRoomMap_Dojos_6
+	ptr gAreaRoomMap_Dojos_7
+	ptr gAreaRoomMap_Dojos_8
+	ptr gAreaRoomMap_Dojos_9
+	ptr gAreaRoomMap_Dojos_10
+	ptr gAreaRoomMap_Dojos_11
+	ptr gAreaRoomMap_Dojos_12
+	ptr gAreaRoomMap_Dojos_13
+	ptr gAreaRoomMap_Dojos_0
+	ptr gAreaRoomMap_Dojos_0
 
 gAreaRoomMap_MinishCracks_0:: @ 08104C40
 	map_bottom offset_gAreaRoomMap_MinishCracks_LonLonRanchNorth_bottom, 0x12C, 0
@@ -1318,24 +1318,24 @@ gAreaRoomMap_MinishCracks_17:: @ 08104DD8
 	map_top offset_gAreaRoomMap_MinishCracks_11_top, 0x12C, 1, 1
 
 gAreaRoomMaps_MinishCracks:: @ 08104DF0
-	.4byte gAreaRoomMap_MinishCracks_0
-	.4byte gAreaRoomMap_MinishCracks_1
-	.4byte gAreaRoomMap_MinishCracks_2
-	.4byte gAreaRoomMap_MinishCracks_3
-	.4byte gAreaRoomMap_MinishCracks_4
-	.4byte gAreaRoomMap_MinishCracks_5
-	.4byte gAreaRoomMap_MinishCracks_6
-	.4byte gAreaRoomMap_MinishCracks_7
-	.4byte gAreaRoomMap_MinishCracks_8
-	.4byte gAreaRoomMap_MinishCracks_9
-	.4byte gAreaRoomMap_MinishCracks_10
-	.4byte gAreaRoomMap_MinishCracks_11
-	.4byte gAreaRoomMap_MinishCracks_12
-	.4byte gAreaRoomMap_MinishCracks_13
-	.4byte gAreaRoomMap_MinishCracks_14
-	.4byte gAreaRoomMap_MinishCracks_15
-	.4byte gAreaRoomMap_MinishCracks_16
-	.4byte gAreaRoomMap_MinishCracks_17
+	ptr gAreaRoomMap_MinishCracks_0
+	ptr gAreaRoomMap_MinishCracks_1
+	ptr gAreaRoomMap_MinishCracks_2
+	ptr gAreaRoomMap_MinishCracks_3
+	ptr gAreaRoomMap_MinishCracks_4
+	ptr gAreaRoomMap_MinishCracks_5
+	ptr gAreaRoomMap_MinishCracks_6
+	ptr gAreaRoomMap_MinishCracks_7
+	ptr gAreaRoomMap_MinishCracks_8
+	ptr gAreaRoomMap_MinishCracks_9
+	ptr gAreaRoomMap_MinishCracks_10
+	ptr gAreaRoomMap_MinishCracks_11
+	ptr gAreaRoomMap_MinishCracks_12
+	ptr gAreaRoomMap_MinishCracks_13
+	ptr gAreaRoomMap_MinishCracks_14
+	ptr gAreaRoomMap_MinishCracks_15
+	ptr gAreaRoomMap_MinishCracks_16
+	ptr gAreaRoomMap_MinishCracks_17
 
 gAreaRoomMap_ArmosInteriors_0:: @ 08104E38
 	map_bottom offset_gAreaRoomMap_ArmosInteriors_RuinsEntranceNorth_bottom, 0x12C, 0
@@ -1382,17 +1382,17 @@ gAreaRoomMap_ArmosInteriors_10:: @ 08104F28
 	map_top offset_gAreaRoomMap_ArmosInteriors_FortressRight_top, 0x12C, 1, 1
 
 gAreaRoomMaps_ArmosInteriors:: @ 08104F40
-	.4byte gAreaRoomMap_ArmosInteriors_0
-	.4byte gAreaRoomMap_ArmosInteriors_1
-	.4byte gAreaRoomMap_ArmosInteriors_2
-	.4byte gAreaRoomMap_ArmosInteriors_3
-	.4byte gAreaRoomMap_ArmosInteriors_4
-	.4byte gAreaRoomMap_ArmosInteriors_5
-	.4byte gAreaRoomMap_ArmosInteriors_6
-	.4byte gAreaRoomMap_ArmosInteriors_7
-	.4byte gAreaRoomMap_ArmosInteriors_8
-	.4byte gAreaRoomMap_ArmosInteriors_9
-	.4byte gAreaRoomMap_ArmosInteriors_10
+	ptr gAreaRoomMap_ArmosInteriors_0
+	ptr gAreaRoomMap_ArmosInteriors_1
+	ptr gAreaRoomMap_ArmosInteriors_2
+	ptr gAreaRoomMap_ArmosInteriors_3
+	ptr gAreaRoomMap_ArmosInteriors_4
+	ptr gAreaRoomMap_ArmosInteriors_5
+	ptr gAreaRoomMap_ArmosInteriors_6
+	ptr gAreaRoomMap_ArmosInteriors_7
+	ptr gAreaRoomMap_ArmosInteriors_8
+	ptr gAreaRoomMap_ArmosInteriors_9
+	ptr gAreaRoomMap_ArmosInteriors_10
 
 gAreaRoomMap_MinishRafters_0:: @ 08104F6C
 	map_bottom offset_gAreaRoomMap_MinishRafters_Cafe_bottom, 0x3E0, 1, 1
@@ -1407,10 +1407,10 @@ gAreaRoomMap_MinishRafters_3:: @ 08104F90
 	map_bottom offset_gAreaRoomMap_MinishRafters_Bakery_bottom, 0x3E0, 1, 1
 
 gAreaRoomMaps_MinishRafters:: @ 08104F9C
-	.4byte gAreaRoomMap_MinishRafters_0
-	.4byte gAreaRoomMap_MinishRafters_1
-	.4byte gAreaRoomMap_MinishRafters_2
-	.4byte gAreaRoomMap_MinishRafters_3
+	ptr gAreaRoomMap_MinishRafters_0
+	ptr gAreaRoomMap_MinishRafters_1
+	ptr gAreaRoomMap_MinishRafters_2
+	ptr gAreaRoomMap_MinishRafters_3
 
 gAreaRoomMap_GoronCave_0:: @ 08104FAC
 	map_bottom offset_gAreaRoomMap_GoronCave_Stairs_bottom, 0x12C, 1
@@ -1421,8 +1421,8 @@ gAreaRoomMap_GoronCave_1:: @ 08104FC4
 	map_top offset_gAreaRoomMap_GoronCave_Main_top, 0x546, 1, 1
 
 gAreaRoomMaps_GoronCave:: @ 08104FDC
-	.4byte gAreaRoomMap_GoronCave_0
-	.4byte gAreaRoomMap_GoronCave_1
+	ptr gAreaRoomMap_GoronCave_0
+	ptr gAreaRoomMap_GoronCave_1
 
 gAreaRoomMap_WindTribeTower_0:: @ 08104FE4
 	map_bottom offset_gAreaRoomMap_WindTribeTower_Entrance_bottom, 0x276, 1
@@ -1441,17 +1441,17 @@ gAreaRoomMap_WindTribeTower_3:: @ 0810502C
 	map_top offset_gAreaRoomMap_WindTribeTower_Floor3_top, 0x276, 1, 1
 
 gAreaRoomMaps_WindTribeTower:: @ 08105044
-	.4byte gAreaRoomMap_WindTribeTower_0
-	.4byte gAreaRoomMap_WindTribeTower_1
-	.4byte gAreaRoomMap_WindTribeTower_2
-	.4byte gAreaRoomMap_WindTribeTower_3
+	ptr gAreaRoomMap_WindTribeTower_0
+	ptr gAreaRoomMap_WindTribeTower_1
+	ptr gAreaRoomMap_WindTribeTower_2
+	ptr gAreaRoomMap_WindTribeTower_3
 
 gAreaRoomMap_WindTribeTowerRoof_0:: @ 08105054
 	map_bottom offset_gAreaRoomMap_WindTribeTowerRoof_0_bottom, 0x30C, 1
 	map_top offset_gAreaRoomMap_WindTribeTowerRoof_0_top, 0x30C, 1, 1
 
 gAreaRoomMaps_WindTribeTowerRoof:: @ 0810506C
-	.4byte gAreaRoomMap_WindTribeTowerRoof_0
+	ptr gAreaRoomMap_WindTribeTowerRoof_0
 
 gAreaRoomMap_MinishCaves_0:: @ 08105070
 	map_bottom offset_gAreaRoomMap_MinishCaves_BeanPesto_bottom, 0x474, 1
@@ -1494,16 +1494,16 @@ gAreaRoomMap_MinishCaves_9:: @ 08105148
 	map_top offset_gAreaRoomMap_MinishCaves_MinishWoodsSouthwest_top, 0x618, 1, 1
 
 gAreaRoomMaps_MinishCaves:: @ 08105160
-	.4byte gAreaRoomMap_MinishCaves_0
-	.4byte gAreaRoomMap_MinishCaves_1
-	.4byte gAreaRoomMap_MinishCaves_2
-	.4byte gAreaRoomMap_MinishCaves_3
-	.4byte gAreaRoomMap_MinishCaves_4
-	.4byte gAreaRoomMap_MinishCaves_5
-	.4byte gAreaRoomMap_MinishCaves_6
-	.4byte gAreaRoomMap_MinishCaves_7
-	.4byte gAreaRoomMap_MinishCaves_8
-	.4byte gAreaRoomMap_MinishCaves_9
+	ptr gAreaRoomMap_MinishCaves_0
+	ptr gAreaRoomMap_MinishCaves_1
+	ptr gAreaRoomMap_MinishCaves_2
+	ptr gAreaRoomMap_MinishCaves_3
+	ptr gAreaRoomMap_MinishCaves_4
+	ptr gAreaRoomMap_MinishCaves_5
+	ptr gAreaRoomMap_MinishCaves_6
+	ptr gAreaRoomMap_MinishCaves_7
+	ptr gAreaRoomMap_MinishCaves_8
+	ptr gAreaRoomMap_MinishCaves_9
 
 gAreaRoomMap_CastleGardenMinishHoles_0:: @ 08105188
 	map_bottom offset_gAreaRoomMap_CastleGardenMinishHoles_0_bottom, 0x1C2, 1
@@ -1514,8 +1514,8 @@ gAreaRoomMap_CastleGardenMinishHoles_1:: @ 081051A0
 	map_top offset_gAreaRoomMap_CastleGardenMinishHoles_1_top, 0x1C2, 1, 1
 
 gAreaRoomMaps_CastleGardenMinishHoles:: @ 081051B8
-	.4byte gAreaRoomMap_CastleGardenMinishHoles_0
-	.4byte gAreaRoomMap_CastleGardenMinishHoles_1
+	ptr gAreaRoomMap_CastleGardenMinishHoles_0
+	ptr gAreaRoomMap_CastleGardenMinishHoles_1
 
 gAreaRoomMap_37_0:: @ 081051C0
 	map_bottom offset_gAreaRoomMap_37_0_bottom, 0x1C2, 1
@@ -1526,15 +1526,15 @@ gAreaRoomMap_37_1:: @ 081051D8
 	map_top offset_gAreaRoomMap_37_1_top, 0x1C2, 1, 1
 
 gAreaRoomMaps_37:: @ 081051F0
-	.4byte gAreaRoomMap_37_0
-	.4byte gAreaRoomMap_37_1
+	ptr gAreaRoomMap_37_0
+	ptr gAreaRoomMap_37_1
 
 gAreaRoomMap_EzloCutscene_0:: @ 081051F8
 	map_bottom offset_gAreaRoomMap_EzloCutscene_0_bottom, 0x258, 1
 	map_top offset_gAreaRoomMap_EzloCutscene_0_top, 0x258, 1, 1
 
 gAreaRoomMaps_EzloCutscene:: @ 08105210
-	.4byte gAreaRoomMap_EzloCutscene_0
+	ptr gAreaRoomMap_EzloCutscene_0
 
 gAreaRoomMap_HyruleTownUnderground_0:: @ 08105214
 	map_bottom offset_gAreaRoomMap_HyruleTownUnderground_0_bottom, 0xE10, 1
@@ -1545,8 +1545,8 @@ gAreaRoomMap_HyruleTownUnderground_1:: @ 0810522C
 	map_top offset_gAreaRoomMap_HyruleTownUnderground_1_top, 0x12C, 1, 1
 
 gAreaRoomMaps_HyruleTownUnderground:: @ 08105244
-	.4byte gAreaRoomMap_HyruleTownUnderground_0
-	.4byte gAreaRoomMap_HyruleTownUnderground_1
+	ptr gAreaRoomMap_HyruleTownUnderground_0
+	ptr gAreaRoomMap_HyruleTownUnderground_1
 
 gAreaRoomMap_GardenFountains_0:: @ 0810524C
 	map_bottom offset_gAreaRoomMap_GardenFountains_East_bottom, 0x12C, 1
@@ -1557,8 +1557,8 @@ gAreaRoomMap_GardenFountains_1:: @ 08105264
 	map_top offset_gAreaRoomMap_GardenFountains_West_top, 0x12C, 1, 1
 
 gAreaRoomMaps_GardenFountains:: @ 0810527C
-	.4byte gAreaRoomMap_GardenFountains_0
-	.4byte gAreaRoomMap_GardenFountains_1
+	ptr gAreaRoomMap_GardenFountains_0
+	ptr gAreaRoomMap_GardenFountains_1
 
 gAreaRoomMap_HyruleCastleCellar_0:: @ 08105284
 	map_bottom offset_gAreaRoomMap_HyruleCastleCellar_0_bottom, 0x3C0, 1
@@ -1569,15 +1569,15 @@ gAreaRoomMap_HyruleCastleCellar_1:: @ 0810529C
 	map_top offset_gAreaRoomMap_HyruleCastleCellar_1_top, 0x1E0, 1, 1
 
 gAreaRoomMaps_HyruleCastleCellar:: @ 081052B4
-	.4byte gAreaRoomMap_HyruleCastleCellar_0
-	.4byte gAreaRoomMap_HyruleCastleCellar_1
+	ptr gAreaRoomMap_HyruleCastleCellar_0
+	ptr gAreaRoomMap_HyruleCastleCellar_1
 
 gAreaRoomMap_SimonsSimulation_0:: @ 081052BC
 	map_bottom offset_gAreaRoomMap_SimonsSimulation_0_bottom, 0x23A, 1
 	map_top offset_gAreaRoomMap_SimonsSimulation_0_top, 0x23A, 1, 1
 
 gAreaRoomMaps_SimonsSimulation:: @ 081052D4
-	.4byte gAreaRoomMap_SimonsSimulation_0
+	ptr gAreaRoomMap_SimonsSimulation_0
 
 gAreaRoomMap_40_0:: @ 081052D8
 	map_bottom offset_gAreaRoomMap_40_0_bottom, 0x286, 1
@@ -1616,15 +1616,15 @@ gAreaRoomMap_40_8:: @ 08105398
 	map_top offset_gAreaRoomMap_40_8_top, 0x200, 1, 1
 
 gAreaRoomMaps_40:: @ 081053B0
-	.4byte gAreaRoomMap_40_0
-	.4byte gAreaRoomMap_40_1
-	.4byte gAreaRoomMap_40_2
-	.4byte gAreaRoomMap_40_3
-	.4byte gAreaRoomMap_40_4
-	.4byte gAreaRoomMap_40_5
-	.4byte gAreaRoomMap_40_6
-	.4byte gAreaRoomMap_40_7
-	.4byte gAreaRoomMap_40_8
+	ptr gAreaRoomMap_40_0
+	ptr gAreaRoomMap_40_1
+	ptr gAreaRoomMap_40_2
+	ptr gAreaRoomMap_40_3
+	ptr gAreaRoomMap_40_4
+	ptr gAreaRoomMap_40_5
+	ptr gAreaRoomMap_40_6
+	ptr gAreaRoomMap_40_7
+	ptr gAreaRoomMap_40_8
 
 gAreaRoomMap_DeepwoodShrine_0:: @ 081053D4
 	map_bottom offset_gAreaRoomMap_DeepwoodShrine_Madderpillar_bottom, 0x1FE, 1
@@ -1715,45 +1715,45 @@ gAreaRoomMap_DeepwoodShrineEntry_0:: @ 081055CC
 	map_top offset_gAreaRoomMap_DeepwoodShrineEntry_Main_top, 0x1C2, 1, 1
 
 gAreaRoomMaps_DeepwoodShrine:: @ 081055E4
-	.4byte gAreaRoomMap_DeepwoodShrine_0
-	.4byte gAreaRoomMap_DeepwoodShrine_1
-	.4byte gAreaRoomMap_DeepwoodShrine_2
-	.4byte gAreaRoomMap_DeepwoodShrine_3
-	.4byte gAreaRoomMap_DeepwoodShrine_4
-	.4byte gAreaRoomMap_DeepwoodShrine_5
-	.4byte gAreaRoomMap_DeepwoodShrine_6
-	.4byte gAreaRoomMap_DeepwoodShrine_7
-	.4byte gAreaRoomMap_DeepwoodShrine_8
-	.4byte gAreaRoomMap_DeepwoodShrine_9
-	.4byte gAreaRoomMap_DeepwoodShrine_10
-	.4byte gAreaRoomMap_DeepwoodShrine_11
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_DeepwoodShrine_12
-	.4byte gAreaRoomMap_DeepwoodShrine_13
-	.4byte gAreaRoomMap_DeepwoodShrine_14
-	.4byte gAreaRoomMap_DeepwoodShrine_15
-	.4byte gAreaRoomMap_DeepwoodShrine_16
-	.4byte gAreaRoomMap_DeepwoodShrine_17
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_DeepwoodShrine_18
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_Unused
-	.4byte gAreaRoomMap_DeepwoodShrine_19
+	ptr gAreaRoomMap_DeepwoodShrine_0
+	ptr gAreaRoomMap_DeepwoodShrine_1
+	ptr gAreaRoomMap_DeepwoodShrine_2
+	ptr gAreaRoomMap_DeepwoodShrine_3
+	ptr gAreaRoomMap_DeepwoodShrine_4
+	ptr gAreaRoomMap_DeepwoodShrine_5
+	ptr gAreaRoomMap_DeepwoodShrine_6
+	ptr gAreaRoomMap_DeepwoodShrine_7
+	ptr gAreaRoomMap_DeepwoodShrine_8
+	ptr gAreaRoomMap_DeepwoodShrine_9
+	ptr gAreaRoomMap_DeepwoodShrine_10
+	ptr gAreaRoomMap_DeepwoodShrine_11
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_DeepwoodShrine_12
+	ptr gAreaRoomMap_DeepwoodShrine_13
+	ptr gAreaRoomMap_DeepwoodShrine_14
+	ptr gAreaRoomMap_DeepwoodShrine_15
+	ptr gAreaRoomMap_DeepwoodShrine_16
+	ptr gAreaRoomMap_DeepwoodShrine_17
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_DeepwoodShrine_18
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_Unused
+	ptr gAreaRoomMap_DeepwoodShrine_19
 
 gAreaRoomMaps_DeepwoodShrineBoss:: @ 08105668
-	.4byte gAreaRoomMap_DeepwoodShrineBoss_0
+	ptr gAreaRoomMap_DeepwoodShrineBoss_0
 
 gAreaRoomMaps_DeepwoodShrineEntry:: @ 0810566C
-	.4byte gAreaRoomMap_DeepwoodShrineEntry_0
+	ptr gAreaRoomMap_DeepwoodShrineEntry_0
 
 gAreaRoomMap_CaveOfFlames_0:: @ 08105670
 	map_bottom offset_gAreaRoomMap_CaveOfFlames_AfterCane_bottom, 0x30E, 1
@@ -1828,37 +1828,37 @@ gAreaRoomMap_CaveOfFlames_17:: @ 08105808
 	map_top offset_gAreaRoomMap_CaveOfFlames_BossDoor_top, 0x9D8, 1, 1
 
 gAreaRoomMaps_CaveOfFlames:: @ 08105820
-	.4byte gAreaRoomMap_CaveOfFlames_0
-	.4byte gAreaRoomMap_CaveOfFlames_1
-	.4byte gAreaRoomMap_CaveOfFlames_2
-	.4byte gAreaRoomMap_CaveOfFlames_3
-	.4byte gAreaRoomMap_CaveOfFlames_4
-	.4byte gAreaRoomMap_CaveOfFlames_5
-	.4byte gAreaRoomMap_CaveOfFlames_6
-	.4byte gAreaRoomMap_CaveOfFlames_7
-	.4byte gAreaRoomMap_CaveOfFlames_8
-	.4byte gAreaRoomMap_CaveOfFlames_9
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_CaveOfFlames_10
-	.4byte gAreaRoomMap_CaveOfFlames_11
-	.4byte gAreaRoomMap_CaveOfFlames_12
-	.4byte gAreaRoomMap_CaveOfFlames_13
-	.4byte gAreaRoomMap_CaveOfFlames_14
-	.4byte gAreaRoomMap_CaveOfFlames_15
-	.4byte gAreaRoomMap_CaveOfFlames_16
-	.4byte gAreaRoomMap_CaveOfFlames_17
+	ptr gAreaRoomMap_CaveOfFlames_0
+	ptr gAreaRoomMap_CaveOfFlames_1
+	ptr gAreaRoomMap_CaveOfFlames_2
+	ptr gAreaRoomMap_CaveOfFlames_3
+	ptr gAreaRoomMap_CaveOfFlames_4
+	ptr gAreaRoomMap_CaveOfFlames_5
+	ptr gAreaRoomMap_CaveOfFlames_6
+	ptr gAreaRoomMap_CaveOfFlames_7
+	ptr gAreaRoomMap_CaveOfFlames_8
+	ptr gAreaRoomMap_CaveOfFlames_9
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_CaveOfFlames_10
+	ptr gAreaRoomMap_CaveOfFlames_11
+	ptr gAreaRoomMap_CaveOfFlames_12
+	ptr gAreaRoomMap_CaveOfFlames_13
+	ptr gAreaRoomMap_CaveOfFlames_14
+	ptr gAreaRoomMap_CaveOfFlames_15
+	ptr gAreaRoomMap_CaveOfFlames_16
+	ptr gAreaRoomMap_CaveOfFlames_17
 
 gAreaRoomMap_CaveOfFlamesBoss_0:: @ 08105880
 	map_bottom offset_gAreaRoomMap_CaveOfFlamesBoss_0_bottom, 0x360, 1
 	map_top offset_gAreaRoomMap_CaveOfFlamesBoss_0_top, 0x360, 1, 1
 
 gAreaRoomMaps_CaveOfFlamesBoss:: @ 08105898
-	.4byte gAreaRoomMap_CaveOfFlamesBoss_0
+	ptr gAreaRoomMap_CaveOfFlamesBoss_0
 
 gAreaRoomMap_FortressOfWinds_0:: @ 0810589C
 	map_bottom offset_gAreaRoomMap_FortressOfWinds_DoubleEyegore_bottom, 0x1BA, 1
@@ -1957,50 +1957,50 @@ gAreaRoomMap_FortressOfWinds_23:: @ 08105AC4
 	map_top offset_gAreaRoomMap_FortressOfWinds_HeartPiece_top, 0x1A0, 1, 1
 
 gAreaRoomMaps_FortressOfWinds:: @ 08105ADC
-	.4byte gAreaRoomMap_FortressOfWinds_0
-	.4byte gAreaRoomMap_FortressOfWinds_1
-	.4byte gAreaRoomMap_FortressOfWinds_2
-	.4byte gAreaRoomMap_FortressOfWinds_3
-	.4byte gAreaRoomMap_FortressOfWinds_4
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_FortressOfWinds_5
-	.4byte gAreaRoomMap_FortressOfWinds_6
-	.4byte gAreaRoomMap_FortressOfWinds_7
-	.4byte gAreaRoomMap_FortressOfWinds_8
-	.4byte gAreaRoomMap_FortressOfWinds_9
-	.4byte gAreaRoomMap_FortressOfWinds_10
-	.4byte gAreaRoomMap_FortressOfWinds_11
-	.4byte gAreaRoomMap_FortressOfWinds_12
-	.4byte gAreaRoomMap_FortressOfWinds_13
-	.4byte gAreaRoomMap_FortressOfWinds_14
-	.4byte gAreaRoomMap_FortressOfWinds_15
-	.4byte gAreaRoomMap_FortressOfWinds_16
-	.4byte gAreaRoomMap_FortressOfWinds_17
-	.4byte gAreaRoomMap_FortressOfWinds_18
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_FortressOfWinds_19
-	.4byte gAreaRoomMap_FortressOfWinds_20
-	.4byte gAreaRoomMap_FortressOfWinds_21
-	.4byte gAreaRoomMap_FortressOfWinds_22
-	.4byte gAreaRoomMap_FortressOfWinds_23
+	ptr gAreaRoomMap_FortressOfWinds_0
+	ptr gAreaRoomMap_FortressOfWinds_1
+	ptr gAreaRoomMap_FortressOfWinds_2
+	ptr gAreaRoomMap_FortressOfWinds_3
+	ptr gAreaRoomMap_FortressOfWinds_4
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_FortressOfWinds_5
+	ptr gAreaRoomMap_FortressOfWinds_6
+	ptr gAreaRoomMap_FortressOfWinds_7
+	ptr gAreaRoomMap_FortressOfWinds_8
+	ptr gAreaRoomMap_FortressOfWinds_9
+	ptr gAreaRoomMap_FortressOfWinds_10
+	ptr gAreaRoomMap_FortressOfWinds_11
+	ptr gAreaRoomMap_FortressOfWinds_12
+	ptr gAreaRoomMap_FortressOfWinds_13
+	ptr gAreaRoomMap_FortressOfWinds_14
+	ptr gAreaRoomMap_FortressOfWinds_15
+	ptr gAreaRoomMap_FortressOfWinds_16
+	ptr gAreaRoomMap_FortressOfWinds_17
+	ptr gAreaRoomMap_FortressOfWinds_18
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_FortressOfWinds_19
+	ptr gAreaRoomMap_FortressOfWinds_20
+	ptr gAreaRoomMap_FortressOfWinds_21
+	ptr gAreaRoomMap_FortressOfWinds_22
+	ptr gAreaRoomMap_FortressOfWinds_23
 
 gAreaRoomMap_FortressOfWindsTop_0:: @ 08105B70
 	map_bottom offset_gAreaRoomMap_FortressOfWindsTop_Main_bottom, 0x4B0, 1
 	map_top offset_gAreaRoomMap_FortressOfWindsTop_Main_top, 0x4B0, 1, 1
 
 gAreaRoomMaps_FortressOfWindsTop:: @ 08105B88
-	.4byte gAreaRoomMap_FortressOfWindsTop_0
+	ptr gAreaRoomMap_FortressOfWindsTop_0
 
 gAreaRoomMap_InnerMazaal_0:: @ 08105B8C
 	map_bottom offset_gAreaRoomMap_InnerMazaal_Main_bottom, 0x286, 1
@@ -2011,8 +2011,8 @@ gAreaRoomMap_InnerMazaal_1:: @ 08105BA4
 	map_top offset_gAreaRoomMap_InnerMazaal_Phase1_top, 0x286, 1, 1
 
 gAreaRoomMaps_InnerMazaal:: @ 08105BBC
-	.4byte gAreaRoomMap_InnerMazaal_0
-	.4byte gAreaRoomMap_InnerMazaal_1
+	ptr gAreaRoomMap_InnerMazaal_0
+	ptr gAreaRoomMap_InnerMazaal_1
 
 gAreaRoomMap_TempleOfDroplets_0:: @ 08105BC4
 	map_bottom offset_gAreaRoomMap_TempleOfDroplets_WestHole_bottom, 0x1BA, 1
@@ -2179,68 +2179,68 @@ gAreaRoomMap_TempleOfDroplets_40:: @ 08105F84
 	map_top offset_gAreaRoomMap_TempleOfDroplets_FlamebarBlockPuzzle_top, 0x1A0, 1, 1
 
 gAreaRoomMaps_TempleOfDroplets:: @ 08105F9C
-	.4byte gAreaRoomMap_TempleOfDroplets_0
-	.4byte gAreaRoomMap_TempleOfDroplets_1
-	.4byte gAreaRoomMap_TempleOfDroplets_2
-	.4byte gAreaRoomMap_TempleOfDroplets_3
-	.4byte gAreaRoomMap_TempleOfDroplets_4
-	.4byte gAreaRoomMap_TempleOfDroplets_5
-	.4byte gAreaRoomMap_TempleOfDroplets_6
-	.4byte gAreaRoomMap_TempleOfDroplets_7
-	.4byte gAreaRoomMap_TempleOfDroplets_8
-	.4byte gAreaRoomMap_TempleOfDroplets_9
-	.4byte gAreaRoomMap_TempleOfDroplets_10
-	.4byte gAreaRoomMap_TempleOfDroplets_11
-	.4byte gAreaRoomMap_TempleOfDroplets_12
-	.4byte gAreaRoomMap_TempleOfDroplets_13
-	.4byte gAreaRoomMap_TempleOfDroplets_14
-	.4byte gAreaRoomMap_TempleOfDroplets_15
-	.4byte gAreaRoomMap_TempleOfDroplets_16
-	.4byte gAreaRoomMap_TempleOfDroplets_17
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_TempleOfDroplets_18
-	.4byte gAreaRoomMap_TempleOfDroplets_19
-	.4byte gAreaRoomMap_TempleOfDroplets_20
-	.4byte gAreaRoomMap_TempleOfDroplets_21
-	.4byte gAreaRoomMap_TempleOfDroplets_22
-	.4byte gAreaRoomMap_TempleOfDroplets_23
-	.4byte gAreaRoomMap_TempleOfDroplets_24
-	.4byte gAreaRoomMap_TempleOfDroplets_25
-	.4byte gAreaRoomMap_TempleOfDroplets_26
-	.4byte gAreaRoomMap_TempleOfDroplets_27
-	.4byte gAreaRoomMap_TempleOfDroplets_28
-	.4byte gAreaRoomMap_TempleOfDroplets_29
-	.4byte gAreaRoomMap_TempleOfDroplets_30
-	.4byte gAreaRoomMap_TempleOfDroplets_31
-	.4byte gAreaRoomMap_TempleOfDroplets_32
-	.4byte gAreaRoomMap_TempleOfDroplets_33
-	.4byte gAreaRoomMap_TempleOfDroplets_34
-	.4byte gAreaRoomMap_TempleOfDroplets_35
-	.4byte gAreaRoomMap_TempleOfDroplets_36
-	.4byte gAreaRoomMap_TempleOfDroplets_37
-	.4byte gAreaRoomMap_TempleOfDroplets_38
-	.4byte gAreaRoomMap_TempleOfDroplets_39
-	.4byte gAreaRoomMap_TempleOfDroplets_40
+	ptr gAreaRoomMap_TempleOfDroplets_0
+	ptr gAreaRoomMap_TempleOfDroplets_1
+	ptr gAreaRoomMap_TempleOfDroplets_2
+	ptr gAreaRoomMap_TempleOfDroplets_3
+	ptr gAreaRoomMap_TempleOfDroplets_4
+	ptr gAreaRoomMap_TempleOfDroplets_5
+	ptr gAreaRoomMap_TempleOfDroplets_6
+	ptr gAreaRoomMap_TempleOfDroplets_7
+	ptr gAreaRoomMap_TempleOfDroplets_8
+	ptr gAreaRoomMap_TempleOfDroplets_9
+	ptr gAreaRoomMap_TempleOfDroplets_10
+	ptr gAreaRoomMap_TempleOfDroplets_11
+	ptr gAreaRoomMap_TempleOfDroplets_12
+	ptr gAreaRoomMap_TempleOfDroplets_13
+	ptr gAreaRoomMap_TempleOfDroplets_14
+	ptr gAreaRoomMap_TempleOfDroplets_15
+	ptr gAreaRoomMap_TempleOfDroplets_16
+	ptr gAreaRoomMap_TempleOfDroplets_17
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_TempleOfDroplets_18
+	ptr gAreaRoomMap_TempleOfDroplets_19
+	ptr gAreaRoomMap_TempleOfDroplets_20
+	ptr gAreaRoomMap_TempleOfDroplets_21
+	ptr gAreaRoomMap_TempleOfDroplets_22
+	ptr gAreaRoomMap_TempleOfDroplets_23
+	ptr gAreaRoomMap_TempleOfDroplets_24
+	ptr gAreaRoomMap_TempleOfDroplets_25
+	ptr gAreaRoomMap_TempleOfDroplets_26
+	ptr gAreaRoomMap_TempleOfDroplets_27
+	ptr gAreaRoomMap_TempleOfDroplets_28
+	ptr gAreaRoomMap_TempleOfDroplets_29
+	ptr gAreaRoomMap_TempleOfDroplets_30
+	ptr gAreaRoomMap_TempleOfDroplets_31
+	ptr gAreaRoomMap_TempleOfDroplets_32
+	ptr gAreaRoomMap_TempleOfDroplets_33
+	ptr gAreaRoomMap_TempleOfDroplets_34
+	ptr gAreaRoomMap_TempleOfDroplets_35
+	ptr gAreaRoomMap_TempleOfDroplets_36
+	ptr gAreaRoomMap_TempleOfDroplets_37
+	ptr gAreaRoomMap_TempleOfDroplets_38
+	ptr gAreaRoomMap_TempleOfDroplets_39
+	ptr gAreaRoomMap_TempleOfDroplets_40
 
 gAreaRoomMap_61_0:: @ 08106078
 	map_bottom offset_gAreaRoomMap_Null61_0_bottom, 0x1C2, 1
 	map_top offset_gAreaRoomMap_Null61_0_top, 0x1C2, 1, 1
 
 gAreaRoomMaps_61:: @ 08106090
-	.4byte gAreaRoomMap_61_0
+	ptr gAreaRoomMap_61_0
 
 gAreaRoomMap_HyruleTownMinishCaves_0:: @ 08106094
 	map_bottom offset_gAreaRoomMap_HyruleTownMinishCaves_0_bottom, 0x330, 1
@@ -2287,28 +2287,28 @@ gAreaRoomMap_HyruleTownMinishCaves_10:: @ 08106184
 	map_top offset_gAreaRoomMap_HyruleTownMinishCaves_10_top, 0x348, 1, 1
 
 gAreaRoomMaps_HyruleTownMinishCaves:: @ 0810619C
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_0
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_1
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_2
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_3
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_4
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_5
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_6
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_7
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_8
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_9
-	.4byte gAreaRoomMap_HyruleTownMinishCaves_10
+	ptr gAreaRoomMap_HyruleTownMinishCaves_0
+	ptr gAreaRoomMap_HyruleTownMinishCaves_1
+	ptr gAreaRoomMap_HyruleTownMinishCaves_2
+	ptr gAreaRoomMap_HyruleTownMinishCaves_3
+	ptr gAreaRoomMap_HyruleTownMinishCaves_4
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr gAreaRoomMap_HyruleTownMinishCaves_5
+	ptr gAreaRoomMap_HyruleTownMinishCaves_6
+	ptr gAreaRoomMap_HyruleTownMinishCaves_7
+	ptr gAreaRoomMap_HyruleTownMinishCaves_8
+	ptr gAreaRoomMap_HyruleTownMinishCaves_9
+	ptr gAreaRoomMap_HyruleTownMinishCaves_10
 
 gAreaRoomMap_RoyalCrypt_0:: @ 081061F4
 	map_bottom offset_gAreaRoomMap_RoyalCrypt_0_bottom, 0x532, 1
@@ -2347,22 +2347,22 @@ gAreaRoomMap_RoyalCrypt_8:: @ 081062B4
 	map_top offset_gAreaRoomMap_RoyalCrypt_Entrance_top, 0x154, 1, 1
 
 gAreaRoomMaps_RoyalCrypt:: @ 081062CC
-	.4byte gAreaRoomMap_RoyalCrypt_0
-	.4byte gAreaRoomMap_RoyalCrypt_1
-	.4byte gAreaRoomMap_RoyalCrypt_2
-	.4byte gAreaRoomMap_RoyalCrypt_3
-	.4byte gAreaRoomMap_RoyalCrypt_4
-	.4byte gAreaRoomMap_RoyalCrypt_5
-	.4byte gAreaRoomMap_RoyalCrypt_6
-	.4byte gAreaRoomMap_RoyalCrypt_7
-	.4byte gAreaRoomMap_RoyalCrypt_8
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
+	ptr gAreaRoomMap_RoyalCrypt_0
+	ptr gAreaRoomMap_RoyalCrypt_1
+	ptr gAreaRoomMap_RoyalCrypt_2
+	ptr gAreaRoomMap_RoyalCrypt_3
+	ptr gAreaRoomMap_RoyalCrypt_4
+	ptr gAreaRoomMap_RoyalCrypt_5
+	ptr gAreaRoomMap_RoyalCrypt_6
+	ptr gAreaRoomMap_RoyalCrypt_7
+	ptr gAreaRoomMap_RoyalCrypt_8
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
 
 gAreaRoomMap_PalaceOfWinds_GyorgTornado:: @ 0810630C
 	map_bottom offset_gAreaRoomMap_PalaceOfWinds_GyorgTornado_bottom, 0xA8C, 1
@@ -2569,62 +2569,62 @@ gAreaRoomMap_PalaceOfWinds_DarkCompassHall:: @ 081067BC
 	map_top offset_gAreaRoomMap_PalaceOfWinds_DarkCompassHall_top, 0x708, 1, 1
 
 gAreaRoomMaps_PalaceOfWinds:: @ 081067D4
-	.4byte gAreaRoomMap_PalaceOfWinds_GyorgTornado
-	.4byte gAreaRoomMap_PalaceOfWinds_BossKey
-	.4byte gAreaRoomMap_PalaceOfWinds_BeforeBallAndChainSoldiers
-	.4byte gAreaRoomMap_PalaceOfWinds_GyorgBossDoor
-	.4byte gAreaRoomMap_PalaceOfWinds_EastChestFromGyorgBossDoor
-	.4byte gAreaRoomMap_PalaceOfWinds_MoblinAndWizzrobeFight
-	.4byte gAreaRoomMap_PalaceOfWinds_FourButtonStalfos
-	.4byte gAreaRoomMap_PalaceOfWinds_FanAndKeyToBossKey
-	.4byte gAreaRoomMap_PalaceOfWinds_BallAndChainSoldiers
-	.4byte gAreaRoomMap_PalaceOfWinds_BombarossaPath
-	.4byte gAreaRoomMap_PalaceOfWinds_HoleToDarknut
-	.4byte gAreaRoomMap_PalaceOfWinds_ToBombarossaPath
-	.4byte gAreaRoomMap_PalaceOfWinds_DarknutMiniboss
-	.4byte gAreaRoomMap_PalaceOfWinds_BombWallInside
-	.4byte gAreaRoomMap_PalaceOfWinds_BombWallOutside
-	.4byte gAreaRoomMap_PalaceOfWinds_CloudJumps
-	.4byte gAreaRoomMap_PalaceOfWinds_BlockMazeToBossDoor
-	.4byte gAreaRoomMap_PalaceOfWinds_CrackedFloorLakitu
-	.4byte gAreaRoomMap_PalaceOfWinds_HeartPieceBridge
-	.4byte gAreaRoomMap_PalaceOfWinds_FanBridge
-	.4byte gAreaRoomMap_PalaceOfWinds_ToFanBridge
-	.4byte gAreaRoomMap_PalaceOfWinds_RedWarpHall
-	.4byte gAreaRoomMap_PalaceOfWinds_PlatformCloneRide
-	.4byte gAreaRoomMap_PalaceOfWinds_PitCornerAfterKey
-	.4byte gAreaRoomMap_PalaceOfWinds_CrowRide
-	.4byte gAreaRoomMap_PalaceOfWinds_GratePlatformRide
-	.4byte gAreaRoomMap_PalaceOfWinds_PotPush
-	.4byte gAreaRoomMap_PalaceOfWinds_FloormasterLever
-	.4byte gAreaRoomMap_PalaceOfWinds_Map
-	.4byte gAreaRoomMap_PalaceOfWinds_CornerToMap
-	.4byte gAreaRoomMap_PalaceOfWinds_StairsAfterFloormaster
-	.4byte gAreaRoomMap_PalaceOfWinds_HoleToKinstoneWizzrobe
-	.4byte gAreaRoomMap_PalaceOfWinds_KeyArrowButton
-	.4byte gAreaRoomMap_PalaceOfWinds_GratesTo3F
-	.4byte gAreaRoomMap_PalaceOfWinds_SpinyFight
-	.4byte gAreaRoomMap_PalaceOfWinds_PeahatSwitch
-	.4byte gAreaRoomMap_PalaceOfWinds_WhirlwindBombarossa
-	.4byte gAreaRoomMap_PalaceOfWinds_DoorToStalfosFirebar
-	.4byte gAreaRoomMap_PalaceOfWinds_StalfosFireborHole
-	.4byte gAreaRoomMap_PalaceOfWinds_ShortcutDoorButtons
-	.4byte gAreaRoomMap_PalaceOfWinds_ToPeahatSwitch
-	.4byte gAreaRoomMap_PalaceOfWinds_KinstoneWizzrobeFight
-	.4byte gAreaRoomMap_PalaceOfWinds_GibdoStairs
-	.4byte gAreaRoomMap_PalaceOfWinds_SpikeBarSmallKey
-	.4byte gAreaRoomMap_PalaceOfWinds_RocCape
-	.4byte gAreaRoomMap_PalaceOfWinds_FireBarGrates
-	.4byte gAreaRoomMap_PalaceOfWinds_PlatformRideBombarossas
-	.4byte gAreaRoomMap_PalaceOfWinds_BridgeAfterDarknut
-	.4byte gAreaRoomMap_PalaceOfWinds_BridgeSwitchesCloneBlock
-	.4byte gAreaRoomMap_PalaceOfWinds_EntranceRoom
-	.4byte gAreaRoomMap_PalaceOfWinds_DarkCompassHall
+	ptr gAreaRoomMap_PalaceOfWinds_GyorgTornado
+	ptr gAreaRoomMap_PalaceOfWinds_BossKey
+	ptr gAreaRoomMap_PalaceOfWinds_BeforeBallAndChainSoldiers
+	ptr gAreaRoomMap_PalaceOfWinds_GyorgBossDoor
+	ptr gAreaRoomMap_PalaceOfWinds_EastChestFromGyorgBossDoor
+	ptr gAreaRoomMap_PalaceOfWinds_MoblinAndWizzrobeFight
+	ptr gAreaRoomMap_PalaceOfWinds_FourButtonStalfos
+	ptr gAreaRoomMap_PalaceOfWinds_FanAndKeyToBossKey
+	ptr gAreaRoomMap_PalaceOfWinds_BallAndChainSoldiers
+	ptr gAreaRoomMap_PalaceOfWinds_BombarossaPath
+	ptr gAreaRoomMap_PalaceOfWinds_HoleToDarknut
+	ptr gAreaRoomMap_PalaceOfWinds_ToBombarossaPath
+	ptr gAreaRoomMap_PalaceOfWinds_DarknutMiniboss
+	ptr gAreaRoomMap_PalaceOfWinds_BombWallInside
+	ptr gAreaRoomMap_PalaceOfWinds_BombWallOutside
+	ptr gAreaRoomMap_PalaceOfWinds_CloudJumps
+	ptr gAreaRoomMap_PalaceOfWinds_BlockMazeToBossDoor
+	ptr gAreaRoomMap_PalaceOfWinds_CrackedFloorLakitu
+	ptr gAreaRoomMap_PalaceOfWinds_HeartPieceBridge
+	ptr gAreaRoomMap_PalaceOfWinds_FanBridge
+	ptr gAreaRoomMap_PalaceOfWinds_ToFanBridge
+	ptr gAreaRoomMap_PalaceOfWinds_RedWarpHall
+	ptr gAreaRoomMap_PalaceOfWinds_PlatformCloneRide
+	ptr gAreaRoomMap_PalaceOfWinds_PitCornerAfterKey
+	ptr gAreaRoomMap_PalaceOfWinds_CrowRide
+	ptr gAreaRoomMap_PalaceOfWinds_GratePlatformRide
+	ptr gAreaRoomMap_PalaceOfWinds_PotPush
+	ptr gAreaRoomMap_PalaceOfWinds_FloormasterLever
+	ptr gAreaRoomMap_PalaceOfWinds_Map
+	ptr gAreaRoomMap_PalaceOfWinds_CornerToMap
+	ptr gAreaRoomMap_PalaceOfWinds_StairsAfterFloormaster
+	ptr gAreaRoomMap_PalaceOfWinds_HoleToKinstoneWizzrobe
+	ptr gAreaRoomMap_PalaceOfWinds_KeyArrowButton
+	ptr gAreaRoomMap_PalaceOfWinds_GratesTo3F
+	ptr gAreaRoomMap_PalaceOfWinds_SpinyFight
+	ptr gAreaRoomMap_PalaceOfWinds_PeahatSwitch
+	ptr gAreaRoomMap_PalaceOfWinds_WhirlwindBombarossa
+	ptr gAreaRoomMap_PalaceOfWinds_DoorToStalfosFirebar
+	ptr gAreaRoomMap_PalaceOfWinds_StalfosFireborHole
+	ptr gAreaRoomMap_PalaceOfWinds_ShortcutDoorButtons
+	ptr gAreaRoomMap_PalaceOfWinds_ToPeahatSwitch
+	ptr gAreaRoomMap_PalaceOfWinds_KinstoneWizzrobeFight
+	ptr gAreaRoomMap_PalaceOfWinds_GibdoStairs
+	ptr gAreaRoomMap_PalaceOfWinds_SpikeBarSmallKey
+	ptr gAreaRoomMap_PalaceOfWinds_RocCape
+	ptr gAreaRoomMap_PalaceOfWinds_FireBarGrates
+	ptr gAreaRoomMap_PalaceOfWinds_PlatformRideBombarossas
+	ptr gAreaRoomMap_PalaceOfWinds_BridgeAfterDarknut
+	ptr gAreaRoomMap_PalaceOfWinds_BridgeSwitchesCloneBlock
+	ptr gAreaRoomMap_PalaceOfWinds_EntranceRoom
+	ptr gAreaRoomMap_PalaceOfWinds_DarkCompassHall
 
 gAreaRoomMap_PalaceOfWindsBoss_0:: @ 081068A0
 	map_top offset_gAreaRoomMap_PalaceOfWindsBoss_0_top, 0x1F80, 1, 1
 gAreaRoomMaps_PalaceOfWindsBoss:: @ 081068AC
-	.4byte gAreaRoomMap_PalaceOfWindsBoss_0
+	ptr gAreaRoomMap_PalaceOfWindsBoss_0
 
 gAreaRoomMap_Sanctuary_0:: @ 081068B0
 	map_bottom offset_gAreaRoomMap_Sanctuary_Hall_bottom, 0x6D6, 1
@@ -2639,14 +2639,14 @@ gAreaRoomMap_Sanctuary_2:: @ 081068E0
 	map_top offset_gAreaRoomMap_Sanctuary_StainedGlass_top, 0x344, 1, 1
 
 gAreaRoomMaps_Sanctuary:: @ 081068F8
-	.4byte gAreaRoomMap_Sanctuary_0
-	.4byte gAreaRoomMap_Sanctuary_1
-	.4byte gAreaRoomMap_Sanctuary_2
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
+	ptr gAreaRoomMap_Sanctuary_0
+	ptr gAreaRoomMap_Sanctuary_1
+	ptr gAreaRoomMap_Sanctuary_2
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
 
 gAreaRoomMap_HyruleCastle_0:: @ 08106918
 	map_bottom offset_gAreaRoomMap_HyruleCastle_0_bottom, 0x7CE, 1
@@ -2677,29 +2677,29 @@ gAreaRoomMap_HyruleCastle_6:: @ 081069A8
 	map_top offset_gAreaRoomMap_HyruleCastle_6_top, 0x12C, 1, 1
 
 gAreaRoomMaps_HyruleCastle:: @ 081069C0
-	.4byte gAreaRoomMap_HyruleCastle_0
-	.4byte gAreaRoomMap_HyruleCastle_1
-	.4byte gAreaRoomMap_HyruleCastle_2
-	.4byte gAreaRoomMap_HyruleCastle_3
-	.4byte gAreaRoomMap_HyruleCastle_4
-	.4byte gAreaRoomMap_HyruleCastle_5
-	.4byte gAreaRoomMap_HyruleCastle_6
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
-	.4byte 0x0
+	ptr gAreaRoomMap_HyruleCastle_0
+	ptr gAreaRoomMap_HyruleCastle_1
+	ptr gAreaRoomMap_HyruleCastle_2
+	ptr gAreaRoomMap_HyruleCastle_3
+	ptr gAreaRoomMap_HyruleCastle_4
+	ptr gAreaRoomMap_HyruleCastle_5
+	ptr gAreaRoomMap_HyruleCastle_6
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
+	ptr 0x0
 
 gAreaRoomMap_SanctuaryEntrance_0:: @ 08106A00
 	map_bottom offset_gAreaRoomMap_SanctuaryEntrance_Main_bottom, 0x396, 1
 	map_top offset_gAreaRoomMap_SanctuaryEntrance_Main_top, 0x396, 1, 1
 
 gAreaRoomMaps_SanctuaryEntrance:: @ 08106A18
-	.4byte gAreaRoomMap_SanctuaryEntrance_0
+	ptr gAreaRoomMap_SanctuaryEntrance_0
 
 gAreaRoomMap_DarkHyruleCastle_1FEntrance:: @ 08106A1C
 	map_bottom offset_gAreaRoomMap_DarkHyruleCastle_1fEntrance_bottom, 0xE58, 1
@@ -2942,66 +2942,66 @@ gAreaRoomMap_DarkHyruleCastle_3FKeatonHallToVaati9:: @ 08106FA4
 	map_top offset_gAreaRoomMap_DarkHyruleCastle_3b_top, 0x1BA, 1, 1
 
 gAreaRoomMaps_DarkHyruleCastle:: @ 08106FBC
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FEntrance
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FTopLeftTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FTopRightTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FBottomLeftTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FBottomRightTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FKeatonHallToVaati
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FTripleDarknut
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FTopLeftTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FTopLeftCorner
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBossKey
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBlueWarp
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FTopRightCornerGhini
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FTopRightCornerTorches
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FTopRightTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FTopLeftDarknut
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FSparks
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FTopRightDarknuts
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FLeft
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FRight
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBottomLeftDarknuts
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBossDoor
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBottomRightDarknut
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBottomLeftCornerPuzzle
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FEntrance
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBottomLeftCorner
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBottomLeftTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBottomLeftGhini
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FTopRightTower7
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1Entrance
-	.4byte gAreaRoomMap_DarkHyruleCastle_2FBottomRightTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FTopLeftTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FThroneRoom
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FCompass
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FTopRightTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FBeforeThrone
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopTopLeft
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopTop
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopTopRight
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopLeft
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopRight
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopBottomLeft
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopBottom
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FLoopBottomRight
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FBottomLeftTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_1FBottomRightTower
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1BelowThrone
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1BelowCompass
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1BeforeThrone
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1ToPrison
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1BombWall
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1Keatons
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1ToPrisonFirebar
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1Cannons
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1Left
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1Right
-	.4byte gAreaRoomMap_DarkHyruleCastle_B1Map
-	.4byte gAreaRoomMap_DarkHyruleCastle_B2ToPrison
-	.4byte gAreaRoomMap_DarkHyruleCastle_B2Prison
-	.4byte gAreaRoomMap_DarkHyruleCastle_B2Dropdown
-	.4byte gAreaRoomMap_DarkHyruleCastle_3FKeatonHallToVaati9
+	ptr gAreaRoomMap_DarkHyruleCastle_1FEntrance
+	ptr gAreaRoomMap_DarkHyruleCastle_3FTopLeftTower
+	ptr gAreaRoomMap_DarkHyruleCastle_3FTopRightTower
+	ptr gAreaRoomMap_DarkHyruleCastle_3FBottomLeftTower
+	ptr gAreaRoomMap_DarkHyruleCastle_3FBottomRightTower
+	ptr gAreaRoomMap_DarkHyruleCastle_3FKeatonHallToVaati
+	ptr gAreaRoomMap_DarkHyruleCastle_3FTripleDarknut
+	ptr gAreaRoomMap_DarkHyruleCastle_2FTopLeftTower
+	ptr gAreaRoomMap_DarkHyruleCastle_2FTopLeftCorner
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBossKey
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBlueWarp
+	ptr gAreaRoomMap_DarkHyruleCastle_2FTopRightCornerGhini
+	ptr gAreaRoomMap_DarkHyruleCastle_2FTopRightCornerTorches
+	ptr gAreaRoomMap_DarkHyruleCastle_2FTopRightTower
+	ptr gAreaRoomMap_DarkHyruleCastle_2FTopLeftDarknut
+	ptr gAreaRoomMap_DarkHyruleCastle_2FSparks
+	ptr gAreaRoomMap_DarkHyruleCastle_2FTopRightDarknuts
+	ptr gAreaRoomMap_DarkHyruleCastle_2FLeft
+	ptr gAreaRoomMap_DarkHyruleCastle_2FRight
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBottomLeftDarknuts
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBossDoor
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBottomRightDarknut
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBottomLeftCornerPuzzle
+	ptr gAreaRoomMap_DarkHyruleCastle_2FEntrance
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBottomLeftCorner
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBottomLeftTower
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBottomLeftGhini
+	ptr gAreaRoomMap_DarkHyruleCastle_3FTopRightTower7
+	ptr gAreaRoomMap_DarkHyruleCastle_B1Entrance
+	ptr gAreaRoomMap_DarkHyruleCastle_2FBottomRightTower
+	ptr gAreaRoomMap_DarkHyruleCastle_1FTopLeftTower
+	ptr gAreaRoomMap_DarkHyruleCastle_1FThroneRoom
+	ptr gAreaRoomMap_DarkHyruleCastle_1FCompass
+	ptr gAreaRoomMap_DarkHyruleCastle_1FTopRightTower
+	ptr gAreaRoomMap_DarkHyruleCastle_1FBeforeThrone
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopTopLeft
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopTop
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopTopRight
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopLeft
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopRight
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopBottomLeft
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopBottom
+	ptr gAreaRoomMap_DarkHyruleCastle_1FLoopBottomRight
+	ptr gAreaRoomMap_DarkHyruleCastle_1FBottomLeftTower
+	ptr gAreaRoomMap_DarkHyruleCastle_1FBottomRightTower
+	ptr gAreaRoomMap_DarkHyruleCastle_B1BelowThrone
+	ptr gAreaRoomMap_DarkHyruleCastle_B1BelowCompass
+	ptr gAreaRoomMap_DarkHyruleCastle_B1BeforeThrone
+	ptr gAreaRoomMap_DarkHyruleCastle_B1ToPrison
+	ptr gAreaRoomMap_DarkHyruleCastle_B1BombWall
+	ptr gAreaRoomMap_DarkHyruleCastle_B1Keatons
+	ptr gAreaRoomMap_DarkHyruleCastle_B1ToPrisonFirebar
+	ptr gAreaRoomMap_DarkHyruleCastle_B1Cannons
+	ptr gAreaRoomMap_DarkHyruleCastle_B1Left
+	ptr gAreaRoomMap_DarkHyruleCastle_B1Right
+	ptr gAreaRoomMap_DarkHyruleCastle_B1Map
+	ptr gAreaRoomMap_DarkHyruleCastle_B2ToPrison
+	ptr gAreaRoomMap_DarkHyruleCastle_B2Prison
+	ptr gAreaRoomMap_DarkHyruleCastle_B2Dropdown
+	ptr gAreaRoomMap_DarkHyruleCastle_3FKeatonHallToVaati9
 
 gAreaRoomMap_DarkHyruleCastleOutside_0:: @ 081070AC
 	map_bottom offset_gAreaRoomMap_DarkHyruleCastleOutside_ZeldaStatuePlatform_bottom, 0x2EE, 1
@@ -3040,22 +3040,22 @@ gAreaRoomMap_DarkHyruleCastleOutside_8:: @ 0810716C
 	map_top offset_gAreaRoomMap_DarkHyruleCastleOutside_8_top, 0x630, 1, 1
 
 gAreaRoomMaps_DarkHyruleCastleOutside:: @ 08107184
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_0
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_1
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_2
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_3
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_4
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_5
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_6
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_7
-	.4byte gAreaRoomMap_DarkHyruleCastleOutside_8
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_0
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_1
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_2
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_3
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_4
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_5
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_6
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_7
+	ptr gAreaRoomMap_DarkHyruleCastleOutside_8
 
 gAreaRoomMap_DarkHyruleCastleBridge_0:: @ 081071A8
 	map_bottom offset_gAreaRoomMap_DarkHyruleCastleBridge_Main_bottom, 0x2A8, 1
 	map_top offset_gAreaRoomMap_DarkHyruleCastleBridge_Main_top, 0x2A8, 1, 1
 
 gAreaRoomMaps_DarkHyruleCastleBridge:: @ 081071C0
-	.4byte gAreaRoomMap_DarkHyruleCastleBridge_0
+	ptr gAreaRoomMap_DarkHyruleCastleBridge_0
 
 gAreaRoomMap_VaatisArms_0:: @ 081071C4
 	map_bottom offset_gAreaRoomMap_VaatisArms_First_bottom, 0x214, 1
@@ -3070,9 +3070,9 @@ gAreaRoomMap_VaatisArms_2:: @ 081071F4
 	map_top offset_gAreaRoomMap_VaatisArms_3_top, 0x214, 1, 1
 
 gAreaRoomMaps_VaatisArms:: @ 0810720C
-	.4byte gAreaRoomMap_VaatisArms_0
-	.4byte gAreaRoomMap_VaatisArms_1
-	.4byte gAreaRoomMap_VaatisArms_2
+	ptr gAreaRoomMap_VaatisArms_0
+	ptr gAreaRoomMap_VaatisArms_1
+	ptr gAreaRoomMap_VaatisArms_2
 
 gAreaRoomMap_Vaati3_0:: @ 08107218
 	map_bottom offset_gAreaRoomMap_Vaati3_0_bottom, 0x294, 1
@@ -3083,15 +3083,15 @@ gAreaRoomMap_Vaati3_1:: @ 08107230
 	map_top offset_gAreaRoomMap_Vaati3_1_top, 0x210, 1, 1
 
 gAreaRoomMaps_Vaati3:: @ 08107248
-	.4byte gAreaRoomMap_Vaati3_0
-	.4byte gAreaRoomMap_Vaati3_1
+	ptr gAreaRoomMap_Vaati3_0
+	ptr gAreaRoomMap_Vaati3_1
 
 gAreaRoomMap_Vaati2_0:: @ 08107250
 	map_bottom offset_gAreaRoomMap_Vaati2_0_bottom, 0x294, 1
 	map_top offset_gAreaRoomMap_Vaati2_0_top, 0x294, 1, 1
 
 gAreaRoomMaps_Vaati2:: @ 08107268
-	.4byte gAreaRoomMap_Vaati2_0
+	ptr gAreaRoomMap_Vaati2_0
 
 gAreaRoomMap_47_0:: @ 0810726C
 	map_bottom offset_gAreaRoomMap_47_0_bottom, 0x256, 1
@@ -3106,9 +3106,9 @@ gAreaRoomMap_47_2:: @ 0810729C
 	map_top offset_gAreaRoomMap_47_2_top, 0x47E, 1, 1
 
 gAreaRoomMaps_47:: @ 081072B4
-	.4byte gAreaRoomMap_47_0
-	.4byte gAreaRoomMap_47_1
-	.4byte gAreaRoomMap_47_2
+	ptr gAreaRoomMap_47_0
+	ptr gAreaRoomMap_47_1
+	ptr gAreaRoomMap_47_2
 
 gAreaRoomMap_CastorCaves_0:: @ 081072C0
 	map_bottom offset_gAreaRoomMap_CastorCaves_South_bottom, 0x168, 1
@@ -3131,11 +3131,11 @@ gAreaRoomMap_CastorCaves_4:: @ 08107320
 	map_top offset_gAreaRoomMap_CastorCaves_HeartPiece_top, 0x12C, 1, 1
 
 gAreaRoomMaps_CastorCaves:: @ 08107338
-	.4byte gAreaRoomMap_CastorCaves_0
-	.4byte gAreaRoomMap_CastorCaves_1
-	.4byte gAreaRoomMap_CastorCaves_2
-	.4byte gAreaRoomMap_CastorCaves_3
-	.4byte gAreaRoomMap_CastorCaves_4
+	ptr gAreaRoomMap_CastorCaves_0
+	ptr gAreaRoomMap_CastorCaves_1
+	ptr gAreaRoomMap_CastorCaves_2
+	ptr gAreaRoomMap_CastorCaves_3
+	ptr gAreaRoomMap_CastorCaves_4
 
 gAreaRoomMap_CastorDarknut_0:: @ 0810734C
 	map_bottom offset_gAreaRoomMap_CastorDarknut_Main_bottom, 0x1BA, 1
@@ -3146,8 +3146,8 @@ gAreaRoomMap_CastorDarknut_1:: @ 08107364
 	map_top offset_gAreaRoomMap_CastorDarknut_Hall_top, 0x280, 1, 1
 
 gAreaRoomMaps_CastorDarknut:: @ 0810737C
-	.4byte gAreaRoomMap_CastorDarknut_0
-	.4byte gAreaRoomMap_CastorDarknut_1
+	ptr gAreaRoomMap_CastorDarknut_0
+	ptr gAreaRoomMap_CastorDarknut_1
 
 gAreaRoomMap_Caves_0:: @ 08107384
 	map_bottom offset_gAreaRoomMap_Caves_Boomerang_bottom, 0x372, 1
@@ -3246,30 +3246,30 @@ gAreaRoomMap_Caves_23:: @ 081075AC
 	map_top offset_gAreaRoomMap_Caves_KinstoneBusinessScrub_top, 0x12C, 1, 1
 
 gAreaRoomMaps_Caves:: @ 081075C4
-	.4byte gAreaRoomMap_Caves_0
-	.4byte gAreaRoomMap_Caves_1
-	.4byte gAreaRoomMap_Caves_2
-	.4byte gAreaRoomMap_Caves_3
-	.4byte gAreaRoomMap_Caves_4
-	.4byte gAreaRoomMap_Caves_5
-	.4byte gAreaRoomMap_Caves_6
-	.4byte gAreaRoomMap_Caves_7
-	.4byte gAreaRoomMap_Caves_8
-	.4byte gAreaRoomMap_Caves_9
-	.4byte gAreaRoomMap_Caves_10
-	.4byte gAreaRoomMap_Caves_11
-	.4byte gAreaRoomMap_Caves_12
-	.4byte gAreaRoomMap_Caves_13
-	.4byte gAreaRoomMap_Caves_14
-	.4byte gAreaRoomMap_Caves_15
-	.4byte gAreaRoomMap_Caves_16
-	.4byte gAreaRoomMap_Caves_17
-	.4byte gAreaRoomMap_Caves_18
-	.4byte gAreaRoomMap_Caves_19
-	.4byte gAreaRoomMap_Caves_20
-	.4byte gAreaRoomMap_Caves_21
-	.4byte gAreaRoomMap_Caves_22
-	.4byte gAreaRoomMap_Caves_23
+	ptr gAreaRoomMap_Caves_0
+	ptr gAreaRoomMap_Caves_1
+	ptr gAreaRoomMap_Caves_2
+	ptr gAreaRoomMap_Caves_3
+	ptr gAreaRoomMap_Caves_4
+	ptr gAreaRoomMap_Caves_5
+	ptr gAreaRoomMap_Caves_6
+	ptr gAreaRoomMap_Caves_7
+	ptr gAreaRoomMap_Caves_8
+	ptr gAreaRoomMap_Caves_9
+	ptr gAreaRoomMap_Caves_10
+	ptr gAreaRoomMap_Caves_11
+	ptr gAreaRoomMap_Caves_12
+	ptr gAreaRoomMap_Caves_13
+	ptr gAreaRoomMap_Caves_14
+	ptr gAreaRoomMap_Caves_15
+	ptr gAreaRoomMap_Caves_16
+	ptr gAreaRoomMap_Caves_17
+	ptr gAreaRoomMap_Caves_18
+	ptr gAreaRoomMap_Caves_19
+	ptr gAreaRoomMap_Caves_20
+	ptr gAreaRoomMap_Caves_21
+	ptr gAreaRoomMap_Caves_22
+	ptr gAreaRoomMap_Caves_23
 
 gAreaRoomMap_VeilFallsCaves_0:: @ 08107624
 	map_bottom offset_gAreaRoomMap_VeilFallsCaves_Hallway2f_bottom, 0x1A4, 1
@@ -3312,16 +3312,16 @@ gAreaRoomMap_VeilFallsCaves_9:: @ 081076FC
 	map_top offset_gAreaRoomMap_VeilFallsCaves_HallwayHeartPiece_top, 0x12C, 1, 1
 
 gAreaRoomMaps_VeilFallsCaves:: @ 08107714
-	.4byte gAreaRoomMap_VeilFallsCaves_0
-	.4byte gAreaRoomMap_VeilFallsCaves_1
-	.4byte gAreaRoomMap_VeilFallsCaves_2
-	.4byte gAreaRoomMap_VeilFallsCaves_3
-	.4byte gAreaRoomMap_VeilFallsCaves_4
-	.4byte gAreaRoomMap_VeilFallsCaves_5
-	.4byte gAreaRoomMap_VeilFallsCaves_6
-	.4byte gAreaRoomMap_VeilFallsCaves_7
-	.4byte gAreaRoomMap_VeilFallsCaves_8
-	.4byte gAreaRoomMap_VeilFallsCaves_9
+	ptr gAreaRoomMap_VeilFallsCaves_0
+	ptr gAreaRoomMap_VeilFallsCaves_1
+	ptr gAreaRoomMap_VeilFallsCaves_2
+	ptr gAreaRoomMap_VeilFallsCaves_3
+	ptr gAreaRoomMap_VeilFallsCaves_4
+	ptr gAreaRoomMap_VeilFallsCaves_5
+	ptr gAreaRoomMap_VeilFallsCaves_6
+	ptr gAreaRoomMap_VeilFallsCaves_7
+	ptr gAreaRoomMap_VeilFallsCaves_8
+	ptr gAreaRoomMap_VeilFallsCaves_9
 
 gAreaRoomMap_RoyalValleyGraves_0:: @ 0810773C
 	map_bottom offset_gAreaRoomMap_RoyalValleyGraves_HeartPiece_bottom, 0x12C, 1
@@ -3332,15 +3332,15 @@ gAreaRoomMap_RoyalValleyGraves_1:: @ 08107754
 	map_top offset_gAreaRoomMap_RoyalValleyGraves_Gina_top, 0x258, 1, 1
 
 gAreaRoomMaps_RoyalValleyGraves:: @ 0810776C
-	.4byte gAreaRoomMap_RoyalValleyGraves_0
-	.4byte gAreaRoomMap_RoyalValleyGraves_1
+	ptr gAreaRoomMap_RoyalValleyGraves_0
+	ptr gAreaRoomMap_RoyalValleyGraves_1
 
 gAreaRoomMap_45_0:: @ 08107774
 	map_bottom offset_gAreaRoomMap_45_0_bottom, 0x1FE, 1
 	map_top offset_gAreaRoomMap_45_0_top, 0x1FE, 1, 1
 
 gAreaRoomMaps_45:: @ 0810778C
-	.4byte gAreaRoomMap_45_0
+	ptr gAreaRoomMap_45_0
 
 gAreaRoomMap_46_0:: @ 08107790
 	map_bottom offset_gAreaRoomMap_Null46_0_bottom, 0x286, 1
@@ -3375,14 +3375,14 @@ gAreaRoomMap_46_7:: @ 08107838
 	map_top offset_gAreaRoomMap_Null46_7_top, 0x2F2, 1, 1
 
 gAreaRoomMaps_46:: @ 08107850
-	.4byte gAreaRoomMap_46_0
-	.4byte gAreaRoomMap_46_1
-	.4byte gAreaRoomMap_46_2
-	.4byte gAreaRoomMap_46_3
-	.4byte gAreaRoomMap_46_4
-	.4byte gAreaRoomMap_46_5
-	.4byte gAreaRoomMap_46_6
-	.4byte gAreaRoomMap_46_7
+	ptr gAreaRoomMap_46_0
+	ptr gAreaRoomMap_46_1
+	ptr gAreaRoomMap_46_2
+	ptr gAreaRoomMap_46_3
+	ptr gAreaRoomMap_46_4
+	ptr gAreaRoomMap_46_5
+	ptr gAreaRoomMap_46_6
+	ptr gAreaRoomMap_46_7
 
 gAreaRoomMap_08107870:: @ 08107870
 	map_bottom offset_gAreaRoomMap_08107870_0, 0xC80, 1
@@ -3396,206 +3396,206 @@ gAreaRoomMap_4D_0:: @ 0810788C
 	map_top offset_gAreaRoomMap_4d_0_top, 0xCD0, 1, 1
 
 gAreaRoomMaps_4D:: @ 081078A4
-	.4byte gAreaRoomMap_4D_0
+	ptr gAreaRoomMap_4D_0
 
 gAreaRoomMap_57_0:: @ 081078A8
 	map_bottom offset_gAreaRoomMap_57_0_bottom, 0xC80, 1
 	map_top offset_gAreaRoomMap_57_0_top, 0xC80, 1, 1
 
 gAreaRoomMaps_57:: @ 081078C0
-	.4byte gAreaRoomMap_57_0
+	ptr gAreaRoomMap_57_0
 
 gAreaRoomMap_5F_0:: @ 081078C4
 	map_bottom offset_gAreaRoomMap_5f_0_bottom, 0xC80, 1
 	map_top offset_gAreaRoomMap_5f_0_top, 0xC80, 1, 1
 
 gAreaRoomMaps_5F:: @ 081078DC
-	.4byte gAreaRoomMap_5F_0
+	ptr gAreaRoomMap_5F_0
 
 gAreaRoomMap_67_0:: @ 081078E0
 	map_bottom offset_gAreaRoomMap_67_0_bottom, 0x12C, 1
 	map_top offset_gAreaRoomMap_67_0_top, 0x12C, 1, 1
 
 gAreaRoomMaps_67:: @ 081078F8
-	.4byte gAreaRoomMap_67_0
+	ptr gAreaRoomMap_67_0
 
 gAreaRoomMap_6F_0:: @ 081078FC
 	map_bottom offset_gAreaRoomMap_6f_0_bottom, 0xC80, 1
 	map_top offset_gAreaRoomMap_6f_0_top, 0xC80, 1, 1
 
 gAreaRoomMaps_6F:: @ 08107914
-	.4byte gAreaRoomMap_6F_0
+	ptr gAreaRoomMap_6F_0
 
 gAreaRoomMap_77_0:: @ 08107918
 	map_bottom offset_gAreaRoomMap_77_0_bottom, 0x1040, 1
 	map_top offset_gAreaRoomMap_77_0_top, 0x1040, 1, 1
 
 gAreaRoomMaps_77:: @ 08107930
-	.4byte gAreaRoomMap_77_0
+	ptr gAreaRoomMap_77_0
 
 gAreaRoomMap_7F_0:: @ 08107934
 	map_bottom offset_gAreaRoomMap_7f_0_bottom, 0xC80, 1
 	map_top offset_gAreaRoomMap_7f_0_top, 0xC80, 1, 1
 
 gAreaRoomMaps_7F:: @ 0810794C
-	.4byte gAreaRoomMap_7F_0
+	ptr gAreaRoomMap_7F_0
 
 gAreaRoomMap_87_0:: @ 08107950
 	map_bottom offset_gAreaRoomMap_87_0_bottom, 0xF3C, 1
 	map_top offset_gAreaRoomMap_87_0_top, 0xF3C, 1, 1
 
 gAreaRoomMaps_87:: @ 08107968
-	.4byte gAreaRoomMap_87_0
+	ptr gAreaRoomMap_87_0
 
 gAreaRoomMap_8F_0:: @ 0810796C
 	map_bottom offset_gAreaRoomMap_8f_0_bottom, 0xFA0, 1
 	map_top offset_gAreaRoomMap_8f_0_top, 0xFA0, 1, 1
 
 gAreaRoomMaps_8F:: @ 08107984
-	.4byte gAreaRoomMap_8F_0
+	ptr gAreaRoomMap_8F_0
 
 gAreaRoomMaps:: @ 08107988
-	.4byte gAreaRoomMaps_MinishWoods             @ 0x0
-	.4byte gAreaRoomMaps_MinishVillage           @ 0x1
-	.4byte gAreaRoomMaps_HyruleTown              @ 0x2
-	.4byte gAreaRoomMaps_HyruleField             @ 0x3
-	.4byte gAreaRoomMaps_CastorWilds             @ 0x4
-	.4byte gAreaRoomMaps_Ruins                   @ 0x5
-	.4byte gAreaRoomMaps_MtCrenel                @ 0x6
-	.4byte gAreaRoomMaps_CastleGarden            @ 0x7
-	.4byte gAreaRoomMaps_CloudTops               @ 0x8
-	.4byte gAreaRoomMaps_RoyalValley             @ 0x9
-	.4byte gAreaRoomMaps_VeilFalls               @ 0xA
-	.4byte gAreaRoomMaps_LakeHylia               @ 0xB
-	.4byte gAreaRoomMaps_LakeWoodsCave           @ 0xC
-	.4byte gAreaRoomMaps_Beanstalks              @ 0xD
-	.4byte gAreaRoomMaps_Empty                   @ 0xE
-	.4byte gAreaRoomMaps_HyruleDigCaves          @ 0xF
-	.4byte gAreaRoomMaps_MelarisMine             @ 0x10
-	.4byte gAreaRoomMaps_MinishPaths            @ 0x11
-	.4byte gAreaRoomMaps_CrenelMinishPaths       @ 0x12
-	.4byte gAreaRoomMaps_DigCaves1               @ 0x13
-	.4byte gAreaRoomMaps_CrenelDigCave           @ 0x14
-	.4byte gAreaRoomMaps_FestivalTown            @ 0x15
-	.4byte gAreaRoomMaps_VeilFallsDigCave        @ 0x16
-	.4byte gAreaRoomMaps_CastorWildsDigCave      @ 0x17
-	.4byte gAreaRoomMaps_OuterFortressOfWinds    @ 0x18
-	.4byte gAreaRoomMaps_HyliaDigCaves           @ 0x19
-	.4byte gAreaRoomMaps_VeilFallsTop            @ 0x1A
-	.4byte gAreaRoomMaps_Unused                  @ 0x1B
-	.4byte gAreaRoomMaps_Unused                  @ 0x1C
-	.4byte gAreaRoomMaps_Unused                  @ 0x1D
-	.4byte gAreaRoomMaps_Unused                  @ 0x1E
-	.4byte gAreaRoomMaps_Unused                  @ 0x1F
-	.4byte gAreaRoomMaps_MinishHouseInteriors    @ 0x20
-	.4byte gAreaRoomMaps_HouseInteriors1         @ 0x21
-	.4byte gAreaRoomMaps_HouseInteriors2         @ 0x22
-	.4byte gAreaRoomMaps_HouseInteriors3         @ 0x23
-	.4byte gAreaRoomMaps_TreeInteriors           @ 0x24
-	.4byte gAreaRoomMaps_Dojos                   @ 0x25
-	.4byte gAreaRoomMaps_CrenelCaves             @ 0x26
-	.4byte gAreaRoomMaps_MinishCracks            @ 0x27
-	.4byte gAreaRoomMaps_HouseInteriors4         @ 0x28
-	.4byte gAreaRoomMaps_GreatFairies            @ 0x29
-	.4byte gAreaRoomMaps_CastorCaves             @ 0x2A
-	.4byte gAreaRoomMaps_CastorDarknut           @ 0x2B
-	.4byte gAreaRoomMaps_ArmosInteriors          @ 0x2C
-	.4byte gAreaRoomMaps_TownMinishHoles         @ 0x2D
-	.4byte gAreaRoomMaps_MinishRafters           @ 0x2E
-	.4byte gAreaRoomMaps_GoronCave               @ 0x2F
-	.4byte gAreaRoomMaps_WindTribeTower          @ 0x30
-	.4byte gAreaRoomMaps_WindTribeTowerRoof      @ 0x31
-	.4byte gAreaRoomMaps_Caves                   @ 0x32
-	.4byte gAreaRoomMaps_VeilFallsCaves          @ 0x33
-	.4byte gAreaRoomMaps_RoyalValleyGraves       @ 0x34
-	.4byte gAreaRoomMaps_MinishCaves             @ 0x35
-	.4byte gAreaRoomMaps_CastleGardenMinishHoles @ 0x36
-	.4byte gAreaRoomMaps_37                      @ 0x37
-	.4byte gAreaRoomMaps_EzloCutscene            @ 0x38
-	.4byte gAreaRoomMaps_Unused                  @ 0x39
-	.4byte gAreaRoomMaps_Unused                  @ 0x3A
-	.4byte gAreaRoomMaps_Unused                  @ 0x3B
-	.4byte gAreaRoomMaps_Unused                  @ 0x3C
-	.4byte gAreaRoomMaps_Unused                  @ 0x3D
-	.4byte gAreaRoomMaps_Unused                  @ 0x3E
-	.4byte gAreaRoomMaps_Unused                  @ 0x3F
-	.4byte gAreaRoomMaps_40                      @ 0x40
-	.4byte gAreaRoomMaps_HyruleTownUnderground   @ 0x41
-	.4byte gAreaRoomMaps_GardenFountains         @ 0x42
-	.4byte gAreaRoomMaps_HyruleCastleCellar      @ 0x43
-	.4byte gAreaRoomMaps_SimonsSimulation        @ 0x44
-	.4byte gAreaRoomMaps_45                      @ 0x45
-	.4byte gAreaRoomMaps_46                      @ 0x46
-	.4byte gAreaRoomMaps_47                      @ 0x47
-	.4byte gAreaRoomMaps_DeepwoodShrine          @ 0x48
-	.4byte gAreaRoomMaps_DeepwoodShrineBoss      @ 0x49
-	.4byte gAreaRoomMaps_DeepwoodShrineEntry     @ 0x4A
-	.4byte gAreaRoomMaps_Unused                  @ 0x4B
-	.4byte gAreaRoomMaps_Unused                  @ 0x4C
-	.4byte gAreaRoomMaps_4D                      @ 0x4D
-	.4byte gAreaRoomMaps_Unused                  @ 0x4E
-	.4byte gAreaRoomMaps_Unused                  @ 0x4F
-	.4byte gAreaRoomMaps_CaveOfFlames            @ 0x50
-	.4byte gAreaRoomMaps_CaveOfFlamesBoss        @ 0x51
-	.4byte gAreaRoomMaps_Unused                  @ 0x52
-	.4byte gAreaRoomMaps_Unused                  @ 0x53
-	.4byte gAreaRoomMaps_Unused                  @ 0x54
-	.4byte gAreaRoomMaps_Unused                  @ 0x55
-	.4byte gAreaRoomMaps_Unused                  @ 0x56
-	.4byte gAreaRoomMaps_57                      @ 0x57
-	.4byte gAreaRoomMaps_FortressOfWinds         @ 0x58
-	.4byte gAreaRoomMaps_FortressOfWindsTop      @ 0x59
-	.4byte gAreaRoomMaps_InnerMazaal             @ 0x5A
-	.4byte gAreaRoomMaps_Unused                  @ 0x5B
-	.4byte gAreaRoomMaps_Unused                  @ 0x5C
-	.4byte gAreaRoomMaps_Unused                  @ 0x5D
-	.4byte gAreaRoomMaps_Unused                  @ 0x5E
-	.4byte gAreaRoomMaps_5F                      @ 0x5F
-	.4byte gAreaRoomMaps_TempleOfDroplets        @ 0x60
-	.4byte gAreaRoomMaps_61                      @ 0x61
-	.4byte gAreaRoomMaps_HyruleTownMinishCaves   @ 0x62
-	.4byte gAreaRoomMaps_Unused                  @ 0x63
-	.4byte gAreaRoomMaps_Unused                  @ 0x64
-	.4byte gAreaRoomMaps_Unused                  @ 0x65
-	.4byte gAreaRoomMaps_Unused                  @ 0x66
-	.4byte gAreaRoomMaps_67                      @ 0x67
-	.4byte gAreaRoomMaps_RoyalCrypt              @ 0x68
-	.4byte gAreaRoomMaps_Unused                  @ 0x69
-	.4byte gAreaRoomMaps_Unused                  @ 0x6A
-	.4byte gAreaRoomMaps_Unused                  @ 0x6B
-	.4byte gAreaRoomMaps_Unused                  @ 0x6C
-	.4byte gAreaRoomMaps_Unused                  @ 0x6D
-	.4byte gAreaRoomMaps_Unused                  @ 0x6E
-	.4byte gAreaRoomMaps_6F                      @ 0x6F
-	.4byte gAreaRoomMaps_PalaceOfWinds           @ 0x70
-	.4byte gAreaRoomMaps_PalaceOfWindsBoss       @ 0x71
-	.4byte gAreaRoomMaps_Unused                  @ 0x72
-	.4byte gAreaRoomMaps_Unused                  @ 0x73
-	.4byte gAreaRoomMaps_Unused                  @ 0x74
-	.4byte gAreaRoomMaps_Unused                  @ 0x75
-	.4byte gAreaRoomMaps_Unused                  @ 0x76
-	.4byte gAreaRoomMaps_77                      @ 0x77
-	.4byte gAreaRoomMaps_Sanctuary               @ 0x78
-	.4byte gAreaRoomMaps_Unused                  @ 0x79
-	.4byte gAreaRoomMaps_Unused                  @ 0x7A
-	.4byte gAreaRoomMaps_Unused                  @ 0x7B
-	.4byte gAreaRoomMaps_Unused                  @ 0x7C
-	.4byte gAreaRoomMaps_Unused                  @ 0x7D
-	.4byte gAreaRoomMaps_Unused                  @ 0x7E
-	.4byte gAreaRoomMaps_7F                      @ 0x7F
-	.4byte gAreaRoomMaps_HyruleCastle            @ 0x80
-	.4byte gAreaRoomMaps_SanctuaryEntrance       @ 0x81
-	.4byte gAreaRoomMaps_Unused                  @ 0x82
-	.4byte gAreaRoomMaps_Unused                  @ 0x83
-	.4byte gAreaRoomMaps_Unused                  @ 0x84
-	.4byte gAreaRoomMaps_Unused                  @ 0x85
-	.4byte gAreaRoomMaps_Unused                  @ 0x86
-	.4byte gAreaRoomMaps_87                      @ 0x87
-	.4byte gAreaRoomMaps_DarkHyruleCastle        @ 0x88
-	.4byte gAreaRoomMaps_DarkHyruleCastleOutside @ 0x89
-	.4byte gAreaRoomMaps_VaatisArms              @ 0x8A
-	.4byte gAreaRoomMaps_Vaati3                  @ 0x8B
-	.4byte gAreaRoomMaps_Vaati2                  @ 0x8C
-	.4byte gAreaRoomMaps_DarkHyruleCastleBridge  @ 0x8D
-	.4byte gAreaRoomMaps_Unused                  @ 0x8E
-	.4byte gAreaRoomMaps_8F                      @ 0x8F
+	ptr gAreaRoomMaps_MinishWoods             @ 0x0
+	ptr gAreaRoomMaps_MinishVillage           @ 0x1
+	ptr gAreaRoomMaps_HyruleTown              @ 0x2
+	ptr gAreaRoomMaps_HyruleField             @ 0x3
+	ptr gAreaRoomMaps_CastorWilds             @ 0x4
+	ptr gAreaRoomMaps_Ruins                   @ 0x5
+	ptr gAreaRoomMaps_MtCrenel                @ 0x6
+	ptr gAreaRoomMaps_CastleGarden            @ 0x7
+	ptr gAreaRoomMaps_CloudTops               @ 0x8
+	ptr gAreaRoomMaps_RoyalValley             @ 0x9
+	ptr gAreaRoomMaps_VeilFalls               @ 0xA
+	ptr gAreaRoomMaps_LakeHylia               @ 0xB
+	ptr gAreaRoomMaps_LakeWoodsCave           @ 0xC
+	ptr gAreaRoomMaps_Beanstalks              @ 0xD
+	ptr gAreaRoomMaps_Empty                   @ 0xE
+	ptr gAreaRoomMaps_HyruleDigCaves          @ 0xF
+	ptr gAreaRoomMaps_MelarisMine             @ 0x10
+	ptr gAreaRoomMaps_MinishPaths            @ 0x11
+	ptr gAreaRoomMaps_CrenelMinishPaths       @ 0x12
+	ptr gAreaRoomMaps_DigCaves1               @ 0x13
+	ptr gAreaRoomMaps_CrenelDigCave           @ 0x14
+	ptr gAreaRoomMaps_FestivalTown            @ 0x15
+	ptr gAreaRoomMaps_VeilFallsDigCave        @ 0x16
+	ptr gAreaRoomMaps_CastorWildsDigCave      @ 0x17
+	ptr gAreaRoomMaps_OuterFortressOfWinds    @ 0x18
+	ptr gAreaRoomMaps_HyliaDigCaves           @ 0x19
+	ptr gAreaRoomMaps_VeilFallsTop            @ 0x1A
+	ptr gAreaRoomMaps_Unused                  @ 0x1B
+	ptr gAreaRoomMaps_Unused                  @ 0x1C
+	ptr gAreaRoomMaps_Unused                  @ 0x1D
+	ptr gAreaRoomMaps_Unused                  @ 0x1E
+	ptr gAreaRoomMaps_Unused                  @ 0x1F
+	ptr gAreaRoomMaps_MinishHouseInteriors    @ 0x20
+	ptr gAreaRoomMaps_HouseInteriors1         @ 0x21
+	ptr gAreaRoomMaps_HouseInteriors2         @ 0x22
+	ptr gAreaRoomMaps_HouseInteriors3         @ 0x23
+	ptr gAreaRoomMaps_TreeInteriors           @ 0x24
+	ptr gAreaRoomMaps_Dojos                   @ 0x25
+	ptr gAreaRoomMaps_CrenelCaves             @ 0x26
+	ptr gAreaRoomMaps_MinishCracks            @ 0x27
+	ptr gAreaRoomMaps_HouseInteriors4         @ 0x28
+	ptr gAreaRoomMaps_GreatFairies            @ 0x29
+	ptr gAreaRoomMaps_CastorCaves             @ 0x2A
+	ptr gAreaRoomMaps_CastorDarknut           @ 0x2B
+	ptr gAreaRoomMaps_ArmosInteriors          @ 0x2C
+	ptr gAreaRoomMaps_TownMinishHoles         @ 0x2D
+	ptr gAreaRoomMaps_MinishRafters           @ 0x2E
+	ptr gAreaRoomMaps_GoronCave               @ 0x2F
+	ptr gAreaRoomMaps_WindTribeTower          @ 0x30
+	ptr gAreaRoomMaps_WindTribeTowerRoof      @ 0x31
+	ptr gAreaRoomMaps_Caves                   @ 0x32
+	ptr gAreaRoomMaps_VeilFallsCaves          @ 0x33
+	ptr gAreaRoomMaps_RoyalValleyGraves       @ 0x34
+	ptr gAreaRoomMaps_MinishCaves             @ 0x35
+	ptr gAreaRoomMaps_CastleGardenMinishHoles @ 0x36
+	ptr gAreaRoomMaps_37                      @ 0x37
+	ptr gAreaRoomMaps_EzloCutscene            @ 0x38
+	ptr gAreaRoomMaps_Unused                  @ 0x39
+	ptr gAreaRoomMaps_Unused                  @ 0x3A
+	ptr gAreaRoomMaps_Unused                  @ 0x3B
+	ptr gAreaRoomMaps_Unused                  @ 0x3C
+	ptr gAreaRoomMaps_Unused                  @ 0x3D
+	ptr gAreaRoomMaps_Unused                  @ 0x3E
+	ptr gAreaRoomMaps_Unused                  @ 0x3F
+	ptr gAreaRoomMaps_40                      @ 0x40
+	ptr gAreaRoomMaps_HyruleTownUnderground   @ 0x41
+	ptr gAreaRoomMaps_GardenFountains         @ 0x42
+	ptr gAreaRoomMaps_HyruleCastleCellar      @ 0x43
+	ptr gAreaRoomMaps_SimonsSimulation        @ 0x44
+	ptr gAreaRoomMaps_45                      @ 0x45
+	ptr gAreaRoomMaps_46                      @ 0x46
+	ptr gAreaRoomMaps_47                      @ 0x47
+	ptr gAreaRoomMaps_DeepwoodShrine          @ 0x48
+	ptr gAreaRoomMaps_DeepwoodShrineBoss      @ 0x49
+	ptr gAreaRoomMaps_DeepwoodShrineEntry     @ 0x4A
+	ptr gAreaRoomMaps_Unused                  @ 0x4B
+	ptr gAreaRoomMaps_Unused                  @ 0x4C
+	ptr gAreaRoomMaps_4D                      @ 0x4D
+	ptr gAreaRoomMaps_Unused                  @ 0x4E
+	ptr gAreaRoomMaps_Unused                  @ 0x4F
+	ptr gAreaRoomMaps_CaveOfFlames            @ 0x50
+	ptr gAreaRoomMaps_CaveOfFlamesBoss        @ 0x51
+	ptr gAreaRoomMaps_Unused                  @ 0x52
+	ptr gAreaRoomMaps_Unused                  @ 0x53
+	ptr gAreaRoomMaps_Unused                  @ 0x54
+	ptr gAreaRoomMaps_Unused                  @ 0x55
+	ptr gAreaRoomMaps_Unused                  @ 0x56
+	ptr gAreaRoomMaps_57                      @ 0x57
+	ptr gAreaRoomMaps_FortressOfWinds         @ 0x58
+	ptr gAreaRoomMaps_FortressOfWindsTop      @ 0x59
+	ptr gAreaRoomMaps_InnerMazaal             @ 0x5A
+	ptr gAreaRoomMaps_Unused                  @ 0x5B
+	ptr gAreaRoomMaps_Unused                  @ 0x5C
+	ptr gAreaRoomMaps_Unused                  @ 0x5D
+	ptr gAreaRoomMaps_Unused                  @ 0x5E
+	ptr gAreaRoomMaps_5F                      @ 0x5F
+	ptr gAreaRoomMaps_TempleOfDroplets        @ 0x60
+	ptr gAreaRoomMaps_61                      @ 0x61
+	ptr gAreaRoomMaps_HyruleTownMinishCaves   @ 0x62
+	ptr gAreaRoomMaps_Unused                  @ 0x63
+	ptr gAreaRoomMaps_Unused                  @ 0x64
+	ptr gAreaRoomMaps_Unused                  @ 0x65
+	ptr gAreaRoomMaps_Unused                  @ 0x66
+	ptr gAreaRoomMaps_67                      @ 0x67
+	ptr gAreaRoomMaps_RoyalCrypt              @ 0x68
+	ptr gAreaRoomMaps_Unused                  @ 0x69
+	ptr gAreaRoomMaps_Unused                  @ 0x6A
+	ptr gAreaRoomMaps_Unused                  @ 0x6B
+	ptr gAreaRoomMaps_Unused                  @ 0x6C
+	ptr gAreaRoomMaps_Unused                  @ 0x6D
+	ptr gAreaRoomMaps_Unused                  @ 0x6E
+	ptr gAreaRoomMaps_6F                      @ 0x6F
+	ptr gAreaRoomMaps_PalaceOfWinds           @ 0x70
+	ptr gAreaRoomMaps_PalaceOfWindsBoss       @ 0x71
+	ptr gAreaRoomMaps_Unused                  @ 0x72
+	ptr gAreaRoomMaps_Unused                  @ 0x73
+	ptr gAreaRoomMaps_Unused                  @ 0x74
+	ptr gAreaRoomMaps_Unused                  @ 0x75
+	ptr gAreaRoomMaps_Unused                  @ 0x76
+	ptr gAreaRoomMaps_77                      @ 0x77
+	ptr gAreaRoomMaps_Sanctuary               @ 0x78
+	ptr gAreaRoomMaps_Unused                  @ 0x79
+	ptr gAreaRoomMaps_Unused                  @ 0x7A
+	ptr gAreaRoomMaps_Unused                  @ 0x7B
+	ptr gAreaRoomMaps_Unused                  @ 0x7C
+	ptr gAreaRoomMaps_Unused                  @ 0x7D
+	ptr gAreaRoomMaps_Unused                  @ 0x7E
+	ptr gAreaRoomMaps_7F                      @ 0x7F
+	ptr gAreaRoomMaps_HyruleCastle            @ 0x80
+	ptr gAreaRoomMaps_SanctuaryEntrance       @ 0x81
+	ptr gAreaRoomMaps_Unused                  @ 0x82
+	ptr gAreaRoomMaps_Unused                  @ 0x83
+	ptr gAreaRoomMaps_Unused                  @ 0x84
+	ptr gAreaRoomMaps_Unused                  @ 0x85
+	ptr gAreaRoomMaps_Unused                  @ 0x86
+	ptr gAreaRoomMaps_87                      @ 0x87
+	ptr gAreaRoomMaps_DarkHyruleCastle        @ 0x88
+	ptr gAreaRoomMaps_DarkHyruleCastleOutside @ 0x89
+	ptr gAreaRoomMaps_VaatisArms              @ 0x8A
+	ptr gAreaRoomMaps_Vaati3                  @ 0x8B
+	ptr gAreaRoomMaps_Vaati2                  @ 0x8C
+	ptr gAreaRoomMaps_DarkHyruleCastleBridge  @ 0x8D
+	ptr gAreaRoomMaps_Unused                  @ 0x8E
+	ptr gAreaRoomMaps_8F                      @ 0x8F

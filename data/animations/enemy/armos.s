@@ -29,12 +29,12 @@ gSpriteAnimations_Armos_7:: @ 080CE25E
 	.include "animations/gSpriteAnimations_Armos_7.s"
 
 gSpriteAnimations_Armos:: @ 080CE264
-	.4byte gSpriteAnimations_Armos_0
-	.4byte gSpriteAnimations_Armos_1
-	.4byte gSpriteAnimations_Armos_2
-	.4byte gSpriteAnimations_Armos_3
-	.4byte gSpriteAnimations_Armos_4
-	.4byte gSpriteAnimations_Armos_5
-	.4byte gSpriteAnimations_Armos_6
-	.4byte gSpriteAnimations_Armos_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Armos_0
+	ptr gSpriteAnimations_Armos_1
+	ptr gSpriteAnimations_Armos_2
+	ptr gSpriteAnimations_Armos_3
+	ptr gSpriteAnimations_Armos_4
+	ptr gSpriteAnimations_Armos_5
+	ptr gSpriteAnimations_Armos_6
+	ptr gSpriteAnimations_Armos_7
+	ptr 00000000

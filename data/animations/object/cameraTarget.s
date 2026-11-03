@@ -11,6 +11,6 @@ gSpriteAnimations_CameraTarget_1:: @ 0811F795
 	.include "animations/gSpriteAnimations_CameraTarget_1.s"
 
 gSpriteAnimations_CameraTarget:: @ 0811F7CC
-	.4byte gSpriteAnimations_CameraTarget_0
-	.4byte gSpriteAnimations_CameraTarget_1
-	.4byte 00000000
+	ptr gSpriteAnimations_CameraTarget_0
+	ptr gSpriteAnimations_CameraTarget_1
+	ptr 00000000

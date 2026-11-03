@@ -17,8 +17,8 @@ gSpriteAnimations_Railtrack_3:: @ 081205F0
 	.include "animations/gSpriteAnimations_Railtrack_3.s"
 
 gSpriteAnimations_Railtrack:: @ 081205F4
-	.4byte gSpriteAnimations_Railtrack_0
-	.4byte gSpriteAnimations_Railtrack_1
-	.4byte gSpriteAnimations_Railtrack_2
-	.4byte gSpriteAnimations_Railtrack_3
-	.4byte 00000000
+	ptr gSpriteAnimations_Railtrack_0
+	ptr gSpriteAnimations_Railtrack_1
+	ptr gSpriteAnimations_Railtrack_2
+	ptr gSpriteAnimations_Railtrack_3
+	ptr 00000000

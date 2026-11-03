@@ -14,8 +14,8 @@ gSpriteAnimations_FigurineDevice_2:: @ 08120B01
 	.include "animations/gSpriteAnimations_FigurineDevice_2.s"
 
 gSpriteAnimations_FigurineDevice:: @ 08120B10
-	.4byte gSpriteAnimations_FigurineDevice_0
-	.4byte gSpriteAnimations_FigurineDevice_1
-	.4byte gSpriteAnimations_FigurineDevice_2
-	.4byte 00000000
+	ptr gSpriteAnimations_FigurineDevice_0
+	ptr gSpriteAnimations_FigurineDevice_1
+	ptr gSpriteAnimations_FigurineDevice_2
+	ptr 00000000
 

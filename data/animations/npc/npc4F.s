@@ -17,8 +17,8 @@ gSpriteAnimations_Npc4F_3:: @ 0811421F
 	.include "animations/gSpriteAnimations_Npc4F_3.s"
 
 gSpriteAnimations_Npc4F:: @ 08114228
-	.4byte gSpriteAnimations_Npc4F_0
-	.4byte gSpriteAnimations_Npc4F_1
-	.4byte gSpriteAnimations_Npc4F_2
-	.4byte gSpriteAnimations_Npc4F_3
-	.4byte 00000000
+	ptr gSpriteAnimations_Npc4F_0
+	ptr gSpriteAnimations_Npc4F_1
+	ptr gSpriteAnimations_Npc4F_2
+	ptr gSpriteAnimations_Npc4F_3
+	ptr 00000000

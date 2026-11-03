@@ -32,6 +32,9 @@ void DarknutTimerHandler(u32* a1);
 void BiggoronTimerHandler(u32* a1);
 void InitAllRoomResInfo(void);
 void InitRoomResInfo(RoomResInfo* info, RoomHeader* hdr, u32 area, u32 room);
+#ifdef PLATFORM_PC
+void PcOracleRoomInfo(RoomResInfo* info, u32 area, u32 room);
+#endif
 void sub_080532E4(void);
 void ResetTimerFlags(void);
 
@@ -566,6 +569,9 @@ void InitRoomResInfo(RoomResInfo* info, RoomHeader* r_hdr, u32 area, u32 room) {
     if (gAreaTable[area] != NULL) {
         info->properties = *(gAreaTable[area] + room);
     }
+#ifdef PLATFORM_PC
+    PcOracleRoomInfo(info, area, room);
+#endif
 }
 
 RoomResInfo* GetCurrentRoomInfo(void) {

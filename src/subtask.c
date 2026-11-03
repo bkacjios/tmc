@@ -15,7 +15,6 @@
 
 extern Screen gUnk_03001020;
 extern u8 gPaletteBufferBackup[];
-extern u8 gUnk_03000420[];
 
 void sub_080A70AC(const KeyButtonLayout* layout);
 void sub_080A5F48(u32, u32);
@@ -215,7 +214,7 @@ void Subtask_FadeIn(void) {
         MemCopy(&gGFXSlots, &gUI.gfxSlotList, sizeof(GfxSlotList));
         MemCopy(gPaletteList, gUI.palettes, sizeof(gUI.palettes));
         MemCopy(&gRoomControls, &gUI.roomControls, sizeof(RoomControls));
-        MemCopy(gUnk_03000420, gUI.unk_2a8, sizeof(gUI.unk_2a8));
+        MemCopy(gOAMControls.unk, gUI.unk_2a8, sizeof(gUI.unk_2a8));
         MemCopy(&gActiveScriptInfo, &gUI.activeScriptInfo, sizeof(ActiveScriptInfo));
         sub_0805E958();
         gUI.unk_d = gRoomTransition.field2f;
@@ -254,7 +253,7 @@ void Subtask_FadeOut(void) {
         gMapBottom.bgSettings = gUI.mapBottomBgSettings;
         gMapTop.bgSettings = gUI.mapTopBgSettings;
         MemCopy(&gUI.activeScriptInfo, &gActiveScriptInfo, sizeof(ActiveScriptInfo));
-        MemCopy(gUI.unk_2a8, gUnk_03000420, sizeof(gUI.unk_2a8));
+        MemCopy(gUI.unk_2a8, gOAMControls.unk, sizeof(gUI.unk_2a8));
         MemCopy(gUI.palettes, gPaletteList, sizeof(gUI.palettes));
         MemCopy(&gUI.gfxSlotList, &gGFXSlots, sizeof(gGFXSlots));
         MemCopy(&gUI.roomControls, &gRoomControls, sizeof(RoomControls));

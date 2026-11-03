@@ -105,7 +105,7 @@ typedef struct {
     u32 type2;
     u16 xPos;
     u16 yPos;
-    u32 spritePtr;
+    uptr spritePtr;
 } EntityData;
 
 typedef struct {

@@ -31,14 +31,14 @@ gSpriteAnimations_Puffstool_8:: @ 080CC165
 	.include "animations/gSpriteAnimations_Puffstool_8.s"
 
 gSpriteAnimations_Puffstool:: @ 080CC174
-	.4byte gSpriteAnimations_Puffstool_0
-	.4byte gSpriteAnimations_Puffstool_1
-	.4byte gSpriteAnimations_Puffstool_2
-	.4byte gSpriteAnimations_Puffstool_3
-	.4byte gSpriteAnimations_Puffstool_4
-	.4byte gSpriteAnimations_Puffstool_5
-	.4byte gSpriteAnimations_Puffstool_6
-	.4byte gSpriteAnimations_Puffstool_7
-	.4byte gSpriteAnimations_Puffstool_8
-	.4byte 00000000
+	ptr gSpriteAnimations_Puffstool_0
+	ptr gSpriteAnimations_Puffstool_1
+	ptr gSpriteAnimations_Puffstool_2
+	ptr gSpriteAnimations_Puffstool_3
+	ptr gSpriteAnimations_Puffstool_4
+	ptr gSpriteAnimations_Puffstool_5
+	ptr gSpriteAnimations_Puffstool_6
+	ptr gSpriteAnimations_Puffstool_7
+	ptr gSpriteAnimations_Puffstool_8
+	ptr 00000000
 

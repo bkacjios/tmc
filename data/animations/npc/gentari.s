@@ -32,18 +32,18 @@ gSpriteAnimations_Gentari_13:: @ 08109B60
 	.include "animations/gSpriteAnimations_Gentari_13.s"
 
 gSpriteAnimations_Gentari:: @ 08109B80
-	.4byte gSpriteAnimations_Gentari_0
-	.4byte gSpriteAnimations_Gentari_1
-	.4byte gSpriteAnimations_Gentari_2
-	.4byte gSpriteAnimations_Gentari_3
-	.4byte gSpriteAnimations_Gentari_4
-	.4byte gSpriteAnimations_Gentari_4
-	.4byte gSpriteAnimations_Gentari_4
-	.4byte gSpriteAnimations_Gentari_7
-	.4byte gSpriteAnimations_Gentari_8
-	.4byte gSpriteAnimations_Gentari_1
-	.4byte gSpriteAnimations_Gentari_8
-	.4byte gSpriteAnimations_Gentari_3
-	.4byte gSpriteAnimations_Gentari_12
-	.4byte gSpriteAnimations_Gentari_13
-	.4byte 00000000
+	ptr gSpriteAnimations_Gentari_0
+	ptr gSpriteAnimations_Gentari_1
+	ptr gSpriteAnimations_Gentari_2
+	ptr gSpriteAnimations_Gentari_3
+	ptr gSpriteAnimations_Gentari_4
+	ptr gSpriteAnimations_Gentari_4
+	ptr gSpriteAnimations_Gentari_4
+	ptr gSpriteAnimations_Gentari_7
+	ptr gSpriteAnimations_Gentari_8
+	ptr gSpriteAnimations_Gentari_1
+	ptr gSpriteAnimations_Gentari_8
+	ptr gSpriteAnimations_Gentari_3
+	ptr gSpriteAnimations_Gentari_12
+	ptr gSpriteAnimations_Gentari_13
+	ptr 00000000

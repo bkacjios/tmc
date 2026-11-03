@@ -11,6 +11,6 @@ gSpriteAnimations_WarpPoint_1:: @ 08121394
 	.include "animations/gSpriteAnimations_WarpPoint_1.s"
 
 gSpriteAnimations_WarpPoint:: @ 081213B8
-	.4byte gSpriteAnimations_WarpPoint_0
-	.4byte gSpriteAnimations_WarpPoint_1
-	.4byte 00000000
+	ptr gSpriteAnimations_WarpPoint_0
+	ptr gSpriteAnimations_WarpPoint_1
+	ptr 00000000

@@ -33,8 +33,20 @@ AGBCC_PATH ?= $(shell pwd)/tools/agbcc
 CC1 := $(AGBCC_PATH)/bin/agbcc
 SHA1 := $(shell { command -v sha1sum || command -v shasum; } 2>/dev/null) -c
 
-SCANINC := tools/bin/scaninc
-PREPROC := tools/bin/preproc
-ASSET_PROCESSOR := tools/bin/asset_processor
+# Non-empty when make runs on Windows (MSYS2).
+HOST_WINDOWS := $(filter MINGW% MSYS% CYGWIN%,$(shell uname -s))
+
+# Built by the top-level Makefile (target tools). On Windows (MSYS2), they go
+# in tools/windows, so that a checkout shared with Linux keeps both sets.
+ifneq ($(HOST_WINDOWS),)
+TOOLS_DIR := tools/windows
+else
+TOOLS_DIR := tools
+endif
+
+SCANINC := $(TOOLS_DIR)/bin/scaninc
+PREPROC := $(TOOLS_DIR)/bin/preproc
+ASSET_PROCESSOR := $(TOOLS_DIR)/bin/asset_processor
 ENUM_PROCESSOR := tools/extract_include_enum.py
-FIX := tools/bin/gbafix
+FIX := $(TOOLS_DIR)/bin/gbafix
+TMC_STRINGS := $(TOOLS_DIR)/bin/tmc_strings

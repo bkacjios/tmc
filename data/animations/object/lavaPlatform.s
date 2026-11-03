@@ -10,8 +10,8 @@ gSpriteAnimations_LavaPlatform_1_1:: @ 08122684
 	.include "animations/gSpriteAnimations_LavaPlatform_1_1.s"
 
 gSpriteAnimations_LavaPlatform_1:: @ 08122698
-	.4byte gSpriteAnimations_LavaPlatform_1_0
-	.4byte gSpriteAnimations_LavaPlatform_1_1
+	ptr gSpriteAnimations_LavaPlatform_1_0
+	ptr gSpriteAnimations_LavaPlatform_1_1
 	.include "animations/gSpriteAnimations_LavaPlatform_1.s"
 
 gSpriteAnimations_LavaPlatform_0_0:: @ 081226A4
@@ -33,10 +33,10 @@ gSpriteAnimations_LavaPlatform_0_5:: @ 08122753
 	.include "animations/gSpriteAnimations_LavaPlatform_0_5.s"
 
 gSpriteAnimations_LavaPlatform:: @ 08122764
-	.4byte gSpriteAnimations_LavaPlatform_0_0
-	.4byte gSpriteAnimations_LavaPlatform_0_1
-	.4byte gSpriteAnimations_LavaPlatform_0_2
-	.4byte gSpriteAnimations_LavaPlatform_0_3
-	.4byte gSpriteAnimations_LavaPlatform_0_4
-	.4byte gSpriteAnimations_LavaPlatform_0_5
-	.4byte 00000000
+	ptr gSpriteAnimations_LavaPlatform_0_0
+	ptr gSpriteAnimations_LavaPlatform_0_1
+	ptr gSpriteAnimations_LavaPlatform_0_2
+	ptr gSpriteAnimations_LavaPlatform_0_3
+	ptr gSpriteAnimations_LavaPlatform_0_4
+	ptr gSpriteAnimations_LavaPlatform_0_5
+	ptr 00000000

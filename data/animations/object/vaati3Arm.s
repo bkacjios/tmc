@@ -17,8 +17,8 @@ gSpriteAnimations_Vaati3Arm_3:: @ 0812490E
 	.include "animations/gSpriteAnimations_Vaati3Arm_3.s"
 
 gSpriteAnimations_Vaati3Arm:: @ 08124928
-	.4byte gSpriteAnimations_Vaati3Arm_0
-	.4byte gSpriteAnimations_Vaati3Arm_1
-	.4byte gSpriteAnimations_Vaati3Arm_2
-	.4byte gSpriteAnimations_Vaati3Arm_3
-	.4byte 00000000
+	ptr gSpriteAnimations_Vaati3Arm_0
+	ptr gSpriteAnimations_Vaati3Arm_1
+	ptr gSpriteAnimations_Vaati3Arm_2
+	ptr gSpriteAnimations_Vaati3Arm_3
+	ptr 00000000

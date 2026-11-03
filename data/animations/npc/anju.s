@@ -30,12 +30,12 @@ gSpriteAnimations_Anju_3:: @ 0811372B
 	.include "animations/gSpriteAnimations_Anju_3.s"
 
 gSpriteAnimations_Anju:: @ 08113730
-	.4byte gSpriteAnimations_Anju_0
-	.4byte gSpriteAnimations_Anju_1
-	.4byte gSpriteAnimations_Anju_2
-	.4byte gSpriteAnimations_Anju_3
-	.4byte gSpriteAnimations_Anju_4
-	.4byte gSpriteAnimations_Anju_5
-	.4byte gSpriteAnimations_Anju_6
-	.4byte gSpriteAnimations_Anju_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Anju_0
+	ptr gSpriteAnimations_Anju_1
+	ptr gSpriteAnimations_Anju_2
+	ptr gSpriteAnimations_Anju_3
+	ptr gSpriteAnimations_Anju_4
+	ptr gSpriteAnimations_Anju_5
+	ptr gSpriteAnimations_Anju_6
+	ptr gSpriteAnimations_Anju_7
+	ptr 00000000

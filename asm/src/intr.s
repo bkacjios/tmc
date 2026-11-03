@@ -1938,9 +1938,9 @@ arm_CheckBitsEU: @ 0x080B20EC
 	strb r3, [fp, #3]
 	bx lr
 _080B2144:
-	.4byte ram_sub_080B2140
-	.4byte ram_sub_080B20DC
-	.4byte ram_sub_080B2088
+	ptr ram_sub_080B2140
+	ptr ram_sub_080B20DC
+	ptr ram_sub_080B2088
 .endif
 	
 _080B2A30: .4byte gOAMControls

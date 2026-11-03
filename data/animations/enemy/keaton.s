@@ -41,16 +41,16 @@ gSpriteAnimations_Keaton_11:: @ 080CE91B
 	.include "animations/gSpriteAnimations_Keaton_11.s"
 
 gSpriteAnimations_Keaton:: @ 080CE944
-	.4byte gSpriteAnimations_Keaton_0
-	.4byte gSpriteAnimations_Keaton_1
-	.4byte gSpriteAnimations_Keaton_2
-	.4byte gSpriteAnimations_Keaton_3
-	.4byte gSpriteAnimations_Keaton_4
-	.4byte gSpriteAnimations_Keaton_5
-	.4byte gSpriteAnimations_Keaton_6
-	.4byte gSpriteAnimations_Keaton_7
-	.4byte gSpriteAnimations_Keaton_8
-	.4byte gSpriteAnimations_Keaton_9
-	.4byte gSpriteAnimations_Keaton_10
-	.4byte gSpriteAnimations_Keaton_11
-	.4byte 00000000
+	ptr gSpriteAnimations_Keaton_0
+	ptr gSpriteAnimations_Keaton_1
+	ptr gSpriteAnimations_Keaton_2
+	ptr gSpriteAnimations_Keaton_3
+	ptr gSpriteAnimations_Keaton_4
+	ptr gSpriteAnimations_Keaton_5
+	ptr gSpriteAnimations_Keaton_6
+	ptr gSpriteAnimations_Keaton_7
+	ptr gSpriteAnimations_Keaton_8
+	ptr gSpriteAnimations_Keaton_9
+	ptr gSpriteAnimations_Keaton_10
+	ptr gSpriteAnimations_Keaton_11
+	ptr 00000000

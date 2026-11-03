@@ -44,9 +44,9 @@ gUnk_0810F682:: @ 0810F682
 	.incbin "guard/gUnk_0810F682.bin"
 
 gUnk_0810F6BC:: @ 0810F6BC
-	.4byte gUnk_0810F560
-	.4byte gUnk_0810F59A
-	.4byte gUnk_0810F5D4
-	.4byte gUnk_0810F60E
-	.4byte gUnk_0810F648
-	.4byte gUnk_0810F682
+	ptr gUnk_0810F560
+	ptr gUnk_0810F59A
+	ptr gUnk_0810F5D4
+	ptr gUnk_0810F60E
+	ptr gUnk_0810F648
+	ptr gUnk_0810F682

@@ -11,7 +11,13 @@
 /** File signature */
 #define SIGNATURE 'MCZ3'
 /** Maximum message speed. */
+#ifdef PLATFORM_PC
+/** PC only: the whole text up to the next pause at once. */
+#define MSG_SPEED_INSTANT 3
+#define MAX_MSG_SPEED 4
+#else
 #define MAX_MSG_SPEED 3
+#endif
 /** Number of save slots */
 #define NUM_SAVE_SLOTS 3
 /** Maximum brightness. */

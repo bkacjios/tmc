@@ -30,12 +30,12 @@ gSpriteAnimations_Townsperson_7:: @ 0810BD47
 	.include "animations/gSpriteAnimations_Townsperson_7.s"
 
 gSpriteAnimations_Townsperson:: @ 0810BD58
-	.4byte gSpriteAnimations_Townsperson_0
-	.4byte gSpriteAnimations_Townsperson_1
-	.4byte gSpriteAnimations_Townsperson_2
-	.4byte gSpriteAnimations_Townsperson_3
-	.4byte gSpriteAnimations_Townsperson_4
-	.4byte gSpriteAnimations_Townsperson_5
-	.4byte gSpriteAnimations_Townsperson_6
-	.4byte gSpriteAnimations_Townsperson_7
-	.4byte 00000000
+	ptr gSpriteAnimations_Townsperson_0
+	ptr gSpriteAnimations_Townsperson_1
+	ptr gSpriteAnimations_Townsperson_2
+	ptr gSpriteAnimations_Townsperson_3
+	ptr gSpriteAnimations_Townsperson_4
+	ptr gSpriteAnimations_Townsperson_5
+	ptr gSpriteAnimations_Townsperson_6
+	ptr gSpriteAnimations_Townsperson_7
+	ptr 00000000

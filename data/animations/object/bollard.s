@@ -17,7 +17,7 @@ gSpriteAnimations_Bollard_3:: @ 0812133C
 	.include "animations/gSpriteAnimations_Bollard_3.s"
 
 gSpriteAnimations_Bollard:: @ 08121358
-	.4byte gSpriteAnimations_Bollard_0
-	.4byte gSpriteAnimations_Bollard_1
-	.4byte gSpriteAnimations_Bollard_2
-	.4byte gSpriteAnimations_Bollard_3
+	ptr gSpriteAnimations_Bollard_0
+	ptr gSpriteAnimations_Bollard_1
+	ptr gSpriteAnimations_Bollard_2
+	ptr gSpriteAnimations_Bollard_3

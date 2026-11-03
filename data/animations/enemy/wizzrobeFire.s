@@ -29,12 +29,12 @@ gSpriteAnimations_WizzrobeFire_7:: @ 080CE043
 	.include "animations/gSpriteAnimations_WizzrobeFire_7.s"
 
 gSpriteAnimations_WizzrobeFire:: @ 080CE050
-	.4byte gSpriteAnimations_WizzrobeFire_0
-	.4byte gSpriteAnimations_WizzrobeFire_1
-	.4byte gSpriteAnimations_WizzrobeFire_2
-	.4byte gSpriteAnimations_WizzrobeFire_3
-	.4byte gSpriteAnimations_WizzrobeFire_4
-	.4byte gSpriteAnimations_WizzrobeFire_5
-	.4byte gSpriteAnimations_WizzrobeFire_6
-	.4byte gSpriteAnimations_WizzrobeFire_7
-	.4byte 00000000
+	ptr gSpriteAnimations_WizzrobeFire_0
+	ptr gSpriteAnimations_WizzrobeFire_1
+	ptr gSpriteAnimations_WizzrobeFire_2
+	ptr gSpriteAnimations_WizzrobeFire_3
+	ptr gSpriteAnimations_WizzrobeFire_4
+	ptr gSpriteAnimations_WizzrobeFire_5
+	ptr gSpriteAnimations_WizzrobeFire_6
+	ptr gSpriteAnimations_WizzrobeFire_7
+	ptr 00000000

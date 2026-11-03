@@ -11,6 +11,6 @@ gSpriteAnimations_Wisp_1:: @ 080CEBBD
 	.include "animations/gSpriteAnimations_Wisp_1.s"
 
 gSpriteAnimations_Wisp:: @ 080CEBD0
-	.4byte gSpriteAnimations_Wisp_0
-	.4byte gSpriteAnimations_Wisp_1
-	.4byte 00000000
+	ptr gSpriteAnimations_Wisp_0
+	ptr gSpriteAnimations_Wisp_1
+	ptr 00000000

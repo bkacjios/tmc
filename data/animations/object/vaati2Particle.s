@@ -11,6 +11,6 @@ gSpriteAnimations_Vaati2Particle_1:: @ 08124320
 	.include "animations/gSpriteAnimations_Vaati2Particle_1.s"
 
 gSpriteAnimations_Vaati2Particle:: @ 08124348
-	.4byte gSpriteAnimations_Vaati2Particle_0
-	.4byte gSpriteAnimations_Vaati2Particle_1
-	.4byte 00000000
+	ptr gSpriteAnimations_Vaati2Particle_0
+	ptr gSpriteAnimations_Vaati2Particle_1
+	ptr 00000000

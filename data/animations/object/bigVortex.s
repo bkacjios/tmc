@@ -14,7 +14,7 @@ gSpriteAnimations_BigVortex_2:: @ 081236BA
 	.include "animations/gSpriteAnimations_BigVortex_2.s"
 
 gSpriteAnimations_BigVortex:: @ 081236CC
-	.4byte gSpriteAnimations_BigVortex_0
-	.4byte gSpriteAnimations_BigVortex_1
-	.4byte gSpriteAnimations_BigVortex_2
-	.4byte 00000000
+	ptr gSpriteAnimations_BigVortex_0
+	ptr gSpriteAnimations_BigVortex_1
+	ptr gSpriteAnimations_BigVortex_2
+	ptr 00000000
