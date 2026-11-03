@@ -25,6 +25,8 @@ tools/binutils
 # scripts
 *.py
 !tools/extract_include_enum.py
+!tools/pc/*.py
+__pycache__/
 *.pl
 
 # graphics

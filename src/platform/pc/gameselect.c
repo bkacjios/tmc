@@ -110,7 +110,7 @@ static void DrawMenu(SDL_Renderer* renderer, int selected, const char* message) 
     } else {
         DrawText(renderer, "LEFT/RIGHT: choose     A/START: play", MENU_W / 2, 400, 1.5f);
     }
-    SDL_RenderPresent(renderer);
+    PcRenderPresent();
 }
 
 // TMC_MENU_SHOT=path saves the first menu frame and exits (for testing).

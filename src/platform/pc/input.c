@@ -17,14 +17,24 @@
 #define STICK_DEADZONE 16000
 #define TRIGGER_THRESHOLD 16000
 
+#ifdef PC_S30
+// The S30's face buttons are in Nintendo's layout: A is the right one (east),
+// B the bottom one (south).
+#define PAD_A SDL_GAMEPAD_BUTTON_EAST
+#define PAD_B SDL_GAMEPAD_BUTTON_SOUTH
+#else
+#define PAD_A SDL_GAMEPAD_BUTTON_SOUTH
+#define PAD_B SDL_GAMEPAD_BUTTON_EAST
+#endif
+
 // Same order as the GBA's KEYINPUT bits.
 static const char* const sButtonIds[PC_NUM_BUTTONS] = {
     "a", "b", "select", "start", "right", "left", "up", "down", "r", "l",
 };
 
 static const PcBinding sDefaults[PC_NUM_BUTTONS] = {
-    { SDL_SCANCODE_X, SDL_GAMEPAD_BUTTON_SOUTH },
-    { SDL_SCANCODE_Z, SDL_GAMEPAD_BUTTON_EAST },
+    { SDL_SCANCODE_X, PAD_A },
+    { SDL_SCANCODE_Z, PAD_B },
     { SDL_SCANCODE_BACKSPACE, SDL_GAMEPAD_BUTTON_BACK },
     { SDL_SCANCODE_RETURN, SDL_GAMEPAD_BUTTON_START },
     { SDL_SCANCODE_RIGHT, SDL_GAMEPAD_BUTTON_DPAD_RIGHT },
@@ -99,6 +109,24 @@ const char* PcKeyName(int button) {
 }
 
 const char* PcPadName(int button) {
+#ifdef PC_S30
+    // The names printed on the S30.
+    static const char* const sNames[] = {
+        [SDL_GAMEPAD_BUTTON_SOUTH] = "B",             [SDL_GAMEPAD_BUTTON_EAST] = "A",
+        [SDL_GAMEPAD_BUTTON_WEST] = "Y",              [SDL_GAMEPAD_BUTTON_NORTH] = "X",
+        [SDL_GAMEPAD_BUTTON_BACK] = "Select",         [SDL_GAMEPAD_BUTTON_START] = "Start",
+        [SDL_GAMEPAD_BUTTON_LEFT_STICK] = "L3",       [SDL_GAMEPAD_BUTTON_LEFT_SHOULDER] = "L1",
+        [SDL_GAMEPAD_BUTTON_RIGHT_SHOULDER] = "R1",   [SDL_GAMEPAD_BUTTON_DPAD_UP] = "D-Pad Up",
+        [SDL_GAMEPAD_BUTTON_DPAD_DOWN] = "D-Pad Down", [SDL_GAMEPAD_BUTTON_DPAD_LEFT] = "D-Pad Left",
+        [SDL_GAMEPAD_BUTTON_DPAD_RIGHT] = "D-Pad Right",
+    };
+    int pad = gPcBindings[button].pad;
+
+    if (pad == PC_PAD_LEFT_TRIGGER)
+        return "L2";
+    if (pad == PC_PAD_RIGHT_TRIGGER)
+        return "R2";
+#else
     static const char* const sLabels[] = {
         [SDL_GAMEPAD_BUTTON_LABEL_A] = "A",           [SDL_GAMEPAD_BUTTON_LABEL_B] = "B",
         [SDL_GAMEPAD_BUTTON_LABEL_X] = "X",           [SDL_GAMEPAD_BUTTON_LABEL_Y] = "Y",
@@ -121,13 +149,16 @@ const char* PcPadName(int button) {
         return "LT";
     if (pad == PC_PAD_RIGHT_TRIGGER)
         return "RT";
+#endif
     if (pad < 0)
         return "-";
+#ifndef PC_S30
     if (sGamepad != NULL) {
         SDL_GamepadButtonLabel label = SDL_GetGamepadButtonLabel(sGamepad, (SDL_GamepadButton)pad);
         if (label != SDL_GAMEPAD_BUTTON_LABEL_UNKNOWN && label < SDL_arraysize(sLabels))
             return sLabels[label];
     }
+#endif
     if (pad < (int)SDL_arraysize(sNames) && sNames[pad] != NULL)
         return sNames[pad];
     return "Other";
@@ -298,7 +329,7 @@ int PcTakeMenuRequest(void) {
 }
 
 // Buttons for moving around menus: the bound ones, plus arrows, Enter (A),
-// and the gamepad's D-pad, south (A) and east (B) buttons, so a bad binding
+// and the gamepad's D-pad, A and B buttons, so a bad binding
 // can't lock anyone out.
 uint16_t PcPollMenuKeys(void) {
     const bool* k = SDL_GetKeyboardState(NULL);
@@ -323,9 +354,9 @@ uint16_t PcPollMenuKeys(void) {
             keys |= PC_KEY_LEFT;
         if (SDL_GetGamepadButton(sGamepad, SDL_GAMEPAD_BUTTON_DPAD_RIGHT))
             keys |= PC_KEY_RIGHT;
-        if (SDL_GetGamepadButton(sGamepad, SDL_GAMEPAD_BUTTON_SOUTH))
+        if (SDL_GetGamepadButton(sGamepad, PAD_A))
             keys |= PC_KEY_A;
-        if (SDL_GetGamepadButton(sGamepad, SDL_GAMEPAD_BUTTON_EAST))
+        if (SDL_GetGamepadButton(sGamepad, PAD_B))
             keys |= PC_KEY_B;
     }
     return keys;

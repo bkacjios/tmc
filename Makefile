@@ -43,6 +43,15 @@ pc-win: tools
 	@$(MAKE) -f PC.mk build/pcwin_$(GAME_VERSION)/objects.txt GAME_VERSION=$(GAME_VERSION) PC_OS=windows
 	@$(MAKE) -f PC.mk build GAME_VERSION=$(GAME_VERSION) PC_OS=windows
 
+# PocketGo S30 build (ARMv7 cross-compile against the pocketgo-s30 sysroot,
+# S30_WORK), in build/pcs30_*. See docs/pc-s30.md.
+.PHONY: pc-s30
+pc-s30: GAME_VERSION ?=USA
+pc-s30: tools
+	@$(MAKE) -f PC.mk deps GAME_VERSION=$(GAME_VERSION) PC_OS=s30
+	@$(MAKE) -f PC.mk build/pcs30_$(GAME_VERSION)/objects.txt GAME_VERSION=$(GAME_VERSION) PC_OS=s30
+	@$(MAKE) -f PC.mk build GAME_VERSION=$(GAME_VERSION) PC_OS=s30
+
 clean-pc:
 	@$(MAKE) -f PC.mk clean
 

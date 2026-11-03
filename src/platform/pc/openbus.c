@@ -3,13 +3,14 @@
 // The game sometimes reads members of a NULL pointer. On the GBA that reads the
 // BIOS area, which returns "open bus" (the last BIOS opcode fetched) instead of
 // crashing; writes there are ignored. The PC cannot map memory at address 0, so
-// a SIGSEGV handler decodes the faulting x86 instruction, performs it with the
-// open bus value (or drops the write) and resumes after it. On Windows, a
-// vectored exception handler does the same.
+// a SIGSEGV handler decodes the faulting x86 (or ARM, on the S30) instruction,
+// performs it with the open bus value (or drops the write) and resumes after
+// it. On Windows, a vectored exception handler does the same.
 //
 // Only the instruction forms GCC emits for loads, stores, compares and simple
-// arithmetic on memory are handled. Anything else still crashes, with the
-// instruction bytes printed so the decoder can be extended.
+// arithmetic on memory are handled (on ARM: loads and stores, ARM state only).
+// Anything else still crashes, with the instruction bytes printed so the
+// decoder can be extended.
 // TMC_LOG_OPENBUS=1 logs each site the first time it is hit.
 
 #define _GNU_SOURCE // REG_* register names in ucontext.h
@@ -18,7 +19,8 @@
 #include <string.h>
 #include "pc.h"
 
-#if (defined(__linux__) || defined(_WIN32)) && (defined(__i386__) || defined(__x86_64__))
+#if (defined(__linux__) || defined(_WIN32)) && (defined(__i386__) || defined(__x86_64__)) || \
+    (defined(__linux__) && defined(__arm__))
 #include <stddef.h>
 #include <stdint.h>
 
@@ -68,6 +70,16 @@ static Word* Reg(Machine* mc, int r) {
 #include <ucontext.h>
 
 typedef mcontext_t Machine;
+#ifdef __arm__
+typedef unsigned long Word;
+#define FLAGS(mc) ((mc)->arm_cpsr)
+#define IP(mc) ((mc)->arm_pc)
+
+// r0-r15 are consecutive in the context.
+static Word* Reg(Machine* mc, int r) {
+    return &mc->arm_r0 + r;
+}
+#else
 typedef greg_t Word;
 #define FLAGS(mc) ((mc)->gregs[REG_EFL])
 #ifdef __x86_64__
@@ -87,7 +99,7 @@ static Word* Reg(Machine* mc, int r) {
     return &mc->gregs[sRegs[r]];
 }
 #endif
-#define SP(mc) (*Reg(mc, 4))
+#endif
 
 static int sLog;
 
@@ -102,11 +114,119 @@ static uint64_t OpenBusRead(uintptr_t addr, int size) {
     return value;
 }
 
+#ifdef __arm__
+#define CPSR_T (1u << 5)
+#define CPSR_C (1u << 29)
+
+// Register r as an operand: the PC reads as the instruction's address + 8.
+static uint32_t ArmReg(Machine* mc, int r) {
+    return r == 15 ? (uint32_t)IP(mc) + 8 : (uint32_t)*Reg(mc, r);
+}
+
+// The offset of a load or store with a register offset: Rm shifted by an
+// immediate.
+static uint32_t ShiftedReg(Machine* mc, uint32_t insn) {
+    uint32_t rm = ArmReg(mc, insn & 15);
+    int amount = (insn >> 7) & 31;
+    switch ((insn >> 5) & 3) {
+        case 0: // LSL
+            return rm << amount;
+        case 1: // LSR
+            return amount ? rm >> amount : 0;
+        case 2: // ASR
+            return (uint32_t)((int32_t)rm >> (amount ? amount : 31));
+        default: // ROR, or RRX for 0
+            if (amount)
+                return (rm >> amount) | (rm << (32 - amount));
+            return (FLAGS(mc) & CPSR_C ? 0x80000000u : 0) | (rm >> 1);
+    }
+}
+
+// Emulates the ARM load or store at ip. Returns its length, or 0.
+static int Emulate(Machine* mc, const uint8_t* ip, uintptr_t addr) {
+    uint32_t insn = *(const uint32_t*)ip;
+    int rn = (insn >> 16) & 15, rt = (insn >> 12) & 15;
+    int pre = (insn >> 24) & 1, up = (insn >> 23) & 1, wb = (insn >> 21) & 1, load = (insn >> 20) & 1;
+    uint32_t base, offset, address, value = 0;
+    int size;
+
+    (void)addr; // the address is computed from the registers
+    if (FLAGS(mc) & CPSR_T)
+        return 0; // Thumb: the game and the platform layer are compiled as ARM code
+    base = ArmReg(mc, rn);
+
+    if ((insn & 0x0E000000) == 0x08000000) { // LDM, STM
+        uint32_t list = insn & 0xFFFF;
+        int n = __builtin_popcount(list), i;
+        if ((insn & (1 << 22)) || (load && (list & 0x8000)))
+            return 0; // user registers, or a load of the PC
+        address = up ? base + (pre ? 4 : 0) : base - 4 * n + (pre ? 0 : 4);
+        if (wb)
+            *Reg(mc, rn) = up ? base + 4 * n : base - 4 * n;
+        if (load) {
+            for (i = 0; i < 15; i++) {
+                if (list & (1 << i)) {
+                    *Reg(mc, i) = (Word)OpenBusRead(address, 4);
+                    address += 4;
+                }
+            }
+        }
+        return 4;
+    }
+
+    if ((insn & 0x0C000000) == 0x04000000) { // LDR, STR, LDRB, STRB
+        if ((insn & 0x02000010) == 0x02000010)
+            return 0; // media instructions
+        offset = (insn & (1 << 25)) ? ShiftedReg(mc, insn) : insn & 0xFFF;
+        size = (insn & (1 << 22)) ? 1 : 4;
+    } else if ((insn & 0x0E000090) == 0x00000090 && (insn & 0x60) != 0) { // halfword, signed, doubleword
+        int op = (insn >> 5) & 3;
+        offset = (insn & (1 << 22)) ? ((insn >> 4) & 0xF0) | (insn & 15) : ArmReg(mc, insn & 15);
+        if (op == 1) {
+            size = 2; // LDRH, STRH
+        } else if (load) {
+            size = op == 2 ? -1 : -2; // LDRSB, LDRSH
+        } else {
+            size = 8; // LDRD (op 2), STRD (op 3)
+            load = op == 2;
+            if (rt & 1)
+                return 0;
+        }
+    } else {
+        return 0;
+    }
+
+    if (load && rt == 15)
+        return 0;
+    address = pre ? (up ? base + offset : base - offset) : base;
+    if (!pre)
+        *Reg(mc, rn) = up ? base + offset : base - offset;
+    else if (wb)
+        *Reg(mc, rn) = address;
+    if (!load)
+        return 4; // the write is dropped
+    if (size == 8) {
+        uint64_t v = OpenBusRead(address, 8);
+        *Reg(mc, rt) = (uint32_t)v;
+        *Reg(mc, rt + 1) = (uint32_t)(v >> 32);
+        return 4;
+    }
+    value = (uint32_t)OpenBusRead(address, size < 0 ? -size : size);
+    if (size == -1)
+        value = (uint32_t)(int8_t)value;
+    else if (size == -2)
+        value = (uint32_t)(int16_t)value;
+    *Reg(mc, rt) = value;
+    return 4;
+}
+#else
 // The decoded prefixes of an instruction.
 typedef struct {
     int size; // operand size: 1, 2, 4 or 8 bytes
     int rex;  // REX prefix (x86_64), or 0
 } Prefix;
+
+#define SP(mc) (*Reg(mc, 4))
 
 #define REX_W 8
 #define REX_R 4
@@ -342,6 +462,7 @@ static int Emulate(Machine* mc, const uint8_t* ip, uintptr_t addr) {
     }
     return 0;
 }
+#endif
 
 // Performs a faulting access to low memory and skips the instruction. Returns
 // 0 for any other fault.

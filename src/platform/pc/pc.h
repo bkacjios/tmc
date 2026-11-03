@@ -74,6 +74,7 @@ int PcSaveScreenshot(const char* path);
 int PcSavePixels(const char* path, const uint32_t* pixels);
 void PcApplyVideoOptions(void); // fullscreen, filtering and scaling from gPcOptions
 struct SDL_Renderer* PcGetRenderer(void); // NULL when headless
+void PcRenderPresent(void);               // instead of SDL_RenderPresent
 void PcRestoreGameView(void);
 
 // config.c: tmc.cfg, with the controls and these options.

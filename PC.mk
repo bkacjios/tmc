@@ -13,6 +13,13 @@ default:
 # PC_OS=windows cross-compiles the 32-bit build for Windows with MinGW-w64
 # (i686-w64-mingw32), into a statically linked tmc.exe. SDL3 is built from
 # source as a static library for it (build/deps, see below).
+#
+# PC_OS=s30 cross-compiles the 32-bit build for the PocketGo S30 (Allwinner
+# A33: ARMv7 hard-float, Alpine Linux with musl), against the sysroot of the
+# pocketgo-s30 build tree ($(S30_WORK)). Game code is compiled with
+# arm-none-eabi-gcc (it needs -fno-toplevel-reorder, which clang lacks), the
+# platform layer and the link with the tree's clang wrapper. SDL3 is built
+# from source as a static library (KMSDRM video, ALSA audio).
 
 include Toolchain.mk
 
@@ -24,8 +31,13 @@ ifneq ($(PC_BITS), 32)
 $(error PC_OS=windows needs PC_BITS=32)
 endif
 BUILD_DIR = build/pcwin_$(GAME_VERSION)
+else ifeq ($(PC_OS), s30)
+ifneq ($(PC_BITS), 32)
+$(error PC_OS=s30 needs PC_BITS=32)
+endif
+BUILD_DIR = build/pcs30_$(GAME_VERSION)
 else ifneq ($(PC_OS), linux)
-$(error PC_OS must be linux or windows)
+$(error PC_OS must be linux, windows or s30)
 else ifeq ($(PC_BITS), 64)
 BUILD_DIR = build/pc64_$(GAME_VERSION)
 else ifeq ($(PC_BITS), 32)
@@ -57,6 +69,12 @@ else
 $(error unknown version $(GAME_VERSION))
 endif
 
+# Compiler and assembler flags for the target CPU.
+ARCH_FLAGS := -m$(PC_BITS)
+AS_ARCH := --$(PC_BITS)
+# GNU as for x86 needs the GBA assembly adjusted (see ASM_TO_X86).
+ASM_FILTER = $(ASM_TO_X86)
+
 ifeq ($(PC_OS), windows)
 EXE = $(BUILD_DIR)/$(BUILD_NAME).exe
 MINGW := i686-w64-mingw32
@@ -73,7 +91,7 @@ SDL_LIB := $(SDL_PREFIX)/lib/libSDL3.a
 PKG_CONFIG := PKG_CONFIG_LIBDIR=$(SDL_PREFIX)/lib/pkgconfig pkg-config --static
 # GCC lays out bitfields like MSVC on Windows by default; the game's structs
 # need the GCC (and agbcc) layout.
-PC_CFLAGS := -mno-ms-bitfields
+PC_CFLAGS := -malign-data=abi -mno-ms-bitfields
 # A fixed image base, below 4 GiB and above the GBA regions mapped at runtime.
 PC_LDFLAGS := -static -Wl,--image-base=0x10000000 -Wl,--disable-dynamicbase
 # Runs the built executable (for the menu art): directly when building on
@@ -83,6 +101,36 @@ RUN_EXE :=
 else
 RUN_EXE := wine
 endif
+else ifeq ($(PC_OS), s30)
+EXE = $(BUILD_DIR)/$(BUILD_NAME)
+S30_WORK ?= ../../s30-build
+S30_SYSROOT := $(abspath $(S30_WORK)/sysroot)
+S30_CLANG := $(abspath $(S30_WORK)/bin/armv7-clang)
+HOST_CC := $(TOOLCHAIN_PATH)arm-none-eabi-gcc
+HOST_AS := $(TOOLCHAIN_PATH)arm-none-eabi-as
+# The platform layer needs a Linux target for the system and SDL headers.
+PLATFORM_CC := $(S30_CLANG)
+LINK_CC := $(S30_CLANG)
+# ARM code only (no Thumb), for openbus.c's instruction decoder.
+ARCH_FLAGS := -marm -march=armv7-a -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard
+AS_ARCH := -march=armv7-a -mfpu=neon-vfpv4 -mfloat-abi=hard
+# The GBA assembly is ARM assembly already.
+ASM_FILTER := cat
+# The device's musl headers come before the bare-metal (newlib) ones, and
+# enums are int-sized as on Linux.
+PC_CPPFLAGS := -isystem$(S30_SYSROOT)/usr/include
+PC_CFLAGS := -fno-short-enums
+SDL_TARGET := armv7-s30
+SDL_PREFIX := $(CURDIR)/build/deps/$(SDL_TARGET)
+SDL_LIB := $(SDL_PREFIX)/lib/libSDL3.a
+PKG_CONFIG := PKG_CONFIG_LIBDIR=$(SDL_PREFIX)/lib/pkgconfig pkg-config --static
+# Linked above the GBA address space, as on Linux.
+PC_LDFLAGS := -no-pie -Wl,--image-base=0x10000000
+# Runs the built executable (for the menu art) under QEMU.
+RUN_EXE := qemu-arm-static -L $(S30_SYSROOT)
+# The BIOS animation and the logos can be skipped (see below).
+BIOS_INTRO_SKIPPABLE ?= 1
+LOGOS_SKIPPABLE ?= 1
 else
 EXE = $(BUILD_DIR)/$(BUILD_NAME)
 HOST_CC  ?= gcc
@@ -95,7 +143,10 @@ endif
 # The executable is linked above the GBA address space: the original ROM is
 # mapped at 0x08000000 at runtime, since some data still holds ROM addresses.
 PC_LDFLAGS := -no-pie -Wl,-Ttext-segment=0x10000000
+PC_CFLAGS := -malign-data=abi
 endif
+PLATFORM_CC ?= $(HOST_CC)
+LINK_CC ?= $(HOST_CC)
 
 .SUFFIXES:
 .SECONDARY:
@@ -105,7 +156,7 @@ endif
 .PHONY: build clean deps
 build: $(EXE) $$(MENU_ART)
 
-# Libraries built from source (Windows: SDL3).
+# Libraries built from source (Windows and S30: SDL3).
 deps: $(SDL_LIB)
 
 clean:
@@ -120,7 +171,7 @@ build/$(GAME_VERSION)/extracted_assets_$(GAME_VERSION):
 # ===============
 
 ASINCLUDE := -I $(ASSET_DIR) -I $(BUILD_DIR)/enum_include
-ASFLAGS := --$(PC_BITS) --defsym PLATFORM_PC=1 $(if $(filter 64,$(PC_BITS)),--defsym PLATFORM_PC64=1) --defsym $(GAME_VERSION)=1 --defsym REVISION=$(REVISION) --defsym $(GAME_LANGUAGE)=1 $(ASINCLUDE)
+ASFLAGS := $(AS_ARCH) --defsym PLATFORM_PC=1 $(if $(filter 64,$(PC_BITS)),--defsym PLATFORM_PC64=1) --defsym $(GAME_VERSION)=1 --defsym REVISION=$(REVISION) --defsym $(GAME_LANGUAGE)=1 $(ASINCLUDE)
 
 ENUM_ASM_SRCS := $(wildcard include/*.h)
 ENUM_ASM_HEADERS := $(patsubst include/%.h,$(BUILD_DIR)/enum_include/%.inc,$(ENUM_ASM_SRCS))
@@ -133,7 +184,7 @@ ASM_TO_X86 := sed -E 's/^(\s*)\.align\b/\1.p2align/; /^\s*\.(syntax|thumb|arm|th
 $(BUILD_DIR)/data/%.o: deps = $(shell $(SCANINC) -I . $(ASINCLUDE) data/$*.s)
 $(BUILD_DIR)/data/%.o: data/%.s $$(deps) $(ENUM_ASM_HEADERS) | $(ASSET_DIR)
 	@mkdir -p $(dir $@)
-	$(PREPROC) $(BUILD_NAME) $< -- $(ASINCLUDE) | $(ASM_TO_X86) | $(HOST_AS) $(ASFLAGS) -o $@ $(ASM_FIXUP)
+	$(PREPROC) $(BUILD_NAME) $< -- $(ASINCLUDE) | $(ASM_FILTER) | $(HOST_AS) $(ASFLAGS) -o $@ $(ASM_FIXUP)
 
 # Handwritten ARM code is replaced by C in src/platform/pc, but the data tables
 # defined in those files are still needed.
@@ -143,7 +194,7 @@ ASM_DATA_OBJS := $(patsubst %.s,$(BUILD_DIR)/%.data.o,$(ASM_DATA_SRCS))
 $(BUILD_DIR)/asm/src/%.data.o: asm/src/%.s tools/pc/asm_data.py $(ENUM_ASM_HEADERS) | $(ASSET_DIR)
 	@mkdir -p $(dir $@)
 	python3 tools/pc/asm_data.py < $< > $(BUILD_DIR)/asm/src/$*.data.s
-	$(PREPROC) $(BUILD_NAME) $(BUILD_DIR)/asm/src/$*.data.s -- $(ASINCLUDE) | $(ASM_TO_X86) | $(HOST_AS) $(ASFLAGS) -o $@ $(ASM_FIXUP)
+	$(PREPROC) $(BUILD_NAME) $(BUILD_DIR)/asm/src/$*.data.s -- $(ASINCLUDE) | $(ASM_FILTER) | $(HOST_AS) $(ASFLAGS) -o $@ $(ASM_FIXUP)
 
 $(BUILD_DIR)/enum_include/%.inc: include/%.h
 	@mkdir -p $(dir $@)
@@ -163,26 +214,48 @@ RAM_COMMONS := | python3 tools/pc/ram_commons.py $(RAM_SYMBOLS)
 endif
 
 
-ifeq ($(PC_OS), windows)
-# Static SDL3 for MinGW, built from the release source.
+# Static SDL3, built from the release source (Windows and S30).
 SDL_VERSION := 3.4.18
 SDL_SRC := build/deps/src/SDL3-$(SDL_VERSION)
-$(SDL_LIB):
+ifeq ($(PC_OS), windows)
+SDL_TARGET := $(MINGW)
+SDL_CMAKE := cmake
+SDL_CMAKE_FLAGS := -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_SYSTEM_PROCESSOR=x86 \
+	-DCMAKE_C_COMPILER=$(MINGW)-gcc -DCMAKE_CXX_COMPILER=$(MINGW)-g++ -DCMAKE_RC_COMPILER=$(WINDRES) \
+	-DCMAKE_FIND_ROOT_PATH=/usr/$(MINGW)
+else ifeq ($(PC_OS), s30)
+# Console only: KMSDRM with OpenGL ES (the libraries are loaded at runtime),
+# ALSA, and evdev input through udev.
+SDL_CMAKE := PKG_CONFIG_LIBDIR=$(S30_SYSROOT)/usr/lib/pkgconfig:$(S30_SYSROOT)/usr/share/pkgconfig \
+	PKG_CONFIG_SYSROOT_DIR=$(S30_SYSROOT) cmake
+SDL_CMAKE_FLAGS := -DCMAKE_SYSTEM_NAME=Linux -DCMAKE_SYSTEM_PROCESSOR=armv7 \
+	-DCMAKE_C_COMPILER=$(S30_CLANG) -DCMAKE_CXX_COMPILER=$(S30_CLANG)++ -DCMAKE_SYSROOT=$(S30_SYSROOT) \
+	-DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY \
+	-DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY \
+	-DSDL_UNIX_CONSOLE_BUILD=ON -DSDL_X11=OFF -DSDL_WAYLAND=OFF -DSDL_VULKAN=OFF -DSDL_OPENGL=OFF \
+	-DSDL_OPENGLES=ON -DSDL_KMSDRM=ON -DSDL_ALSA=ON -DSDL_PULSEAUDIO=OFF -DSDL_PIPEWIRE=OFF \
+	-DSDL_JACK=OFF -DSDL_SNDIO=OFF -DSDL_DBUS=OFF -DSDL_IBUS=OFF -DSDL_LIBURING=OFF -DSDL_CAMERA=OFF
+endif
+ifneq ($(SDL_LIB),)
+$(SDL_SRC):
 	@mkdir -p build/deps/src
 	cd build/deps/src && curl -fsSL -O https://github.com/libsdl-org/SDL/releases/download/release-$(SDL_VERSION)/SDL3-$(SDL_VERSION).tar.gz && tar xzf SDL3-$(SDL_VERSION).tar.gz
-	cmake -S $(SDL_SRC) -B build/deps/sdl3-build-$(MINGW) -G Ninja -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_SYSTEM_PROCESSOR=x86 \
-		-DCMAKE_C_COMPILER=$(MINGW)-gcc -DCMAKE_CXX_COMPILER=$(MINGW)-g++ -DCMAKE_RC_COMPILER=$(WINDRES) \
-		-DCMAKE_FIND_ROOT_PATH=/usr/$(MINGW) -DCMAKE_BUILD_TYPE=Release -DSDL_SHARED=OFF -DSDL_STATIC=ON \
+$(SDL_LIB): | $(SDL_SRC)
+	$(SDL_CMAKE) -S $(SDL_SRC) -B build/deps/sdl3-build-$(SDL_TARGET) -G Ninja $(SDL_CMAKE_FLAGS) \
+		-DCMAKE_BUILD_TYPE=Release -DSDL_SHARED=OFF -DSDL_STATIC=ON \
 		-DSDL_TESTS=OFF -DSDL_EXAMPLES=OFF -DCMAKE_INSTALL_PREFIX=$(SDL_PREFIX)
-	cmake --build build/deps/sdl3-build-$(MINGW)
-	cmake --install build/deps/sdl3-build-$(MINGW)
+	cmake --build build/deps/sdl3-build-$(SDL_TARGET)
+	cmake --install build/deps/sdl3-build-$(SDL_TARGET)
 endif
 
 SDL_CFLAGS := $(shell $(PKG_CONFIG) --cflags sdl3)
 SDL_LIBS   := $(shell $(PKG_CONFIG) --libs sdl3)
 
 CINCLUDE := -I include -I build/$(GAME_VERSION)
-CPPFLAGS := -m$(PC_BITS) -std=gnu11 $(CINCLUDE) -DPLATFORM_PC -DNON_MATCHING=1 -D$(GAME_VERSION) -DREVISION=$(REVISION) -D$(GAME_LANGUAGE)
+CPPFLAGS := $(ARCH_FLAGS) $(PC_CPPFLAGS) -std=gnu11 $(CINCLUDE) -DPLATFORM_PC -DNON_MATCHING=1 -D$(GAME_VERSION) -DREVISION=$(REVISION) -D$(GAME_LANGUAGE)
+ifeq ($(PC_OS), s30)
+CPPFLAGS += -DPC_S30
+endif
 # LOGOS_SKIPPABLE=1: A or Start skips the Nintendo/Capcom logos on the first
 # boot too, not only after a soft reset (title.c).
 ifeq ($(LOGOS_SKIPPABLE), 1)
@@ -191,7 +264,7 @@ endif
 # -funsigned-char: char is unsigned on ARM.
 # -fpermissive: the decompiled code relies on pre-C99 leniency.
 PC_OPT ?= -O2
-CFLAGS := -m$(PC_BITS) -std=gnu11 $(PC_OPT) -g -malign-data=abi -fno-toplevel-reorder -fno-merge-constants -fpermissive -funsigned-char -fwrapv -fno-strict-aliasing -fcommon -fno-pie -w $(PC_CFLAGS)
+CFLAGS := $(ARCH_FLAGS) -std=gnu11 $(PC_OPT) -g -fno-toplevel-reorder -fno-merge-constants -fpermissive -funsigned-char -fwrapv -fno-strict-aliasing -fcommon -fno-pie -w $(PC_CFLAGS)
 
 PLATFORM_SRCS := $(wildcard src/platform/pc/*.c)
 PLATFORM_OBJS := $(patsubst %.c,$(BUILD_DIR)/%.o,$(PLATFORM_SRCS))
@@ -203,6 +276,12 @@ endif
 # -fno-common: the platform layer's variables stay out of the game's RAM
 # (.gba_ram, made of common symbols, in the 64-bit build).
 $(PLATFORM_OBJS): CFLAGS := $(filter-out -w,$(CFLAGS)) -Wall -Wno-multichar -fno-common
+# The platform layer is compiled with PLATFORM_CC (clang for the S30), without
+# the GCC-only flags.
+ifneq ($(PLATFORM_CC), $(HOST_CC))
+$(PLATFORM_OBJS): HOST_CC := $(PLATFORM_CC)
+$(PLATFORM_OBJS): CFLAGS := $(filter-out -fno-toplevel-reorder -fpermissive -fno-merge-constants,$(CFLAGS))
+endif
 
 # EMBED_ROM=1: builds baserom.gba, and gba_bios.bin if it is there, into the
 # executable (embed.c), so it runs without them. Such an executable contains
@@ -252,7 +331,7 @@ TITLE_EXE = $(EXE)
 endif
 
 LINK_OBJS = $(BUILD_DIR)/pc.ld $(BUILD_DIR)/objects.txt $$(addprefix $(BUILD_DIR)/,$$(objs)) $(PLATFORM_OBJS) $(ASM_DATA_OBJS) $$(ORACLE_OBJS) $(RAM_SYMBOLS_OBJ)
-LINK = cd $(BUILD_DIR) && $(HOST_CC) -m$(PC_BITS) $(PC_LDFLAGS) -o $(notdir $@) -Wl,-T,pc.ld -Wl,-Map,$(notdir $(basename $@)).map \
+LINK = cd $(BUILD_DIR) && $(LINK_CC) $(ARCH_FLAGS) $(PC_LDFLAGS) -o $(notdir $@) -Wl,-T,pc.ld -Wl,-Map,$(notdir $(basename $@)).map \
 	$(objs) $(patsubst $(BUILD_DIR)/%,%,$(PLATFORM_OBJS) $(ASM_DATA_OBJS) $(ORACLE_OBJS) $(RAM_SYMBOLS_OBJ) $(filter $(ICON_OBJ),$^)) $(SDL_LIBS) -lm
 
 $(EXE) $(TITLE_EXE): objs = $(shell cat $(BUILD_DIR)/objects.txt 2>/dev/null)
@@ -294,7 +373,7 @@ $(BUILD_DIR)/oracle/lynna.c: tools/pc/oracle_map.py tools/pc/oracle_lynna_tiles.
 	python3 tools/pc/oracle_map.py $(ORACLES_DISASM) $@
 
 $(BUILD_DIR)/oracle/lynna.o: $(BUILD_DIR)/oracle/lynna.c
-	$(HOST_CC) -m$(PC_BITS) -c $< -o $@
+	$(HOST_CC) $(ARCH_FLAGS) -c $< -o $@
 
 $(ORACLE_ART): $(MENU_DIR)/%.bmp: tools/pc/oracle_title.py tools/pc/gbc_gfx.py
 	@mkdir -p $(MENU_DIR)
